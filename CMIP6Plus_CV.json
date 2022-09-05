@@ -1807,7 +1807,8 @@
     },
     "dcppC-forecast-addPinatubo": {
       "activity_id": [
-        "DCPP VolMIP"
+        "DCPP",
+        "VolMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2081,7 +2082,8 @@
     },
     "esm-1pct-brch-1000PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2107,7 +2109,8 @@
     },
     "esm-1pct-brch-2000PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2133,7 +2136,8 @@
     },
     "esm-1pct-brch-750PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2159,7 +2163,8 @@
     },
     "esm-1pctCO2": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2183,7 +2188,8 @@
     },
     "esm-bell-1000PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2207,7 +2213,8 @@
     },
     "esm-bell-2000PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -2231,7 +2238,8 @@
     },
     "esm-bell-750PgC": {
       "activity_id": [
-        "C4MIP CDRMIP"
+        "C4MIP",
+        "CDRMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -4342,7 +4350,8 @@
     },
     "land-hist": {
       "activity_id": [
-        "LS3MIP LUMIP"
+        "LS3MIP",
+        "LUMIP"
       ],
       "additional_allowed_model_components": [
         "BGC"
@@ -6060,7 +6069,8 @@
     },
     "piClim-aer": {
       "activity_id": [
-        "RFMIP AerChemMIP"
+        "RFMIP",
+        "AerChemMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -6107,7 +6117,8 @@
     },
     "piClim-control": {
       "activity_id": [
-        "RFMIP AerChemMIP"
+        "RFMIP",
+        "AerChemMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -7122,7 +7133,8 @@
     },
     "ssp370": {
       "activity_id": [
-        "ScenarioMIP AerChemMIP"
+        "ScenarioMIP",
+        "AerChemMIP"
       ],
       "additional_allowed_model_components": [
         "AER",
@@ -9031,14 +9043,14 @@
         "HighResMIP"
       ],
       "cohort": [
-        "Registered"
+        "Published"
       ],
       "institution_id": [
         "EC-Earth-Consortium"
       ],
       "license_info": {
         "exceptions_contact": "@ec-earth.org <- cmip6-data",
-        "history": "",
+        "history": "2022-06-27: initially published under CC BY 4.0",
         "id": "CC BY 4.0",
         "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
         "source_specific_info": "",
@@ -10078,13 +10090,15 @@
       "activity_participation": [
         "HighResMIP"
       ],
-      "cohort": "Registered",
+      "cohort": [
+        "Published"
+      ],
       "institution_id": [
         "IPSL"
       ],
       "license_info": {
         "exceptions_contact": "@listes.ipsl.fr <- ipsl-cmip6",
-        "history": "",
+        "history": "2022-07-21: initially published under CC BY 4.0",
         "id": "CC BY 4.0",
         "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
         "source_specific_info": "",
@@ -10097,13 +10111,15 @@
       "activity_participation": [
         "HighResMIP"
       ],
-      "cohort": "Registered",
+      "cohort": [
+        "Published"
+      ],
       "institution_id": [
         "IPSL"
       ],
       "license_info": {
         "exceptions_contact": "@listes.ipsl.fr <- ipsl-cmip6",
-        "history": "",
+        "history": "2022-07-21: initially published under CC BY 4.0",
         "id": "CC BY 4.0",
         "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
         "source_specific_info": "",
@@ -10116,13 +10132,15 @@
       "activity_participation": [
         "HighResMIP"
       ],
-      "cohort": "Registered",
+      "cohort": [
+        "Published"
+      ],
       "institution_id": [
         "IPSL"
       ],
       "license_info": {
         "exceptions_contact": "@listes.ipsl.fr <- ipsl-cmip6",
-        "history": "",
+        "history": "2022-07-20: initially published under CC BY 4.0",
         "id": "CC BY 4.0",
         "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
         "source_specific_info": "",
@@ -10135,13 +10153,15 @@
       "activity_participation": [
         "HighResMIP"
       ],
-      "cohort": "Registered",
+      "cohort": [
+        "Published"
+      ],
       "institution_id": [
         "IPSL"
       ],
       "license_info": {
         "exceptions_contact": "@listes.ipsl.fr <- ipsl-cmip6",
-        "history": "",
+        "history": "2022-07-21: initially published under CC BY 4.0",
         "id": "CC BY 4.0",
         "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
         "source_specific_info": "",
@@ -11251,19 +11271,19 @@
     "CV_collection_modified": "2022-09-05",
     "CV_collection_version": "6.3.0.0",
     "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: a4dc475633c29ebc6728ee8bdcdcbcce",
+    "checksum": "md5: a97ad9cfdd2230fd5379158dbd80db8e",
     "file_checksums": {
-      "CMIP6Plus_CV.json": "md5: 85eef9e33d495a3529826787441dfcff",
       "CMIP6Plus_DRS.json": "md5: c406c690f6282a5489945942f1f52af0",
       "CMIP6Plus_activity_id.json": "md5: 52acb18084e2913cee556f2df19b1d45",
-      "CMIP6Plus_experiment_id.json": "md5: cc447c09d0a0a05981cdebea306d13e2",
+      "CMIP6Plus_experiment_id.json": "md5: caa0dd6540257be02ce17f713a0504f7",
       "CMIP6Plus_further_info_url.json": "md5: 87f164d879eebdc8849ecd244136677c",
       "CMIP6Plus_license.json": "md5: 745ac5aa15be6d5a6fa5999ca6247d09",
       "CMIP6Plus_mip_era.json": "md5: 571fcf17882adb5a9df045b59fd753bf",
       "CMIP6Plus_required_global_attributes.json": "md5: 4b9197d499707c1fdd3a8f0c54c08a0b",
-      "CMIP6Plus_source_id.json": "md5: 0eb968496aa7c16865691f47b5d92f43",
+      "CMIP6Plus_source_id.json": "md5: 192ca5dfc56cc5d21467314f67df959e",
       "CMIP6Plus_sub_experiment_id.json": "md5: 9f495f4f41795ac7d5fc69d72dd7dbdf",
-      "CMIP6Plus_tracking_id.json": "md5: 0f4f2dbbc84543ca4a62ce457acae553"
+      "CMIP6Plus_tracking_id.json": "md5: 0f4f2dbbc84543ca4a62ce457acae553",
+      "previous CMIP6Plus_CV.json": "md5: 14f0d5e69a0298c9f3148d9b91e33a9a"
     },
     "institution_id": "MOHC",
     "previous_commit": "To be added",
