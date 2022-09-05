@@ -1,0 +1,14 @@
+{
+  "tracking_id": [
+    "hdl:21.14100/.*"
+  ],
+  "version_metadata": {
+    "CV_collection_modified": "2022-09-05",
+    "CV_collection_version": "6.3.0.0",
+    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
+    "checksum": "md5: 0f4f2dbbc84543ca4a62ce457acae553",
+    "institution_id": "MOHC",
+    "previous_commit": "To be added",
+    "specs_doc": "v6.3.0 (link TBC)"
+  }
+}

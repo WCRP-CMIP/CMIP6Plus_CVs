@@ -1,0 +1,7845 @@
+{
+  "experiment_id": {
+    "1pctCO2": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "1 percent per year increase in CO2",
+      "experiment_id": "1pctCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2-4xext": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "extension from year 140 of 1pctCO2 with 4xCO2",
+      "experiment_id": "1pctCO2-4xext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "1pctCO2"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2-bgc": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "biogeochemically-coupled version of 1 percent per year increasing CO2 experiment",
+      "experiment_id": "1pctCO2-bgc",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2-cdr": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "1 percent per year decrease in CO2 from 4xCO2",
+      "experiment_id": "1pctCO2-cdr",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "1pctCO2"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2-rad": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "radiatively-coupled version of 1 percent per year increasing CO2 experiment",
+      "experiment_id": "1pctCO2-rad",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2Ndep": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "1 percent per year increasing CO2 experiment with increasing N-deposition",
+      "experiment_id": "1pctCO2Ndep",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2Ndep-bgc": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "biogeochemically-coupled version of 1 percent per year increasing CO2 experiment with increasing N-deposition",
+      "experiment_id": "1pctCO2Ndep-bgc",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "1pctCO2to4x-withism": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "simulation with interactive ice sheet forced by 1 percent per year increase in CO2 to 4xCO2 (subsequently held fixed)",
+      "experiment_id": "1pctCO2to4x-withism",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "piControl-withism"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G1": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt quadrupling of CO2 plus reduction in total solar irradiance",
+      "experiment_id": "G1",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G6SST1": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "SSTs, forcings, and other prescribed conditions from year 2020 of SSP5-8.5",
+      "experiment_id": "G6SST1",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G6SST2-solar": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6solar",
+      "experiment_id": "G6SST2-solar",
+      "parent_activity_id": [
+        "GeoMIP"
+      ],
+      "parent_experiment_id": [
+        "G6solar"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G6SST2-sulfur": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6sulfur",
+      "experiment_id": "G6SST2-sulfur",
+      "parent_activity_id": [
+        "GeoMIP"
+      ],
+      "parent_experiment_id": [
+        "G6sulfur"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G6solar": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245",
+      "experiment_id": "G6solar",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G6sulfur": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "stratospheric sulfate aerosol injection to reduce net forcing from SSP585 to SSP245",
+      "experiment_id": "G6sulfur",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G7SST1-cirrus": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2020 of SSP5-8.5 and cirrus thinning",
+      "experiment_id": "G7SST1-cirrus",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G7SST2-cirrus": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G7cirrus",
+      "experiment_id": "G7SST2-cirrus",
+      "parent_activity_id": [
+        "GeoMIP"
+      ],
+      "parent_experiment_id": [
+        "G7cirrus"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "G7cirrus": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "increase cirrus ice crystal fall speed to reduce net forcing in SSP585 by 1 W m-2",
+      "experiment_id": "G7cirrus",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "a4SST": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST but with SSTs from abrupt-4xCO2",
+      "experiment_id": "a4SST",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "a4SSTice": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST but with SSTs and sea ice from abrupt-4xCO2",
+      "experiment_id": "a4SSTice",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "a4SSTice-4xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST but with SSTs and sea ice from abrupt-4xCO2, and 4xCO2 seen by radiation and vegetation",
+      "experiment_id": "a4SSTice-4xCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "abrupt-0p5xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt halving of CO2",
+      "experiment_id": "abrupt-0p5xCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "abrupt-2xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt doubling of CO2",
+      "experiment_id": "abrupt-2xCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "abrupt-4xCO2": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt quadrupling of CO2",
+      "experiment_id": "abrupt-4xCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "abrupt-solm4p": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt 4% decrease in solar constant",
+      "experiment_id": "abrupt-solm4p",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "abrupt-solp4p": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "abrupt 4% increase in solar constant",
+      "experiment_id": "abrupt-solp4p",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "AMIP",
+      "experiment_id": "amip",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-4xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP SSTs with 4xCO2",
+      "experiment_id": "amip-4xCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-TIP": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "same as \"amip\" run, but surface elevations of the Tibetan-Iranian Plateau and Himalayas reduced to 500m",
+      "experiment_id": "amip-TIP",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-TIP-nosh": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "same as \"amip\" run, but sensible heat not allowed for elevations of the Tibetan-Iranian Plateau and Himalayas above 500m",
+      "experiment_id": "amip-TIP-nosh",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-a4SST-4xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as AMIP but with warming pattern from abrupt-4xCO2 added to SSTs and 4xCO2 seen by radiation and vegetation",
+      "experiment_id": "amip-a4SST-4xCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-climSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "AMIP with climatological SIC",
+      "experiment_id": "amip-climSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-climSST": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "AMIP with climatological SST",
+      "experiment_id": "amip-climSST",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-future4K": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP with patterned 4K SST increase",
+      "experiment_id": "amip-future4K",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-hist": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "AMIP-style simulation covering the period 1870-2014",
+      "experiment_id": "amip-hist",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-hld": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "same as \"amip\" run, but surface elevations of the East African Highlands in Africa, Sierra Madre in N. America and Andes in S. America reduced to 500m",
+      "experiment_id": "amip-hld",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-lfmip-pObs": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "prescribed land (from pseudo-observations) and AMIP SSTs",
+      "experiment_id": "amip-lfmip-pObs",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-lfmip-pdLC": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "prescribed modern land surface climatology from historical, prescribed SST and sea-ice from historical plus scenario runs",
+      "experiment_id": "amip-lfmip-pdLC",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-lfmip-rmLC": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "prescribed land surface climatology from historical plus scenario 30yr running mean, prescribed SST and sea-ice from historical plus scenario runs",
+      "experiment_id": "amip-lfmip-rmLC",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-lwoff": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP experiment with longwave cloud-radiative effects off",
+      "experiment_id": "amip-lwoff",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-m4K": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP with uniform 4K SST decrease",
+      "experiment_id": "amip-m4K",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-p4K": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP with uniform 4K SST increase",
+      "experiment_id": "amip-p4K",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-p4K-lwoff": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP experiment with uniform 4K SST increase and with longwave cloud radiative effects off",
+      "experiment_id": "amip-p4K-lwoff",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "amip-piForcing": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "AMIP SSTs with pre-industrial anthropogenic and natural forcing",
+      "experiment_id": "amip-piForcing",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "aqua-4xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "aquaplanet with control SST and 4xCO2",
+      "experiment_id": "aqua-4xCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "aqua-control": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "aquaplanet control",
+      "experiment_id": "aqua-control",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "aqua-control-lwoff": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "aquaplanet control with longwave cloud radiative effects off",
+      "experiment_id": "aqua-control-lwoff",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "aqua-p4K": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "aquaplanet with uniform 4K SST increase",
+      "experiment_id": "aqua-p4K",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "aqua-p4K-lwoff": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "aquaplanet with uniform 4K SST increase and with longwave cloud radiative effects off",
+      "experiment_id": "aqua-p4K-lwoff",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "control-1950": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "coupled control with fixed 1950's forcing (HighResMIP equivalent of pre-industrial control)",
+      "experiment_id": "control-1950",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "spinup-1950"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "control-slab": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control with slab ocean",
+      "experiment_id": "control-slab",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "SLAB"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppA-assim": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Assimilation run paralleling the historical simulation, which may be used to generate hindcast initial conditions",
+      "experiment_id": "dcppA-assim",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppA-hindcast": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast initialized based on observations and using historical forcing",
+      "experiment_id": "dcppA-hindcast",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1960",
+        "s1961",
+        "s1962",
+        "s1963",
+        "s1964",
+        "s1965",
+        "s1966",
+        "s1967",
+        "s1968",
+        "s1969",
+        "s1970",
+        "s1971",
+        "s1972",
+        "s1973",
+        "s1974",
+        "s1975",
+        "s1976",
+        "s1977",
+        "s1978",
+        "s1979",
+        "s1980",
+        "s1981",
+        "s1982",
+        "s1983",
+        "s1984",
+        "s1985",
+        "s1986",
+        "s1987",
+        "s1988",
+        "s1989",
+        "s1990",
+        "s1991",
+        "s1992",
+        "s1993",
+        "s1994",
+        "s1995",
+        "s1996",
+        "s1997",
+        "s1998",
+        "s1999",
+        "s2000",
+        "s2001",
+        "s2002",
+        "s2003",
+        "s2004",
+        "s2005",
+        "s2006",
+        "s2007",
+        "s2008",
+        "s2009",
+        "s2010",
+        "s2011",
+        "s2012",
+        "s2013",
+        "s2014",
+        "s2015",
+        "s2016",
+        "s2017",
+        "s2018",
+        "s2019"
+      ]
+    },
+    "dcppA-hindcast-niff": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast initialized based on observations but without using knowledge of subsequent historical forcing",
+      "experiment_id": "dcppA-hindcast-niff",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1960",
+        "s1961",
+        "s1962",
+        "s1963",
+        "s1964",
+        "s1965",
+        "s1966",
+        "s1967",
+        "s1968",
+        "s1969",
+        "s1970",
+        "s1971",
+        "s1972",
+        "s1973",
+        "s1974",
+        "s1975",
+        "s1976",
+        "s1977",
+        "s1978",
+        "s1979",
+        "s1980",
+        "s1981",
+        "s1982",
+        "s1983",
+        "s1984",
+        "s1985",
+        "s1986",
+        "s1987",
+        "s1988",
+        "s1989",
+        "s1990",
+        "s1991",
+        "s1992",
+        "s1993",
+        "s1994",
+        "s1995",
+        "s1996",
+        "s1997",
+        "s1998",
+        "s1999",
+        "s2000",
+        "s2001",
+        "s2002",
+        "s2003",
+        "s2004",
+        "s2005",
+        "s2006",
+        "s2007",
+        "s2008",
+        "s2009",
+        "s2010",
+        "s2011",
+        "s2012",
+        "s2013",
+        "s2014",
+        "s2015",
+        "s2016",
+        "s2017",
+        "s2018",
+        "s2019"
+      ]
+    },
+    "dcppA-historical-niff": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast initialized from historical climate simulation but without using knowledge of subsequent historical forcing",
+      "experiment_id": "dcppA-historical-niff",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1960",
+        "s1961",
+        "s1962",
+        "s1963",
+        "s1964",
+        "s1965",
+        "s1966",
+        "s1967",
+        "s1968",
+        "s1969",
+        "s1970",
+        "s1971",
+        "s1972",
+        "s1973",
+        "s1974",
+        "s1975",
+        "s1976",
+        "s1977",
+        "s1978",
+        "s1979",
+        "s1980",
+        "s1981",
+        "s1982",
+        "s1983",
+        "s1984",
+        "s1985",
+        "s1986",
+        "s1987",
+        "s1988",
+        "s1989",
+        "s1990",
+        "s1991",
+        "s1992",
+        "s1993",
+        "s1994",
+        "s1995",
+        "s1996",
+        "s1997",
+        "s1998",
+        "s1999",
+        "s2000",
+        "s2001",
+        "s2002",
+        "s2003",
+        "s2004",
+        "s2005",
+        "s2006",
+        "s2007",
+        "s2008",
+        "s2009",
+        "s2010",
+        "s2011",
+        "s2012",
+        "s2013",
+        "s2014",
+        "s2015",
+        "s2016",
+        "s2017",
+        "s2018",
+        "s2019"
+      ]
+    },
+    "dcppB-forecast": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "forecast initialized from observations with forcing from ssp245",
+      "experiment_id": "dcppB-forecast",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s2017",
+        "s2018",
+        "s2019",
+        "s2020",
+        "s2021",
+        "s2022",
+        "s2023",
+        "s2024",
+        "s2025",
+        "s2026",
+        "s2027",
+        "s2028",
+        "s2029"
+      ]
+    },
+    "dcppC-amv-ExTrop-neg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized climate impact of negative extratropical AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-ExTrop-neg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-amv-ExTrop-pos": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized climate impact of positive extratropical AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-ExTrop-pos",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-amv-Trop-neg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized climate impact of negative tropical AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-Trop-neg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-amv-Trop-pos": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized positive tropical AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-Trop-pos",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-amv-neg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized climate impact of negative AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-neg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-amv-pos": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized climate impact of positive AMV anomaly pattern",
+      "experiment_id": "dcppC-amv-pos",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-atl-control": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized Atlantic control",
+      "experiment_id": "dcppC-atl-control",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-atl-pacemaker": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pacemaker Atlantic experiment",
+      "experiment_id": "dcppC-atl-pacemaker",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1910",
+        "s1920",
+        "s1950"
+      ]
+    },
+    "dcppC-atl-spg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "predictability of 1990s warming of Atlantic sub-polar gyre",
+      "experiment_id": "dcppC-atl-spg",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1992",
+        "s1993",
+        "s1994",
+        "s1995",
+        "s1996",
+        "s1997",
+        "s1998",
+        "s1999"
+      ]
+    },
+    "dcppC-forecast-addAgung": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2015 forecast with added Agung forcing",
+      "experiment_id": "dcppC-forecast-addAgung",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s2014"
+      ]
+    },
+    "dcppC-forecast-addElChichon": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2015 forecast with added El Chichon forcing",
+      "experiment_id": "dcppC-forecast-addElChichon",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s2014"
+      ]
+    },
+    "dcppC-forecast-addPinatubo": {
+      "activity_id": [
+        "DCPP VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2015 forecast with added Pinatubo forcing",
+      "experiment_id": "dcppC-forecast-addPinatubo",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s2014"
+      ]
+    },
+    "dcppC-hindcast-noAgung": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast but with only background volcanic forcing to be the same as that used in the 2015 forecast",
+      "experiment_id": "dcppC-hindcast-noAgung",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1962"
+      ]
+    },
+    "dcppC-hindcast-noElChichon": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast but with only background volcanic forcing to be the same as that used in the 2015 forecast",
+      "experiment_id": "dcppC-hindcast-noElChichon",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1981"
+      ]
+    },
+    "dcppC-hindcast-noPinatubo": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "hindcast but with only background volcanic forcing to be the same as that used in the 2015 forecast",
+      "experiment_id": "dcppC-hindcast-noPinatubo",
+      "parent_activity_id": [
+        "no parent",
+        "DCPP"
+      ],
+      "parent_experiment_id": [
+        "no parent",
+        "dcppA-assim"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1990"
+      ]
+    },
+    "dcppC-ipv-NexTrop-neg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized negative northern extratropical IPV anomaly pattern",
+      "experiment_id": "dcppC-ipv-NexTrop-neg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-ipv-NexTrop-pos": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized positive northern extratropical IPV anomaly pattern",
+      "experiment_id": "dcppC-ipv-NexTrop-pos",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-ipv-neg": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized negative IPV anomaly pattern",
+      "experiment_id": "dcppC-ipv-neg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-ipv-pos": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized positive IPV anomaly pattern",
+      "experiment_id": "dcppC-ipv-pos",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-pac-control": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized Pacific control",
+      "experiment_id": "dcppC-pac-control",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "dcppC-pac-pacemaker": {
+      "activity_id": [
+        "DCPP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pacemaker Pacific experiment",
+      "experiment_id": "dcppC-pac-pacemaker",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "s1910",
+        "s1920",
+        "s1950"
+      ]
+    },
+    "deforest-globe": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized transient global deforestation",
+      "experiment_id": "deforest-globe",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-1pct-brch-1000PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "zero emissions simulation branched from 1% run after 1000 PgC cumulative emission",
+      "experiment_id": "esm-1pct-brch-1000PgC",
+      "parent_activity_id": [
+        "CMIP",
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "1pctCO2",
+        "esm-1pctCO2"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-1pct-brch-2000PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "zero emissions simulation branched from 1% run after 2000 PgC cumulative emission",
+      "experiment_id": "esm-1pct-brch-2000PgC",
+      "parent_activity_id": [
+        "CMIP",
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "1pctCO2",
+        "esm-1pctCO2"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-1pct-brch-750PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "zero emissions simulation branched from 1% run after 750 PgC cumulative emission",
+      "experiment_id": "esm-1pct-brch-750PgC",
+      "parent_activity_id": [
+        "CMIP",
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "1pctCO2",
+        "esm-1pctCO2"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-1pctCO2": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emissions driven 1% run",
+      "experiment_id": "esm-1pctCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-bell-1000PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emissions driven 1000PgC bell-curve",
+      "experiment_id": "esm-bell-1000PgC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-bell-2000PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emissions driven 2000PgC bell-curve",
+      "experiment_id": "esm-bell-2000PgC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-bell-750PgC": {
+      "activity_id": [
+        "C4MIP CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emissions driven 750PgC bell-curve",
+      "experiment_id": "esm-bell-750PgC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-hist": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated",
+      "experiment_id": "esm-hist",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-hist-ext": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "post-2014 all-forcing simulation with atmospheric CO2 concentration calculated",
+      "experiment_id": "esm-hist-ext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-hist"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-past1000": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "last millennium experiment with interactive carbon cycle",
+      "experiment_id": "esm-past1000",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-pi-CO2pulse": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "pulse addition of 100 Gt carbon to pre-industrial atmosphere",
+      "experiment_id": "esm-pi-CO2pulse",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-pi-cdr-pulse": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "pulse removal of 100 Gt carbon from pre-industrial atmosphere",
+      "experiment_id": "esm-pi-cdr-pulse",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-piControl": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "pre-industrial control simulation with CO2 concentration calculated",
+      "experiment_id": "esm-piControl",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl-spinup"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-piControl-spinup": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
+      "experiment_id": "esm-piControl-spinup",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp534-over": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emission-driven SSP5-3.4-OS scenario",
+      "experiment_id": "esm-ssp534-over",
+      "parent_activity_id": [
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "esm-ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emission-driven RCP8.5 based on SSP5",
+      "experiment_id": "esm-ssp585",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-hist"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585-ocn-alk": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emission-driven SSP5-8.5 scenario but with ocean alkalinization from year 2020 onward",
+      "experiment_id": "esm-ssp585-ocn-alk",
+      "parent_activity_id": [
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "esm-ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585-ocn-alk-stop": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emission-driven SSP5-8.5 scenario with alkalinization terminated in year 2070",
+      "experiment_id": "esm-ssp585-ocn-alk-stop",
+      "parent_activity_id": [
+        "CDRMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-ssp585-ocn-alk"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585-ssp126Lu": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emissions-driven SSP5-8.5 with SSP1-2.6 land use",
+      "experiment_id": "esm-ssp585-ssp126Lu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-hist"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585-ssp126Lu-ext": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "extension of the LUMIP emissions-driven simulation following SSP5-8.5 with SSP1-2.6 land use",
+      "experiment_id": "esm-ssp585-ssp126Lu-ext",
+      "parent_activity_id": [
+        "LUMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-ssp585-ssp126Lu"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-ssp585ext": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "emission-driven long-term extension of the SSP5-8.5 scenario",
+      "experiment_id": "esm-ssp585ext",
+      "parent_activity_id": [
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "esm-ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-yr2010CO2-CO2pulse": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "instantaneous 100 Gt C addition to an industrial era atmosphere",
+      "experiment_id": "esm-yr2010CO2-CO2pulse",
+      "parent_activity_id": [
+        "CDRMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-yr2010CO2-control"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-yr2010CO2-cdr-pulse": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "instantaneous 100 Gt C removal from industrial era atmosphere",
+      "experiment_id": "esm-yr2010CO2-cdr-pulse",
+      "parent_activity_id": [
+        "CDRMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-yr2010CO2-control"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-yr2010CO2-control": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "historical emissions followed by fixed 2010 emissions (both model-diagnosed)",
+      "experiment_id": "esm-yr2010CO2-control",
+      "parent_activity_id": [
+        "CDRMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "esm-yr2010CO2-noemit": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "branches from esm-yr2010CO2-control with zero emissions",
+      "experiment_id": "esm-yr2010CO2-noemit",
+      "parent_activity_id": [
+        "CDRMIP"
+      ],
+      "parent_experiment_id": [
+        "esm-yr2010CO2-control"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-all": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface fluxes of momentum, heat and water into ocean",
+      "experiment_id": "faf-all",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-antwater-stress": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface fluxes of momentum and freshwater into ocean, the latter around the coast of Antarctica only",
+      "experiment_id": "faf-antwater-stress",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-heat": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface flux of heat into ocean",
+      "experiment_id": "faf-heat",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-heat-NA0pct": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface flux of heat into ocean",
+      "experiment_id": "faf-heat-NA0pct",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-heat-NA50pct": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface flux of heat into ocean",
+      "experiment_id": "faf-heat-NA50pct",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-passiveheat": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus surface flux of passive heat tracer into ocean",
+      "experiment_id": "faf-passiveheat",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-stress": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface flux of momentum into ocean",
+      "experiment_id": "faf-stress",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "faf-water": {
+      "activity_id": [
+        "FAFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "control plus perturbative surface flux of water into ocean",
+      "experiment_id": "faf-water",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "futSST-pdSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with future SST and present day SIC",
+      "experiment_id": "futSST-pdSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "futureSST-4xCO2-solar": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "year 100 SSTs from abrupt-4xCO2 with quadrupled CO2 and solar reduction",
+      "experiment_id": "futureSST-4xCO2-solar",
+      "parent_activity_id": [
+        "GeoMIP"
+      ],
+      "parent_experiment_id": [
+        "G1"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highres-future": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "coupled future 2015-2050 using a scenario as close to CMIP5 RCP8.5 as possible within CMIP6",
+      "experiment_id": "highres-future",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "hist-1950"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-4xCO2": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "highresSST-present SST with 4xCO2 concentrations",
+      "experiment_id": "highresSST-4xCO2",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "highresSST-present"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-LAI": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "common LAI dataset within the highresSST-present experiment",
+      "experiment_id": "highresSST-LAI",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "highresSST-present"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-future": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "forced atmosphere experiment for 2015-2050 using SST/sea-ice derived from CMIP5 RCP8.5 simulations and a scenario as close to RCP8.5 as possible within CMIP6",
+      "experiment_id": "highresSST-future",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "highresSST-present"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-p4K": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "uniform 4K warming of highresSST-present SST",
+      "experiment_id": "highresSST-p4K",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "highresSST-present"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-present": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "forced atmosphere experiment for 1950-2014",
+      "experiment_id": "highresSST-present",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "highresSST-smoothed": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "smoothed SST version of highresSST-present",
+      "experiment_id": "highresSST-smoothed",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "highresSST-present"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-1950": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "coupled historical 1950-2014",
+      "experiment_id": "hist-1950",
+      "parent_activity_id": [
+        "HighResMIP"
+      ],
+      "parent_experiment_id": [
+        "spinup-1950"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-1950HC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical forcing, but with1950s halocarbon concentrations; initialized in 1950",
+      "experiment_id": "hist-1950HC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-CO2": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical CO2-only run",
+      "experiment_id": "hist-CO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-GHG": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical well-mixed GHG-only run",
+      "experiment_id": "hist-GHG",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-GHG-cmip5": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical well-mixed GHG-only run (CMIP5-era historical [1850-2005] and RCP4.5 [2006-2020] forcing)",
+      "experiment_id": "hist-GHG-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-aer": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical anthropogenic aerosols-only run",
+      "experiment_id": "hist-aer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-aer-cmip5": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical anthropogenic aerosols-only run (CMIP5-era historical [1850-2005] and RCP4.5 [2006-2020] forcing)",
+      "experiment_id": "hist-aer-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-all-aer2": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical ALL-forcing run with alternate estimates of aerosol forcing",
+      "experiment_id": "hist-all-aer2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-all-nat2": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical ALL-forcing run with alternate estimates of natural forcing",
+      "experiment_id": "hist-all-nat2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-bgc": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "biogeochemically-coupled version of the simulation of the recent past with CO2 concentration prescribed",
+      "experiment_id": "hist-bgc",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-nat": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical natural-only run",
+      "experiment_id": "hist-nat",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-nat-cmip5": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical natural-only run (CMIP5-era historical [1850-2005] and RCP4.5 [2006-2020] forcing)",
+      "experiment_id": "hist-nat-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-noLu": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical with no land-use change",
+      "experiment_id": "hist-noLu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-piAer": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical forcing, but with pre-industrial aerosol emissions",
+      "experiment_id": "hist-piAer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-piNTCF": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical forcing, but with pre-industrial NTCF emissions",
+      "experiment_id": "hist-piNTCF",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-resAMO": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "initialized from \"historical\" run year 1870 and SSTs in the AMO domain (0deg-70degN, 70degW-0deg) restored to AMIP SSTs with historical forcings",
+      "experiment_id": "hist-resAMO",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-resIPO": {
+      "activity_id": [
+        "GMMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "initialized from \"historical\" run year 1870 and SSTs in tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW) restored to AMIP SSTs with historical forcings",
+      "experiment_id": "hist-resIPO",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-sol": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical solar-only run",
+      "experiment_id": "hist-sol",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-spAer-aer": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical simulation with specified anthropogenic aerosols, no other forcings",
+      "experiment_id": "hist-spAer-aer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-spAer-all": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical simulation with specified anthropogenic aerosols",
+      "experiment_id": "hist-spAer-all",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-stratO3": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "BGC"
+      ],
+      "experiment": "historical stratospheric ozone-only run",
+      "experiment_id": "hist-stratO3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-totalO3": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "BGC"
+      ],
+      "experiment": "historical total ozone-only run",
+      "experiment_id": "hist-totalO3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "hist-volc": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical volcanic-only run",
+      "experiment_id": "hist-volc",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical prescribed SSTs and historical forcing",
+      "experiment_id": "histSST",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-1950HC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with 1950 halocarbon concentrations. Experiment is initialized from histSST (AerChemMIP) simulation from January 1950",
+      "experiment_id": "histSST-1950HC",
+      "parent_activity_id": [
+        "AerChemMIP"
+      ],
+      "parent_experiment_id": [
+        "histSST"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-noLu": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with pre-industrial LULCC",
+      "experiment_id": "histSST-noLu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-piAer": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with pre-industrial aerosol emissions",
+      "experiment_id": "histSST-piAer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-piCH4": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with pre-industrial methane concentrations",
+      "experiment_id": "histSST-piCH4",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-piN2O": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcings, but with pre-industrial N2O concentrations",
+      "experiment_id": "histSST-piN2O",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-piNTCF": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with pre-industrial NTCF emissions",
+      "experiment_id": "histSST-piNTCF",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "histSST-piO3": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical SSTs and historical forcing, but with pre-industrial ozone precursor emissions",
+      "experiment_id": "histSST-piO3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "historical": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "all-forcing simulation of the recent past",
+      "experiment_id": "historical",
+      "parent_activity_id": [
+        "CMIP",
+        "PMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl",
+        "past1000",
+        "past2k"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "historical-cmip5": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "all-forcing simulation of the recent past (CMIP5-era [1850-2005] forcing)",
+      "experiment_id": "historical-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "historical-ext": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "post-2014 all-forcing simulation",
+      "experiment_id": "historical-ext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "historical-withism": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "historical with interactive ice sheet",
+      "experiment_id": "historical-withism",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "piControl-withism"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-1pctCO2to4x-self": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet model forced by ISM's own AOGCM 1pctCO2to4x output",
+      "experiment_id": "ism-1pctCO2to4x-self",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-piControl-self"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-1pctCO2to4x-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet model forced by ISMIP6-specified AOGCM 1pctCO2to4x output",
+      "experiment_id": "ism-1pctCO2to4x-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-pdControl-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-amip-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISMIP6-specified AGCM AMIP output",
+      "experiment_id": "ism-amip-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-ctrl-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-asmb-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by initMIP synthetic atmospheric experiment",
+      "experiment_id": "ism-asmb-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-ctrl-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-bsmb-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by initMIP synthetic oceanic experiment",
+      "experiment_id": "ism-bsmb-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-ctrl-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-ctrl-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet model initMIP control",
+      "experiment_id": "ism-ctrl-std",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-historical-self": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISM's own AOGCM historical output",
+      "experiment_id": "ism-historical-self",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-piControl-self"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-historical-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM historical output",
+      "experiment_id": "ism-historical-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-pdControl-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-lig127k-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISMIP6-specified AGCM last interglacial output",
+      "experiment_id": "ism-lig127k-std",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-pdControl-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM pdControl output",
+      "experiment_id": "ism-pdControl-std",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-piControl-self": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISM's own AOGCM piControl output",
+      "experiment_id": "ism-piControl-self",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-ssp585-self": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISM's own AOGCM ssp585 output",
+      "experiment_id": "ism-ssp585-self",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-historical-self"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ism-ssp585-std": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM ssp585 output",
+      "experiment_id": "ism-ssp585-std",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "ism-historical-std"
+      ],
+      "required_model_components": [
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-cCO2": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only constant CO2",
+      "experiment_id": "land-cCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-cClim": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only constant climate",
+      "experiment_id": "land-cClim",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-crop-grass": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with cropland as natural grassland",
+      "experiment_id": "land-crop-grass",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-crop-noFert": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with no fertilizer",
+      "experiment_id": "land-crop-noFert",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-crop-noIrrig": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with no irrigation",
+      "experiment_id": "land-crop-noIrrig",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-crop-noIrrigFert": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with managed crops but with irrigation and fertilization held constant",
+      "experiment_id": "land-crop-noIrrigFert",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist": {
+      "activity_id": [
+        "LS3MIP LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical land-only",
+      "experiment_id": "land-hist",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-altLu1": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only alternate land-use history",
+      "experiment_id": "land-hist-altLu1",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-altLu2": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only alternate land use history",
+      "experiment_id": "land-hist-altLu2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-altStartYear": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only alternate start year",
+      "experiment_id": "land-hist-altStartYear",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-cruNcep": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "as land-hist with CRU-NCEP forcings",
+      "experiment_id": "land-hist-cruNcep",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-princeton": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "as land-hist with Princeton forcings",
+      "experiment_id": "land-hist-princeton",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-hist-wfdei": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "as land-hist with WFDEI forcings",
+      "experiment_id": "land-hist-wfdei",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-noFire": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with no human fire management",
+      "experiment_id": "land-noFire",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-noLu": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "historical land-only with no land-use change",
+      "experiment_id": "land-noLu",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-noPasture": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with constant pastureland",
+      "experiment_id": "land-noPasture",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-noShiftCultivate": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with shifting cultivation turned off",
+      "experiment_id": "land-noShiftCultivate",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-noWoodHarv": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "historical land-only with no wood harvest",
+      "experiment_id": "land-noWoodHarv",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-ssp126": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "future ssp1-2.6 land only",
+      "experiment_id": "land-ssp126",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-ssp434": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "future ssp4-3.4 land only",
+      "experiment_id": "land-ssp434",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "land-ssp585": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "future ssp5-8.5 land only",
+      "experiment_id": "land-ssp585",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "LAND"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-initLC": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "initialized from \"historical\" run year 1980, but with land conditions initialized from pseudo-observations",
+      "experiment_id": "lfmip-initLC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-pdLC": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "prescribed land conditions (from current climate climatology) and initialized from \"historical\" run year 1980",
+      "experiment_id": "lfmip-pdLC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-pdLC-cruNcep": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-pdLC with Land-Hist-cruNcep",
+      "experiment_id": "lfmip-pdLC-cruNcep",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-pdLC-princeton": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-pdLC with Land-Hist-princeton",
+      "experiment_id": "lfmip-pdLC-princeton",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-pdLC-wfdei": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-pdLC with Land-Hist-wfdei",
+      "experiment_id": "lfmip-pdLC-wfdei",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-rmLC": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "prescribed land conditions (from running mean climatology) and initialized from \"historical\" run year 1980",
+      "experiment_id": "lfmip-rmLC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-rmLC-cruNcep": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-rmLC with Land-Hist-cruNcep",
+      "experiment_id": "lfmip-rmLC-cruNcep",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-rmLC-princeton": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-rmLC with Land-Hist-princeton",
+      "experiment_id": "lfmip-rmLC-princeton",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lfmip-rmLC-wfdei": {
+      "activity_id": [
+        "LS3MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "as LFMIP-rmLC with Land-Hist-wfdei",
+      "experiment_id": "lfmip-rmLC-wfdei",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lgm": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last glacial maximum",
+      "experiment_id": "lgm",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "lig127k": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last interglacial (127k)",
+      "experiment_id": "lig127k",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "midHolocene": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "mid-Holocene",
+      "experiment_id": "midHolocene",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "midPliocene-eoi400": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "mid-Pliocene warm period",
+      "experiment_id": "midPliocene-eoi400",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "modelSST-futArcSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day coupled model SST and future Arctic SIC",
+      "experiment_id": "modelSST-futArcSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "modelSST-pdSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice present day control with coupled model SST",
+      "experiment_id": "modelSST-pdSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "omip1": {
+      "activity_id": [
+        "OMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "OMIP experiment forced by Large and Yeager (CORE-2, NCEP) atmospheric data set and initialized with observed physical and biogeochemical ocean data",
+      "experiment_id": "omip1",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "OGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "omip1-spunup": {
+      "activity_id": [
+        "OMIP"
+      ],
+      "additional_allowed_model_components": [],
+      "experiment": "OMIP experiment forced by Large and Yeager (CORE-2, NCEP) atmospheric data set and initialized from at least a 2000-year spin up of the coupled physical-biogeochemical model",
+      "experiment_id": "omip1-spunup",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "OGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "omip2": {
+      "activity_id": [
+        "OMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "OMIP experiment forced by JRA55-do atmospheric data set and initialized with observed physical and biogeochemical ocean data",
+      "experiment_id": "omip2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "OGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "omip2-spunup": {
+      "activity_id": [
+        "OMIP"
+      ],
+      "additional_allowed_model_components": [],
+      "experiment": "OMIP experiment forced by JRA55-do atmospheric data set and initialized from at least a 2000-year spin up of the coupled physical-biogeochemical model",
+      "experiment_id": "omip2-spunup",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "OGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-futAntSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled time slice constrained by future Antarctic SIC",
+      "experiment_id": "pa-futAntSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-futAntSIC-ext": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled extended simulation with future Antarctic SIC",
+      "experiment_id": "pa-futAntSIC-ext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-futArcSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled time slice constrained by future Arctic SIC",
+      "experiment_id": "pa-futArcSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-futArcSIC-ext": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled extended simulation with future Arctic SIC",
+      "experiment_id": "pa-futArcSIC-ext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-pdSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled time slice contrained by present day SIC",
+      "experiment_id": "pa-pdSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-pdSIC-ext": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled extended simulation constrained by present day SIC",
+      "experiment_id": "pa-pdSIC-ext",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-piAntSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled time slice with pre-industrial Antarctic SIC",
+      "experiment_id": "pa-piAntSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pa-piArcSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Partially-coupled time slice constrained by pre-industrial Arctic SIC",
+      "experiment_id": "pa-piArcSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "past1000": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last millennium",
+      "experiment_id": "past1000",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "past1000-solaronly": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last millennium experiment using only solar forcing",
+      "experiment_id": "past1000-solaronly",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "past1000-volconly": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last millennium experiment using only volcanic forcing",
+      "experiment_id": "past1000-volconly",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "past2k": {
+      "activity_id": [
+        "PMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "last two millennia experiment",
+      "experiment_id": "past2k",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-futAntSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and future Antarctic SIC",
+      "experiment_id": "pdSST-futAntSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-futArcSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and future Arctic SIC",
+      "experiment_id": "pdSST-futArcSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-futArcSICSIT": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and future Arctic SIC and sea ice thickness",
+      "experiment_id": "pdSST-futArcSICSIT",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-futBKSeasSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and future Barents and Kara Seas SIC",
+      "experiment_id": "pdSST-futBKSeasSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-futOkhotskSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and future Sea of Okhotsk SIC",
+      "experiment_id": "pdSST-futOkhotskSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-pdSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and SIC",
+      "experiment_id": "pdSST-pdSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-pdSICSIT": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice constrained by present day conditions including sea ice thickness",
+      "experiment_id": "pdSST-pdSICSIT",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-piAntSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and pre-industrial Antarctic SIC",
+      "experiment_id": "pdSST-piAntSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "pdSST-piArcSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with present day SST and pre-industrial Arctic SIC",
+      "experiment_id": "pdSST-piArcSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xDMS": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of DMS",
+      "experiment_id": "piClim-2xDMS",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xNOx": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled production of NOx due to lightning",
+      "experiment_id": "piClim-2xNOx",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xVOC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of biogenic VOCs",
+      "experiment_id": "piClim-2xVOC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xdust": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of dust",
+      "experiment_id": "piClim-2xdust",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xfire": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions from fires",
+      "experiment_id": "piClim-2xfire",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-2xss": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of sea salt",
+      "experiment_id": "piClim-2xss",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-4xCO2": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "effective radiative forcing by 4xCO2",
+      "experiment_id": "piClim-4xCO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-BC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 black carbon emissions",
+      "experiment_id": "piClim-BC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-CH4": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 methane concentrations (including chemistry)",
+      "experiment_id": "piClim-CH4",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-HC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 halocarbon concentrations (including chemistry)",
+      "experiment_id": "piClim-HC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-N2O": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 N2O concentrations (including chemistry)",
+      "experiment_id": "piClim-N2O",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-NH3": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 ammonia emissions",
+      "experiment_id": "piClim-NH3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-NOx": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 NOx emissions",
+      "experiment_id": "piClim-NOx",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-NTCF": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 NTCF emissions",
+      "experiment_id": "piClim-NTCF",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-O3": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 ozone precursor emissions",
+      "experiment_id": "piClim-O3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-OC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 organic carbon emissions",
+      "experiment_id": "piClim-OC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-SO2": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 SO2 emissions",
+      "experiment_id": "piClim-SO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-VOC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 VOC emissions",
+      "experiment_id": "piClim-VOC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-aer": {
+      "activity_id": [
+        "RFMIP AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "effective radiative forcing by present-day aerosols",
+      "experiment_id": "piClim-aer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-anthro": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "effective radiative forcing by present day anthropogenic agents",
+      "experiment_id": "piClim-anthro",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-control": {
+      "activity_id": [
+        "RFMIP AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Control simulation providing baseline for evaluating effective radiative forcing (ERF)",
+      "experiment_id": "piClim-control",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-ghg": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "effective radiative forcing by present-day greenhouse gases",
+      "experiment_id": "piClim-ghg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-histaer": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "transient effective radiative forcing by aerosols",
+      "experiment_id": "piClim-histaer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-histall": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "transient effective radiative forcing",
+      "experiment_id": "piClim-histall",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-histghg": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "transient effective radiative forcing by greenhouse gases",
+      "experiment_id": "piClim-histghg",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-histnat": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "transient effective radiative forcing by natural perturbations",
+      "experiment_id": "piClim-histnat",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-lu": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "effective radiative forcing by present-day land use",
+      "experiment_id": "piClim-lu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-spAer-aer": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "effective radiative forcing at present day with specified anthropogenic aerosol optical properties, all forcings",
+      "experiment_id": "piClim-spAer-aer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-spAer-anthro": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "effective radiative forcing at present day with specified anthropogenic aerosol optical properties, anthropogenic forcings",
+      "experiment_id": "piClim-spAer-anthro",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-spAer-histaer": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "transient effective radiative forcing with specified anthropogenic aerosol optical properties, aerosol forcing",
+      "experiment_id": "piClim-spAer-histaer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piClim-spAer-histall": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "transient effective radiative forcing with specified anthropogenic aerosol optical properties, all forcings",
+      "experiment_id": "piClim-spAer-histall",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piControl": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial control",
+      "experiment_id": "piControl",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-spinup"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piControl-cmip5": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial control (CMIP5-era [1850-2005] forcing)",
+      "experiment_id": "piControl-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl-spinup-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piControl-spinup": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial control (spin-up)",
+      "experiment_id": "piControl-spinup",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piControl-spinup-cmip5": {
+      "activity_id": [
+        "CMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "pre-industrial control (spin-up; CMIP5-era [1850-2005] forcing)",
+      "experiment_id": "piControl-spinup-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piControl-withism": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "preindustrial control with interactive ice sheet",
+      "experiment_id": "piControl-withism",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "experiment forced with pre-industrial SSTs, sea ice and atmospheric constituents",
+      "experiment_id": "piSST",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-4xCO2": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST with radiation and vegetation seeing 4xCO2",
+      "experiment_id": "piSST-4xCO2",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-4xCO2-rad": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST with radiation-only seeing 4xCO2",
+      "experiment_id": "piSST-4xCO2-rad",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-4xCO2-solar": {
+      "activity_id": [
+        "GeoMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "preindustrial control SSTs with quadrupled CO2 and solar reduction",
+      "experiment_id": "piSST-4xCO2-solar",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-pdSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with pre-industrial SST and present day SIC",
+      "experiment_id": "piSST-pdSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-piSIC": {
+      "activity_id": [
+        "PAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Atmosphere time slice with pre-industrial SST and SIC",
+      "experiment_id": "piSST-piSIC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "amip"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "piSST-pxK": {
+      "activity_id": [
+        "CFMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "as piSST with uniform SST increase with magnitude based on abrupt-4xCO2 response",
+      "experiment_id": "piSST-pxK",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "rad-irf": {
+      "activity_id": [
+        "RFMIP"
+      ],
+      "additional_allowed_model_components": [
+        ""
+      ],
+      "experiment": "offline assessment of radiative transfer parmeterizations in clear skies",
+      "experiment_id": "rad-irf",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "RAD"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "rcp26-cmip5": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "future projection based on CMIP5-era RCP2.6 scenario (CMIP5-era [2006-2100] forcing)",
+      "experiment_id": "rcp26-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "rcp45-cmip5": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "future projection based on CMIP5-era RCP4.5 scenario (CMIP5-era [2006-2100] forcing)",
+      "experiment_id": "rcp45-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "rcp60-cmip5": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "future projection based on CMIP5-era RCP6.0 scenario (CMIP5-era [2006-2100] forcing)",
+      "experiment_id": "rcp60-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "rcp85-cmip5": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "future projection based on CMIP5-era RCP8.5 scenario (CMIP5-era [2006-2100] forcing)",
+      "experiment_id": "rcp85-cmip5",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical-cmip5"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "spinup-1950": {
+      "activity_id": [
+        "HighResMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER"
+      ],
+      "experiment": "coupled spinup with fixed 1950s forcings from 1950 initial conditions (with ocean at rest) to provide initial condition for control-1950 and hist-1950",
+      "experiment_id": "spinup-1950",
+      "parent_activity_id": [
+        "no parent"
+      ],
+      "parent_experiment_id": [
+        "no parent"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp119": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "low-end scenario reaching 1.9 W m-2, based on SSP1",
+      "experiment_id": "ssp119",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp126": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "update of RCP2.6 based on SSP1",
+      "experiment_id": "ssp126",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp126-ssp370Lu": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP1-2.6 with SSP3-7.0 land use",
+      "experiment_id": "ssp126-ssp370Lu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "update of RCP4.5 based on SSP2",
+      "experiment_id": "ssp245",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-GHG": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "well-mixed GHG-only SSP2-4.5 run",
+      "experiment_id": "ssp245-GHG",
+      "parent_activity_id": [
+        "DAMIP"
+      ],
+      "parent_experiment_id": [
+        "hist-GHG"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-aer": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "aerosol-only SSP2-4.5 run",
+      "experiment_id": "ssp245-aer",
+      "parent_activity_id": [
+        "DAMIP"
+      ],
+      "parent_experiment_id": [
+        "hist-aer"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-cov-GHG": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip including well mixed GHG only, based upon ssp245",
+      "experiment_id": "ssp245-cov-GHG",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-cov-aer": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip including anthropogenic aerosols only, based upon ssp245",
+      "experiment_id": "ssp245-cov-aer",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-cov-fossil": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip followed by increased emissions due to a fossil-fuel based recovery, based upon ssp245",
+      "experiment_id": "ssp245-cov-fossil",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-cov-modgreen": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip followed by moderate-green stimulus recovery, based upon ssp245",
+      "experiment_id": "ssp245-cov-modgreen",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-cov-strgreen": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip followed by strong-green stimulus recovery, based upon ssp245",
+      "experiment_id": "ssp245-cov-strgreen",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-covid": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "2-year Covid-19 emissions blip based upon ssp245",
+      "experiment_id": "ssp245-covid",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp245"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-nat": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "natural-only SSP2-4.5 run",
+      "experiment_id": "ssp245-nat",
+      "parent_activity_id": [
+        "DAMIP"
+      ],
+      "parent_experiment_id": [
+        "hist-nat"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp245-stratO3": {
+      "activity_id": [
+        "DAMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "BGC"
+      ],
+      "experiment": "stratospheric ozone-only SSP2-4.5 (ssp245) run",
+      "experiment_id": "ssp245-stratO3",
+      "parent_activity_id": [
+        "DAMIP"
+      ],
+      "parent_experiment_id": [
+        "hist-stratO3"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370": {
+      "activity_id": [
+        "ScenarioMIP AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "gap-filling scenario reaching 7.0 based on SSP3",
+      "experiment_id": "ssp370",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370-lowNTCF": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, with low NTCF emissions",
+      "experiment_id": "ssp370-lowNTCF",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370-lowNTCFCH4": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, with low NTCF emissions and methane concentrations",
+      "experiment_id": "ssp370-lowNTCFCH4",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370-ssp126Lu": {
+      "activity_id": [
+        "LUMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0 with SSP1-2.6 land use",
+      "experiment_id": "ssp370-ssp126Lu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, with SSTs prescribed from ssp370",
+      "experiment_id": "ssp370SST",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowAer": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low aerosol emissions",
+      "experiment_id": "ssp370SST-lowAer",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowBC": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low black carbon emissions",
+      "experiment_id": "ssp370SST-lowBC",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowCH4": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low methane concentrations",
+      "experiment_id": "ssp370SST-lowCH4",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowNTCF": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low NTCF emissions",
+      "experiment_id": "ssp370SST-lowNTCF",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowNTCFCH4": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low NTCF emissions and methane concentrations",
+      "experiment_id": "ssp370SST-lowNTCFCH4",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-lowO3": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with low ozone precursor emissions",
+      "experiment_id": "ssp370SST-lowO3",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER",
+        "CHEM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370SST-ssp126Lu": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, prescribed SSTs, with SSP1-2.6 land use",
+      "experiment_id": "ssp370SST-ssp126Lu",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp370pdSST": {
+      "activity_id": [
+        "AerChemMIP"
+      ],
+      "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "SSP3-7.0, with SSTs prescribed as present day",
+      "experiment_id": "ssp370pdSST",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "AER"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp434": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "gap-filling scenario reaching 3.4 based on SSP4",
+      "experiment_id": "ssp434",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp460": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "update of RCP6.0 based on SSP4",
+      "experiment_id": "ssp460",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp534-over": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "overshoot of 3.4 W/m**2 branching from ssp585 in 2040",
+      "experiment_id": "ssp534-over",
+      "parent_activity_id": [
+        "ScenarioMIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp534-over-bgc": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "biogeochemically-coupled version of the RCP3.4-overshoot based on SSP5",
+      "experiment_id": "ssp534-over-bgc",
+      "parent_activity_id": [
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "ssp585-bgc"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp585": {
+      "activity_id": [
+        "ScenarioMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "update of RCP8.5 based on SSP5",
+      "experiment_id": "ssp585",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp585-bgc": {
+      "activity_id": [
+        "C4MIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "biogeochemically-coupled version of the RCP8.5 based on SSP5",
+      "experiment_id": "ssp585-bgc",
+      "parent_activity_id": [
+        "C4MIP"
+      ],
+      "parent_experiment_id": [
+        "hist-bgc"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "ssp585-withism": {
+      "activity_id": [
+        "ISMIP6"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "ssp585 with interactive ice sheet",
+      "experiment_id": "ssp585-withism",
+      "parent_activity_id": [
+        "ISMIP6"
+      ],
+      "parent_experiment_id": [
+        "historical-withism"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "ISM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-cluster-21C": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "volcanic cluster experiment under 21st century SSP2-4.5 scenario",
+      "experiment_id": "volc-cluster-21C",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-cluster-ctrl": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "19th century volcanic cluster initialized from PiControl",
+      "experiment_id": "volc-cluster-ctrl",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-cluster-mill": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "19th century volcanic cluster initialized from past1000",
+      "experiment_id": "volc-cluster-mill",
+      "parent_activity_id": [
+        "PMIP"
+      ],
+      "parent_experiment_id": [
+        "past1000"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-long-eq": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized equatorial volcanic eruption emitting 56.2 Tg SO2",
+      "experiment_id": "volc-long-eq",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-long-hlN": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "idealized Northern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2",
+      "experiment_id": "volc-long-hlN",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-long-hlS": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Idealized Southern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2",
+      "experiment_id": "volc-long-hlS",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-pinatubo-full": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Pinatubo experiment",
+      "experiment_id": "volc-pinatubo-full",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-pinatubo-slab": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Pinatubo experiment with slab ocean",
+      "experiment_id": "volc-pinatubo-slab",
+      "parent_activity_id": [
+        "VolMIP"
+      ],
+      "parent_experiment_id": [
+        "control-slab"
+      ],
+      "required_model_components": [
+        "AGCM",
+        "SLAB"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-pinatubo-strat": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Pinatubo experiment with partial radiative forcing, includes only stratospheric warming",
+      "experiment_id": "volc-pinatubo-strat",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "volc-pinatubo-surf": {
+      "activity_id": [
+        "VolMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+      ],
+      "experiment": "Pinatubo experiment with partial radiative forcing, solar radiation scattering only",
+      "experiment_id": "volc-pinatubo-surf",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "piControl"
+      ],
+      "required_model_components": [
+        "AOGCM"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    },
+    "yr2010CO2": {
+      "activity_id": [
+        "CDRMIP"
+      ],
+      "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+      ],
+      "experiment": "concentration-driven fixed 2010 forcing",
+      "experiment_id": "yr2010CO2",
+      "parent_activity_id": [
+        "CMIP"
+      ],
+      "parent_experiment_id": [
+        "historical"
+      ],
+      "required_model_components": [
+        "AOGCM",
+        "BGC"
+      ],
+      "sub_experiment_id": [
+        "none"
+      ]
+    }
+  },
+  "version_metadata": {
+    "CV_collection_modified": "2022-09-05",
+    "CV_collection_version": "6.3.0.0",
+    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
+    "checksum": "md5: cc447c09d0a0a05981cdebea306d13e2",
+    "institution_id": "MOHC",
+    "previous_commit": "To be added",
+    "specs_doc": "v6.3.0 (link TBC)"
+  }
+}
