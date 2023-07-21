@@ -2,7 +2,7 @@
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
-** THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT **
+### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 
 To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)]() page on the CMIP website.
 
@@ -18,7 +18,7 @@ Thanks to our contributors!
 
 ## Acknowledgement
 
-The repository content has been collected from many contributors representing the Coupled Model Intercomparison Project phase 6+ (CMIP6Plus), including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)) with assistance from colleagues at the [UK MetOffice](https://www.metoffice.gov.uk/), UK Centre for Environmental Data Analysis ([CEDA](https://www.ceda.ac.uk/)), the Deutsches Klimarechenzentrum ([DKRZ](https://www.dkrz.de/en/)) in Germany and the members of the Infrastructure for the European Network for Earth System Modelling ([IS-ENES](https://is.enes.org/)) consortium.
+The repository content has been collected from many contributors representing the Coupled Model Intercomparison Project phase 6+ (CMIP6Plus), including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), the [UK MetOffice](https://www.metoffice.gov.uk/), with assistance from colleagues at the UK Centre for Environmental Data Analysis ([CEDA](https://www.ceda.ac.uk/)), the Deutsches Klimarechenzentrum ([DKRZ](https://www.dkrz.de/en/)) in Germany and the members of the Infrastructure for the European Network for Earth System Modelling ([IS-ENES](https://is.enes.org/)) consortium.
 
 This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) within the Department of Energy's ([DOE](https://www.energy.gov/)) Office of Science ([OS](https://science.osti.gov/)). The work at PCMDI is performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
