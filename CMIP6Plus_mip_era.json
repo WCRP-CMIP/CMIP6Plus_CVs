@@ -1,0 +1,12 @@
+{
+  "Header": {
+    "CV_collection_modified": "2022-09-05",
+    "CV_collection_version": "6.3.0.0",
+    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
+    "checksum": "md5: 766d790228d83749bd1052d3bf7a3b70",
+    "institution_id": "MOHC",
+    "previous_commit": "To be added",
+    "specs_doc": "v6.3.0 (link TBC)"
+  },
+  "mip_era": "CMIP6Plus"
+}
