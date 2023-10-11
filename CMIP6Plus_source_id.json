@@ -41,8 +41,8 @@
                 "Published"
             ],
             "institution_id": [
-                "MOHC",
-                "NERC"
+                "NERC",
+                "MOHC"
             ],
             "license_info": {
                 "exceptions_contact": "@metoffice.gov.uk <- cmip6.hadgem3",
