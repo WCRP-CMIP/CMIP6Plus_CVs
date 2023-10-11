@@ -38,8 +38,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical well-mixed GHG-only run",
@@ -66,8 +66,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical anthropogenic aerosols-only run",
@@ -94,8 +94,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical solar-only run",
@@ -122,8 +122,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical volcanic-only run",
@@ -150,8 +150,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical total ozone-only run",
@@ -187,8 +187,8 @@
             "start": 1850,
             "end": 2020,
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "required_model_components": [
@@ -203,8 +203,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "future well-mixed GHG-only run",
@@ -231,8 +231,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "future anthropogenic aerosols-only run",
@@ -259,8 +259,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "future solar-only run",
@@ -287,8 +287,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "future volcanic-only run",
@@ -315,8 +315,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "future total ozone-only run",
@@ -352,8 +352,8 @@
             "start": 2015,
             "end": 2024,
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "required_model_components": [
@@ -377,8 +377,8 @@
             "start": 1850,
             "end": 2020,
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "required_model_components": [
@@ -393,8 +393,8 @@
                 "LESFMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "historical natural-only run",
@@ -421,8 +421,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "1 percent per year increase in CO2",
@@ -445,8 +445,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "abrupt quadrupling of CO2",
@@ -469,8 +469,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "AMIP",
@@ -493,8 +493,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
+                "CHEM",
+                "AER"
             ],
             "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated",
             "experiment_id": "esm-hist",
@@ -517,8 +517,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
+                "CHEM",
+                "AER"
             ],
             "experiment": "post-2014 all-forcing simulation with atmospheric CO2 concentration calculated",
             "experiment_id": "esm-hist-ext",
@@ -541,8 +541,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
+                "CHEM",
+                "AER"
             ],
             "experiment": "pre-industrial control simulation with CO2 concentration calculated",
             "experiment_id": "esm-piControl",
@@ -565,8 +565,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
+                "CHEM",
+                "AER"
             ],
             "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
             "experiment_id": "esm-piControl-spinup",
@@ -589,8 +589,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "all-forcing simulation of the recent past (CMIP5-era [1850-2005] forcing)",
@@ -613,8 +613,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "post-2014 all-forcing simulation",
@@ -637,8 +637,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "pre-industrial control",
@@ -661,8 +661,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "pre-industrial control (CMIP5-era [1850-2005] forcing)",
@@ -685,8 +685,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "pre-industrial control (spin-up)",
@@ -709,8 +709,8 @@
                 "CMIP"
             ],
             "additional_allowed_model_components": [
-                "AER",
                 "CHEM",
+                "AER",
                 "BGC"
             ],
             "experiment": "pre-industrial control (spin-up; CMIP5-era [1850-2005] forcing)",
