@@ -1,14 +1,38 @@
 {
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: be5d1db66b455f5e8dd02c402dd0d967",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "further_info_url": [
-    "https://furtherinfo.es-doc.org/.*"
-  ]
+    "Header": {
+        "latest change": {
+            "author": "Daniel Ellis <daniel.ellis@ext.esa.int>",
+            "institution_id": null
+        },
+        "specs_doc": "v6.3.0 (link TBC)",
+        "CMIP6Plus_CVS dir?": {
+            "CV_collection_modified": "2023-10-11",
+            "CV_collection_version": "0.0.1",
+            "previous_commit": "0.0.1"
+        },
+        "miptables": {
+            "tag": {
+                "version": "v6.5.0.0",
+                "latest": true
+            },
+            "commit": {
+                "SHA": "9fa6eda52792b51326dfc77b955c4e46a8334a2c",
+                "latest": true
+            },
+            "Repository URL": "https://github.com/PCMDI/mip-cmor-tables.git",
+            "DOI": null,
+            "lisence": "CC0 1.0 Universal"
+        },
+        "institutions": {
+            "tag": "0.0.2",
+            "Repository URL": "https://github.com/cmip-ipo-internal/CMIPInstitutions.git",
+            "DOI": null,
+            "lisence": "MIT License Copyright (c) 2023 Dan Ellis"
+        },
+        "CMOR": "3.7.2",
+        "CVTool": "0.0.3"
+    },
+    "further_info_url": [
+        "https://furtherinfo.es-doc.org/.*"
+    ]
 }
