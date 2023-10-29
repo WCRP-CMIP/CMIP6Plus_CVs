@@ -6,7 +6,7 @@
         },
         "specs_doc": "v6.3.0 (link TBC)",
         "CMIP6Plus_CVS dir?": {
-            "CV_collection_modified": "2023-10-12",
+            "CV_collection_modified": "2023-10-29",
             "CV_collection_version": "0.0.1",
             "previous_commit": "0.0.1"
         },
@@ -16,52 +16,46 @@
                 "latest": true
             },
             "commit": {
-                "SHA": "9fa6eda52792b51326dfc77b955c4e46a8334a2c",
+                "SHA": "f6a6f930dda2a66e1a48c16c3edecc3effb0c603",
                 "latest": true
             },
             "Repository URL": "https://github.com/PCMDI/mip-cmor-tables.git",
             "DOI": null,
-            "lisence": "CC0 1.0 Universal"
+            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.z6487ini/LICENSE-CC-BY"
         },
-        "institutions": {
-            "tag": "0.0.2",
-            "Repository URL": "https://github.com/cmip-ipo-internal/CMIPInstitutions.git",
-            "DOI": null,
-            "lisence": "MIT License Copyright (c) 2023 Dan Ellis"
-        },
-        "CMOR": "3.7.2",
+        "CMOR": "3.7.3",
         "CVTool": "0.0.3"
     },
     "required_global_attributes": [
-        "institution",
-        "physics_index",
-        "mip_era",
-        "institution_id",
-        "grid_label",
-        "data_specs_version",
+        "creation_date",
         "table_id",
+        "mip_era",
+        "further_info_url",
+        "institution_id",
+        "institution",
+        "product",
         "source_id",
-        "tracking_id",
+        "initialization_index",
+        "license",
+        "grid_label",
+        "grid",
+        "realization_index",
+        "source_type",
+        "sub_experiment",
         "experiment",
         "sub_experiment_id",
-        "source_type",
-        "further_info_url",
-        "nominal_resolution",
-        "activity_id",
-        "experiment_id",
-        "grid",
+        "frequency",
+        "physics_index",
         "Conventions",
-        "forcing_index",
-        "initialization_index",
         "realm",
         "variant_label",
+        "experiment_id",
+        "activity_id",
+        "tracking_id",
+        "data_specs_version",
         "source",
-        "sub_experiment",
-        "frequency",
-        "creation_date",
-        "realization_index",
-        "product",
-        "variable_id",
-        "license"
+        "forcing_index",
+        "nominal_resolution",
+        "variable_id"
     ]
 }
