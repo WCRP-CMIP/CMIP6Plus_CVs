@@ -13,8 +13,7 @@
         },
         "activity_id": {
             "CMIP": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
-            "LESFMIP": "The Large Ensemble Single Forcing Model Intercomparison Project",
-            "PMIP": "Paleoclimat Modeling Intercomparison Project"
+            "LESFMIP": "The Large Ensemble Single Forcing Model Intercomparison Project"
         },
         "data_specs_version": [
             "^[[:digit:]]\\{1,2\\}\\.[[:digit:]]\\{1,2\\}\\.[[:digit:]]\\{1,3\\}\\.[[:digit:]]\\{1,3\\}$"
@@ -190,8 +189,8 @@
             },
             "fut-Aer": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -220,8 +219,8 @@
             },
             "fut-GHG": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -276,8 +275,8 @@
             },
             "fut-sol": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -306,8 +305,8 @@
             },
             "fut-totalO3": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -336,8 +335,8 @@
             },
             "fut-volc": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -366,8 +365,8 @@
             },
             "hist-GHG": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -390,8 +389,8 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 1
             },
@@ -415,8 +414,8 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 1
             },
@@ -443,8 +442,8 @@
             },
             "hist-nat": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -467,8 +466,8 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 3
             },
@@ -492,15 +491,15 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 1
             },
             "hist-totalO3": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -523,15 +522,15 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 1
             },
             "hist-volc": {
                 "activity_id": [
-                    "LESFMIP",
-                    "DAMIP"
+                    "DAMIP",
+                    "LESFMIP"
                 ],
                 "additional_allowed_model_components": [
                     "BGC",
@@ -554,8 +553,8 @@
                 ],
                 "start": 1850,
                 "sub_experiment_id": [
-                    "none",
-                    "f2023"
+                    "f2023",
+                    "none"
                 ],
                 "tier": 1
             },
@@ -839,36 +838,36 @@
             "seaIce": "Sea Ice"
         },
         "required_global_attributes": [
-            "source_type",
-            "realization_index",
-            "realm",
-            "institution",
-            "grid_label",
-            "experiment_id",
-            "nominal_resolution",
-            "initialization_index",
-            "grid",
-            "sub_experiment_id",
-            "license",
-            "physics_index",
-            "Conventions",
-            "activity_id",
-            "experiment",
-            "frequency",
-            "further_info_url",
-            "forcing_index",
-            "table_id",
-            "data_specs_version",
-            "sub_experiment",
-            "creation_date",
-            "variable_id",
-            "source_id",
-            "variant_label",
             "institution_id",
+            "further_info_url",
+            "realization_index",
+            "Conventions",
+            "license",
+            "sub_experiment_id",
             "mip_era",
+            "initialization_index",
+            "nominal_resolution",
+            "experiment",
+            "grid_label",
+            "frequency",
+            "grid",
+            "forcing_index",
+            "data_specs_version",
+            "institution",
+            "activity_id",
+            "source_id",
+            "source_type",
+            "sub_experiment",
             "tracking_id",
+            "source",
+            "variant_label",
+            "creation_date",
             "product",
-            "source"
+            "realm",
+            "experiment_id",
+            "variable_id",
+            "table_id",
+            "physics_index"
         ],
         "source_id": {
             "HadGEM3-GC31-LL": {

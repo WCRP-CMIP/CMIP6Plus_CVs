@@ -20,7 +20,7 @@
             },
             "Repository URL": "https://github.com/PCMDI/mip-cmor-tables.git",
             "DOI": null,
-            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.s1snbpn0/LICENSE-CC-BY"
+            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.fyjdjmny/LICENSE-CC-BY"
         },
         "CMOR": "3.7.3",
         "CVTool": "0.0.3",
@@ -34,8 +34,8 @@
     "experiment_id": {
         "hist-GHG": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -55,8 +55,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Well-mixed greenhouse-gas-only historical simulations",
             "tier": 1,
@@ -80,8 +80,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Anthropogenic-aerosol-only historical simulations",
             "tier": 1,
@@ -105,8 +105,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Solar-only historical simulations",
             "tier": 1,
@@ -115,8 +115,8 @@
         },
         "hist-volc": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -136,8 +136,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Volcanic-only historical simulations",
             "tier": 1,
@@ -146,8 +146,8 @@
         },
         "hist-totalO3": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -167,8 +167,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Ozone-only historical simulations",
             "tier": 1,
@@ -198,8 +198,8 @@
         },
         "fut-GHG": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -228,8 +228,8 @@
         },
         "fut-Aer": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -258,8 +258,8 @@
         },
         "fut-sol": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -288,8 +288,8 @@
         },
         "fut-volc": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -318,8 +318,8 @@
         },
         "fut-totalO3": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -395,8 +395,8 @@
         },
         "hist-nat": {
             "activity_id": [
-                "LESFMIP",
-                "DAMIP"
+                "DAMIP",
+                "LESFMIP"
             ],
             "additional_allowed_model_components": [
                 "BGC",
@@ -416,8 +416,8 @@
                 "AOGCM"
             ],
             "sub_experiment_id": [
-                "none",
-                "f2023"
+                "f2023",
+                "none"
             ],
             "description": "Natural forcings (solar + volcanic)",
             "tier": 3,
