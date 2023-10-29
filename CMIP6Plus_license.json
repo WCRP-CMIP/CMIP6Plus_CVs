@@ -7,8 +7,8 @@
         "specs_doc": "v6.3.0 (link TBC)",
         "CMIP6Plus_CVS dir?": {
             "CV_collection_modified": "2023-10-29",
-            "CV_collection_version": "0.0.1",
-            "previous_commit": "0.0.1"
+            "CV_collection_version": "6.5.0",
+            "previous_commit": "6.5.0"
         },
         "miptables": {
             "tag": {
@@ -21,7 +21,7 @@
             },
             "Repository URL": "https://github.com/PCMDI/mip-cmor-tables.git",
             "DOI": null,
-            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.z6487ini/LICENSE-CC-BY"
+            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.s1snbpn0/LICENSE-CC-BY"
         },
         "CMOR": "3.7.3",
         "CVTool": "0.0.3"
