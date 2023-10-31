@@ -1,7 +1,7 @@
 {
     "Header": {
         "CMIP6Plus_CVS dir": {
-            "CV_collection_modified": "2023-10-29",
+            "CV_collection_modified": "2023-10-31",
             "CV_collection_version": "6.5.0",
             "previous_commit": "6.5.0"
         },
@@ -15,18 +15,18 @@
                 "latest": true
             },
             "commit": {
-                "SHA": "f6a6f930dda2a66e1a48c16c3edecc3effb0c603",
+                "SHA": "490b9b82ee74b63c8adaade114763f88f89feb2e",
                 "latest": true
             },
             "Repository URL": "https://github.com/PCMDI/mip-cmor-tables.git",
             "DOI": null,
-            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.fyjdjmny/LICENSE-CC-BY"
+            "license": "/var/folders/hc/s_7lggq12nndglbdyrn3f91m1l58yd/T/cvtool.miptables.7xos0qix/LICENSE-CC-BY"
         },
         "CMOR": "3.7.3",
         "CVTool": "0.0.3",
         "specs_doc": "v6.3.0 (link TBC)",
         "CMIP6Plus_CVS dir?": {
-            "CV_collection_modified": "2023-10-29",
+            "CV_collection_modified": "2023-10-31",
             "CV_collection_version": "6.5.0",
             "previous_commit": "6.5.0"
         }
