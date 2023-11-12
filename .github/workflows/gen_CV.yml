@@ -1,0 +1,107 @@
+name: Generate CV file
+
+on:
+  push:
+    branches:
+      - lesfII
+      - main
+      
+      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
+
+jobs:
+  create-branch-and-update-files:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      id-token: write
+      issues: write
+      discussions: write
+      packages: write
+      pages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+
+
+      - name: Set up Git
+        run: |
+          git config user.email "actions@wcrp-cmip.org"
+          git config user.name "CMIP-IPO GitHub Action"
+          git config credential.helper store
+          git config --global user.email "actions@wcrp-cmip.org"
+          git config --global user.name "CMIP-IPO GitHub Action"
+          git config --global push.default current
+          GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          echo "GH_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
+          echo "GITHUB_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Clear previous
+        run: |
+          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+          if [ -e "CVs/CV.json" ]; then
+            echo "Removing output CV.json"
+            rm -f CVs/CV.json
+            git add -A 
+            git commit -m 'Remove CV.json'
+            git push origin $(git rev-parse --abbrev-ref HEAD)
+          else
+            mkdir -p CVs
+          fi
+        shell: bash
+
+
+      - name: Run Python Check
+        run: python create_cv.py
+        working-directory: .github/workflows/
+        env:
+          PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
+          PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
+        continue-on-error: true
+
+      - name: Print output
+        run: |
+          echo "${more CVs/CV.json}"
+        shell: bash
+
+
+
+
+      # - name: Print output
+      #   run: |
+      #     echo "::set-output name=PYSTD::$PYTHON_SCRIPT_OUTPUT"
+      #     echo "::set-output name=PYERR::$PYTHON_SCRIPT_ERROR"        
+
+      # - name: Check Python script output
+      #   run: |
+      #     echo "Python script output: $PYTHON_SCRIPT_OUTPUT"
+      #     if [[ "$PYTHON_SCRIPT_OUTPUT" == "FAILED"* ]]; then
+      #       echo "Issue processing failed. Closing the issue..."
+      #       gh issue close "${{ github.event.issue.number }}"
+      #       gh issue comment "${{ github.event.issue.number }}" --body "Processing failed with the following error: $PYTHON_SCRIPT_OUTPUT"
+      #     else
+      #       echo "Issue processed successfully."
+      #     fi
+      #   shell: bash
+
+
+      - name: Write new CV
+        run: |
+          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+          if [ -e "CVs/CV.json" ]; then
+            current_datetime=$(date +"%Y-%m-%d %H:%M")
+            git add -A 
+            git commit -m "Automatically generated CV.json: $current_datetime"
+            git push origin $(git rev-parse --abbrev-ref HEAD)
+          fi
+        shell: bash
+
