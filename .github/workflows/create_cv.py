@@ -27,7 +27,6 @@ docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e19662
 relative = '../../'
 cv_prefix = 'CMIP6Plus'
 file_path = f'{relative}CVs/CV.json'
-sort_keys = True
 
 
 ###################################
@@ -192,7 +191,7 @@ for entry in structure:
 
 
 # Order the keys alphabetically
-# CV = {k: CV[k] for k in sorted(CV)}
+CV = {k: CV[k] for k in sorted(CV)}
 
 
 ###################################
@@ -211,5 +210,5 @@ CV['version_metadata'] = {
 
 # Write the JSON data to the file with an indentation of 4 spaces and sorted keys
 
-json.dump(CV, f, indent=4, sort_keys=sort_keys)
+json.dump(CV, f, indent=4, sort_keys=True)
 f.close()
