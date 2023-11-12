@@ -155,7 +155,6 @@ for entry in structure:
             CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
                 {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
             
-            del CV['institutions']
 
 
                 
