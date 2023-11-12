@@ -16,8 +16,9 @@ CV = OrderedDict()
 '''
 Github action test script:
 
- act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 --verbose;
+ act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 --verbose -b & sleep 4 &&
 docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /usr/bin/bash -c "cd .github/workflows/;python create_cv.py;cd ../../CVs;more CV.json;exit"
+
 
 *note* interactive docker shell can use id or name as a reference. 
 '''
@@ -191,7 +192,12 @@ for entry in structure:
 
 # Order the keys alphabetically
 # CV = {k: CV[k] for k in sorted(CV)}
-CV = OrderedDict(sorted(CV.items()))
+
+sorted_keys = sorted(CV.keys(), key=lambda x: x.lower())
+# f.write(str(sorted_keys))
+# Creating a new OrderedDict with sorted keys
+CV = OrderedDict((key, CV[key]) for key in sorted_keys)
+
 
 
 ###################################

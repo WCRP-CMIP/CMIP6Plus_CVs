@@ -47,18 +47,21 @@ jobs:
 
       - name: Clear previous
         run: |
-          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-          if [ -e "CVs/CV.json" ]; then
-            echo "Removing output CV.json"
-            rm -f CVs/CV.json
-            git add -A 
-            git commit -m 'Remove CV.json'
-            git push origin $(git rev-parse --abbrev-ref HEAD)
+          if [ -z "$ACT" ]; then
+            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+            if [ -e "CVs/CV.json" ]; then
+              echo "Removing output CV.json"
+              rm -f CVs/CV.json
+              git add -A 
+              git commit -m 'Remove CV.json'
+              git push origin $(git rev-parse --abbrev-ref HEAD)
+            else
+              mkdir -p CVs
+            fi
           else
-            mkdir -p CVs
+            echo "Skipping this step in 'act' environment."
           fi
         shell: bash
-
 
       - name: Run Python Check
         run: python create_cv.py
@@ -89,15 +92,25 @@ jobs:
       #     fi
       #   shell: bash
 
-
       - name: Write new CV
         run: |
-          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-          if [ -e "CVs/CV.json" ]; then
-            current_datetime=$(date +"%Y-%m-%d %H:%M")
-            git add -A 
-            git commit -m "Automatically generated CV.json: $current_datetime"
-            git push origin $(git rev-parse --abbrev-ref HEAD)
+          if [ -z "$ACT" ]; then
+            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+            if [ -e "CVs/CV.json" ]; then
+              current_datetime=$(date +"%Y-%m-%d %H:%M")
+              git add -A 
+              git commit -m "Automatically generated CV.json: $current_datetime"
+              git push origin $(git rev-parse --abbrev-ref HEAD)
+            fi
+          else
+            echo "Skipping this step in 'act' environment."
           fi
         shell: bash
 
+
+      - name: If using act detach -b for debugging
+        run: |
+          if [ -n "$ACT" ]; then
+            echo "Delaying by 30 seconds for testing with act"
+            sleep 30
+          fi
