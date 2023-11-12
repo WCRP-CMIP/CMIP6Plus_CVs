@@ -5,7 +5,7 @@ on:
     branches:
       - lesfII
       - main
-      
+
       # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
 
 jobs:
@@ -68,10 +68,6 @@ jobs:
           PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
         continue-on-error: true
 
-      - name: Print output
-        run: |
-          echo "${more CVs/CV.json}"
-        shell: bash
 
 
 
