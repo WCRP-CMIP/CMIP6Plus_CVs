@@ -5,7 +5,9 @@ from glob import glob
 from urllib import request
 from datetime import datetime, timedelta
 
+from collections import OrderedDict
 
+CV = OrderedDict()
 
 ###################################
 # run script for testing actions 
@@ -68,9 +70,6 @@ def notnull(dictionary, keys,replace='none'):
 ###################################
 
 
-
-
-CV = {}
 for key in 'source_type frequency realm grid_label'.split():
 
     CV={**CV,**read_json_from_github('PCMDI', 'mip-cmor-tables', 'additional_tables', f'MIP_{key}.json')}
@@ -210,5 +209,5 @@ CV['version_metadata'] = {
 
 # Write the JSON data to the file with an indentation of 4 spaces and sorted keys
 
-json.dump(CV, f, indent=4, sort_keys=True)
+json.dump(CV, f, indent=4, sort_keys=False)
 f.close()
