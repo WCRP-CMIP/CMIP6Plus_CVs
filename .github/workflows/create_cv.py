@@ -124,10 +124,6 @@ f = open(file_path, 'w')
 for entry in structure:
     file = f"{relative}{cv_prefix}_{entry}.json"
 
-    print(entry,file)
-
-
-
     if entry == 'table_id':
     
             CV['table_id'] = ['APmon']
@@ -153,13 +149,13 @@ for entry in structure:
 
                 CV[entry] = notnull(CV[entry],['parent_experiment_id','parent)sub_experiment_id'], 'no parent')
 
-            if entry == 'source_id':
-                # this section updates the institutions
+        if entry == 'source_id':
+            # this section updates the institutions
 
-                CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
-                    {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
-                
-                del CV['institutions']
+            CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
+                {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
+            
+            del CV['institutions']
 
 
                 
