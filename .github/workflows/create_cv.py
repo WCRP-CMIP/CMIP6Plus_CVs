@@ -190,7 +190,8 @@ for entry in structure:
 
 
 # Order the keys alphabetically
-CV = {k: CV[k] for k in sorted(CV)}
+# CV = {k: CV[k] for k in sorted(CV)}
+CV = OrderedDict(sorted(CV.items()))
 
 
 ###################################
