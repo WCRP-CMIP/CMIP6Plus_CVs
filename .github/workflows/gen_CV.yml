@@ -29,6 +29,10 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+    
+
+      # - name: Install NPM
+      #   uses: actions/setup-node@v3
 
 
 
@@ -108,9 +112,27 @@ jobs:
         shell: bash
 
 
+
+
+      # - name: Install fx
+      #   run: |
+      #     if [ -n "$ACT" ]; then
+      #     sudo npm install -g fx
+      #     fi
+      #   shell: bash
+
+      - name: View JSON file with fx
+        run: |
+          if [ -n "$ACT" ]; then
+            # fx -y < CVs/CV.json
+            jq -n 'reduce inputs as $obj ({}; . + $obj)' CVs/CV.json 
+
+          fi
+        shell: bash
+
       - name: If using act detach -b for debugging
         run: |
           if [ -n "$ACT" ]; then
-            echo "Delaying by 30 seconds for testing with act"
-            sleep 30
+            echo "Delaying by 360 seconds for testing with act"
+            sleep 360
           fi

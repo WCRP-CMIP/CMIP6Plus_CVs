@@ -16,8 +16,13 @@ CV = OrderedDict()
 '''
 Github action test script:
 
- act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 --verbose -b & sleep 4 &&
-docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /usr/bin/bash -c "cd .github/workflows/;python create_cv.py;cd ../../CVs;more CV.json;exit"
+act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 --verbose -b & sleep 4 &&
+docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525apacman -S /usr/bin/bash -c "cd .github/workflows/;python create_cv.py;cd ../../CVs;more CV.json;exit"
+
+sudo apt-update
+sudo apt install snapd
+sudo snap install fx
+fx CVs/CV.json
 
 
 *note* interactive docker shell can use id or name as a reference. 
@@ -31,10 +36,21 @@ relative = '../../'
 cv_prefix = 'CMIP6Plus'
 file_path = f'{relative}CVs/CV.json'
 
+mip_tables = 'mip-cmor-tables'
+table_prefix = 'MIP_'
+
 
 ###################################
 # define functions
 ###################################
+
+def read_contents_from_github(username, repo, directory, token=None):
+    base_url = f"https://api.github.com/repos/{username}/{repo}/contents/{directory}"
+    response = request.urlopen(base_url)
+    json_data = json.loads(response.read().decode('utf-8'))
+
+    return json_data
+    # https://api.github.com/repos/PCMDI/mip-cmor-tables/contents/Tables
 
 def read_json_from_github(username, repository, branch, path):
     raw_url = f'https://raw.githubusercontent.com/{username}/{repository}/{branch}/{path}'
@@ -66,6 +82,7 @@ def notnull(dictionary, keys,replace='none'):
 
 
 
+
 ###################################
 # read from mip tables
 ###################################
@@ -73,9 +90,9 @@ def notnull(dictionary, keys,replace='none'):
 
 for key in 'source_type frequency realm grid_label'.split():
 
-    CV={**CV,**read_json_from_github('PCMDI', 'mip-cmor-tables', 'additional_tables', f'MIP_{key}.json')}
+    CV={**CV,**read_json_from_github('PCMDI', mip_tables, 'additional_tables', f'{table_prefix}{key}.json')}
 
-institutions = read_json_from_github('PCMDI', 'mip-cmor-tables', 'additional_tables', f'MIP_institutions.json')
+institutions = read_json_from_github('PCMDI', mip_tables, 'additional_tables', f'{table_prefix}institutions.json')
 
 
 
@@ -124,11 +141,8 @@ for entry in structure:
     file = f"{relative}{cv_prefix}_{entry}.json"
 
     if entry == 'table_id':
-    
-            CV['table_id'] = ['APmon']
-            # [t.split('/')[-1].rstrip('.json') for t in glob(f'{tables}/Tables/*.json')]
-        # ['APmon']
-
+            # extract tables using github api
+            CV['table_id'] = [t.get('name').rstrip('.json').lstrip(table_prefix) for t in read_contents_from_github('PCMDI',mip_tables,'Tables')]
 
 
     elif os.path.exists(os.path.abspath(file)):
@@ -148,15 +162,34 @@ for entry in structure:
 
                 CV[entry] = notnull(CV[entry],['parent_experiment_id','parent)sub_experiment_id'], 'no parent')
 
-        if entry == 'source_id':
+        elif entry == 'activity_id':
+            CV[entry] = {f"{key}": value["long_name"] for key, value in CV[entry].items()}
+
+
+        elif entry == 'source_id':
             # this section updates the institutions
 
             CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
                 {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
             
+            for model in CV[entry]:
+                model_info = CV[entry][model]
+                components = []
+                for component, info in model_info['model_component'].items():
+                    
+                    description = info.get("description", "none")
+                    components.append(f"{component}: {description}")
+
+                components_str = "\n".join(components)
+
+                CV[entry][model]['source'] = f"{model_info['source_id']} ({model_info['release_year']}: \n{components_str})"
+
+                for d in 'model_component release_year label label_extended'.split():
+                    del CV[entry][model][d]
 
 
-                
+
+
 
 
 #         elif entry in template:
@@ -174,17 +207,6 @@ for entry in structure:
 
 #     core.stdout.MissingValueError(f'The following fields are required:{diff} ')
 
-#     #  update this to the correct format.
-#     CV['source_type'] = dict([[s, source_type[s]]
-#                                  for s in CV['source_type']])
-#     print(CV['source_type'])
-#     CV = prune(CV)
-
-#     CVfile = f"{directory}{outloc}/{core.io.ensure_suffix(prefix,'_')}CV.json"
-#     core.io.json_write(dict(CV=CV), CVfile, sort=True)
-
-#     return CVfile
-
 
 
 
@@ -196,7 +218,7 @@ for entry in structure:
 sorted_keys = sorted(CV.keys(), key=lambda x: x.lower())
 # f.write(str(sorted_keys))
 # Creating a new OrderedDict with sorted keys
-CV = OrderedDict((key, CV[key]) for key in sorted_keys)
+CV = { "CV" : OrderedDict((key, CV[key]) for key in sorted_keys) }
 
 
 
