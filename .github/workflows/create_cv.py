@@ -1,6 +1,6 @@
 print('Create CV ')
 import json
-import os
+import os,re
 from glob import glob
 from urllib import request
 from datetime import datetime, timedelta
@@ -16,8 +16,16 @@ CV = OrderedDict()
 '''
 Github action test script:
 
+export PATH="${HOME}/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
 act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 --verbose -b & sleep 4 &&
-docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525apacman -S /usr/bin/bash -c "cd .github/workflows/;python create_cv.py;cd ../../CVs;more CV.json;exit"
+
+
+docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
+
+docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash -c "fq '.CV.table_id' CVs/CV.json";
+
+-S /usr/bin/bash -c "cd .github/workflows/;python create_cv.py;cd ../../CVs;more CV.json;exit"
 
 sudo apt-update
 sudo apt install snapd
@@ -39,6 +47,7 @@ file_path = f'{relative}CVs/CV.json'
 mip_tables = 'mip-cmor-tables'
 table_prefix = 'MIP_'
 
+pattern = re.compile(f'^{re.escape(table_prefix)}_*|\.json$')
 
 ###################################
 # define functions
@@ -142,7 +151,7 @@ for entry in structure:
 
     if entry == 'table_id':
             # extract tables using github api
-            CV['table_id'] = [t.get('name').rstrip('.json').lstrip(table_prefix) for t in read_contents_from_github('PCMDI',mip_tables,'Tables')]
+            CV['table_id'] = [ pattern.sub('', t.get('name')) for t in read_contents_from_github('PCMDI',mip_tables,'Tables') ]
 
 
     elif os.path.exists(os.path.abspath(file)):
