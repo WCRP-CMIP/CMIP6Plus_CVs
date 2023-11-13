@@ -103,6 +103,7 @@ jobs:
             if [ -e "CVs/CV.json" ]; then
               current_datetime=$(date +"%Y-%m-%d %H:%M")
               git add -A 
+              git add -f CVs/CV.json
               git commit -m "Automatically generated CV.json: $current_datetime"
               git push origin $(git rev-parse --abbrev-ref HEAD)
             fi
