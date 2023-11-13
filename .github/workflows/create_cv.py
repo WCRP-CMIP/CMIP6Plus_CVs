@@ -210,7 +210,7 @@ for entry in structure:
 
 
 
-
+del CV['version_metadata']
 
 # Order the keys alphabetically
 # CV = {k: CV[k] for k in sorted(CV)}
