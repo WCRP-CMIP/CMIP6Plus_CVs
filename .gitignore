@@ -1,3 +1,4 @@
 # .gitignore
 .DS_Store
 CVs/CV.json
+CVs/CMIP6Plus_CV.json

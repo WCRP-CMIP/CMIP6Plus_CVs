@@ -8,6 +8,11 @@ on:
 
       # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
 
+      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -b -W .github/workflows/gen_CV.yml 
+
+
+      # docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
+
 jobs:
   create-branch-and-update-files:
     runs-on: ubuntu-latest
@@ -53,11 +58,11 @@ jobs:
         run: |
           if [ -z "$ACT" ]; then
             echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-            if [ -e "CVs/CV.json" ]; then
-              echo "Removing output CV.json"
-              rm -f CVs/CV.json
+            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+              echo "Removing output CMIP6Plus_CV.json"
+              rm -f CVs/CMIP6Plus_CV.json
               git add -A 
-              git commit -m 'Remove CV.json'
+              git commit -m 'Remove CMIP6Plus_CV.json'
               git push origin $(git rev-parse --abbrev-ref HEAD)
             else
               mkdir -p CVs
@@ -67,13 +72,46 @@ jobs:
           fi
         shell: bash
 
+      - name: Print latest commit SHA
+        id: commit_sha
+        run: |
+          commit='ds'
+          echo "COMMITS='hello'" >> $GITHUB_ENV 
+          echo "COMMITS=hello" >> $GITHUB_OUTPUT 
+          echo "${{git rev-parse HEAD}}i"
+          echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV
+          
+
+        shell: bash
+  
+      - name: Get latest tag for current branch
+        id: repo_tag
+        run: |
+          echo "${{git describe --tags --abbrev=0 }}"
+        shell: bash
+  
+      - name: Get latest commit date
+        id: latest_commit
+        run: |
+          echo "${{git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S'}}"
+        shell: bash
+        # envvar steps.latest_commit.outputs.commit_date
+        # stdout steps.latest_commit.outputs.stdout
+
+      - name: Use the information in subsequent steps or jobs
+        run: |
+          echo "Using commit SHA: ${{ steps.commit_sha.outputs.stdout }}"
+          echo "Using latest tag: ${{ steps.repo_tag.outputs.stdout }}"
+          echo "Using latest commit date: ${{ steps.latest_commit.outputs.stdout }}"
+        shell: bash
+
       - name: Run Python Check
-        run: python create_cv.py
-        working-directory: .github/workflows/
+        run: python create_cv.py -c "${{ steps.commit_sha.outputs.stdout }}" -t "${{ steps.repo_tag.outputs.stdout }}" -d "${{ steps.latest_commit.outputs.stdout }}"
+        working-directory: .github/workflows/ 
         env:
           PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
           PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
-        continue-on-error: true
+        continue-on-error: false
 
 
 
@@ -100,10 +138,10 @@ jobs:
         run: |
           if [ -z "$ACT" ]; then
             echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-            if [ -e "CVs/CV.json" ]; then
+            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
               current_datetime=$(date +"%Y-%m-%d %H:%M")
               git add -A 
-              git add -f CVs/CV.json
+              git add -f CVs/CMIP6Plus_CV.json
               git commit -m "Automatically generated CV.json: $current_datetime"
               git push origin $(git rev-parse --abbrev-ref HEAD)
             fi
@@ -122,14 +160,22 @@ jobs:
       #     fi
       #   shell: bash
 
-      - name: View JSON file with fx
+
+      - name: Debug current working directory
+        run: |
+          pwd
+          ls -al
+
+      - name: View JSON file with jq
         run: |
           if [ -n "$ACT" ]; then
-            # fx -y < CVs/CV.json
-            jq -n 'reduce inputs as $obj ({}; . + $obj)' CVs/CV.json 
-
+            # fx -y < CVs/CMIP6Plus_CV.json
+            # jq  '.' CVs/CMIP6Plus_CV.json 
+            echo "jghjgh  $(steps.commit_sha.outputs.COMMITS) ${COMMITS} kl"
           fi
         shell: bash
+
+        
 
       - name: If using act detach -b for debugging
         run: |
