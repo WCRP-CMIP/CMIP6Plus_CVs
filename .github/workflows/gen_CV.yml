@@ -62,10 +62,10 @@ jobs:
           echo "COMMIT_HASH=${GITHUB_SHA}" >> $GITHUB_ENV
 
           if [ -n "${GITHUB_REF}" ]; then
-            RELEASE_TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
+            TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
           else
             # If no tag, get the tag associated with the main branch using GitHub API
-            TAG=$(curl -s "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
+            TAG=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
           fi
 
           echo "TAG_VERSION=${TAG}" >> $GITHUB_ENV
