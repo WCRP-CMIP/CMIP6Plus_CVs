@@ -26,7 +26,10 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
     if 'checksum' in dictionary[checksum_location]:
         if not overwrite:
             raise RuntimeError('Checksum already exists.')
-        del dictionary[checksum_location]['checksum']
+        # del dictionary[checksum_location]['checksum']
+        # blank the checksum rather than deleting it. This keeps the order. 
+        dictionary[checksum_location]['checksum'] = '' 
+
     checksum = _checksum(dictionary)
     dictionary[checksum_location]['checksum'] = checksum
     return dictionary

@@ -18,11 +18,13 @@ def get_latest_commit(repo_owner: str, repo_name: str) -> Dict[str, str]:
         github_token = os.environ.get("GITHUB_TOKEN")
         if not github_token:
             print("GITHUB_TOKEN not available.")
-            return {}
+            # return {}
+            headers = {}
+        else:
+            headers = {"Authorization": f"Bearer {github_token}"}
 
         api_url_commits = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits'
-        headers = {"Authorization": f"Bearer {github_token}"}
-
+        
 
         api_url = f'https://www.github.com/repos/{repo_owner}/{repo_name}'
 
