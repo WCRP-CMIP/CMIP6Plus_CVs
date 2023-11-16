@@ -12,7 +12,6 @@ on:
 
       # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -b -W .github/workflows/gen_CV.yml 
 
-
       # docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
 
 jobs:
@@ -40,8 +39,6 @@ jobs:
 
       # - name: Install NPM
       #   uses: actions/setup-node@v3
-
-
 
       - name: Set up Git
         run: |
@@ -76,6 +73,7 @@ jobs:
           echo "Commit Date: $COMMIT_DATE"
 
 
+
       - name: Clear previous
         run: |
           if [ -z "$ACT" ]; then
@@ -93,6 +91,7 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
+
 
       - name: Print latest commit SHA
         id: commit_sha
@@ -135,6 +134,7 @@ jobs:
       #     fi
       #   shell: bash
 
+
       - name: Write new CV
         run: |
           if [ -z "$ACT" ]; then
@@ -150,6 +150,7 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
+        
 
 
       - name: Debug current working directory
