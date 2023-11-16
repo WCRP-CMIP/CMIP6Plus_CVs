@@ -44,7 +44,7 @@ jobs:
       - name: Set up Git
         run: |
           git config user.email "actions@wcrp-cmip.org"
-          git config user.name "CMIP-IPO GitHub Action"
+          git config user.name "CMIP-IPO: Automated GitHub Action"
           git config credential.helper store
           git config --global user.email "actions@wcrp-cmip.org"
           git config --global user.name "CMIP-IPO GitHub Action"
@@ -53,6 +53,27 @@ jobs:
           echo "GH_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
           echo "GITHUB_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
         shell: bash
+
+
+      - name: Set GIT repo environment variables
+        run: |
+          echo "COMMIT_HASH=${GITHUB_SHA}" >> $GITHUB_ENV
+          echo "TAG_VERSION=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+          # Use GitHub API to get commit information
+          COMMIT_DATE=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+                          "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}" | \
+                        jq -r '.commit.author.date')
+
+          echo "COMMIT_DATE=${COMMIT_DATE}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Display GIT environment variables
+        run: |
+          echo "Commit Hash: $COMMIT_HASH"
+          echo "Tag Version: $TAG_VERSION"
+          
+          echo "Commit Date: $COMMIT_DATE"
+
 
       - name: Clear previous
         run: |
@@ -71,7 +92,6 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
-
       - name: Print latest commit SHA
         id: commit_sha
         run: |
@@ -89,14 +109,19 @@ jobs:
         run: |
           echo "${{git describe --tags --abbrev=0 }}"
         shell: bash
+
   
       - name: Get latest commit date
         id: latest_commit
         run: |
           echo "${{git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S'}}"
+          
         shell: bash
         # envvar steps.latest_commit.outputs.commit_date
         # stdout steps.latest_commit.outputs.stdout
+        # echo "COMMITS=hello" >> $GITHUB_OUTPUT 
+        #   echo "${{git rev-parse HEAD}}i"
+        #   echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV
 
       - name: Use the information in subsequent steps or jobs
         run: |
@@ -106,8 +131,9 @@ jobs:
         shell: bash
 
       - name: Run Python Check
-        run: python create_cv.py -c "${{ steps.commit_sha.outputs.stdout }}" -t "${{ steps.repo_tag.outputs.stdout }}" -d "${{ steps.latest_commit.outputs.stdout }}"
-        working-directory: .github/workflows/ 
+        id: 'run-python-script'
+        run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}"
+        working-directory: .github/workflows/libs
         env:
           PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
           PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
