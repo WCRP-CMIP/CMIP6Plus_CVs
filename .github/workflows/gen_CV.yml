@@ -71,9 +71,9 @@ jobs:
             # RELEASE_TAG=$(git describe --tags --abbrev=0 $(git rev-list --tags --max-count=1))
             # # $(git describe --tags --abbrev=0)
 
-            API_KEY=${{ env.API_KEY }}
-            # Authorization: token $API_KEY" 
-            echo "${{env.API_KEY}}"
+            # API_KEY=${{ env.API_KEY }}
+            # # Authorization: token $API_KEY" 
+            # echo "${{env.API_KEY}}"
             TAG=$(curl -s -H "https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r .tag_name)
           fi
 
