@@ -48,7 +48,7 @@ fx CVs/CV.json
 # tunable parameters
 ###################################
 
-relative = '../../../'
+relative = '../../'
 cv_prefix = 'CMIP6Plus'
 file_path = f'{relative}CVs/CMIP6Plus_CV.json'
 

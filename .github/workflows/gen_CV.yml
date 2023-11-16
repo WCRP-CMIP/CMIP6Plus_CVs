@@ -107,7 +107,7 @@ jobs:
       - name: Run Python Check
         id: 'run-python-script'
         run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}"
-        working-directory: .github/workflows/libs
+        working-directory: .github/libs
         env:
           PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
           PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
@@ -150,7 +150,7 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
-        
+
 
 
       - name: Debug current working directory
