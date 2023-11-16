@@ -57,24 +57,15 @@ jobs:
           echo "GITHUB_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
         shell: bash
 
-
       - name: Set GIT repo environment variables
         run: |
           echo "COMMIT_HASH=${GITHUB_SHA}" >> $GITHUB_ENV
-          # echo "TAG_VERSION=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
-
 
           if [ -n "${GITHUB_REF}" ]; then
             RELEASE_TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
           else
-            # If no tag, get the tag associated with the main branch
-            # RELEASE_TAG=$(git describe --tags --abbrev=0 $(git rev-list --tags --max-count=1))
-            # # $(git describe --tags --abbrev=0)
-
-            # API_KEY=${{ env.API_KEY }}
-            # # Authorization: token $API_KEY" 
-            # echo "${{env.API_KEY}}"
-            TAG=$(curl -s -H "https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r .tag_name)
+            # If no tag, get the tag associated with the main branch using GitHub API
+            TAG=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
           fi
 
           echo "TAG_VERSION=${TAG}" >> $GITHUB_ENV
