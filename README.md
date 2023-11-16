@@ -1,9 +1,7 @@
 # CMIP6Plus_CVs
+![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg)
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
-
-Tests:
-![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg)
 
 
 
