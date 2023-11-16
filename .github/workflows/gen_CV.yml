@@ -1,0 +1,191 @@
+name: Generate CV file
+
+on:
+  push:
+    branches:
+      - lesfII
+      - main
+    tags:
+      - '*'
+
+      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
+
+      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -b -W .github/workflows/gen_CV.yml 
+
+      # docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
+
+jobs:
+  create-branch-and-update-files:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      id-token: write
+      issues: write
+      discussions: write
+      packages: write
+      pages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
+
+    env:
+        API_KEY: ${{ secrets.API_KEY }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+    
+
+      # - name: Install NPM
+      #   uses: actions/setup-node@v3
+
+      - name: Set up Git
+        run: |
+          git config user.email "actions@wcrp-cmip.org"
+          git config user.name "CMIP-IPO: Automated GitHub Action"
+          git config credential.helper store
+          git config --global user.email "actions@wcrp-cmip.org"
+          git config --global user.name "CMIP-IPO GitHub Action"
+          git config --global push.default current
+          GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          echo "GH_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
+          echo "GITHUB_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Set GIT repo environment variables
+        run: |
+          echo "COMMIT_HASH=${GITHUB_SHA}" >> $GITHUB_ENV
+
+          # if [ -n "${GITHUB_REF}" ]; then
+          #   TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
+          # else
+          #   # If no tag, get the tag associated with the main branch using GitHub API
+            TAG=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
+          # fi
+
+          echo "TAG_VERSION=${TAG}" >> $GITHUB_ENV
+
+          # Use GitHub API to get commit information
+          COMMIT_DATE=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+                          "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}" | \
+                        jq -r '.commit.author.date')
+
+          echo "COMMIT_DATE=${COMMIT_DATE}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Display GIT environment variables
+        run: |
+          echo "Commit Hash: $COMMIT_HASH"
+          echo "Tag Version: $TAG_VERSION"
+          echo "Commit Date: $COMMIT_DATE"
+          echo "${{github.repository}}"
+
+
+
+      - name: Clear previous
+        run: |
+          if [ -z "$ACT" ]; then
+            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+              echo "Removing output CMIP6Plus_CV.json"
+              rm -f CVs/CMIP6Plus_CV.json
+              git add -A 
+              git commit -m 'Remove CMIP6Plus_CV.json'
+              git push origin $(git rev-parse --abbrev-ref HEAD)
+            else
+              mkdir -p CVs
+            fi
+          else
+            echo "Skipping this step in 'act' environment."
+          fi
+        shell: bash
+
+
+      - name: Print latest commit SHA
+        id: commit_sha
+        run: |
+          commit='ds'
+          echo "COMMITS='hello'" >> $GITHUB_ENV 
+          echo "COMMITS=hello" >> $GITHUB_OUTPUT 
+          echo "$(git rev-parse HEAD)"
+          echo "commit=$(git rev-parse HEAD)" >> $GITHUB_ENV
+        shell: bash
+  
+
+      - name: Run Python Check
+        id: 'run-python-script'
+        run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+        # env.GH_TOKEN
+        working-directory: .github/libs
+        env:
+          PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
+          PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
+        continue-on-error: false
+
+
+
+
+
+      # - name: Print output
+      #   run: |
+      #     echo "::set-output name=PYSTD::$PYTHON_SCRIPT_OUTPUT"
+      #     echo "::set-output name=PYERR::$PYTHON_SCRIPT_ERROR"        
+
+      # - name: Check Python script output
+      #   run: |
+      #     echo "Python script output: $PYTHON_SCRIPT_OUTPUT"
+      #     if [[ "$PYTHON_SCRIPT_OUTPUT" == "FAILED"* ]]; then
+      #       echo "Issue processing failed. Closing the issue..."
+      #       gh issue close "${{ github.event.issue.number }}"
+      #       gh issue comment "${{ github.event.issue.number }}" --body "Processing failed with the following error: $PYTHON_SCRIPT_OUTPUT"
+      #     else
+      #       echo "Issue processed successfully."
+      #     fi
+      #   shell: bash
+
+
+      - name: Write new CV
+        run: |
+          if [ -z "$ACT" ]; then
+            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+              current_datetime=$(date +"%Y-%m-%d %H:%M")
+              git add -A 
+              git add -f CVs/CMIP6Plus_CV.json
+              git commit -m "Automatically generated CV.json: $current_datetime"
+              git push origin $(git rev-parse --abbrev-ref HEAD)
+            fi
+          else
+            echo "Skipping this step in 'act' environment."
+          fi
+        shell: bash
+
+
+
+      - name: Debug current working directory
+        run: |
+          pwd
+          ls -al
+
+      - name: View JSON file with jq
+        run: |
+          if [ -n "$ACT" ]; then
+            # fx -y < CVs/CMIP6Plus_CV.json
+            # jq  '.' CVs/CMIP6Plus_CV.json 
+            echo "jghjgh  $(steps.commit_sha.outputs.COMMITS) ${COMMITS} kl"
+          fi
+        shell: bash
+
+        
+
+      - name: If using act detach -b for debugging
+        run: |
+          if [ -n "$ACT" ]; then
+            echo "Delaying by 360 seconds for testing with act"
+            sleep 360
+          fi
