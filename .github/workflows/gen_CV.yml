@@ -92,14 +92,15 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
+
       - name: Print latest commit SHA
         id: commit_sha
         run: |
           commit='ds'
           echo "COMMITS='hello'" >> $GITHUB_ENV 
           echo "COMMITS=hello" >> $GITHUB_OUTPUT 
-          echo "${{git rev-parse HEAD}}i"
-          echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV
+          echo "$(git rev-parse HEAD)"
+          echo "commit=$(git rev-parse HEAD)" >> $GITHUB_ENV
           
 
         shell: bash
@@ -107,14 +108,14 @@ jobs:
       - name: Get latest tag for current branch
         id: repo_tag
         run: |
-          echo "${{git describe --tags --abbrev=0 }}"
+          echo "$(git describe --tags --abbrev=0)"
         shell: bash
 
   
       - name: Get latest commit date
         id: latest_commit
         run: |
-          echo "${{git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S'}}"
+          echo "$(git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S')"
           
         shell: bash
         # envvar steps.latest_commit.outputs.commit_date
