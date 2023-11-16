@@ -280,7 +280,7 @@ CV = { "CV" : OrderedDict((key, CV[key]) for key in sorted_keys) }
 ###################################
 
 
-mip = get_latest_commit('PCMDI',mip_tables,api=args.api)
+mip = get_latest_commit('PCMDI',mip_tables,github_token=args.api)
 
 CV['CV']['version_metadata'] = OrderedDict(
     {
