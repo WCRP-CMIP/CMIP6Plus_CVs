@@ -1,6 +1,6 @@
 # CMIP6Plus_CVs
 ![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg) 
-
+![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
 ![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
 
 
