@@ -92,7 +92,6 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
-<<<<<<< HEAD
       - name: Print latest commit SHA
         id: commit_sha
         run: |
@@ -122,36 +121,7 @@ jobs:
         # stdout steps.latest_commit.outputs.stdout
         # echo "COMMITS=hello" >> $GITHUB_OUTPUT 
         #   echo "${{git rev-parse HEAD}}i"
-        #   echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV
-=======
-
-      # - name: Print latest commit SHA
-      #   id: commit_sha
-      #   run: |
-      #     commit='ds'
-      #     echo "COMMITS='hello'" >> $GITHUB_ENV 
-      #     echo "COMMITS=hello" >> $GITHUB_OUTPUT 
-      #     echo "${{git rev-parse HEAD}}i"
-      #     echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV
-      #   shell: bash
-      #   continue-on-error: true
-  
-      # - name: Get latest tag for current branch
-      #   id: repo_tag
-      #   run: |
-      #     echo "${{git describe --tags --abbrev=0 }}"
-      #   shell: bash
-      #   continue-on-error: true
-  
-      # - name: Get latest commit date
-      #   id: latest_commit
-      #   run: |
-      #     echo "${{git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S'}}"
-      #   shell: bash
-      #   continue-on-error: true
-      #   # envvar steps.latest_commit.outputs.commit_date
-      #   # stdout steps.latest_commit.outputs.stdout
->>>>>>> 5adc7136f1fd71ca7c980eedaa75b0587f76358d
+        #   echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV"
 
       - name: Use the information in subsequent steps or jobs
         run: |
