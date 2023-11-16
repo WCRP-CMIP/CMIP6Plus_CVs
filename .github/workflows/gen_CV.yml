@@ -119,7 +119,8 @@ jobs:
 
       - name: Run Python Check
         id: 'run-python-script'
-        run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "{env.GH_TOKEN}"
+        run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${env.GH_TOKEN}"
+        # env.GH_TOKEN
         working-directory: .github/libs
         env:
           PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
