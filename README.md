@@ -4,11 +4,11 @@
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
+---
 
 
 
-
-### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
+**__ #### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT__ **
 
 To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/model-intercomparison-projects-mips/) page on the CMIP website.
 
