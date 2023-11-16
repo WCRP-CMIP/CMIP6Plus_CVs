@@ -5,6 +5,8 @@ on:
     branches:
       - lesfII
       - main
+    tags:
+      - '*'
 
       # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
 
@@ -71,7 +73,6 @@ jobs:
         run: |
           echo "Commit Hash: $COMMIT_HASH"
           echo "Tag Version: $TAG_VERSION"
-          
           echo "Commit Date: $COMMIT_DATE"
 
 
@@ -101,35 +102,8 @@ jobs:
           echo "COMMITS=hello" >> $GITHUB_OUTPUT 
           echo "$(git rev-parse HEAD)"
           echo "commit=$(git rev-parse HEAD)" >> $GITHUB_ENV
-          
-
         shell: bash
   
-      - name: Get latest tag for current branch
-        id: repo_tag
-        run: |
-          echo "$(git describe --tags --abbrev=0)"
-        shell: bash
-
-  
-      - name: Get latest commit date
-        id: latest_commit
-        run: |
-          echo "$(git log -1 --format='%at' | xargs -I{} date -r {} '+%Y/%m/%d_%H:%M:%S')"
-          
-        shell: bash
-        # envvar steps.latest_commit.outputs.commit_date
-        # stdout steps.latest_commit.outputs.stdout
-        # echo "COMMITS=hello" >> $GITHUB_OUTPUT 
-        #   echo "${{git rev-parse HEAD}}i"
-        #   echo "commit=${{git rev-parse HEAD}}" >> $GITHUB_ENV"
-
-      - name: Use the information in subsequent steps or jobs
-        run: |
-          echo "Using commit SHA: ${{ steps.commit_sha.outputs.stdout }}"
-          echo "Using latest tag: ${{ steps.repo_tag.outputs.stdout }}"
-          echo "Using latest commit date: ${{ steps.latest_commit.outputs.stdout }}"
-        shell: bash
 
       - name: Run Python Check
         id: 'run-python-script'
@@ -176,16 +150,6 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
-
-
-
-
-      # - name: Install fx
-      #   run: |
-      #     if [ -n "$ACT" ]; then
-      #     sudo npm install -g fx
-      #     fi
-      #   shell: bash
 
 
       - name: Debug current working directory

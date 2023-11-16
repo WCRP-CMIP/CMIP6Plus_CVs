@@ -29,6 +29,7 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
         del dictionary[checksum_location]['checksum']
     checksum = _checksum(dictionary)
     dictionary[checksum_location]['checksum'] = checksum
+    return dictionary
 
 
 def validate_checksum(dictionary, checksum_location='version_metadata'):
