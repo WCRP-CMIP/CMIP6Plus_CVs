@@ -73,7 +73,7 @@ jobs:
 
             API_KEY=${{ env.API_KEY }}
             # Authorization: token $API_KEY" 
-            echo "${{API_KEY}}"
+            echo "${{env.API_KEY}}"
             TAG=$(curl -s -H "https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r .tag_name)
           fi
 
