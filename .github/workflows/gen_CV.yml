@@ -64,9 +64,10 @@ jobs:
             RELEASE_TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
           else
             # If no tag, get the tag associated with the main branch
-            RELEASE_TAG=$(git describe --tags --abbrev=0)
+            RELEASE_TAG=$(git describe --tags --abbrev=0 $(git rev-list --tags --max-count=1))
+            # $(git describe --tags --abbrev=0)
           fi
-          
+
           echo "TAG_VERSION=${RELEASE_TAG}" >> $GITHUB_ENV
 
           # Use GitHub API to get commit information
