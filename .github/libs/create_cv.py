@@ -75,6 +75,8 @@ parser.add_argument('-d', '--date', type=str, help='date_commit')
 # Add the tag argument
 parser.add_argument('-t', '--tag', type=str, help='tag')
 
+parser.add_argument('-a', '--api', type=str, default=None, help='api_token')
+
 args = parser.parse_args()
 
 
@@ -278,7 +280,7 @@ CV = { "CV" : OrderedDict((key, CV[key]) for key in sorted_keys) }
 ###################################
 
 
-mip = get_latest_commit('PCMDI',mip_tables)
+mip = get_latest_commit('PCMDI',mip_tables,api=args.api)
 
 CV['CV']['version_metadata'] = OrderedDict(
     {

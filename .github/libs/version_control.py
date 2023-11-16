@@ -2,7 +2,7 @@ import os,json
 from typing import Dict
 from urllib import request
 
-def get_latest_commit(repo_owner: str, repo_name: str) -> Dict[str, str]:
+def get_latest_commit(repo_owner: str, repo_name: str, api: str) -> Dict[str, str, str]:
     """
     Retrieve information about the latest commit of a GitHub repository using GITHUB_TOKEN.
 
@@ -15,7 +15,7 @@ def get_latest_commit(repo_owner: str, repo_name: str) -> Dict[str, str]:
     """
     try:
         # Access the GITHUB_TOKEN directly within the GitHub Actions environment
-        github_token = os.environ.get("GITHUB_TOKEN")
+        github_token = api
         if not github_token:
             print("GITHUB_TOKEN not available.")
             # return {}
