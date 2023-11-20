@@ -1,424 +1,658 @@
 {
-  "Header": {
-    "CV_collection_modified": "Thu Sep  1 13:47:30 2022 -0700",
-    "CV_collection_version": "6.2.58.34",
-    "author": "Paul J. Durack <durack1@llnl.gov>",
-    "checksum": "md5: 826788727cb8c57b28bbec9029273c1a",
-    "experiment_id_CV_modified": "Tue Dec 15 12:25:59 2020 -0800",
-    "experiment_id_CV_note": "Revise experiment_id historical parent experiments",
-    "institution_id": "PCMDI",
-    "previous_commit": "9ddb8352c2f51fc999549425ea7b4648da5ccd31",
-    "specs_doc": "v6.2.7 (10th September 2018; https://goo.gl/v1drZl)"
-  },
-  "experiment_id": {
-    "1pctCO2": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: 1pctCO2",
-      "end_year": "",
-      "experiment": "1 percent per year increase in CO2",
-      "experiment_id": "1pctCO2",
-      "min_number_yrs_per_sim": "150",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
+    "Header": {
+        "collection": {
+            "CV_collection_version": "6.5.0.0",
+            "CV_collection_modified": "2023-06-23T11:50:16Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: 77a8d8f1f7dedb3014d1dc783bdfa1dc",
+            "experiment_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
+            "experiment_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
+            "experiment_id_note": "Minor tweaks to structure of CVs"
+        },
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
-    "abrupt-4xCO2": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: abrupt-4xCO2",
-      "end_year": "",
-      "experiment": "abrupt quadrupling of CO2",
-      "experiment_id": "abrupt-4xCO2",
-      "min_number_yrs_per_sim": "150",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "amip": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: AMIP",
-      "end_year": "2014",
-      "experiment": "AMIP",
-      "experiment_id": "amip",
-      "min_number_yrs_per_sim": "36",
-      "parent_activity_id": [
-        "no parent"
-      ],
-      "parent_experiment_id": [
-        "no parent"
-      ],
-      "required_model_components": [
-        "AGCM"
-      ],
-      "start_year": "1979",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "esm-hist": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM"
-      ],
-      "description": "CMIP6 historical (CO2 emission-driven)",
-      "end_year": "2014",
-      "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated",
-      "experiment_id": "esm-hist",
-      "min_number_yrs_per_sim": "165",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "esm-piControl"
-      ],
-      "required_model_components": [
-        "AOGCM",
-        "BGC"
-      ],
-      "start_year": "1850",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "esm-hist-ext": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM"
-      ],
-      "description": "Extension beyond 2014 of the CMIP6 historical (CO2 emission-driven)",
-      "end_year": "present",
-      "experiment": "post-2014 all-forcing simulation with atmospheric CO2 concentration calculated",
-      "experiment_id": "esm-hist-ext",
-      "min_number_yrs_per_sim": "1",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "esm-hist"
-      ],
-      "required_model_components": [
-        "AOGCM",
-        "BGC"
-      ],
-      "start_year": "2015",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "esm-piControl": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM"
-      ],
-      "description": "DECK: control (emission-driven)",
-      "end_year": "",
-      "experiment": "pre-industrial control simulation with CO2 concentration calculated",
-      "experiment_id": "esm-piControl",
-      "min_number_yrs_per_sim": "500",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "esm-piControl-spinup"
-      ],
-      "required_model_components": [
-        "AOGCM",
-        "BGC"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "esm-piControl-spinup": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM"
-      ],
-      "description": "DECK: spin-up portion of the control (emission-driven)",
-      "end_year": "",
-      "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
-      "experiment_id": "esm-piControl-spinup",
-      "min_number_yrs_per_sim": "100",
-      "parent_activity_id": [
-        "no parent"
-      ],
-      "parent_experiment_id": [
-        "no parent"
-      ],
-      "required_model_components": [
-        "AOGCM",
-        "BGC"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "historical": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "CMIP6 historical",
-      "end_year": "2014",
-      "experiment": "all-forcing simulation of the recent past",
-      "experiment_id": "historical",
-      "min_number_yrs_per_sim": "165",
-      "parent_activity_id": [
-        "CMIP",
-        "PMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl",
-        "past1000",
-        "past2k"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "1850",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "historical-cmip5": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "CMIP5 historical experiment, using CMIP5-era [1850-2005] forcing",
-      "end_year": "2005",
-      "experiment": "all-forcing simulation of the recent past (CMIP5-era [1850-2005] forcing)",
-      "experiment_id": "historical-cmip5",
-      "min_number_yrs_per_sim": "156",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl-cmip5"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "1850",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "historical-ext": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "Extension beyond 2014 of the CMIP6 historical",
-      "end_year": "present",
-      "experiment": "post-2014 all-forcing simulation",
-      "experiment_id": "historical-ext",
-      "min_number_yrs_per_sim": "1",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "historical"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "2015",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "piControl": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: control",
-      "end_year": "",
-      "experiment": "pre-industrial control",
-      "experiment_id": "piControl",
-      "min_number_yrs_per_sim": "500",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl-spinup"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "1"
-    },
-    "piControl-cmip5": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: control (CMIP5-era pre-industrial forcing)",
-      "end_year": "",
-      "experiment": "pre-industrial control (CMIP5-era [1850-2005] forcing)",
-      "experiment_id": "piControl-cmip5",
-      "min_number_yrs_per_sim": "500",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "piControl-spinup-cmip5"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "piControl-spinup": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: spin-up portion of the control",
-      "end_year": "",
-      "experiment": "pre-industrial control (spin-up)",
-      "experiment_id": "piControl-spinup",
-      "min_number_yrs_per_sim": "100",
-      "parent_activity_id": [
-        "no parent"
-      ],
-      "parent_experiment_id": [
-        "no parent"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
-    },
-    "piControl-spinup-cmip5": {
-      "activity_id": [
-        "CMIP"
-      ],
-      "additional_allowed_model_components": [
-        "AER",
-        "CHEM",
-        "BGC"
-      ],
-      "description": "DECK: spin-up portion of the control (CMIP5-era pre-industrial forcing)",
-      "end_year": "",
-      "experiment": "pre-industrial control (spin-up; CMIP5-era [1850-2005] forcing)",
-      "experiment_id": "piControl-spinup-cmip5",
-      "min_number_yrs_per_sim": "100",
-      "parent_activity_id": [
-        "CMIP"
-      ],
-      "parent_experiment_id": [
-        "no parent"
-      ],
-      "required_model_components": [
-        "AOGCM"
-      ],
-      "start_year": "",
-      "sub_experiment_id": [
-        "none"
-      ],
-      "tier": "2"
+    "experiment_id": {
+        "1pctCO2": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "DECK: 1pctCO2",
+            "end": "",
+            "experiment": "1 percent per year increase in CO2",
+            "experiment_id": "1pctCO2",
+            "min_number_yrs_per_sim": 150,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "abrupt-4xCO2": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "DECK: abrupt-4xCO2",
+            "end": "",
+            "experiment": "abrupt quadrupling of CO2",
+            "experiment_id": "abrupt-4xCO2",
+            "min_number_yrs_per_sim": 150,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "amip": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "DECK: AMIP",
+            "end": 2022,
+            "experiment": "AMIP",
+            "experiment_id": "amip",
+            "min_number_yrs_per_sim": 43,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AGCM"
+            ],
+            "start": 1979,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-hist": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "CMIP6 historical (CO2 emission-driven)",
+            "end": "2014",
+            "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
+            "experiment_id": "esm-hist",
+            "min_number_yrs_per_sim": 165,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-piControl"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "1850",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-piControl": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "DECK: control (emission-driven)",
+            "end": "",
+            "experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
+            "experiment_id": "esm-piControl",
+            "min_number_yrs_per_sim": 500,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-piControl-spinup"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-piControl-spinup": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "DECK: spin-up portion of the control (emission-driven)",
+            "end": "",
+            "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
+            "experiment_id": "esm-piControl-spinup",
+            "min_number_yrs_per_sim": 100,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "fut-Aer": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-aer but with updated forcings",
+            "end": 2024,
+            "experiment": "future anthropogenic aerosols-only run",
+            "experiment_id": "fut-Aer",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "LESFMIP"
+            ],
+            "parent_experiment_id": [
+                "hist-Aer"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "fut-GHG": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-GHG but with updated forcings",
+            "end": 2024,
+            "experiment": "future well-mixed GHG-only run",
+            "experiment_id": "fut-GHG",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "LESFMIP"
+            ],
+            "parent_experiment_id": [
+                "hist-GHG"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "fut-lu": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-lu but with updated forcings",
+            "end": 2024,
+            "experiment": "Single forcing projections",
+            "experiment_id": "fut-lu",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "fut-sol": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-sol but with updated forcings",
+            "end": 2024,
+            "experiment": "future solar-only run",
+            "experiment_id": "fut-sol",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "LESFMIP"
+            ],
+            "parent_experiment_id": [
+                "hist-sol"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "fut-totalO3": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-totalO3 but with updated forcings",
+            "end": 2024,
+            "experiment": "future total ozone-only run",
+            "experiment_id": "fut-totalO3",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "LESFMIP"
+            ],
+            "parent_experiment_id": [
+                "hist-totalO3"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "fut-volc": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "As hist-volc but with updated forcings",
+            "end": 2024,
+            "experiment": "future volcanic-only run",
+            "experiment_id": "fut-volc",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "LESFMIP"
+            ],
+            "parent_experiment_id": [
+                "hist-volc"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 2
+        },
+        "hist-GHG": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Well-mixed greenhouse-gas-only historical simulations",
+            "end": 2020,
+            "experiment": "historical well-mixed GHG-only run",
+            "experiment_id": "hist-GHG",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "hist-aer": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Anthropogenic-aerosol-only historical simulations",
+            "end": 2020,
+            "experiment": "historical anthropogenic aerosols-only run",
+            "experiment_id": "hist-aer",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "hist-lu": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Historical simulations with only land use changes",
+            "end": 2020,
+            "experiment": "Single forcing historical simulations",
+            "experiment_id": "hist-lu",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "hist-nat": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Natural forcings (solar + volcanic)",
+            "end": 2020,
+            "experiment": "historical natural-only run",
+            "experiment_id": "hist-nat",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-sol": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Solar-only historical simulations",
+            "end": 2020,
+            "experiment": "historical solar-only run",
+            "experiment_id": "hist-sol",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "hist-totalO3": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Ozone-only historical simulations",
+            "end": 2020,
+            "experiment": "historical total ozone-only run",
+            "experiment_id": "hist-totalO3",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "hist-volc": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Volcanic-only historical simulations",
+            "end": 2020,
+            "experiment": "historical volcanic-only run",
+            "experiment_id": "hist-volc",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 1
+        },
+        "historical": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "CMIP6 historical",
+            "end": "2014",
+            "experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
+            "experiment_id": "historical",
+            "min_number_yrs_per_sim": 165,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1850",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "piControl": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "DECK: control",
+            "end": "",
+            "experiment": "pre-industrial control (CO2 concentration-driven)",
+            "experiment_id": "piControl",
+            "min_number_yrs_per_sim": 500,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl-spinup"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "piControl-spinup": {
+            "activity_id": [
+                "CMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "DECK: spin-up portion of the control",
+            "end": "",
+            "experiment": "pre-industrial control (spin-up)",
+            "experiment_id": "piControl-spinup",
+            "min_number_yrs_per_sim": 100,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        }
     }
-  }
 }

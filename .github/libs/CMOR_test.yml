@@ -1,0 +1,32 @@
+name: Install CMOR
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: true
+          environment-file: conda.yml
+          miniconda-version: "latest"
+          auto-activate-base: false
+          auto-update-conda: true
+
+      - name: Run your commands in the CMOR environment
+        run: |
+          conda activate CMOR
+          cmor --version
+
+      - name: If using act detach -b for debugging
+        run: |
+          if [ -n "$ACT" ]; then
+            echo "Delaying by 360 seconds for testing with act"
+            sleep 360
+          fi
