@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: b3c8a3fb78abfbb292aae20349d6af00",
+            "checksum": "md5: 77a8d8f1f7dedb3014d1dc783bdfa1dc",
             "experiment_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "experiment_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "experiment_id_note": "Minor tweaks to structure of CVs"
@@ -654,9 +654,5 @@
             ],
             "tier": 2
         }
-    },
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
     }
 }
