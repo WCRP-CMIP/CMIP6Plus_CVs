@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: fcf3d6a3087d5ce63d6ba4398ec4b96a",
+            "checksum": "md5: c3f5042ed2b027815a91db6015d5febe",
             "license_update_commit": "949f0b2ec603e865a7effc041aed5e21f3a7a129",
             "license_modified": "Fri Nov 17 12:06:33 2023 +0000",
             "license_note": "rm further_info"
@@ -17,9 +17,5 @@
     },
     "license": [
         "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
-    ],
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
-    }
+    ]
 }
