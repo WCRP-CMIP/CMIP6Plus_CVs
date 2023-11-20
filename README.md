@@ -1,6 +1,11 @@
 # CMIP6Plus_CVs
 ![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg) 
-![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
+![Versioning](https://github.com/github/docs/actions/workflows/version_update.yml/badge.svg)
+
+![cv main](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
+
+
+
 ![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
 
 
@@ -8,11 +13,7 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
 # 
 
-
-<<<<<<< HEAD
-
 =======
->>>>>>> 344954f7f65db769fe52e2a119dfd931c9bc1a51
 To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/model-intercomparison-projects-mips/) page on the CMIP website.
 
 ## Registering Institutions, Models, or requesting changes to CVs:

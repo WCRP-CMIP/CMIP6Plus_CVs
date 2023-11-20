@@ -178,10 +178,14 @@ for f in files:
         })
         
         
+    del contents['Header']
+    del contents['version_metadata']
+    previous = contents.copy()
 
-    contents = OrderedDict(contents)
-    # del contents['Header']
-    contents['Header'] = template
+    contents = OrderedDict({'Header':template})
+    for key in sorted(previous):
+        contents[key] = previous[key]
+
 
     contents = calculate_checksum(contents,checksum_location='Header',nest = 'file')
 
