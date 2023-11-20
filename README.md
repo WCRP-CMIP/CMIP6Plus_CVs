@@ -1,11 +1,7 @@
 # CMIP6Plus_CVs
-![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg) 
-![Versioning](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg)
-![cv main](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
+![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
+![Versioning](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main)
 
-
-
-![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
 
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
