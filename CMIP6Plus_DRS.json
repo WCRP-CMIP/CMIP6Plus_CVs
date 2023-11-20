@@ -1,19 +1,30 @@
 {
-  "DRS": {
-    "directory_path_example": "CMIP6Plus/CMIP/MOHC/HadGEM3-GC31-MM/historical/r1i1p1f3/Amon/tas/gn/v20191207/",
-    "directory_path_sub_experiment_example": "CMIP6Plus/DCPP/MOHC/HadGEM3-GC31-MM/dcppA-hindcast/s1960-r1i1p1f2/Amon/tas/gn/v20200417/",
-    "directory_path_template": "<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<member_id>/<table_id>/<variable_id>/<grid_label>/<version>",
-    "filename_example": "tas_Amon_HadGEM3-GC31-MM_historical_r1i1p1f3_gn_185001-186912.nc",
-    "filename_sub_experiment_example": "tas_Amon_HadGEM3-GC31-MM_dcppA-hindcast_s1960-r1i1p1f2_gn_196011-196012.nc",
-    "filename_template": "<variable_id>_<table_id>_<source_id>_<experiment_id >_<member_id>_<grid_label>[_<time_range>].nc"
-  },
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: ebda6eafcf0aba1ed108d6051ef27662",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  }
+    "DRS": {
+        "directory_path_example": "CMIP6Plus/CMIP/MOHC/HadGEM3-GC31-MM/historical/r1i1p1f3/Amon/tas/gn/v20191207/",
+        "directory_path_sub_experiment_example": "CMIP6Plus/DCPP/MOHC/HadGEM3-GC31-MM/dcppA-hindcast/s1960-r1i1p1f2/Amon/tas/gn/v20200417/",
+        "directory_path_template": "<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<member_id>/<table_id>/<variable_id>/<grid_label>/<version>",
+        "filename_example": "tas_Amon_HadGEM3-GC31-MM_historical_r1i1p1f3_gn_185001-186912.nc",
+        "filename_sub_experiment_example": "tas_Amon_HadGEM3-GC31-MM_dcppA-hindcast_s1960-r1i1p1f2_gn_196011-196012.nc",
+        "filename_template": "<variable_id>_<table_id>_<source_id>_<experiment_id >_<member_id>_<grid_label>[_<time_range>].nc"
+    },
+    "Header": {
+        "collection": {
+            "CV_collection_version": "6.5.0.0",
+            "CV_collection_modified": "2023-06-23T11:50:16Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: 3e56faaee231789d081384c12b81e043",
+            "DRS_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
+            "DRS_modified": "Thu Mar 9 13:18:57 2023 +0000",
+            "DRS_note": "Minor tweaks to structure of CVs"
+        },
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
+    },
+    "version_metadata": {
+        "checksum": "",
+        "commit": ""
+    }
 }
