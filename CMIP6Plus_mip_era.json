@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 0b15d300aa8ec648d70062fdb2229827",
+            "checksum": "md5: 359988ac429e226e2d121f135a8116ac",
             "mip_era_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "mip_era_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "mip_era_note": "Minor tweaks to structure of CVs"
@@ -15,9 +15,5 @@
         "author": "Matthew Mizielinski",
         "institution_id": "MOHC"
     },
-    "mip_era": "CMIP6Plus",
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
-    }
+    "mip_era": "CMIP6Plus"
 }
