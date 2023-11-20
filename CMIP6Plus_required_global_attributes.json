@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 35897351815f085a7a566e57375ec3d8",
+            "checksum": "md5: 77f39d2ab6087c98543995f0c3eebf5c",
             "required_global_attributes_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "required_global_attributes_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "required_global_attributes_note": "Minor tweaks to structure of CVs"
@@ -45,9 +45,5 @@
         "tracking_id",
         "variable_id",
         "variant_label"
-    ],
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
-    }
+    ]
 }
