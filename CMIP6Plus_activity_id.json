@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 8b78fa738d6f408bed9d64c828fc2dbc",
+            "checksum": "md5: 5e648dbfa042e9ab1d245a14d7b55d8c",
             "activity_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "activity_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "activity_id_note": "Minor tweaks to structure of CVs"
@@ -24,9 +24,5 @@
             "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
             "long_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
         }
-    },
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
     }
 }
