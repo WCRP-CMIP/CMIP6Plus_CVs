@@ -1,5 +1,7 @@
 # .gitignore
-.DS_Store
+*.DS_Store
 CVs/CV.json
 CVs/CMIP6Plus_CV.json
 .github/libs/__pycache_
+*__pycache__
+.DS_Store

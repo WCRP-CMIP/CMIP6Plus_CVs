@@ -4,7 +4,7 @@ from copy import deepcopy
 import hashlib
 import json
 
-def calculate_checksum(dictionary, overwrite=True, checksum_location='version_metadata'):
+def calculate_checksum(dictionary, overwrite=True, checksum_location='version_metadata',nest = None):
     """
     Calculate the checksum for dictionary and add it to the Header
 
@@ -28,14 +28,20 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
             raise RuntimeError('Checksum already exists.')
         # del dictionary[checksum_location]['checksum']
         # blank the checksum rather than deleting it. This keeps the order. 
-        dictionary[checksum_location]['checksum'] = '' 
+        if nest:
+            dictionary[checksum_location][nest]['checksum'] = '' 
+        else:
+            dictionary[checksum_location]['checksum'] = '' 
 
     checksum = _checksum(dictionary)
-    dictionary[checksum_location]['checksum'] = checksum
+    if nest: 
+        dictionary[checksum_location][nest]['checksum'] = checksum
+    else:
+        dictionary[checksum_location]['checksum'] = checksum
     return dictionary
 
 
-def validate_checksum(dictionary, checksum_location='version_metadata'):
+def validate_checksum(dictionary, checksum_location='version_metadata',error = False):
     """
     Validate the checksum in the ``dictionary``.
 
@@ -53,16 +59,20 @@ def validate_checksum(dictionary, checksum_location='version_metadata'):
     RuntimeError
         If the ``checksum`` value is invalid.
     """
-    if 'checksum' not in dictionary[checksum_location]:
+    if (error) & ('checksum' not in dictionary[checksum_location]):
         raise KeyError('No checksum to validate')
     dictionary_copy = deepcopy(dictionary)
-    del dictionary_copy[checksum_location]['checksum']
+    try:del dictionary_copy[checksum_location]['checksum']
+    except:...
     checksum = _checksum(dictionary_copy)
-    if dictionary[checksum_location]['checksum'] != checksum:
-        msg = ('Expected checksum   "{}"\n'
-               'Calculated checksum "{}"').format(dictionary[checksum_location]['checksum'],
-                                                  checksum)
-        raise RuntimeError(msg)
+    if dictionary[checksum_location].get('checksum','no_checksum') != checksum:
+        if error:
+            msg = ('Expected checksum   "{}"\n'
+                'Calculated checksum "{}"').format(dictionary[checksum_location]['checksum'],
+                                                    checksum)
+            raise RuntimeError(msg)
+        else: return False 
+    return True
 
 
 def _checksum(obj):
