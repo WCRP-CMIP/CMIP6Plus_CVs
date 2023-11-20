@@ -4,13 +4,13 @@
             "CV_collection_version": "6.5.0.0",
             "CV_collection_modified": "2023-06-23T11:50:16Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
-            "specs_doc": "v6.5.f0"
+            "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 2bb6dbcd323c51cf573094164fbe4a20",
-            "DRS_update_commit": "36a88685be93ada2a6d9bb683bcc2018bbcb5e8f",
-            "DRS_modified": "Mon Nov 20 15:31:02 2023 +0000",
-            "DRS_note": "Testing the github action on DRS"
+            "checksum": "md5: 8493b96a68f41775a697b440e0c23826",
+            "DRS_update_commit": "9d33edb6d0fc6bd8238da467e58395aca10ace0e",
+            "DRS_modified": "Mon Nov 20 15:39:07 2023 +0000",
+            "DRS_note": "Testing the GitHub Actions using DRS"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
