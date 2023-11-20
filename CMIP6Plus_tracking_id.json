@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: dd87eeb88a006506f9475ee42b66d28b",
+            "checksum": "md5: 38a304b866cd7607ef26ea192bc32459",
             "tracking_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "tracking_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "tracking_id_note": "Minor tweaks to structure of CVs"
@@ -17,9 +17,5 @@
     },
     "tracking_id": [
         "hdl:21.14100/.*"
-    ],
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
-    }
+    ]
 }
