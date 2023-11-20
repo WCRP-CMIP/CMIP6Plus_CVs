@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 9861a71026b961d280e664fb49945457",
+            "checksum": "md5: 4ecc9ad5c1d6fb2e0618d3b2b52cd37c",
             "source_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "source_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "source_id_note": "Minor tweaks to structure of CVs"
@@ -74,9 +74,5 @@
             "release_year": "2016",
             "source_id": "HadGEM3-GC31-LL"
         }
-    },
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
     }
 }
