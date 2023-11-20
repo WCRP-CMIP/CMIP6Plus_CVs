@@ -1,6 +1,12 @@
 name: Generate CV file
 
 on:
+  workflow_run:
+    workflows: ["File Versioning"]
+    types:
+      - completed
+
+
   push:
     branches:
       - '*'
