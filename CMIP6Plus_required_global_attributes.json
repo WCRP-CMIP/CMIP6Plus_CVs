@@ -1,42 +1,53 @@
 {
-  "Header": {
-    "CV_collection_modified": "2023-11-17",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Daniel Ellis <daniel.ellis@ext.esa.int>",
-    "checksum": "",
-    "institution_id": "CMIP-IPO",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "required_global_attributes": [
-    "Conventions",
-    "activity_id",
-    "creation_date",
-    "data_specs_version",
-    "experiment",
-    "experiment_id",
-    "forcing_index",
-    "frequency",
-    "grid",
-    "grid_label",
-    "initialization_index",
-    "institution",
-    "institution_id",
-    "license",
-    "mip_era",
-    "nominal_resolution",
-    "physics_index",
-    "product",
-    "realization_index",
-    "realm",
-    "source",
-    "source_id",
-    "source_type",
-    "sub_experiment",
-    "sub_experiment_id",
-    "table_id",
-    "tracking_id",
-    "variable_id",
-    "variant_label"
-  ]
+    "Header": {
+        "collection": {
+            "CV_collection_version": "6.5.0.0",
+            "CV_collection_modified": "2023-06-23T11:50:16Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: 35897351815f085a7a566e57375ec3d8",
+            "required_global_attributes_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
+            "required_global_attributes_modified": "Thu Mar 9 13:18:57 2023 +0000",
+            "required_global_attributes_note": "Minor tweaks to structure of CVs"
+        },
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
+    },
+    "required_global_attributes": [
+        "Conventions",
+        "activity_id",
+        "creation_date",
+        "data_specs_version",
+        "experiment",
+        "experiment_id",
+        "forcing_index",
+        "frequency",
+        "grid",
+        "grid_label",
+        "initialization_index",
+        "institution",
+        "institution_id",
+        "license",
+        "mip_era",
+        "nominal_resolution",
+        "physics_index",
+        "product",
+        "realization_index",
+        "realm",
+        "source",
+        "source_id",
+        "source_type",
+        "sub_experiment",
+        "sub_experiment_id",
+        "table_id",
+        "tracking_id",
+        "variable_id",
+        "variant_label"
+    ],
+    "version_metadata": {
+        "checksum": "",
+        "commit": ""
+    }
 }
