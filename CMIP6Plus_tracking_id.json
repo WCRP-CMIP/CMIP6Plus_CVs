@@ -1,14 +1,25 @@
 {
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: f26f4d1c70643d47eced87583272f081",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "tracking_id": [
-    "hdl:21.14100/.*"
-  ]
+    "Header": {
+        "collection": {
+            "CV_collection_version": "6.5.0.0",
+            "CV_collection_modified": "2023-06-23T11:50:16Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: dd87eeb88a006506f9475ee42b66d28b",
+            "tracking_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
+            "tracking_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
+            "tracking_id_note": "Minor tweaks to structure of CVs"
+        },
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
+    },
+    "tracking_id": [
+        "hdl:21.14100/.*"
+    ],
+    "version_metadata": {
+        "checksum": "",
+        "commit": ""
+    }
 }
