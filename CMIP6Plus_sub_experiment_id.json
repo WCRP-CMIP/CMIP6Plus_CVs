@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 076184c9e4709cc57803497908a11214",
+            "checksum": "md5: 85586cfd1c2306afd03a9edf2bcb8612",
             "sub_experiment_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
             "sub_experiment_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
             "sub_experiment_id_note": "Minor tweaks to structure of CVs"
@@ -18,9 +18,5 @@
     "sub_experiment_id": {
         "f2023": "Forcings 2023",
         "none": "none"
-    },
-    "version_metadata": {
-        "checksum": "",
-        "commit": ""
     }
 }
