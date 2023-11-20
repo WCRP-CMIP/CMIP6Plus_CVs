@@ -128,7 +128,7 @@ def notnull(dictionary, keys,replace='none'):
 
 Additional = {'realization_index': ['^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$'],
  'variant_label': ['r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$'],
- 'Conventions': ['^CF-1.7 CMIP-6.[0-3]\\( UGRID-1.0\\)\\{0,\\}$'],
+ 'Conventions': ['^CF-1.7 CMIP-6.[0-2,5]\\( UGRID-1.0\\)\\{0,\\}$'],
  'forcing_index': ['^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$'],
  'initialization_index': ['^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$'],
  'physics_index': ['^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$']}
