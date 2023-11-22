@@ -75,9 +75,10 @@ jobs:
         run: |
           count=$(jq ".experiment_id | length" *_experiment_id.json)
           echo "experiment_id=${count}"
-          echo "experiment_id=${count}" >> $GITHUB_ENV
-          # echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
-        
+          echo "experiment=${count}" >> $GITHUB_ENV
+          echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+          echo "experiment_id=${count}"
+          
           count=$(jq ".source_id | length" *_source_id.json)
           echo "source_id=${count}" >> $GITHUB_ENV
           # echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
