@@ -81,9 +81,9 @@ jobs:
       - name: Update README
         run: |
           readme_section="<td><strong>Repository Contents</strong></td>
-          <td><img src='https://img.shields.io/badge/Activities-%20${{activity_id}}%20-purple'>
-          <img src='https://img.shields.io/badge/Experiments-%20${{experiment_id}}%20-coral'>
-          <img src='https://img.shields.io/badge/Sources-%20${{source_id}}%20-blue'></td>"
+          <td><img src='https://img.shields.io/badge/Activities-%20${activity_id}%20-purple'>
+          <img src='https://img.shields.io/badge/Experiments-%20${experiment_id}%20-coral'>
+          <img src='https://img.shields.io/badge/Sources-%20${source_id}%20-blue'></td>"
 
             sed -i "/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/c\\$readme_section" README.md
 
