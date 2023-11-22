@@ -76,7 +76,7 @@ jobs:
 
           # for key in "${keys[@]}"; do
 
-          for key in "experiment_id","source_id","activity_id"
+          for key in "experiment_id" "source_id" "activity_id"
           do
             count=$(jq ".${key}|length" *_${key}.json)
             echo "${key}=${count}" >> $GITHUB_ENV
