@@ -73,11 +73,17 @@ jobs:
         env:
           keys: experiment_id source_id activity_id
         run: |
-          for key in experiment_id source_id activity_id; do
-            count=$(jq ".${key} | length" *_${key}.json)
-            echo "${key}=${count}" >> $GITHUB_ENV
-            echo "${key} length = ${count}" >> $GITHUB_STEP_SUMMARY
-          done
+          count=$(jq ".experiment_id | length" *_experiment_id.json)
+          echo "experiment_id=${count}" >> $GITHUB_ENV
+          echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+        
+          count=$(jq ".source_id | length" *_source_id.json)
+          echo "source_id=${count}" >> $GITHUB_ENV
+          echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+        
+          count=$(jq ".activity_id | length" *_activity_id.json)
+          echo "activity_id=${count}" >> $GITHUB_ENV
+          echo "activity_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         shell: bash  
 
       - name: Show Updated Counts
