@@ -74,21 +74,19 @@ jobs:
           keys: experiment_id source_id activity_id
         run: |
           count=$(jq ".experiment_id | length" *_experiment_id.json)
+          echo "experiment_id=${count}"
           echo "experiment_id=${count}" >> $GITHUB_ENV
-          echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+          # echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         
           count=$(jq ".source_id | length" *_source_id.json)
           echo "source_id=${count}" >> $GITHUB_ENV
-          echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+          # echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         
           count=$(jq ".activity_id | length" *_activity_id.json)
           echo "activity_id=${count}" >> $GITHUB_ENV
-          echo "activity_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+          # echo "activity_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         shell: bash  
 
-      - name: Show Updated Counts
-        run: |
-          cat $GITHUB_ENV
 
       - name: Update README
         run: |
