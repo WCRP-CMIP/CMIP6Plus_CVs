@@ -71,6 +71,7 @@ jobs:
 
       - name: Read JSON files and Update Counts
         run: |
+          set -x
           keys=("experiment_id" "source_id" "activity_id")
     
           for key in "${keys[@]}"; do
@@ -78,7 +79,7 @@ jobs:
             echo "${key}=${count}" >> $GITHUB_ENV
             echo "${key} length = ${count}" >> $GITHUB_STEP_SUMMARY
           done
-        shell: bash  
+        shell: /bin/bash  
 
       - name: Show Updated Counts
         run: |
