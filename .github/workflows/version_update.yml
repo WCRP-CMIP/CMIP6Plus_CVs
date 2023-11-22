@@ -70,24 +70,19 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Read JSON files and Update Counts
-        env:
-          keys: experiment_id source_id activity_id
         run: |
-          count=$(jq ".experiment_id | length" *_experiment_id.json)
-          echo "experiment_id=${count}"
-          echo "experiment=${count}" >> $GITHUB_ENV
-          echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
-          echo "experiment_id=${count}"
-
-          count=$(jq ".source_id | length" *_source_id.json)
-          echo "sourceid=${count}" >> $GITHUB_ENV
-          # echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
-        
-          count=$(jq ".activity_id | length" *_activity_id.json)
-          echo "activityid=${count}" >> $GITHUB_ENV
-          # echo "activity_id length = ${count}" >> $GITHUB_STEP_SUMMARY
+          keys=("experiment_id" "source_id" "activity_id")
+    
+          for key in "${keys[@]}"; do
+            count=$(jq ".${key} | length" *_${key}.json)
+            # echo "${key}=${count}" >> $GITHUB_ENV
+            echo "${key} length = ${count}" >> $GITHUB_STEP_SUMMARY
+          done
         shell: bash  
 
+      - name: Show Updated Counts
+        run: |
+          cat $GITHUB_ENV
 
       - name: Update README
         run: |
