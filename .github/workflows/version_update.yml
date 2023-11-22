@@ -95,6 +95,6 @@ jobs:
           git commit -m "Updating repository description. "
 
       - name: Push Changes
-        uses: ad-m/github-push-action@v0.8.1
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
