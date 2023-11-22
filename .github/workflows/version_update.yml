@@ -78,13 +78,13 @@ jobs:
           echo "experiment=${count}" >> $GITHUB_ENV
           echo "experiment_id length = ${count}" >> $GITHUB_STEP_SUMMARY
           echo "experiment_id=${count}"
-          
+
           count=$(jq ".source_id | length" *_source_id.json)
-          echo "source_id=${count}" >> $GITHUB_ENV
+          echo "sourceid=${count}" >> $GITHUB_ENV
           # echo "source_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         
           count=$(jq ".activity_id | length" *_activity_id.json)
-          echo "activity_id=${count}" >> $GITHUB_ENV
+          echo "activityid=${count}" >> $GITHUB_ENV
           # echo "activity_id length = ${count}" >> $GITHUB_STEP_SUMMARY
         shell: bash  
 
