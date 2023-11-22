@@ -71,12 +71,13 @@ jobs:
 
       - name: Read JSON files and Update Counts
         run: |
-            keys=("experiment_id" "source_id" "activity_id")
+          keys=("experiment_id" "source_id" "activity_id")
 
-            for key in "${keys[@]}"; do
-              count=$(jq ".${key}|length" *_${key}.json)
-              echo "${key}=${count}" >> $GITHUB_ENV
-            done
+          for key in "${keys[@]}"; do
+            count=$(jq ".${key}|length" *_${key}.json)
+            echo "${key}=${count}" >> $GITHUB_ENV
+          done
+        shell: bash
 
       - name: Show Updated Counts
         run: |
@@ -89,7 +90,8 @@ jobs:
           <img src='https://img.shields.io/badge/Experiments-%20${experiment_id}%20-coral'>
           <img src='https://img.shields.io/badge/Sources-%20${source_id}%20-blue'></td>"
 
-            sed -i "/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/c\\$readme_section" README.md
+          sed -i "/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/c\\$readme_section" README.md
+        shell: bash
 
       - name: Commit Changes
         run: |
