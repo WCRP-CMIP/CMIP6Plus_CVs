@@ -19,9 +19,16 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
         </tr>
         <tr>
             <td><strong>Repository Contents</strong></td>
-<td><img src='https://img.shields.io/badge/Activities-%202%20-purple'>
-<img src='https://img.shields.io/badge/Experiments-%2022%20-coral'>
-<img src='https://img.shields.io/badge/Sources-%201%20-blue'></td>
+            <td><img src='https://img.shields.io/badge/activities-%204%20-purple'>
+            <img src='https://img.shields.io/badge/experiments-%204%20-red'></td>
+        </tr end=true>
+        <tr>
+            <td><strong>Interactions</strong></td>
+            <td><img src='https://img.shields.io/github/discussions/WCRP-CMIP/CMIP6Plus_CVs?label=Discussions'>
+            <img src='https://img.shields.io/github/issues/WCRP-CMIP/CMIP6Plus_CVs?label=Requests'>
+            <img src="https://img.shields.io/github/contributors/WCRP-CMIP/CMIP6Plus_CVs">
+            <img src='https://img.shields.io/github/commit-activity/m/WCRP-CMIP/CMIP6Plus_CVs?label=Commit%20Activity'></td>
+        </tr>
     </table>
 </div>
 
