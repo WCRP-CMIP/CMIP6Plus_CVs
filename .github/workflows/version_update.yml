@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: version_changes
-          path: .
+          path: .*.json
 
       # - name: Write Changes
       #   run: |
@@ -121,7 +121,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: readme_changes
-          path: .
+          path: .README.md
 
       # - name: Push Changes
       #   uses: ad-m/github-push-action@master
