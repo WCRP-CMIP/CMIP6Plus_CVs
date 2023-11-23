@@ -1,8 +1,13 @@
 # CMIP6Plus_CVs
+![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
+![Versioning](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main)
+
+
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
-### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
+# 
+
 
 To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/model-intercomparison-projects-mips/) page on the CMIP website.
 
@@ -10,11 +15,18 @@ To see a listing of currently active or planning activities/MIPs, please review 
 
 To register your institution or model or to register a new activity/MIP or experiment, please submit an issue/ticket following the instructions on the [CMIP6Plus_CVs issue page](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/issues/new). Follow the same procedure to request a change in any other CV.
 
+## Automatic generation of CV files. 
+With every update to this repository a new CV file is generated to reflect the changes. This can be found at `CVs/CMIP6PLUS_CV.json`. 
+
+With every new release (see versioning description), a copy of the latest active `CMIP6PLUS_CV.json` will be archived in the CVs directory with the format: `CMIP6PLUS_CV_<tag_number>.json`.
+
+
 ## Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=WCRP-CMIP/CMIP6Plus_CVs)](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/graphs/contributors)
 
 Thanks to our contributors!
+
 
 ## Acknowledgement
 
