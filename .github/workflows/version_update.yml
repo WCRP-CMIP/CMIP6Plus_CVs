@@ -76,6 +76,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Set up Git
+        run: |
+          git config user.email "actions@wcrp-cmip.org"
+          git config user.name "CMIP-IPO: Automated GitHub Action"
+          git config credential.helper store
+          git config --global user.email "actions@wcrp-cmip.org"
+          git config --global user.name "CMIP-IPO GitHub Action"
+          git config --global push.default current
+          echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        shell: bash
+
       - name: Download Changes - Job 1
         uses: actions/download-artifact@v2
         with:
@@ -111,8 +122,6 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config --global user.email "actions@wcrp-cmip.org"
-          git config --global user.name "CMIP-IPO GitHub Action"
           git add README.md
           git commit -m "Updating repository description. "
           git pull 
@@ -129,7 +138,7 @@ jobs:
 
   # push :
   #   runs-on: ubuntu-latest
-  #   needs: [ update_readme , update_versioning]
+  #   needs: [  update_versioning,update_readme ,]
   #   steps:
 
   #     - name: Checkout Repository
