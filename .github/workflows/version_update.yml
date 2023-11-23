@@ -120,7 +120,6 @@ jobs:
 
           perl -0777 -i -pe "s|<td><strong>Repository Contents</strong></td>.*?</tr>|${readme_section}|s" README.md
 
-
         shell: bash
 
       - name: Commit Changes
@@ -130,7 +129,7 @@ jobs:
           git config pull.rebase true 
           # git pull origin $(git rev-parse --abbrev-ref HEAD)
           
-          
+
           git pull 
           git push origin $(git rev-parse --abbrev-ref HEAD)
         continue-on-error: true
