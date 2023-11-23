@@ -58,12 +58,16 @@ jobs:
 
           # Compare the dates
           if [ "$latest_commit_date" \< "$last_modification_date" ]; then
-            echo "The latest commit is older than the last modification date for the file."
-            exit 0  # Successful termination
+            echo "The latest commit is older than the last modification date for the file. "
+
+            echo "EXIT=true" >> $GITHUB_ENV
+            
           else
-            echo "The latest commit is not older than the last modification date for the file. Continuing"
-            # exit 1  # Unsuccessful termination
+            echo "The latest commit is not older than the last modification date for the file."
           fi
+          
+
+              
 
 
 
@@ -118,14 +122,17 @@ jobs:
         run: |
           if [ -z "$ACT" ]; then
             echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
-              echo "Removing output CMIP6Plus_CV.json"
-              rm -f CVs/CMIP6Plus_CV.json
-              git add -A 
-              git commit -m 'Remove CMIP6Plus_CV.json'
-              git push origin $(git rev-parse --abbrev-ref HEAD)
-            else
-              mkdir -p CVs
+
+            if [ ! "$EXIT" ]; then
+              if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+                echo "Removing output CMIP6Plus_CV.json"
+                rm -f CVs/CMIP6Plus_CV.json
+                git add -A 
+                git commit -m 'Remove CMIP6Plus_CV.json'
+                git push origin $(git rev-parse --abbrev-ref HEAD)
+              else
+                mkdir -p CVs
+              fi
             fi
           else
             echo "Skipping this step in 'act' environment."
@@ -136,18 +143,16 @@ jobs:
       - name: Print latest commit SHA
         id: commit_sha
         run: |
-          commit='ds'
-          echo "COMMITS='hello'" >> $GITHUB_ENV 
-          echo "COMMITS=hello" >> $GITHUB_OUTPUT 
-          echo "$(git rev-parse HEAD)"
           echo "commit=$(git rev-parse HEAD)" >> $GITHUB_ENV
         shell: bash
   
 
       - name: Run Python Check
         id: 'run-python-script'
-        run: python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
-        # env.GH_TOKEN
+        run: |
+          if [ ! "$EXIT" ]; then
+            python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+          fi
         working-directory: .github/libs
         env:
           PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
@@ -179,13 +184,15 @@ jobs:
       - name: Write new CV
         run: |
           if [ -z "$ACT" ]; then
-            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-            if [ -e "CVs/CMIP6Plus_CV.json" ]; then
-              current_datetime=$(date +"%Y-%m-%d %H:%M")
-              git add -A 
-              git add -f CVs/CMIP6Plus_CV.json
-              git commit -m "Automatically generated CV.json: $current_datetime"
-              git push origin $(git rev-parse --abbrev-ref HEAD)
+            if [ ! "$EXIT" ]; then
+              echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+              if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+                current_datetime=$(date +"%Y-%m-%d %H:%M")
+                git add -A 
+                git add -f CVs/CMIP6Plus_CV.json
+                git commit -m "Automatically generated CV.json: $current_datetime"
+                git push origin $(git rev-parse --abbrev-ref HEAD)
+              fi
             fi
           else
             echo "Skipping this step in 'act' environment."
@@ -199,16 +206,6 @@ jobs:
           pwd
           ls -al
 
-      - name: View JSON file with jq
-        run: |
-          if [ -n "$ACT" ]; then
-            # fx -y < CVs/CMIP6Plus_CV.json
-            # jq  '.' CVs/CMIP6Plus_CV.json 
-            echo "jghjgh  $(steps.commit_sha.outputs.COMMITS) ${COMMITS} kl"
-          fi
-        shell: bash
-
-        
 
       - name: If using act detach -b for debugging
         run: |
