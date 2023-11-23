@@ -3,7 +3,7 @@ name: File Versioning
 on:
   push:
     branches:
-      - '*'
+      - 'main'
     tags:
       - '*'
 
