@@ -78,10 +78,10 @@ jobs:
 
 
 
-      - name: Download Changes - Job 1
-        uses: actions/download-artifact@v2
-        with:
-          name: version_changes
+      # - name: Download Changes - Job 1
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: version_changes
 
 
       - name: Set up Git
