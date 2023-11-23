@@ -92,7 +92,7 @@ jobs:
           <img src='https://img.shields.io/badge/Experiments-%20${experiment_id}%20-coral'>
           <img src='https://img.shields.io/badge/Sources-%20${source_id}%20-blue'></td>"
 
-          perl -0777 -i -pe "s|<td><strong>Repository Contents</strong></td>.*?</tr>|${{readme_section}}|s" README.md
+          perl -0777 -i -pe "s|<td><strong>Repository Contents</strong></td>.*?</tr>|${readme_section}|s" README.md
 
 
         shell: bash
