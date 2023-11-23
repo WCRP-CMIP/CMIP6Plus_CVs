@@ -135,13 +135,21 @@ jobs:
           echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
         shell: bash
 
-      - name: Write Changes
+      - name: Read Changes
         run: |
           if [ -z "$ACT" ]; then
             git pull
-            # git add -A 
-            # git commit -m "Automated update of metadata"
-            git push origin $(git rev-parse --abbrev-ref HEAD)
+          else
+            echo "Skipping this step in 'act' environment."
+          fi
+        shell: bash
+        continue-on-error: true
+
+        - name: Write Changes
+        run: |
+          if [ -z "$ACT" ]; then
+            # git push origin $(git rev-parse --abbrev-ref HEAD)
+            git push
           else
             echo "Skipping this step in 'act' environment."
           fi
