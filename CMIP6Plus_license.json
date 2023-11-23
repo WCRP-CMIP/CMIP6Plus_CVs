@@ -1,14 +1,21 @@
 {
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: 796aef0080e78a08aaea5811074435a1",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "license": [
-    "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file).*\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
-  ]
+    "Header": {
+        "collection": {
+            "CV_collection_version": "6.5.0.0",
+            "CV_collection_modified": "2023-06-23T11:50:16Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: f6ce4dc3842d6d5c4f7f3d2ca74da79f",
+            "license_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
+            "license_modified": "Thu Mar 9 13:18:57 2023 +0000",
+            "license_note": "Minor tweaks to structure of CVs"
+        },
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
+    },
+    "license": [
+        "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
+    ]
 }
