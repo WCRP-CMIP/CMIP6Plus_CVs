@@ -127,6 +127,7 @@ jobs:
         run: |
           git add README.md
           git commit -m "Updating repository description."
+          git config pull.ff only
           git pull origin $(git rev-parse --abbrev-ref HEAD)
           
           git push origin $(git rev-parse --abbrev-ref HEAD)
