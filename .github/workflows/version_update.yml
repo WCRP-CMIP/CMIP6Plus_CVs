@@ -92,7 +92,14 @@ jobs:
           <img src='https://img.shields.io/badge/Experiments-%20${experiment_id}%20-coral'>
           <img src='https://img.shields.io/badge/Sources-%20${source_id}%20-blue'></td>"
 
-          sed -i "/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/c\\$readme_section" README.md
+          # Use printf to preserve newlines in the variable
+          printf "%s" "$readme_section" > readme_section.txt
+
+          # Use sed to replace the section in README.md
+          sed -i -e '/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/{/td><\/tr>/r readme_section.txt' -e 'd' README.md
+
+          # Remove temporary file
+          rm readme_section.txt
         shell: bash
 
       - name: Commit Changes
