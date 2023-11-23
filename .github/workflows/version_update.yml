@@ -92,7 +92,8 @@ jobs:
           <img src='https://img.shields.io/badge/Experiments-%20${experiment_id}%20-coral'>
           <img src='https://img.shields.io/badge/Sources-%20${source_id}%20-blue'></td>"
 
-          sed -i "/<td><strong>Repository Contents<\/strong><\/td>/,/<\/tr>/c\\$readme_section" README.md
+          sed -i -e "\@<td><strong>Repository Contents</strong></td>@,/<\/tr>/c\\$readme_section" README.md
+
         shell: bash
 
       - name: Commit Changes
