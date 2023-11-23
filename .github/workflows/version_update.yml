@@ -125,7 +125,8 @@ jobs:
           git add README.md
           git commit -m "Updating repository description. "
           git pull 
-          git push
+          
+          git push origin $(git rev-parse --abbrev-ref HEAD)
         continue-on-error: true
          
 
