@@ -1,10 +1,42 @@
 # CMIP6Plus_CVs
-![CV creation](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main) 
-![Versioning](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main)
-
-
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
+#
+
+
+<div align="center" style="width:100%">
+    <table>
+        <tr>
+            <td><strong>Description</strong></td>
+            <td><img src='https://img.shields.io/github/release/WCRP-CMIP/CMIP6Plus_CVs?label=CV%20Version%20%5Blatest%5D'>
+            <img src='https://img.shields.io/github/release/PCMDI/cmor?label=CMOR%20Version&color=green'>
+            <img src='https://img.shields.io/github/release/PCMDI/mip-cmor-tables?label=MIP%20Table%20Version&color=purple'></td>
+        </tr>
+        <tr>
+            <td><strong>Repository Status</strong></td>
+            <td><img src='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main'>
+            <img src='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main'></td>
+        </tr>
+        <tr>
+            <td><strong>Repository Contents</strong></td>
+<td><img src='https://img.shields.io/badge/Activities-%202%20-purple'>
+<img src='https://img.shields.io/badge/Experiments-%2022%20-coral'>
+<img src='https://img.shields.io/badge/Sources-%201%20-blue'></td></tr end>
+        <tr>
+            <td><strong>Interactions</strong></td>
+            <td><img src='https://img.shields.io/github/discussions/WCRP-CMIP/CMIP6Plus_CVs?label=Discussions'>
+            <img src='https://img.shields.io/github/issues/WCRP-CMIP/CMIP6Plus_CVs?label=Requests'>
+            <img src="https://img.shields.io/github/contributors/WCRP-CMIP/CMIP6Plus_CVs">
+            <img src='https://img.shields.io/github/commit-activity/m/WCRP-CMIP/CMIP6Plus_CVs?label=Commit%20Activity'></td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+
+
+
 
 # 
 
