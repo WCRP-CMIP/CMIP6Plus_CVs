@@ -76,6 +76,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+
+
+      - name: Download Changes - Job 1
+        uses: actions/download-artifact@v2
+        with:
+          name: version_changes
+
+
       - name: Set up Git
         run: |
           git config user.email "actions@wcrp-cmip.org"
@@ -86,11 +94,6 @@ jobs:
           git config --global push.default current
           echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
         shell: bash
-
-      - name: Download Changes - Job 1
-        uses: actions/download-artifact@v2
-        with:
-          name: version_changes
 
       - name: Read JSON files and Update Counts
         run: |
