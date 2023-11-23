@@ -139,8 +139,9 @@ jobs:
         run: |
           if [ -z "$ACT" ]; then
             git pull
-            # git push origin $(git rev-parse --abbrev-ref HEAD)
-            git push 
+            git add -A 
+            git commit -m "Automated update of metadata"
+            git push origin $(git rev-parse --abbrev-ref HEAD)
           else
             echo "Skipping this step in 'act' environment."
           fi
