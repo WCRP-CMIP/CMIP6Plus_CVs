@@ -70,7 +70,7 @@ jobs:
 
   update_readme:
     runs-on: ubuntu-latest
-    # needs: update_versioning
+    needs: update_versioning
 
     steps:
       - name: Checkout Repository
