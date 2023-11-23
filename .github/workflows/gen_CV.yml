@@ -60,10 +60,16 @@ jobs:
           if [ "$latest_commit_date" \< "$last_modification_date" ]; then
             echo "The latest commit is older than the last modification date for the file. I shall continue. "
             # exit 1  # Unsuccessful termination
+            gh run cancel ${{ github.run_id }}
+            gh run watch ${{ github.run_id }}
+            
           else
             echo "The latest commit is not older than the last modification date for the file. Skipping"
             exit 0  # Successful termination
           fi
+          
+
+              
 
 
 
