@@ -45,6 +45,27 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
     
+      - name: Is run necessary
+        run: |
+          # This is a useful way to only run the script on branches that need it. 
+          file_path="CVs/CMIP6Plus_CV.json"
+
+          # Get the latest commit date for the repository
+          latest_commit_date=$(git log -n 1 --format=%cd)
+
+          # Get the last modification date for the specified file
+          last_modification_date=$(git log -1 --format=%ad -- "$file_path")
+
+          # Compare the dates
+          if [ "$latest_commit_date" \< "$last_modification_date" ]; then
+            echo "The latest commit is older than the last modification date for the file."
+            exit 0  # Successful termination
+          else
+            echo "The latest commit is not older than the last modification date for the file. Continuing"
+            # exit 1  # Unsuccessful termination
+          fi
+
+
 
       # - name: Install NPM
       #   uses: actions/setup-node@v3
