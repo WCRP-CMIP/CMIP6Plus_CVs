@@ -104,9 +104,10 @@ jobs:
           git pull
           git add README.md
           git commit -m "Updating repository description. "
+          git push 
 
 
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Push Changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
