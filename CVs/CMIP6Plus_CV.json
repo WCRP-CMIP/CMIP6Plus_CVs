@@ -823,16 +823,16 @@
             }
         },
         "source_type": [
+            "CHEM",
             "LAND",
             "AER",
-            "CHEM",
-            "SLAB",
             "RAD",
-            "ISM",
-            "BGC",
             "OGCM",
+            "BGC",
+            "ISM",
+            "AGCM",
             "AOGCM",
-            "AGCM"
+            "SLAB"
         ],
         "sub_experiment_id": {
             "f2023": "Forcings 2023",
@@ -925,12 +925,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Nov 23 2023 00:26 UTC",
-            "checksum": "md5: baf4ee0049f08140a44ec40014704be0",
+            "file_updated": "Thu Nov 23 2023 00:28 UTC",
+            "checksum": "md5: 4c301ac839073c3356d837eb0c116460",
             "CVs": {
-                "updated": "2023-11-23T00:25:48Z",
+                "updated": "2023-11-23T00:28:07Z",
                 "tag": "v6.5.0.0",
-                "commit": "fafa3831e12a95f94b5b78af77d41f9c3b9a66bd"
+                "commit": "6b210a19c25d82a760714042ba6650d133a36b9a"
             },
             "MIP tables": {
                 "updated": "2023-11-21T11:12:49Z",
