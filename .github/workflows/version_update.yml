@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: version_changes
-          path: .*.json
+          path: .
 
       # - name: Write Changes
       #   run: |
