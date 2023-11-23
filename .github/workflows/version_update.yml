@@ -99,8 +99,8 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --global user.email "actions@wcrp-cmip.org"
+          git config --global user.name "CMIP-IPO GitHub Action"
           git pull
           git add README.md
           git commit -m "Updating repository description. "
