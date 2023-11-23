@@ -139,7 +139,8 @@ jobs:
         run: |
           if [ -z "$ACT" ]; then
             git pull
-            git push origin $(git rev-parse --abbrev-ref HEAD)
+            # git push origin $(git rev-parse --abbrev-ref HEAD)
+            git push 
           else
             echo "Skipping this step in 'act' environment."
           fi
