@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: e5faa1bdf3945f4e6d3b152147fcbfba",
-            "experiment_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "experiment_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "experiment_id_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: 0d5e47506a249720c8001d544db4d3b4",
+            "experiment_id_update_commit": "86a24485870677b17a3e03c1405dc83e593c0bff",
+            "experiment_id_modified": "Thu Nov 23 01:51:59 2023 +0000",
+            "experiment_id_note": "Adding repository badges with actions to update.  (#28)"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "experiment_id": {
         "1pctCO2": {
