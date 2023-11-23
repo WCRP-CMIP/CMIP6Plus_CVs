@@ -3,7 +3,7 @@ name: File Versioning
 on:
   push:
     branches:
-      - '*'
+      - 'main'
     tags:
       - '*'
 
@@ -129,10 +129,9 @@ jobs:
           git commit -m "Updating repository description."
           # git config pull.rebase true
           # git pull origin $(git rev-parse --abbrev-ref HEAD)
-          # git pull origin main
           
-          
-          git push -f origin $(git rev-parse --abbrev-ref HEAD)
+          git pull origin main
+          git push  origin $(git rev-parse --abbrev-ref HEAD)
         continue-on-error: true
          
 
