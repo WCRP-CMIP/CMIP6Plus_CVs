@@ -78,16 +78,12 @@ jobs:
       #     fail_on_error: # optional, default is true
 
       - name: Create Pull Request
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_USERNAME: jacobp100
         run: |
+            base_branch="main"
+            feature_branch="feature-branch"
 
-          github_username="jacobp100"
-          
-          # Set Git user config locally
-          git config --global user.email "${github_username}@users.noreply.github.com"
-          git config --global user.name "${github_username}"
-          base_branch="main"
-          feature_branch="feature-branch"
-
-          gh pr create --base $base_branch --head $feature_branch --title "Automated PR to Main" --body "This pull request was automatically created by a GitHub Actions workflow."
-
-            
+            gh pr create --base $base_branch --head $feature_branch --title "Automated PR to Main" --body "This pull request was automatically created by a GitHub Actions workflow." --reviewer $GITHUB_USERNAME
+      
