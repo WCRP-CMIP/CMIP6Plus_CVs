@@ -1,0 +1,19 @@
+name: Source_ID_dispatch
+
+on:
+  repository_dispatch:
+    types:
+      - source_id
+
+jobs:
+  process-payload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Print Payload
+        run: |
+          echo "Key: ${{ github.event.client_payload.key }}"
+          echo "AnotherKey: ${{ github.event.client_payload.anotherKey }}"
