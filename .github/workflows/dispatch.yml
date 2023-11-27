@@ -85,5 +85,8 @@ jobs:
             base_branch="main"
             feature_branch="feature-branch"
 
+            git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
+            git config --global user.name "${GITHUB_USERNAME}"
+
             gh pr create --base $base_branch --head $feature_branch --title "Automated PR to Main" --body "This pull request was automatically created by a GitHub Actions workflow." --reviewer $GITHUB_USERNAME
       
