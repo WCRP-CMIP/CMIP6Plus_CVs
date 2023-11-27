@@ -27,12 +27,22 @@ jobs:
             base_branch="main"
             new_branch="feature-branch"
             
+            # Set the GitHub username
+            github_username="wolfiex"
+            
+            # Set Git user config locally
+            git config user.email "${github_username}@users.noreply.github.com"
+            git config user.name "${github_username}"
+  
+
             # Create a new branch
             git checkout -b $new_branch
             
             # Create a new file (you can replace this with your actual file creation logic)
             echo "Hello, this is a new file." > new-file.txt
             
+
+
             # Commit and push the changes
             git add new-file.txt
             git commit -m "Add new file"
@@ -44,14 +54,23 @@ jobs:
               base_branch="main"
               feature_branch="feature-branch"
 
-              username=wolfiex
 
-              email = $(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/${{username}} | jq -r .email)
+            # Set the GitHub username
+            github_username="wolfiex"
+            
+            # Set Git user config locally
+            git config user.email "${github_username}@users.noreply.github.com"
+            git config user.name "${github_username}"
+    
 
-              echo " ii ${{username}} -- ${{email}}"
+            #   username=wolfiex
 
-              git config --global user.email "${{email}}"
-              git config --global user.name "${{username}}"
+            #   email = $(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/${{username}} | jq -r .email)
+
+            #   echo " ii ${{username}} -- ${{email}}"
+
+            #   git config --global user.email "${{email}}"
+            #   git config --global user.name "${{username}}"
               
               # Set the title and body of the pull request
               pr_title="Automated PR to Main"
