@@ -10,87 +10,70 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Checkout Repository
-          uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-        - name: Print Payload
-          run: |
-            echo "Recieved Payload:\n${{ github.event.client_payload }}" >> $GITHUB_STEP_SUMMARY
-            echo "Key: ${{ github.event.client_payload.key }}"
-            echo "AnotherKey: ${{ github.event.client_payload.anotherKey }}"
+      - name: Print Payload
+        run: |
+          echo "Received Payload:"
+          echo "Key: ${{ github.event.client_payload.key }}"
+          echo "AnotherKey: ${{ github.event.client_payload.anotherKey }}" >> $GITHUB_STEP_SUMMARY
 
+      - name: Create and push new branch
+        run: |
+          # Set the branch names
+          base_branch="main"
+          new_branch="feature-branch"
+          
+          # Set the GitHub username
+          github_username="wolfiex"
+          
+          # Set Git user config locally
+          git config user.email "${github_username}@users.noreply.github.com"
+          git config user.name "${github_username}"
 
+          # Create a new branch
+          git checkout -b $new_branch
+          
+          # Create a new file (replace with actual file creation logic)
+          echo "Hello, this is a new file." > new-file.txt
 
-        - name: Create and push new branch
-          run: |
-                # Set the branch names
-                base_branch="main"
-                new_branch="feature-branch"
-                
-                # Set the GitHub username
-                github_username="wolfiex"
-                
-                # Set Git user config locally
-                git config user.email "${github_username}@users.noreply.github.com"
-                git config user.name "${github_username}"
+          # Commit and push the changes
+          git add new-file.txt
+          git commit -m "Add new file"
+          git push origin $new_branch
 
+      - name: Create Pull Request to Main
+        run: |
+          # Set the branch names (do this globally)
+          base_branch="main"
+          feature_branch="feature-branch"
 
-                # Create a new branch
-                git checkout -b $new_branch
-                
-                # Create a new file (you can replace this with your actual file creation logic)
-                echo "Hello, this is a new file." > new-file.txt
-                
+          # Set the GitHub username
+          github_username="wolfiex"
+          
+          # Set Git user config locally
+          git config user.email "${github_username}@users.noreply.github.com"
+          git config user.name "${github_username}"
 
+          # Set the title and body of the pull request
+          pr_title="Automated PR to Main"
+          pr_body="This pull request was automatically created by a GitHub Actions workflow."
 
-                # Commit and push the changes
-                git add new-file.txt
-                git commit -m "Add new file"
-                git push origin $new_branch
+          # Set the GITHUB_TOKEN environment variable for authentication
+          export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
-        - name: Create Pull Request to Main
-          run: |
-                # Set the branch names (do this globally)
-                base_branch="main"
-                feature_branch="feature-branch"
+          # Create the pull request using GitHub REST API
+          response=$( \
+            curl -X POST \
+              -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Content-Type: application/json" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"title":"'$pr_title'","body":"'$pr_body'","head":"'$feature_branch'","base":"'$base_branch'"}' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/pulls" \
+          )
 
+          # Extract the pull request URL from the API response
+          pr_url=$(echo "$response" | jq -r .html_url)
 
-                # Set the GitHub username
-                github_username="wolfiex"
-                
-                # Set Git user config locally
-                git config user.email "${github_username}@users.noreply.github.com"
-                git config user.name "${github_username}"
-        
-
-                #   username=wolfiex
-
-                #   email = $(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/${{username}} | jq -r .email)
-
-                #   echo " ii ${{username}} -- ${{email}}"
-
-                #   git config --global user.email "${{email}}"
-                #   git config --global user.name "${{username}}"
-              
-                # Set the title and body of the pull request
-                pr_title="Automated PR to Main"
-                pr_body="This pull request was automatically created by a GitHub Actions workflow."
-
-                # Set the GITHUB_TOKEN environment variable for authentication
-                export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-
-                # Create the pull request using GitHub REST API
-                response=$( \
-                curl -X POST \
-                    -H "Authorization: token $GITHUB_TOKEN" \
-                    -H "Content-Type: application/json" \
-                    -H "Accept: application/vnd.github.v3+json" \
-                    -d '{"title":"'$pr_title'","body":"'$pr_body'","head":"'$feature_branch'","base":"'$base_branch'"}' \
-                    "https://api.github.com/repos/$GITHUB_REPOSITORY/pulls" \
-                )
-
-                # Extract the pull request URL from the API response
-                pr_url=$(echo "$response" | jq -r .html_url)
-
-                echo "Pull Request created successfully: $pr_url"
-                echo "Pull Request created successfully: $pr_url"
+          echo "Pull Request created successfully: $pr_url"
