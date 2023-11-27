@@ -51,7 +51,7 @@ jobs:
             feature_branch="feature-branch"
             
             # Set the GitHub username
-            github_username="wolfiex"
+            github_username="jacobp100"
             
             # Set Git user config locally
             git config user.email "${github_username}@users.noreply.github.com"
