@@ -43,6 +43,15 @@ jobs:
               # Set the branch names (do this globally)
               base_branch="main"
               feature_branch="feature-branch"
+
+              username=wolfiex
+
+              email = $(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/${{username}} | jq -r .email)
+
+              echo " ii ${{username}} -- ${{email}}"
+
+              git config --global user.email "${{email}}"
+              git config --global user.name "${{username}}"
               
               # Set the title and body of the pull request
               pr_title="Automated PR to Main"
