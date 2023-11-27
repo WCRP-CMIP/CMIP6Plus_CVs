@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 02e2f4c9d82faa430a286a3f48981480",
-            "tracking_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "tracking_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "tracking_id_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: 0080b35f268962937c18bd161f5c6d5a",
+            "tracking_id_update_commit": "bd9929685d3695a7a5babd02a2bcab1ea07dca82",
+            "tracking_id_modified": "Thu Nov 23 03:58:16 2023 +0000",
+            "tracking_id_note": "Adding repository badges with actions to update.  (#28)"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "tracking_id": [
         "hdl:21.14100/.*"
