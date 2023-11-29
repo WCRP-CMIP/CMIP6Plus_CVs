@@ -96,5 +96,5 @@ with open(filename,'r') as f:
     
 # write to file
 with open(filename,'w') as f:
-    json.dump(source, indent=4)
+    json.dump(source, f, indent=4)
     
