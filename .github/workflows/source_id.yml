@@ -63,7 +63,7 @@ jobs:
         run: |
 
           git pull 
-          git checkout -b $new_branch;
+          git checkout -b $feature_branch;
           
           content=$(python .github/libs/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
 
