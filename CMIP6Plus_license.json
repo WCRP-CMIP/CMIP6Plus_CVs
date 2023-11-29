@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 0ebc691d704459d5a3fa75539c375cf3",
-            "license_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "license_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "license_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: a8e057bf618868c998ad6bbb2bb9730c",
+            "license_update_commit": "05f38ecf5dfa6ed55eb21fb56c1931c012e6201d",
+            "license_modified": "Mon Nov 27 01:31:43 2023 +0000",
+            "license_note": "Webhook initiated workflow, with external user generated commits"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "license": [
         "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"

@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: ba728c74d866f11cb33557f8428fb31e",
-            "DRS_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "DRS_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "DRS_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: 7972c243dfdeb0963f1fb4caf53d1f1e",
+            "DRS_update_commit": "05f38ecf5dfa6ed55eb21fb56c1931c012e6201d",
+            "DRS_modified": "Mon Nov 27 01:31:43 2023 +0000",
+            "DRS_note": "Webhook initiated workflow, with external user generated commits"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "DRS": {
         "directory_path_example": "CMIP6Plus/CMIP/MOHC/HadGEM3-GC31-MM/historical/r1i1p1f3/Amon/tas/gn/v20191207/",

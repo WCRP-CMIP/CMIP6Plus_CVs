@@ -7,18 +7,19 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 3a7dcdad720116082ca47da52b485a6e",
-            "source_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "source_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "source_id_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: ffa8948ff7ec69ba5b6343dd7d6a7a99",
+            "source_id_update_commit": "f22e2ee50fe427d4035648df0605eea791cbb15c",
+            "source_id_modified": "Wed Nov 29 19:31:47 2023 +0000",
+            "source_id_note": "Adding LESFMIP to HadGEM3-GC31-LL"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "source_id": {
         "HadGEM3-GC31-LL": {
             "activity_participation": [
-                "CMIP"
+                "CMIP",
+                "LESFMIP"
             ],
             "cohort": [
                 "Published"

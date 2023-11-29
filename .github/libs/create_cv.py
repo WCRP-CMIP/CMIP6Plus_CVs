@@ -8,7 +8,7 @@ import argparse
 from collections import OrderedDict
 
 import sys
-from version_control import get_latest_commit
+from _functions import get_latest_commit
 from checksum_tools import calculate_checksum
 
 CV = OrderedDict()
