@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 00c1709245cef8aea96a09bbce865eec",
-            "source_id_update_commit": "05f38ecf5dfa6ed55eb21fb56c1931c012e6201d",
-            "source_id_modified": "Mon Nov 27 01:31:43 2023 +0000",
-            "source_id_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "md5: ffa8948ff7ec69ba5b6343dd7d6a7a99",
+            "source_id_update_commit": "f22e2ee50fe427d4035648df0605eea791cbb15c",
+            "source_id_modified": "Wed Nov 29 19:31:47 2023 +0000",
+            "source_id_note": "Adding LESFMIP to HadGEM3-GC31-LL"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
