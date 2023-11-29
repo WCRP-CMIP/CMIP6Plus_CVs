@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 6bb2e9766077c09a0ea784ef33990508",
-            "sub_experiment_id_update_commit": "05f38ecf5dfa6ed55eb21fb56c1931c012e6201d",
-            "sub_experiment_id_modified": "Mon Nov 27 01:31:43 2023 +0000",
+            "checksum": "md5: 07d6b987501421d63b282ba89cc81935",
+            "sub_experiment_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
+            "sub_experiment_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
             "sub_experiment_id_note": "Webhook initiated workflow, with external user generated commits"
         },
         "author": "Daniel Ellis",
