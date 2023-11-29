@@ -55,24 +55,24 @@ jobs:
       #     git add *source_id.json
       #     git commit -m "Adding a new source_id ${{ github.event.client_payload.name }}"
       #     git push origin $new_branch
-  
+       
       - name: Create Pull Request
         env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GITHUB_USERNAME: ${{ github.event.client_payload.author }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.event.client_payload.author }}
         run: |
-            content=$(python .github.lib/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
+          content=$(python .github.lib/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
 
-            base_branch="main"
-            feature_branch="source_id_${{ github.event.client_payload.name }}"
+          base_branch="main"
+          feature_branch="source_id_${{ github.event.client_payload.name }}"
 
-            git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
-            git config --global user.name "${GITHUB_USERNAME}"
+          git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
+          git config --global user.name "${GITHUB_USERNAME}"
 
-            git add *source_id.json
-            git commit -m 'Adding ${{ github.event.client_payload.name }} to source_id'
-            git push origin $feature_branch
+          git add *source_id.json
+          git commit -m "Adding ${{ github.event.client_payload.name }} to source_id"
+          git push origin $feature_branch
 
-            gh pr create --base $base_branch --head $feature_branch --title "New Source ID - add ${{ github.event.client_payload.name }}" --body "This pull request was automatically created by a GitHub Actions workflow.\n\n Data submitted by @${{github.event.client_payload.author}} \n\n  Adding the following new data. \n ```json \n ${{content}}``` \n\n
-            " --reviewer $GITHUB_USERNAME
+          gh pr create --base $base_branch --head $feature_branch --title "New Source ID - add ${{ github.event.client_payload.name }}" --body "This pull request was automatically created by a GitHub Actions workflow.\n\nData submitted by @${{github.event.client_payload.author}}\n\nAdding the following new data.\n```json\n${{content}}```\n" --reviewer $GITHUB_USERNAME
+
       
