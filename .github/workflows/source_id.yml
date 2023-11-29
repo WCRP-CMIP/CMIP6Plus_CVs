@@ -85,7 +85,7 @@ jobs:
           
           Adding the following new data.
           \`\`\`json
-          ${{content}}
+          $content
           \`\`\`
           
           " --reviewer $GITHUB_USERNAME
