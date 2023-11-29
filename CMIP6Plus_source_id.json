@@ -18,7 +18,8 @@
     "source_id": {
         "HadGEM3-GC31-LL": {
             "activity_participation": [
-                "CMIP"
+                "CMIP",
+                "LESFMIP"
             ],
             "cohort": [
                 "Published"
