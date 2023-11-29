@@ -60,15 +60,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.event.client_payload.author }}
-        run: |
+        run: |  
+
+          base_branch="main"
+          feature_branch="source_id_${{ github.event.client_payload.name }}"
 
           git pull 
           git checkout -b $feature_branch;
           
           content=$(python .github/libs/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
-
-          base_branch="main"
-          feature_branch="source_id_${{ github.event.client_payload.name }}"
 
           git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
           git config --global user.name "${GITHUB_USERNAME}"
