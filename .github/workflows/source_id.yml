@@ -1,0 +1,78 @@
+name: Source_ID_dispatch
+
+on:
+  repository_dispatch:
+    types:
+      - source_id
+
+jobs:
+  process-payload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Print Payload
+        run: |
+          echo "Received Payload:"
+          echo "Key: ${{ github.event.client_payload.key }}"
+          echo "json: ${{ github.event.client_payload.record }}"
+          echo "author: ${{ github.event.client_payload.author }}"
+          echo "source: ${{ github.event.client_payload.name }}"
+
+          # echo "contents=${GH_TOKEN}" >> $GITHUB_ENV
+        
+
+      # - name: Run Python Check
+      #   id: 'run-python-script'
+      #   run: |
+          
+      #     python .github.lib/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }}
+          
+      #   env:
+      #     PYTHON_SCRIPT_OUTPUT: ${{ steps.run-python-script.outputs.stdout }}
+      #     PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
+      #   continue-on-error: false
+
+
+      # - name: Create and push new branch
+      #   run: |
+
+      #     github_username=${{ github.event.client_payload.author }}
+          
+      #     # Set Git user config locally
+      #     git config --global user.email "${github_username}@users.noreply.github.com"
+      #     git config --global user.name "${github_username}"
+      #     # Set the branch names
+      #     new_branch="source_id_${{ github.event.client_payload.name }}"
+          
+      #     # Create a new branch
+      #     git checkout -b $new_branch
+          
+
+      #     # Commit and push the changes
+      #     git add *source_id.json
+      #     git commit -m "Adding a new source_id ${{ github.event.client_payload.name }}"
+      #     git push origin $new_branch
+  
+      - name: Create Pull Request
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_USERNAME: ${{ github.event.client_payload.author }}
+        run: |
+            content=$(python .github.lib/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
+
+            base_branch="main"
+            feature_branch="source_id_${{ github.event.client_payload.name }}"
+
+            git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
+            git config --global user.name "${GITHUB_USERNAME}"
+
+            git add *source_id.json
+            git commit -m 'Adding ${{ github.event.client_payload.name }} to source_id'
+            git push origin $feature_branch
+
+            gh pr create --base $base_branch --head $feature_branch --title "New Source ID - add ${{ github.event.client_payload.name }}" --body "This pull request was automatically created by a GitHub Actions workflow.\n\n Data submitted by @${{github.event.client_payload.author}} \n\n  Adding the following new data. \n ```json \n ${{content}}``` \n\n
+            " --reviewer $GITHUB_USERNAME
+      
