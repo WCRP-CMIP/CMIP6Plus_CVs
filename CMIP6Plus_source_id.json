@@ -74,6 +74,64 @@
             },
             "release_year": "2016",
             "source_id": "HadGEM3-GC31-LL"
+        },
+        "NorESM2-LM": {
+            "activity_participation": [
+                "CMIP",
+                "LESFMIP"
+            ],
+            "cohort": [
+                "unknown"
+            ],
+            "institution_id": [
+                "NCC"
+            ],
+            "label": "NorESM2-LM",
+            "label_extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
+            "license_info": {
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "exceptions_contact": "@met.no <- noresm-ncc",
+                "history": "2019-08-15: initially published under CC BY-SA 4.0; 2022-06-03: relaxed to CC BY 4.0",
+                "source_specific_info": ""
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "OsloAero",
+                    "native_nominal_resolution": "250"
+                },
+                "atmos": {
+                    "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+                    "native_nominal_resolution": "250"
+                },
+                "atmosChem": {
+                    "description": "OsloChemSimp",
+                    "native_nominal_resolution": "250"
+                },
+                "land": {
+                    "description": "CLM",
+                    "native_nominal_resolution": "250"
+                },
+                "landIce": {
+                    "description": "CISM",
+                    "native_nominal_resolution": "250"
+                },
+                "ocean": {
+                    "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                    "native_nominal_resolution": "100"
+                },
+                "ocnBgchem": {
+                    "description": "HAMOCC",
+                    "native_nominal_resolution": "100"
+                },
+                "seaIce": {
+                    "description": "CICE",
+                    "native_nominal_resolution": "100"
+                }
+            },
+            "release_year": 2017,
+            "source_id": "NorESM2-LM"
         }
     }
 }
