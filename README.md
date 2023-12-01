@@ -1,10 +1,12 @@
-# CMIP6Plus_CVs
+# CMIP6Plus Controlled Vocabularies
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 #
 
 
 <div align="center" style="width:100%">
+    <img width='180px' style='fill:red;' src='https://raw.githubusercontent.com/WCRP-CMIP/CMIP6Plus_CVs/main/.github/.wiki/cmip6plus600.png'/>
+   <br>
     <table>
         <tr>
             <td><strong>Description</strong></td>
@@ -41,6 +43,10 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
 # 
 
+## For information on how to interact
+Visit the wiki using the button above, or [this link](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/wiki)
+
+## Currently active MIPs
 
 To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/model-intercomparison-projects-mips/) page on the CMIP website.
 

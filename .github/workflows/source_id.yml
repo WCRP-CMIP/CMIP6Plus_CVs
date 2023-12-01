@@ -62,12 +62,29 @@ jobs:
           GITHUB_USERNAME: ${{ github.event.client_payload.author }}
         run: |  
 
+
+          repository="${{ github.repository }}"
+          github_token="${{ secrets.GITHUB_TOKEN }}"
+
+
           base_branch="main"
           feature_branch="source_id_${{ github.event.client_payload.name }}"
 
           git pull 
-          git checkout -b $feature_branch;
-          
+
+          remote_branch="origin/$feature_branch"
+          branch_info=$(git rev-parse --verify "$remote_branch" 2>&1)
+          echo "branch info: $branch_info"
+
+          if [ -n "$branch_info" ]; then
+
+              git checkout $feature_branch
+              git reset --hard origin/main
+
+          else
+              git checkout -b $feature_branch;
+          fi
+
           content=$(python .github/libs/source_id.py -k ${{ github.event.client_payload.key }} -r ${{ github.event.client_payload.record }})
 
           git config --global user.email "${GITHUB_USERNAME}@users.noreply.github.com"
@@ -76,18 +93,61 @@ jobs:
 
           git add *source_id.json
           git commit -m "Adding ${{ github.event.client_payload.name }} to source_id"
-          git push origin $feature_branch
+          git push origin $feature_branch --force
 
-          gh pr create --base $base_branch --head $feature_branch --title "New Source ID - add ${{ github.event.client_payload.name }}" --body \
-          "This pull request was automatically created by a GitHub Actions workflow.
           
+          if [ -n "$branch_info" ]; then
+            pull_requests=$(curl -s -H "Authorization: token $github_token" \
+            "https://api.github.com/repos/$repository/pulls?state=open&head=$feature_branch" | jq -r '.[].number')
+
+            # base is main, head is our branch. 
+
+            echo "pull requests ${pull_requests}";
+            # Iterate through each pull request and add the comment
+            for pr_number in $pull_requests; do
+              # author=$(curl -s -H "Authorization: token $github_token" \
+              #     "https://api.github.com/repos/$repository/pulls/$pr_number" | jq -r '.user.login')
+
+              echo "running pull request $pr_number"  ;
+              # keep indentation of comment_body !important
+              comment_body="This pull request (#$pr_number) was automatically updated by a GitHub Actions workflow.
+
           Data submitted by @${{github.event.client_payload.author}}
-          
-          Adding the following new data.
-          \`\`\`json
-          $content
-          \`\`\`
-          
-          " --reviewer $GITHUB_USERNAME
 
+          Adding the following updated data.
+          \`\`\`json
+              $content
+          \`\`\` "
+              # escaped=$(echo "$comment_body" | sed 's/"/\\"/g')
+              echo "comment- $comment_body"
+
+              # # Add comment to the pull request
+              # curl -s -H "Authorization: token $github_token" \
+              #     -x POST -d '{"body": "$comment_body"}' \
+              #     "https://api.github.com/repos/$repository/issues/$pr_number/comments" 
+              #     # > /dev/null
+
+              gh pr comment $pr_number --body "$comment_body"
+
+              echo "Comment added to pull request  #$pr_number"
+            done
+
+          else
+
+
+            echo "clean pull"
+            gh pr create --base $base_branch --head $feature_branch --title "New Source ID - add ${{ github.event.client_payload.name }}" --body \
+            "This pull request was automatically created by a GitHub Actions workflow.
+            
+            Data submitted by @${{github.event.client_payload.author}}
+            
+            Adding the following new data.
+            \`\`\`json
+            $content
+            \`\`\`
+            
+            " --reviewer $GITHUB_USERNAME
+
+
+          fi
       
