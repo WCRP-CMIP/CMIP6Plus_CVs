@@ -44,8 +44,10 @@ component_list = [
 
 # sort out the model components
 for c in component_list:
+    if c not in data: continue
     cdummy = data[c][0]
     model_components[c] = OrderedDict({"description": cdummy.get('description','none'),
+                         "version":cdummy.get('version number','none'),
                          "native_nominal_resolution": cdummy.get('resolution','none') })
 
 license = data['license(automated)'][0]
@@ -66,7 +68,7 @@ template = OrderedDict(
                 "license": license['license_id'],
                 "url": license['license_url'],
                 "exceptions_contact": "@%s <- %s"%tuple(data['license_exceptions_contact'].split('@')[::-1]),
-                "history": data.get('license_history',''),
+                # "history": data.get('license_history',''),
                 "source_specific_info": data.get("source_specific_info",''),
                 
             }),
