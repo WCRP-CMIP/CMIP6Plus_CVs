@@ -78,7 +78,8 @@ jobs:
           fi
           
           remote_branch="origin/$feature_branch"
-          branch_info=$(git rev-parse --verify "$remote_branch" 2>&1)
+          echo "bi"
+          branch_info=$(git rev-parse --verify "$remote_branch" >/dev/null 2>&1)
           echo "branch info: $branch_info"
 
           if [ -n "$branch_info" ]; then
