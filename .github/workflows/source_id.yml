@@ -71,15 +71,10 @@ jobs:
           feature_branch="source_id_${{ github.event.client_payload.name }}"
 
           git pull
-
-          if [ $? -ne 0 ]; then
-            echo "Error checking branch existence: $branch_info"
-            exit 1
-          fi
           
           remote_branch="origin/$feature_branch"
           echo "bi"
-          branch_info=$(git rev-parse --verify "$remote_branch" >/dev/null 2>&1)
+          branch_info=$(git rev-parse --verify "$remote_branch" >/dev/null 2>&1 || true)
           echo "branch info: $branch_info"
 
           if [ -n "$branch_info" ]; then
