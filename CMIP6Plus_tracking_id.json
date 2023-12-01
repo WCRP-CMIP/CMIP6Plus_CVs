@@ -1,14 +1,21 @@
 {
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: f26f4d1c70643d47eced87583272f081",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "tracking_id": [
-    "hdl:21.14100/.*"
-  ]
+    "Header": {
+        "collection": {
+            "CV_collection_version": "v6.5.0.0",
+            "CV_collection_modified": "2023-11-20T16:32:10Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: b71d13654a2501d5a80e0236a5032e52",
+            "tracking_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
+            "tracking_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
+            "tracking_id_note": "Webhook initiated workflow, with external user generated commits"
+        },
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
+    },
+    "tracking_id": [
+        "hdl:21.14100/.*"
+    ]
 }

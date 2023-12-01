@@ -1,14 +1,22 @@
 {
-  "Header": {
-    "CV_collection_modified": "2022-09-05",
-    "CV_collection_version": "6.3.0.0",
-    "author": "Matt Mizielinski <matthew.mizielinski@metoffice.gov.uk>",
-    "checksum": "md5: b841ece401fa5f0d5e6bfdbf6dc2e970",
-    "institution_id": "MOHC",
-    "previous_commit": "To be added",
-    "specs_doc": "v6.3.0 (link TBC)"
-  },
-  "sub_experiment_id": {
-    "none": "none"
-  }
+    "Header": {
+        "collection": {
+            "CV_collection_version": "v6.5.0.0",
+            "CV_collection_modified": "2023-11-20T16:32:10Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.0.0",
+            "specs_doc": "v6.5.0"
+        },
+        "file": {
+            "checksum": "md5: 07d6b987501421d63b282ba89cc81935",
+            "sub_experiment_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
+            "sub_experiment_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
+            "sub_experiment_id_note": "Webhook initiated workflow, with external user generated commits"
+        },
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
+    },
+    "sub_experiment_id": {
+        "f2023": "Forcings 2023",
+        "none": "none"
+    }
 }
