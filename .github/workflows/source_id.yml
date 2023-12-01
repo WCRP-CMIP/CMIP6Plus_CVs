@@ -70,21 +70,24 @@ jobs:
           base_branch="main"
           feature_branch="source_id_${{ github.event.client_payload.name }}"
 
-          pull=$(git pull)
-          echo "up to date"
+          git pull
 
-
+          if [ $? -ne 0 ]; then
+            echo "Error checking branch existence: $branch_info"
+            exit 1
+          fi
           
           remote_branch="origin/$feature_branch"
           branch_info=$(git rev-parse --verify "$remote_branch" 2>&1)
           echo "branch info: $branch_info"
 
           if [ -n "$branch_info" ]; then
-
+              echo "checkout existing"
               git checkout $feature_branch
               git reset --hard origin/main
 
           else
+              echo "checkout new"
               git checkout -b $feature_branch;
           fi
 
