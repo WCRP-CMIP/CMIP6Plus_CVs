@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "experiment_id_update_commit": "",
-            "experiment_id_modified": "",
-            "experiment_id_note": ""
+            "checksum": "checksum",
+            "experiment_id_update_commit": "0a5ce01b657727a8427a5e8613d7e4ca7f3beca1",
+            "experiment_id_modified": "Tue Jan 30 11:49:08 2024 +0000",
+            "experiment_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"

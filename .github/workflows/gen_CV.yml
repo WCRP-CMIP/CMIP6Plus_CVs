@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
-    
+
       - name: Is run necessary
         run: |
           # This is a useful way to only run the script on branches that need it. 
@@ -151,7 +151,7 @@ jobs:
         id: 'run-python-script'
         run: |
           if [ ! "$EXIT" ]; then
-            python create_cv.py -c "${COMMIT_HASH}" -b "${{git rev-parse --abbrev-ref HEAD}}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+            python create_cv.py -c "${COMMIT_HASH}" -b $(git rev-parse --abbrev-ref HEAD) -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
           fi
         working-directory: .github/libs
         env:
@@ -198,6 +198,7 @@ jobs:
             echo "Skipping this step in 'act' environment."
           fi
         shell: bash
+        continue-on-error: true
 
 
 
