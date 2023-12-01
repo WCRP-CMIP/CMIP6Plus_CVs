@@ -170,7 +170,11 @@ for f in files:
             commit_dict["author_institute"] = maintainers[author_info[0]]['institute']
             commit_dict["author_name"] = maintainers[author_info[0]]['published_name']
         except:
-            raise KeyError(f'Please add \n\t "{author_info[0]}": \n\t\t','{"institute": "", "published_name": "Name you wish to use"}')
+            commit_dict["author_name"] = author_match.group(1)
+            
+            print( f'Please add \n\t "{author_info[0]}": \n\t\t','{"institute": "", "published_name": "Name you wish to use"}')
+            # this was a keyerror
+            
         commit_dict["author_email"] = author_info[1][:-1]  
 
     if date_match:
@@ -204,7 +208,7 @@ for f in files:
         }),
             
         "author":commit_dict['author_name'],
-        "institution_id":commit_dict['author_institute'],
+        "institution_id":commit_dict.get('author_institute', 'unlisted'),
         })
         
         
@@ -254,11 +258,12 @@ for f in files:
 
     os.popen(f"git add {f}").read()
 #     os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
-    os.popen(f'git commit --author="{author_match.group(1)}" -m "{commit_dict["commit_message"]}"')
+    os.popen(f'git commit --author="{author_match.group(1)}" -m "{commit_dict["commit_message"]}"').read()
 
     
-    # os.popen(f"git push").read()
-
+    
+    
+os.popen(f'git push').read()
 
 # checksum. If checksum is not the same, update.
 

@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "source_id_update_commit": "",
-            "source_id_modified": "",
-            "source_id_note": ""
+            "checksum": "checksum",
+            "source_id_update_commit": "0a5ce01b657727a8427a5e8613d7e4ca7f3beca1",
+            "source_id_modified": "Tue Jan 30 11:49:08 2024 +0000",
+            "source_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
@@ -81,7 +81,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MPI-M"
@@ -134,7 +134,6 @@
             },
             "release_year": 2017,
             "source_id": "MPI-ESM1-2-LR"
-<<<<<<< HEAD
         },
         "MIROC6": {
             "activity_participation": [
@@ -142,7 +141,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MIROC"
@@ -192,7 +191,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MPI-M"
@@ -244,7 +243,7 @@
                 }
             },
             "release_year": 2017,
-            "source_id": "MPI-ESM1-2-HR"
+            "source_id": "MIROC6"
         }
     }
 }
