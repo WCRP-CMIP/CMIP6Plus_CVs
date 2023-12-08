@@ -5,7 +5,7 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
 
 
 <div align="center" style="width:100%">
-    <img width='180px' style='fill:red;' src='https://raw.githubusercontent.com/WCRP-CMIP/CMIP6Plus_CVs/main/.github/.wiki/cmip6plus600.png'/>
+    <img width='180px' style='fill:red;' src='https://raw.githubusercontent.com/WCRP-CMIP/CMIP6Plus_CVs/main/.github/.wiki/CMIP6plus.svg'/>
    <br>
     <table>
         <tr>
@@ -13,12 +13,15 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
             <td>
             <a href='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases'><img src='https://img.shields.io/github/release/WCRP-CMIP/CMIP6Plus_CVs?label=CV%20Version%20%5Blatest%5D'></a>
             <a href='https://github.com/PCMDI/cmor'><img src='https://img.shields.io/github/release/PCMDI/cmor?label=CMOR%20Version&color=green'></a>
-            <a href='https://github.com/PCMDI/mip-cmor-tables'><img src='https://img.shields.io/github/release/PCMDI/mip-cmor-tables?label=MIP%20Table%20Version&color=purple'></a></td>
+            <a href='https://github.com/PCMDI/mip-cmor-tables'><img src='https://img.shields.io/github/release/PCMDI/mip-cmor-tables?label=MIP%20Table%20Version&color=purple'></a>
+            <img src='https://img.shields.io/github/license/WCRP-CMIP/CMIP6Plus_CVs.svg'/>
+            </td>
         </tr>
         <tr>
             <td><strong>Repository Status</strong></td>
             <td><img src='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/gen_CV.yml/badge.svg?branch=main'>
-            <img src='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main'></td>
+            <img src='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/actions/workflows/version_update.yml/badge.svg?branch=main'>
+            </td>
         </tr>
         <tr>
             <td><strong>Repository Contents</strong></td>
@@ -30,15 +33,14 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
             <td> <a href='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/discussions'><img src='https://img.shields.io/github/discussions/WCRP-CMIP/CMIP6Plus_CVs?label=Discussions'></a>
             <a href='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/issues'><img src='https://img.shields.io/github/issues/WCRP-CMIP/CMIP6Plus_CVs?label=Requests'></a>
             <img src="https://img.shields.io/github/contributors/WCRP-CMIP/CMIP6Plus_CVs">
-           <img src='https://img.shields.io/github/commit-activity/m/WCRP-CMIP/CMIP6Plus_CVs?label=Commit%20Activity'></td>
+           <img src='https://img.shields.io/github/commit-activity/m/WCRP-CMIP/CMIP6Plus_CVs?label=Commit%20Activity'>
+           <img src='https://img.shields.io/github/last-commit/WCRP-CMIP/CMIP6Plus_CVs.svg'/> 
+        </td>
         </tr>
     </table>
 </div>
 
 <br>
-
-
-
 
 
 # 
