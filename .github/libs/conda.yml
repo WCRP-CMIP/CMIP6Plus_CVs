@@ -1,7 +1,0 @@
-name: CMOR
-
-channels:
-  - conda-forge
-
-dependencies:
-  - os

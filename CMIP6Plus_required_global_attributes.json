@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 0013775d27a85d8bcc4070b2107e187b",
-            "required_global_attributes_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "required_global_attributes_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "required_global_attributes_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: adf71d675a8b46ee841927514fe8a96f",
+            "required_global_attributes_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
+            "required_global_attributes_modified": "Wed Nov 29 20:17:31 2023 +0000",
+            "required_global_attributes_note": "Webhook initiated workflow, with external user generated commits"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "required_global_attributes": [
         "Conventions",

@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 0f6f06ac208ff101e26028229e04b845",
-            "activity_id_update_commit": "204ebc75641724b44dd05f48925099e36800e08c",
-            "activity_id_modified": "Thu Mar 9 13:18:57 2023 +0000",
-            "activity_id_note": "Minor tweaks to structure of CVs"
+            "checksum": "md5: e22371d8e767b8d93d5596aea9e139c9",
+            "activity_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
+            "activity_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
+            "activity_id_note": "Webhook initiated workflow, with external user generated commits"
         },
-        "author": "Matthew Mizielinski",
-        "institution_id": "MOHC"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "activity_id": {
         "CMIP": {

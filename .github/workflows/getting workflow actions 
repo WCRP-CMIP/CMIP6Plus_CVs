@@ -1,0 +1,22 @@
+curl -s -H "Authorization: token $github_token"     "https://api.github.com/repos/$repository/actions/runs?event=repository_dispatch" | jq -r '.workflow_runs |keys'
+
+
+last run => 0
+curl -s -H "Authorization: token $github_token"     "https://api.github.com/repos/$repository/actions/runs?event=repository_dispatch&name=Source_ID_dispatch" | jq -r '.workflow_runs[0] '
+
+
+rerunurl
+
+curl -s -H "Authorization: token $github_token"     "https://api.github.com/repos/$repository/actions/runs?event=repository_dispatch&name=Source_ID_dispatch" | jq -r '.workflow_runs[0].rerun_url'
+
+
+# Set your GitHub token and repository variables
+github_token="$(gh auth token)"
+repository="WCRP-CMIP/CMIP6Plus_CVs"
+workflow_run_id="7054479259"
+
+# Trigger a new workflow dispatch event for the specified run
+curl -X POST \
+  -H "Authorization: token $github_token" \
+  -H "Accept: application/vnd.github.everest-preview+json" \
+  "https://api.github.com/repos/$repository/actions/runs/$workflow_run_id/rerun"
