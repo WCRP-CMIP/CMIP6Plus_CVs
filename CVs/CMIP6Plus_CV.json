@@ -785,7 +785,6 @@
             "mip_era",
             "nominal_resolution",
             "physics_index",
-            "product",
             "realization_index",
             "realm",
             "source",
@@ -824,16 +823,16 @@
             }
         },
         "source_type": [
-            "LAND",
-            "AER",
             "AOGCM",
+            "AER",
+            "SLAB",
+            "BGC",
+            "AGCM",
+            "CHEM",
             "OGCM",
             "RAD",
-            "ISM",
-            "AGCM",
-            "BGC",
-            "SLAB",
-            "CHEM"
+            "LAND",
+            "ISM"
         ],
         "sub_experiment_id": {
             "f2023": "Forcings 2023",
@@ -926,12 +925,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Fri Dec 08 2023 16:40 UTC",
-            "checksum": "md5: e2ca260420aad72f1ed697bef0265fe3",
+            "file_updated": "Tue Jan 16 2024 21:20 UTC",
+            "checksum": "md5: 33e9a8e2714addbd6fb2a3878f12094a",
             "CVs": {
-                "updated": "2023-12-08T16:40:28Z",
+                "updated": "2024-01-16T21:20:32Z",
                 "tag": "v6.5.0.0",
-                "commit": "c58fc1567673b28958a092af947c0d5324b26390"
+                "commit": "0be62f656f03b555234a99f12ccbe9f487d16ebd"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
