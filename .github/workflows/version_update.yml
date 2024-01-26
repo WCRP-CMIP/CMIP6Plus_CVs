@@ -49,7 +49,7 @@ jobs:
 
       - name: Update Versioning
         id: run-python-script
-        run: python .github/libs/version.py -t ${GH_TOKEN}
+        run: python .github/libs/version.py -t ${GH_TOKEN} -b github.ref
         shell: bash
 
       # - name: Persist All Changes - Job 1
