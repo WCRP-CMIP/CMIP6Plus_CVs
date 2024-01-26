@@ -1,3 +1,20 @@
+'''
+Aims: 
+    Action Parameters
+    If:
+        main branch - update the version metadata_loc
+        see what files have changed 
+        update the version number 
+        reflect this
+        
+    Else:
+        Create a blank header for the file_metadata_loc
+        
+    
+
+'''
+
+
 import glob,os,sys,re,json
 from collections import OrderedDict
 import argparse
@@ -6,6 +23,8 @@ from checksum_tools import validate_checksum,calculate_checksum
 from datetime import datetime
 
 prefix = 'CMIP6Plus_'
+main = 'main'
+metadata_loc = 'Header'
 
 
 ##########################################
@@ -24,7 +43,7 @@ maintainers = json.loads(raw_data.decode('utf-8'))
 # get repo information
 ##########################################
 
-tag = os.popen("git describe --tags --abbrev=0").read().strip()
+tag = os.popen("git describe --tags --abbrev=0 --always").read().strip() or ''
 # release_date = subprocess.check_output(["git", "log", "-1", "--format=%aI", tag]).strip().decode("utf-8")
 
 files = glob.glob(f'{prefix}*.json')
@@ -34,6 +53,8 @@ files = glob.glob(f'{prefix}*.json')
 ##########################################
 parser = argparse.ArgumentParser(description="Retrieve details for the latest tag of a GitHub repository.")
 parser.add_argument("-t","--token" ,help="token number")
+parser.add_argument("-b","--branch" ,help="branch name")
+parser.add_argument('-a','--all', action='store_false',help='If added, we will overwrite ALL the files. ')
 
 args = parser.parse_args()
 
@@ -79,24 +100,33 @@ for f in files:
     contents = json.load(open(f,'r'))
 
 
-    if 'version_metadata' not in contents:
-        contents['version_metadata'] = dict(checksum='',commit='')
+    if metadata_loc not in contents or not args.all:
+        contents[metadata_loc] = dict(file = {"checksum":''},commit='')
+        print('setting blank header on ',f)
 
-
-
-    if validate_checksum(contents):
+    if validate_checksum(contents,metadata_loc):
         continue
 
 
-    
-    
-    skip = 'Author: CMIP-IPO: Automated GitHub Action <actions@wcrp-cmip.org>'  
+    skip = 'CMIP-IPO: Automated GitHub Action <actions@wcrp-cmip.org>'  
     # commit_info = os.popen(f'git log -n 1 -- {f} ').read()
     full = os.popen(f'git log -- {f} ').read()
 
 
     previous_commit = ''
     commit_info = False
+    
+    
+    '''
+    commit 8f25db6f5551574eb826c21ce404d2e111bd2db2
+    Merge: caa0888 124d96c
+    Author: Daniel Ellis <daniel.ellis@ext.esa.int>
+    Date:   Fri Jan 26 16:03:55 2024 +0000
+
+    Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests
+
+
+    '''
 
     commit_blocks = re.split(r'\n(?=commit\s)', full)
     for c in commit_blocks:
@@ -151,10 +181,10 @@ for f in files:
 
 
     ##########################################
-    # create a new version metadata 
+    # create a new version metadata_loc 
     ##########################################
 
-    # previous_commit = contents['version_metadata'].get('commit','')
+    # previous_commit = contents['version_metadata_loc'].get('commit','')
     short = f.replace('.json','').replace(prefix,'')
 
     template =  OrderedDict({
@@ -178,38 +208,55 @@ for f in files:
         })
         
         
-    del contents['Header']
-    del contents['version_metadata']
+    del contents[metadata_loc]
     previous = contents.copy()
 
-    contents = OrderedDict({'Header':template})
+    contents = OrderedDict({metadata_loc:template})
+    
+    if args.branch.split('/')[-1] != main:
+        contents[metadata_loc]['file'] = OrderedDict({
+            "checksum": f'Contents will be updated in branch {main} only.',
+            f"{short}_update_commit":'',
+            f"{short}_modified":'',
+            f"{short}_note":'',
+        })
+        
+    
     for key in sorted(previous):
         contents[key] = previous[key]
 
-
-    contents = calculate_checksum(contents,checksum_location='Header',nest = 'file')
+    contents = calculate_checksum(contents,checksum_location=metadata_loc,nest = 'file')
 
     print('writing',f)
 
     import pprint
-    pprint.pprint(contents['Header'])
+    pprint.pprint(contents[metadata_loc])
 
     print('----------------------------\n\n')
+    
+   
 
-    with open(f,'w') as write:
-        write.write(json.dumps(contents,indent=4))
+    print(len(contents))
+    with open(f,'w') as writef:
+        json.dump(contents,writef,indent=4)
+    # print (contents)
 
 
 
-##########################################
-# keep the individualised commit messages
-##########################################
+    ##########################################
+    # keep the individualised commit messages
+    ##########################################
 
     timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
     formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
+    print(author_match.group(1))
+    print(commit_dict['commit_message'])
 
     os.popen(f"git add {f}").read()
-    os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
+#     os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
+    os.popen(f'git commit --author="{author_match.group(1)}" -m "{commit_dict["commit_message"]}"')
+
+    
     # os.popen(f"git push").read()
 
 

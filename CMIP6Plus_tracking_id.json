@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: b71d13654a2501d5a80e0236a5032e52",
-            "tracking_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "tracking_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "tracking_id_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "Contents will be updated in branch main only.",
+            "tracking_id_update_commit": "",
+            "tracking_id_modified": "",
+            "tracking_id_note": ""
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
