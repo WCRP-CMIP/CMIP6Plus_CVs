@@ -74,6 +74,56 @@
             },
             "release_year": "2016",
             "source_id": "HadGEM3-GC31-LL"
+        },
+        "MIROC6": {
+            "activity_participation": [
+                "CMIP",
+                "LESFMIP"
+            ],
+            "cohort": [
+                "unknown"
+            ],
+            "institution_id": [
+                "MIROC"
+            ],
+            "label": "MIROC6",
+            "label_extended": "MIROC6",
+            "license_info": {
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+                "source_specific_info": ""
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "SPRINTARS6.0",
+                    "version": "none",
+                    "native_nominal_resolution": "250"
+                },
+                "atmos": {
+                    "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
+                    "version": "none",
+                    "native_nominal_resolution": "250"
+                },
+                "land": {
+                    "description": "MATSIRO6.0",
+                    "version": "none",
+                    "native_nominal_resolution": "250"
+                },
+                "ocean": {
+                    "description": "COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)",
+                    "version": "none",
+                    "native_nominal_resolution": "100"
+                },
+                "seaIce": {
+                    "description": "COCO4.9",
+                    "version": "none",
+                    "native_nominal_resolution": "100"
+                }
+            },
+            "release_year": 2017,
+            "source_id": "MIROC6"
         }
     }
 }
