@@ -480,6 +480,180 @@
             ],
             "tier": 3
         },
+        "hist-noLu": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+            "end": 2020,
+            "experiment": "historical with no land-use change",
+            "experiment_id": "hist-noLu",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-piGHG": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
+            "end": 2020,
+            "experiment": "historical forcing but with pre-industrial GHG",
+            "experiment_id": "hist-piGHG",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-piAer": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+            "end": 2020,
+            "experiment": "historical forcing, but with pre-industrial aerosol emissions",
+            "experiment_id": "hist-piAer",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-piSol": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "historical simulations with 1850 solar forcing",
+            "end": 2020,
+            "experiment": "historical all-but-solar run",
+            "experiment_id": "hist-piSol",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-piTotalO3": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "historical simulations with 1850 total ozone",
+            "end": 2020,
+            "experiment": "historical all-but-ozone run",
+            "experiment_id": "hist-piTotalO3",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
+        "hist-piVolc": {
+            "activity_id": [
+                "LESFMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "historical simulations with 1850 volcanic emissions",
+            "end": 2020,
+            "experiment": "historical all-but-volcanic run",
+            "experiment_id": "hist-piVolc",
+            "min_number_yrs_per_sim": "none",
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1850,
+            "sub_experiment_id": [
+                "f2023"
+            ],
+            "tier": 3
+        },
         "hist-sol": {
             "activity_id": [
                 "LESFMIP"
