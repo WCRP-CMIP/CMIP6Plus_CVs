@@ -1,3 +1,16 @@
+'''
+Aims: 
+    Action Parameters
+    If:
+        main branch - update the version metadata
+    Else:
+        Create a blank header for the file_metadata
+        
+    
+
+'''
+
+
 import glob,os,sys,re,json
 from collections import OrderedDict
 import argparse
@@ -6,7 +19,7 @@ from checksum_tools import validate_checksum,calculate_checksum
 from datetime import datetime
 
 prefix = 'CMIP6Plus_'
-
+main = 'main'
 
 ##########################################
 # load the maintainer file
@@ -34,6 +47,7 @@ files = glob.glob(f'{prefix}*.json')
 ##########################################
 parser = argparse.ArgumentParser(description="Retrieve details for the latest tag of a GitHub repository.")
 parser.add_argument("-t","--token" ,help="token number")
+parser.add_argument("-b","--branch" ,help="branch name")
 
 args = parser.parse_args()
 
@@ -82,21 +96,29 @@ for f in files:
     if 'version_metadata' not in contents:
         contents['version_metadata'] = dict(checksum='',commit='')
 
-
-
     if validate_checksum(contents):
         continue
 
 
-    
-    
-    skip = 'Author: CMIP-IPO: Automated GitHub Action <actions@wcrp-cmip.org>'  
+    skip = 'CMIP-IPO: Automated GitHub Action <actions@wcrp-cmip.org>'  
     # commit_info = os.popen(f'git log -n 1 -- {f} ').read()
     full = os.popen(f'git log -- {f} ').read()
 
 
     previous_commit = ''
     commit_info = False
+    
+    
+    '''
+commit 8f25db6f5551574eb826c21ce404d2e111bd2db2
+Merge: caa0888 124d96c
+Author: Daniel Ellis <daniel.ellis@ext.esa.int>
+Date:   Fri Jan 26 16:03:55 2024 +0000
+
+Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests
+
+
+'''
 
     commit_blocks = re.split(r'\n(?=commit\s)', full)
     for c in commit_blocks:
@@ -183,9 +205,18 @@ for f in files:
     previous = contents.copy()
 
     contents = OrderedDict({'Header':template})
+    
+    if args.branch != main:
+        contents['file'] = OrderedDict({
+            "checksum": f'Contents will be updated in branch {main} only.',
+            f"{short}_update_commit":'',
+            f"{short}_modified":'',
+            f"{short}_note":'',
+        }),
+        
+    
     for key in sorted(previous):
         contents[key] = previous[key]
-
 
     contents = calculate_checksum(contents,checksum_location='Header',nest = 'file')
 
@@ -196,8 +227,8 @@ for f in files:
 
     print('----------------------------\n\n')
 
-    with open(f,'w') as write:
-        write.write(json.dumps(contents,indent=4))
+    # with open(f,'w') as write:
+    #     write.write(json.dumps(contents,indent=4))
 
 
 
@@ -205,12 +236,12 @@ for f in files:
 # keep the individualised commit messages
 ##########################################
 
-    timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
-    formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
+    # timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
+    # formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
 
-    os.popen(f"git add {f}").read()
-    os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
-    # os.popen(f"git push").read()
+    # os.popen(f"git add {f}").read()
+    # os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
+    # # os.popen(f"git push").read()
 
 
 # checksum. If checksum is not the same, update.
