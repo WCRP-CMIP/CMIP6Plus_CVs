@@ -7,14 +7,22 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 33ecae4b49a62790e5eabcf7205d9747",
-            "source_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "source_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "source_id_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "md5: 681c6ea333a4afa6b675b76b1bb7303d",
+            "source_id_update_commit": "8f25db6f5551574eb826c21ce404d2e111bd2db2",
+            "source_id_modified": "Fri Jan 26 16:03:55 2024 +0000",
+            "source_id_note": "Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
     },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "source_id_update_commit": "",
+            "source_id_modified": "",
+            "source_id_note": ""
+        }
+    ],
     "source_id": {
         "HadGEM3-GC31-LL": {
             "activity_participation": [

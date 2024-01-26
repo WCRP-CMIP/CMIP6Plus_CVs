@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: a8b46a864fc99501c36638faf8e8989c",
+            "checksum": "md5: c1a6ef3d6cca6fdf5749a94f9695868e",
             "license_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
             "license_modified": "Wed Nov 29 20:17:31 2023 +0000",
             "license_note": "Webhook initiated workflow, with external user generated commits"
@@ -15,6 +15,14 @@
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
     },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "license_update_commit": "",
+            "license_modified": "",
+            "license_note": ""
+        }
+    ],
     "license": [
         "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
     ]

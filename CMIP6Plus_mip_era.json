@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 0b1a9765141e7cf3601d3a8a9e11d471",
+            "checksum": "md5: 522d6acb33a88389ec123f9128cf8d1c",
             "mip_era_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
             "mip_era_modified": "Wed Nov 29 20:17:31 2023 +0000",
             "mip_era_note": "Webhook initiated workflow, with external user generated commits"
@@ -15,5 +15,13 @@
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
     },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "mip_era_update_commit": "",
+            "mip_era_modified": "",
+            "mip_era_note": ""
+        }
+    ],
     "mip_era": "CMIP6Plus"
 }

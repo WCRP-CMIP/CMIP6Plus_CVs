@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: e22371d8e767b8d93d5596aea9e139c9",
+            "checksum": "md5: 630e93121756130d37e2d0c4f254cb9e",
             "activity_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
             "activity_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
             "activity_id_note": "Webhook initiated workflow, with external user generated commits"
@@ -24,5 +24,13 @@
             "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
             "long_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
         }
-    }
+    },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "activity_id_update_commit": "",
+            "activity_id_modified": "",
+            "activity_id_note": ""
+        }
+    ]
 }

@@ -7,7 +7,7 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 960983332bf24a5123fe2654c97f732f",
+            "checksum": "md5: 669b0a6e93b891eccbaa22e7fae979b4",
             "DRS_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
             "DRS_modified": "Wed Nov 29 20:17:31 2023 +0000",
             "DRS_note": "Webhook initiated workflow, with external user generated commits"
@@ -22,5 +22,13 @@
         "filename_example": "tas_Amon_HadGEM3-GC31-MM_historical_r1i1p1f3_gn_185001-186912.nc",
         "filename_sub_experiment_example": "tas_Amon_HadGEM3-GC31-MM_dcppA-hindcast_s1960-r1i1p1f2_gn_196011-196012.nc",
         "filename_template": "<variable_id>_<table_id>_<source_id>_<experiment_id >_<member_id>_<grid_label>[_<time_range>].nc"
-    }
+    },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "DRS_update_commit": "",
+            "DRS_modified": "",
+            "DRS_note": ""
+        }
+    ]
 }

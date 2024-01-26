@@ -2,9 +2,9 @@
 Aims: 
     Action Parameters
     If:
-        main branch - update the version metadata
+        main branch - update the version metadata_loc
     Else:
-        Create a blank header for the file_metadata
+        Create a blank header for the file_metadata_loc
         
     
 
@@ -20,6 +20,7 @@ from datetime import datetime
 
 prefix = 'CMIP6Plus_'
 main = 'main'
+metadata_loc = 'Header'
 
 ##########################################
 # load the maintainer file
@@ -37,7 +38,7 @@ maintainers = json.loads(raw_data.decode('utf-8'))
 # get repo information
 ##########################################
 
-tag = os.popen("git describe --tags --abbrev=0").read().strip()
+tag = os.popen("git describe --tags --abbrev=0 --always").read().strip() or ''
 # release_date = subprocess.check_output(["git", "log", "-1", "--format=%aI", tag]).strip().decode("utf-8")
 
 files = glob.glob(f'{prefix}*.json')
@@ -93,10 +94,10 @@ for f in files:
     contents = json.load(open(f,'r'))
 
 
-    if 'version_metadata' not in contents:
-        contents['version_metadata'] = dict(checksum='',commit='')
+    if metadata_loc not in contents:
+        contents[metadata_loc] = dict(checksum='',commit='')
 
-    if validate_checksum(contents):
+    if validate_checksum(contents,metadata_loc):
         continue
 
 
@@ -110,15 +111,15 @@ for f in files:
     
     
     '''
-commit 8f25db6f5551574eb826c21ce404d2e111bd2db2
-Merge: caa0888 124d96c
-Author: Daniel Ellis <daniel.ellis@ext.esa.int>
-Date:   Fri Jan 26 16:03:55 2024 +0000
+    commit 8f25db6f5551574eb826c21ce404d2e111bd2db2
+    Merge: caa0888 124d96c
+    Author: Daniel Ellis <daniel.ellis@ext.esa.int>
+    Date:   Fri Jan 26 16:03:55 2024 +0000
 
-Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests
+    Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests
 
 
-'''
+    '''
 
     commit_blocks = re.split(r'\n(?=commit\s)', full)
     for c in commit_blocks:
@@ -173,10 +174,10 @@ Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pul
 
 
     ##########################################
-    # create a new version metadata 
+    # create a new version metadata_loc 
     ##########################################
 
-    # previous_commit = contents['version_metadata'].get('commit','')
+    # previous_commit = contents['version_metadata_loc'].get('commit','')
     short = f.replace('.json','').replace(prefix,'')
 
     template =  OrderedDict({
@@ -200,8 +201,7 @@ Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pul
         })
         
         
-    del contents['Header']
-    del contents['version_metadata']
+    del contents[metadata_loc]
     previous = contents.copy()
 
     contents = OrderedDict({'Header':template})
@@ -218,17 +218,19 @@ Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pul
     for key in sorted(previous):
         contents[key] = previous[key]
 
-    contents = calculate_checksum(contents,checksum_location='Header',nest = 'file')
+    contents = calculate_checksum(contents,checksum_location=metadata_loc,nest = 'file')
 
     print('writing',f)
 
     import pprint
-    pprint.pprint(contents['Header'])
+    pprint.pprint(contents[metadata_loc])
 
     print('----------------------------\n\n')
 
-    # with open(f,'w') as write:
-    #     write.write(json.dumps(contents,indent=4))
+    print(len(contents))
+    with open(f,'w') as writef:
+        json.dump(contents,writef,indent=4)
+    # print (contents)
 
 
 

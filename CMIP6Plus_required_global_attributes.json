@@ -7,14 +7,22 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: adf71d675a8b46ee841927514fe8a96f",
-            "required_global_attributes_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "required_global_attributes_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "required_global_attributes_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "md5: 00cb9f93b7a29c4d96654d9d6ed6c985",
+            "required_global_attributes_update_commit": "0be62f656f03b555234a99f12ccbe9f487d16ebd",
+            "required_global_attributes_modified": "Tue Jan 16 21:20:32 2024 +0000",
+            "required_global_attributes_note": "Remove product from CMIP6Plus_required_global_attributes.json"
         },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "required_global_attributes_update_commit": "",
+            "required_global_attributes_modified": "",
+            "required_global_attributes_note": ""
+        }
+    ],
     "required_global_attributes": [
         "Conventions",
         "activity_id",

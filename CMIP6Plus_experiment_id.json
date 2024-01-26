@@ -7,13 +7,13 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: ef7462083ba3db1d18a7b628025ac573",
-            "experiment_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "experiment_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "experiment_id_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "md5: 9eb6e062985747361da48dae334d67e7",
+            "experiment_id_update_commit": "fdac5e62bd0df09eb476231e6d034f90f6dad906",
+            "experiment_id_modified": "Fri Jan 26 10:05:56 2024 +0000",
+            "experiment_id_note": "#47: Manual addition of six LESFMIP all-but-one experiments"
         },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
     "experiment_id": {
         "1pctCO2": {
@@ -828,5 +828,13 @@
             ],
             "tier": 2
         }
-    }
+    },
+    "file": [
+        {
+            "checksum": "Contents will be updated in branch main only.",
+            "experiment_id_update_commit": "",
+            "experiment_id_modified": "",
+            "experiment_id_note": ""
+        }
+    ]
 }
