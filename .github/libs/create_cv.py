@@ -88,9 +88,11 @@ if branch == 'main':
     branch = ''
     print('removing branched CVs')
     os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json')
+else:
+    branch = f"_{branch}"
     
     
-file_path = f'{relative}CVs/CMIP6Plus_CV{'_'+branch}.json'
+file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
 
 
 ###################################
