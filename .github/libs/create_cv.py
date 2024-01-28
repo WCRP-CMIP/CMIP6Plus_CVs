@@ -50,7 +50,7 @@ fx CVs/CV.json
 
 relative = '../../'
 cv_prefix = 'CMIP6Plus'
-file_path = f'{relative}CVs/CMIP6Plus_CV.json'
+
 
 mip_tables = 'mip-cmor-tables'
 table_prefix = 'MIP_'
@@ -75,10 +75,22 @@ parser.add_argument('-d', '--date', type=str, help='date_commit')
 # Add the tag argument
 parser.add_argument('-t', '--tag', type=str, help='tag')
 
+parser.add_argument('-b', '--branch', type=str, default=None, help='branch')
+
 parser.add_argument('-a', '--api', type=str, default=None, help='api_token')
 
 args = parser.parse_args()
 
+
+
+branch = args.branch.split('/')[-1]
+if branch == 'main':
+    branch = ''
+    print('removing branched CVs')
+    os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json')
+    
+    
+file_path = f'{relative}CVs/CMIP6Plus_CV{'_'+branch}.json'
 
 
 ###################################
