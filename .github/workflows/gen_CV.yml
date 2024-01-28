@@ -190,7 +190,7 @@ jobs:
                 current_datetime=$(date +"%Y-%m-%d %H:%M")
                 git add -A 
                 git add -f CVs/CMIP6Plus_CV.json
-                git commit -m "Automatically generated CV.json: $current_datetime"
+                git commit -m "Automatically generated *_CV.json: $current_datetime"
                 git push origin $(git rev-parse --abbrev-ref HEAD)
               fi
             fi
