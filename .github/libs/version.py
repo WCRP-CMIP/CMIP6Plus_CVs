@@ -213,7 +213,7 @@ for f in files:
 
     contents = OrderedDict({metadata_loc:template})
     
-    if args.branch != main:
+    if args.branch.split('/')[-1] != main:
         contents[metadata_loc]['file'] = OrderedDict({
             "checksum": f'Contents will be updated in branch {main} only.',
             f"{short}_update_commit":'',
