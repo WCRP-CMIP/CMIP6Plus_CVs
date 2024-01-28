@@ -151,7 +151,7 @@ jobs:
         id: 'run-python-script'
         run: |
           if [ ! "$EXIT" ]; then
-            python create_cv.py -c "${COMMIT_HASH}" -b "${{github.ref}}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+            python create_cv.py -c "${COMMIT_HASH}" -b "${{git rev-parse --abbrev-ref HEAD}}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
           fi
         working-directory: .github/libs
         env:
