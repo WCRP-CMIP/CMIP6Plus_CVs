@@ -151,7 +151,7 @@ jobs:
         id: 'run-python-script'
         run: |
           if [ ! "$EXIT" ]; then
-            python create_cv.py -c "${COMMIT_HASH}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+            python create_cv.py -c "${COMMIT_HASH}" -b "${{git rev-parse --abbrev-ref HEAD}}" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
           fi
         working-directory: .github/libs
         env:
@@ -190,7 +190,7 @@ jobs:
                 current_datetime=$(date +"%Y-%m-%d %H:%M")
                 git add -A 
                 git add -f CVs/CMIP6Plus_CV.json
-                git commit -m "Automatically generated CV.json: $current_datetime"
+                git commit -m "Automatically generated *_CV.json: $current_datetime"
                 git push origin $(git rev-parse --abbrev-ref HEAD)
               fi
             fi
