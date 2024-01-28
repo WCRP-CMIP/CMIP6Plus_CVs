@@ -829,8 +829,6 @@
             "BGC",
             "AGCM",
             "CHEM",
-            "OGCM",
-            "RAD",
             "LAND",
             "ISM"
         ],
@@ -925,12 +923,13 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Tue Jan 16 2024 21:20 UTC",
-            "checksum": "md5: 33e9a8e2714addbd6fb2a3878f12094a",
+
+            "file_updated": "Sun Jan 28 2024 17:21 UTC",
+            "checksum": "md5: 44bf5641955ace1edd78d598684ff844",
             "CVs": {
-                "updated": "2024-01-16T21:20:32Z",
+                "updated": "2024-01-28T17:20:47Z",
                 "tag": "v6.5.0.0",
-                "commit": "0be62f656f03b555234a99f12ccbe9f487d16ebd"
+                "commit": "7d603f79e2d3ec386617f056c0aef170f4b2e978"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
