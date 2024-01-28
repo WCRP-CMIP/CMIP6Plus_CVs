@@ -145,8 +145,16 @@ for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 
     CV.update(read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}{key}.json'))
 
-institutions = read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json')
+institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json'),**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
 
+def mapinst(i):
+    if i in institutions: 
+        return f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}"
+    elif i in institutions['consortiums']:
+        return f"{i} - {institutions['consortiums'][i]['name']} [consortium]"
+    else: 
+        raise FileNotFoundError('institution: '+i)
+        
 
 
 ###################################
@@ -222,7 +230,10 @@ for entry in structure:
         elif entry == 'source_id':
             # this section updates the institutions
 
-            CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
+    
+
+                    
+            CV['institution_id'] = {i: mapinst(i) for i in sorted(
                 {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
             
             for model in CV[entry]:
