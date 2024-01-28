@@ -7,22 +7,14 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: c7cec887dff094f4b03a4b654ebb5edb",
-            "sub_experiment_id_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "sub_experiment_id_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "sub_experiment_id_note": "Webhook initiated workflow, with external user generated commits"
-        },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
-    },
-    "file": [
-        {
             "checksum": "Contents will be updated in branch main only.",
             "sub_experiment_id_update_commit": "",
             "sub_experiment_id_modified": "",
             "sub_experiment_id_note": ""
-        }
-    ],
+        },
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
+    },
     "sub_experiment_id": {
         "f2023": "Forcings 2023",
         "none": "none"
