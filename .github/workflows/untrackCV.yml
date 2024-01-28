@@ -1,0 +1,21 @@
+name: Untrack File on Pull Request
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  untrack-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Untrack file on pull request
+      run: |
+        git rm 'CVs/*.json' 
+        git commit -m "Untrack file for pull request" --allow-empty
+        git push origin HEAD:${{ github.event.before }}-untrack-file

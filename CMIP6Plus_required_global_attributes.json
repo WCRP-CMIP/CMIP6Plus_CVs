@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: adf71d675a8b46ee841927514fe8a96f",
-            "required_global_attributes_update_commit": "97e50cb5bb8f66d814edb4ca245d01d40cb0abfb",
-            "required_global_attributes_modified": "Wed Nov 29 20:17:31 2023 +0000",
-            "required_global_attributes_note": "Webhook initiated workflow, with external user generated commits"
+            "checksum": "Contents will be updated in branch main only.",
+            "required_global_attributes_update_commit": "",
+            "required_global_attributes_modified": "",
+            "required_global_attributes_note": ""
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
@@ -33,7 +33,6 @@
         "mip_era",
         "nominal_resolution",
         "physics_index",
-        "product",
         "realization_index",
         "realm",
         "source",
