@@ -134,6 +134,7 @@
             },
             "release_year": 2017,
             "source_id": "MPI-ESM1-2-LR"
+<<<<<<< HEAD
         },
         "MIROC6": {
             "activity_participation": [

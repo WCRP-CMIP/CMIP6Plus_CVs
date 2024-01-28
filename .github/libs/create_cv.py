@@ -50,7 +50,7 @@ fx CVs/CV.json
 
 relative = '../../'
 cv_prefix = 'CMIP6Plus'
-file_path = f'{relative}CVs/CMIP6Plus_CV.json'
+
 
 mip_tables = 'mip-cmor-tables'
 table_prefix = 'MIP_'
@@ -75,10 +75,24 @@ parser.add_argument('-d', '--date', type=str, help='date_commit')
 # Add the tag argument
 parser.add_argument('-t', '--tag', type=str, help='tag')
 
+parser.add_argument('-b', '--branch', type=str, default=None, help='branch')
+
 parser.add_argument('-a', '--api', type=str, default=None, help='api_token')
 
 args = parser.parse_args()
 
+
+
+branch = args.branch.split('/')[-1]
+if branch == 'main':
+    branch = ''
+    print('removing branched CVs')
+    os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json')
+else:
+    branch = f"_{branch}"
+    
+    
+file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
 
 
 ###################################
@@ -147,6 +161,14 @@ for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 
 institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json'),**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
 
+def mapinst(i):
+    if i in institutions: 
+        return f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}"
+    elif i in institutions['consortiums']:
+        return f"{i} - {institutions['consortiums'][i]['name']} [consortium]"
+    else: 
+        raise FileNotFoundError('institution: '+i)
+        
 
 
 ###################################
@@ -222,7 +244,10 @@ for entry in structure:
         elif entry == 'source_id':
             # this section updates the institutions
 
-            CV['institution_id'] = {i: f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}" for i in sorted(
+    
+
+                    
+            CV['institution_id'] = {i: mapinst(i) for i in sorted(
                 {component for source in CV[entry].values() for component in source.get("institution_id", [])})}
             
             for model in CV[entry]:
