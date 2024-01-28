@@ -4,7 +4,7 @@ from copy import deepcopy
 import hashlib
 import json
 
-def calculate_checksum(dictionary, overwrite=True, checksum_location='version_metadata',nest = None):
+def calculate_checksum(dictionary, overwrite=True, checksum_location='version_metadata',nest = None,update=False):
     """
     Calculate the checksum for dictionary and add it to the Header
 
@@ -23,7 +23,9 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
         If the ``checksum`` key already exists and ``overwrite`` is
         False.
     """
-    if 'checksum' in dictionary[checksum_location]:
+    
+    
+    if 'checksum' in dictionary[checksum_location]  :
         if not overwrite:
             raise RuntimeError('Checksum already exists.')
         # del dictionary[checksum_location]['checksum']
@@ -32,12 +34,20 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
             dictionary[checksum_location][nest]['checksum'] = '' 
         else:
             dictionary[checksum_location]['checksum'] = '' 
+            
+    cfrom = dictionary.copy()
+    del cfrom[checksum_location]  
 
-    checksum = _checksum(dictionary)
-    if nest: 
-        dictionary[checksum_location][nest]['checksum'] = checksum
-    else:
-        dictionary[checksum_location]['checksum'] = checksum
+    checksum = _checksum(cfrom)
+    from pprint import pprint
+    
+    if update:
+    
+        if nest: 
+            dictionary[checksum_location][nest]['checksum'] = checksum
+        else:
+            dictionary[checksum_location]['checksum'] = checksum
+            
     return dictionary
 
 
@@ -59,10 +69,18 @@ def validate_checksum(dictionary, checksum_location='version_metadata',error = F
     RuntimeError
         If the ``checksum`` value is invalid.
     """
+    
+    
+    
     if ('checksum' not in dictionary[checksum_location]['file']):
         raise KeyError('No checksum to validate')
+    
+    
     dictionary_copy = deepcopy(dictionary)
-    try:del dictionary_copy[checksum_location]['file']['checksum']
+    
+    try:
+        del dictionary_copy[checksum_location]
+        # ['file']['checksum']
     except:...
     checksum = _checksum(dictionary_copy)
     if dictionary[checksum_location]['file'].get('checksum','no_checksum') != checksum:

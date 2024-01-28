@@ -3,6 +3,10 @@ Aims:
     Action Parameters
     If:
         main branch - update the version metadata_loc
+        see what files have changed 
+        update the version number 
+        reflect this
+        
     Else:
         Create a blank header for the file_metadata_loc
         
@@ -21,6 +25,7 @@ from datetime import datetime
 prefix = 'CMIP6Plus_'
 main = 'main'
 metadata_loc = 'Header'
+
 
 ##########################################
 # load the maintainer file
@@ -49,6 +54,7 @@ files = glob.glob(f'{prefix}*.json')
 parser = argparse.ArgumentParser(description="Retrieve details for the latest tag of a GitHub repository.")
 parser.add_argument("-t","--token" ,help="token number")
 parser.add_argument("-b","--branch" ,help="branch name")
+parser.add_argument('-a','--all', action='store_false',help='If added, we will overwrite ALL the files. ')
 
 args = parser.parse_args()
 
@@ -94,8 +100,9 @@ for f in files:
     contents = json.load(open(f,'r'))
 
 
-    if metadata_loc not in contents:
-        contents[metadata_loc] = dict(checksum='',commit='')
+    if metadata_loc not in contents or not args.all:
+        contents[metadata_loc] = dict(file = {"checksum":''},commit='')
+        print('setting blank header on ',f)
 
     if validate_checksum(contents,metadata_loc):
         continue
@@ -204,15 +211,15 @@ for f in files:
     del contents[metadata_loc]
     previous = contents.copy()
 
-    contents = OrderedDict({'Header':template})
+    contents = OrderedDict({metadata_loc:template})
     
     if args.branch != main:
-        contents['file'] = OrderedDict({
+        contents[metadata_loc]['file'] = OrderedDict({
             "checksum": f'Contents will be updated in branch {main} only.',
             f"{short}_update_commit":'',
             f"{short}_modified":'',
             f"{short}_note":'',
-        }),
+        })
         
     
     for key in sorted(previous):
@@ -226,6 +233,8 @@ for f in files:
     pprint.pprint(contents[metadata_loc])
 
     print('----------------------------\n\n')
+    
+   
 
     print(len(contents))
     with open(f,'w') as writef:
@@ -234,16 +243,21 @@ for f in files:
 
 
 
-##########################################
-# keep the individualised commit messages
-##########################################
+    ##########################################
+    # keep the individualised commit messages
+    ##########################################
 
-    # timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
-    # formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
+    timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
+    formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
+    print(author_match.group(1))
+    print(commit_dict['commit_message'])
 
-    # os.popen(f"git add {f}").read()
-    # os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
-    # # os.popen(f"git push").read()
+    os.popen(f"git add {f}").read()
+#     os.popen(f"git commit -m '{formatted_timestamp} - {commit_dict['commit_message'][:50]}'").read()
+    os.popen(f'git commit --author="{author_match.group(1)}" -m "{commit_dict["commit_message"]}"')
+
+    
+    # os.popen(f"git push").read()
 
 
 # checksum. If checksum is not the same, update.
