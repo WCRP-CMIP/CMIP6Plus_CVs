@@ -229,7 +229,7 @@ for f in files:
     for key in sorted(previous):
         contents[key] = previous[key]
 
-    contents = calculate_checksum(contents,checksum_location=metadata_loc,nest = 'file')
+    contents = calculate_checksum(contents,checksum_location=metadata_loc,nest = 'file',update=True)
 
     print('writing',f)
 
