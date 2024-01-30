@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "checksum",
-            "mip_era_update_commit": "a44fab24ec08724a91a0ff6c0458b291079210cb",
-            "mip_era_modified": "Tue Jan 30 12:10:25 2024 +0000",
+            "checksum": "md5: 15ab5b39a4b62012e371f14e3c2afbfc",
+            "mip_era_update_commit": "a8167b642acc8795b293f1c8a34cf723f1a831b5",
+            "mip_era_modified": "Tue Jan 30 12:15:25 2024 +0000",
             "mip_era_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
