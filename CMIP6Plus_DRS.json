@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "checksum",
-            "DRS_update_commit": "f6fec91b9b4649c24a588f7bccb615732b3763c1",
-            "DRS_modified": "Tue Jan 30 12:10:25 2024 +0000",
+            "checksum": "md5: 87c4ebd7d94fc626cbbf6c848a978996",
+            "DRS_update_commit": "3c27fa605c5ef7d0dd5155a491e3748c2eb345c1",
+            "DRS_modified": "Tue Jan 30 12:15:25 2024 +0000",
             "DRS_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
