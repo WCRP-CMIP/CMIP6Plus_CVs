@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "product_update_commit": "0a5ce01b657727a8427a5e8613d7e4ca7f3beca1",
-            "product_modified": "Tue Jan 30 11:49:08 2024 +0000",
+            "product_update_commit": "c4ba76b1493adb39688c060a1363c029a56b06db",
+            "product_modified": "Tue Jan 30 11:49:26 2024 +0000",
             "product_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
