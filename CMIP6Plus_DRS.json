@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "DRS_update_commit": "cb6b7dedafd59002f6300718975be74ad76d1cd6",
-            "DRS_modified": "Tue Jan 30 11:59:01 2024 +0000",
+            "DRS_update_commit": "296e2f1d80bf115fa331206048516f1c2a85209e",
+            "DRS_modified": "Tue Jan 30 12:08:24 2024 +0000",
             "DRS_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
