@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "mip_era_update_commit": "a84c266df6fc8688a8727a7883ffdc379e8591ec",
-            "mip_era_modified": "Sun Jan 28 18:32:32 2024 +0000",
+            "mip_era_update_commit": "0a5ce01b657727a8427a5e8613d7e4ca7f3beca1",
+            "mip_era_modified": "Tue Jan 30 11:49:08 2024 +0000",
             "mip_era_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
