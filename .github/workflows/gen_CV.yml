@@ -21,6 +21,7 @@ on:
 
 jobs:
   generate_cv:
+    needs: untrack-file
     runs-on: ubuntu-latest
     permissions:
       actions: write
