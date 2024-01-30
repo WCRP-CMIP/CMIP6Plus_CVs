@@ -21,6 +21,9 @@ jobs:
 
     - name: Untrack file on pull request
       run: |
+        git config --global user.email "actions@wcrp-cmip.org"
+        git config --global user.name "CMIP-IPO GitHub Action"
+        
         git rm 'CVs/*.json' 
         git commit -m "Untrack file for pull request" --allow-empty
         git push origin HEAD:${{ github.event.before }}-untrack-file
