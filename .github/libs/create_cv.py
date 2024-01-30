@@ -83,17 +83,6 @@ args = parser.parse_args()
 
 
 
-branch = args.branch.split('/')[-1]
-if branch == 'main':
-    branch = ''
-    print('removing branched CVs')
-    os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json')
-else:
-    branch = f"_{branch}"
-    
-    
-file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
-
 
 ###################################
 # define functions
@@ -209,7 +198,7 @@ structure = ['required_global_attributes',
 ###################################
 # main section
 ###################################
-f = open(file_path, 'w')
+
 
 
 for entry in structure:
@@ -323,10 +312,30 @@ CV['CV']['version_metadata'] = OrderedDict(
 # checksum
 ###################################
 
+
+
+
+branch = args.branch.split('/')[-1]
+print(args.branch)
+if branch == 'main':
+    branch = ''
+    print('removing branched CVs')
+    os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json').read()
+else:
+    branch = f"_{branch}"
+    
+    
+file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
+
 CV['CV'] = calculate_checksum(CV['CV'])
 
+if os.path.exists(file_path):
+    with open(file_path, 'r') as f:
+        oldcv = json.load(f)
+        if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
+            sys.exit('CV content unchanged. Exiting')
 
 # Write the JSON data to the file with an indentation of 4 spaces and sorted keys
-
+f = open(file_path, 'w')
 json.dump(CV, f, indent=4, sort_keys=False)
 f.close()

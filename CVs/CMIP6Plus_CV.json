@@ -480,6 +480,180 @@
                 ],
                 "tier": 3
             },
+            "hist-noLu": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+                "end": 2020,
+                "experiment": "historical with no land-use change",
+                "experiment_id": "hist-noLu",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
+            "hist-piGHG": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
+                "end": 2020,
+                "experiment": "historical forcing but with pre-industrial GHG",
+                "experiment_id": "hist-piGHG",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
+            "hist-piAer": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+                "end": 2020,
+                "experiment": "historical forcing, but with pre-industrial aerosol emissions",
+                "experiment_id": "hist-piAer",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
+            "hist-piSol": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "historical simulations with 1850 solar forcing",
+                "end": 2020,
+                "experiment": "historical all-but-solar run",
+                "experiment_id": "hist-piSol",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
+            "hist-piTotalO3": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "historical simulations with 1850 total ozone",
+                "end": 2020,
+                "experiment": "historical all-but-ozone run",
+                "experiment_id": "hist-piTotalO3",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
+            "hist-piVolc": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "historical simulations with 1850 volcanic emissions",
+                "end": 2020,
+                "experiment": "historical all-but-volcanic run",
+                "experiment_id": "hist-piVolc",
+                "min_number_yrs_per_sim": "none",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start": 1850,
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 3
+            },
             "hist-sol": {
                 "activity_id": [
                     "LESFMIP"
@@ -727,7 +901,9 @@
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
         ],
         "institution_id": {
+            "MIROC": "MIROC - MIROC [consortium]",
             "MOHC": " - Met Office Hadley Centre",
+            "MPI-M": "05esem239 - Max Planck Institute for Meteorology",
             "NERC": "02b5d8509 - Natural Environment Research Council"
         },
         "license": [
@@ -754,6 +930,7 @@
         "physics_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
         ],
+        "product": "model-output",
         "realization_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
         ],
@@ -820,17 +997,82 @@
                 },
                 "source_id": "HadGEM3-GC31-LL",
                 "source": "HadGEM3-GC31-LL (2016: \naerosol: UKCA-GLOMAP-mode\natmos: MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)\natmosChem: none\nland: JULES-HadGEM3-GL7.1\nlandIce: none\nocean: NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude))"
+            },
+            "MPI-ESM1-2-LR": {
+                "activity_participation": [
+                    "CMIP",
+                    "LESFMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "MPI-M"
+                ],
+                "license_info": {
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International",
+                    "url": "https://creativecommons.org/licenses/by/4.0/",
+                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+                    "source_specific_info": ""
+                },
+                "source_id": "MPI-ESM1-2-LR",
+                "source": "MPI-ESM1-2-LR (2017: \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
+            },
+            "MPI-ESM1-2-HR": {
+                "activity_participation": [
+                    "CMIP",
+                    "LESFMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "MPI-M"
+                ],
+                "license_info": {
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International",
+                    "url": "https://creativecommons.org/licenses/by/4.0/",
+                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+                    "source_specific_info": ""
+                },
+                "source_id": "MPI-ESM1-2-HR",
+                "source": "MPI-ESM1-2-HR (2017: \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
+            },
+            "MIROC6": {
+                "activity_participation": [
+                    "CMIP",
+                    "LESFMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "MIROC"
+                ],
+                "license_info": {
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International",
+                    "url": "https://creativecommons.org/licenses/by/4.0/",
+                    "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+                    "source_specific_info": ""
+                },
+                "source_id": "MIROC6",
+                "source": "MIROC6 (2017: \naerosol: SPRINTARS6.0\natmos: CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)\nland: MATSIRO6.0\nocean: COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)\nseaIce: COCO4.9)"
             }
         },
         "source_type": [
-            "AOGCM",
-            "AER",
-            "SLAB",
-            "BGC",
-            "AGCM",
+            "ISM",
+            "RAD",
             "CHEM",
+            "AGCM",
+            "SLAB",
+            "OGCM",
+            "BGC",
+            "AOGCM",
             "LAND",
-            "ISM"
+            "AER"
         ],
         "sub_experiment_id": {
             "f2023": "Forcings 2023",
@@ -923,13 +1165,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-
-            "file_updated": "Sun Jan 28 2024 17:21 UTC",
-            "checksum": "md5: 44bf5641955ace1edd78d598684ff844",
+            "file_updated": "Tue Jan 30 2024 11:51 UTC",
+            "checksum": "",
             "CVs": {
-                "updated": "2024-01-28T17:20:47Z",
+                "updated": "2024-01-30T11:49:56Z",
                 "tag": "v6.5.0.0",
-                "commit": "7d603f79e2d3ec386617f056c0aef170f4b2e978"
+                "commit": "8361fe91a049e619da6f80a8430749135bfac225"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
