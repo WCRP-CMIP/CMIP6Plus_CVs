@@ -10,6 +10,9 @@ on:
   push:
     branches:
       - '*'
+    paths:
+      - '**/*'
+      # only trigger if files within the repo are updated
     tags:
       - '*'
 
