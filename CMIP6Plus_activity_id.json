@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "checksum",
-            "activity_id_update_commit": "47407e0fa816cb677fa91f773b05dd4639c06e60",
-            "activity_id_modified": "Tue Jan 30 12:10:25 2024 +0000",
+            "checksum": "md5: 13f76cb7b0cd1075fcb440b6e22afb64",
+            "activity_id_update_commit": "c88f5ae8ea36aaeb6cd03be4db1b57747d69214a",
+            "activity_id_modified": "Tue Jan 30 12:15:25 2024 +0000",
             "activity_id_note": "Update CMIP6Plus_activity_id.json"
         },
         "author": "Daniel Ellis",
