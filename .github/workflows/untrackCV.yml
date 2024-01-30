@@ -6,7 +6,7 @@ on:
       - opened
       - synchronize
   workflow_run:
-     workflows: ["Untrack File on Pull Request","File Versioning"]
+     workflows: ["File Versioning"]
      types:
      - completed
 
