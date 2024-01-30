@@ -20,6 +20,13 @@ on:
       # docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
 
 jobs:
+  init:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello
+        run: echo "generate_cv"
+        
   generate_cv:
     needs: untrack-file
     runs-on: ubuntu-latest
