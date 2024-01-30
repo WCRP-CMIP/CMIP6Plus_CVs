@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "required_global_attributes_update_commit": "9950d475a9158e20c17bea4882cfe3d96d861154",
-            "required_global_attributes_modified": "Tue Jan 30 12:08:24 2024 +0000",
+            "required_global_attributes_update_commit": "fefa8e5007bc1ecfb4c47c4f300f17296a7796dc",
+            "required_global_attributes_modified": "Tue Jan 30 12:10:25 2024 +0000",
             "required_global_attributes_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
