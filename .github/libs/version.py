@@ -96,7 +96,7 @@ CVs = get_latest_repo('WCRP-CMIP','CMIP6Plus_CVs',args.token)
     ##########################################
 for f in files:
 
-
+    print(f'----{f}----')
     contents = json.load(open(f,'r'))
 
 
@@ -240,7 +240,7 @@ for f in files:
     
    
 
-    print(len(contents))
+    print(len(contents), 'writing:', f)
     with open(f,'w') as writef:
         json.dump(contents,writef,indent=4)
     # print (contents)
@@ -263,7 +263,7 @@ for f in files:
     
     
     
-os.popen(f'git push').read()
+print(os.popen(f'git push').read())
 
 # checksum. If checksum is not the same, update.
 
