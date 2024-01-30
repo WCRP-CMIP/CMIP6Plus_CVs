@@ -8,7 +8,6 @@ on:
       - '*'
 
 jobs:
-  needs: generate_cv
   update_versioning:
     runs-on: ubuntu-latest
 
