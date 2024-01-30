@@ -5,6 +5,11 @@ on:
     types:
       - opened
       - synchronize
+  workflow_run:
+     workflows: ["Untrack File on Pull Request","File Versioning"]
+     types:
+     - completed
+
 
 jobs:
   untrack-file:
