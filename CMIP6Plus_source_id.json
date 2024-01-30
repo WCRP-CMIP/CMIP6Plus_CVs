@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "checksum",
-            "source_id_update_commit": "66bd24704c197b541fc4061d829f17aae1df84e0",
-            "source_id_modified": "Tue Jan 30 12:10:25 2024 +0000",
+            "checksum": "md5: 3f8858d55a1c5d022c51ed17240832a0",
+            "source_id_update_commit": "4a3b1d67711ddade9527fa639780995297c63c72",
+            "source_id_modified": "Tue Jan 30 12:15:25 2024 +0000",
             "source_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
