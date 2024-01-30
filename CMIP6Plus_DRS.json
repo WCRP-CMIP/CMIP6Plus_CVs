@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "DRS_update_commit": "",
-            "DRS_modified": "",
-            "DRS_note": ""
+            "checksum": "checksum",
+            "DRS_update_commit": "51e155d94bb6ab686e24151237c87cd4b2136f3e",
+            "DRS_modified": "Sun Jan 28 18:32:32 2024 +0000",
+            "DRS_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"

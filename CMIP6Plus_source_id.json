@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "source_id_update_commit": "",
-            "source_id_modified": "",
-            "source_id_note": ""
+            "checksum": "checksum",
+            "source_id_update_commit": "305efe0706ba38702bb716ae9ddee6d61b7bc894",
+            "source_id_modified": "Sun Jan 28 18:32:32 2024 +0000",
+            "source_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
@@ -81,7 +81,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MPI-M"
@@ -141,7 +141,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MPI-M"
@@ -201,7 +201,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "MIROC"

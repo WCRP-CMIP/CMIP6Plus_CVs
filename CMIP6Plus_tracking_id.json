@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "tracking_id_update_commit": "",
-            "tracking_id_modified": "",
-            "tracking_id_note": ""
+            "checksum": "checksum",
+            "tracking_id_update_commit": "558ad1561dbf7ce5fea096e6670a6a3c0f8dbe6f",
+            "tracking_id_modified": "Sun Jan 28 18:32:32 2024 +0000",
+            "tracking_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"

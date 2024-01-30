@@ -8,15 +8,12 @@
         },
         "file": {
             "checksum": "checksum",
-            "sub_experiment_id_update_commit": "f9a9b913a6a9b40b55e6fcf463120c1b2d80b4a4",
-            "sub_experiment_id_modified": "Sun Jan 28 18:32:32 2024 +0000",
-            "sub_experiment_id_note": "Update branch name in version_update.yml"
+            "product_update_commit": "none",
+            "product_modified": "Sun Jan 28 18:29:52 2024 +0000",
+            "product_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
     },
-    "sub_experiment_id": {
-        "f2023": "Forcings 2023",
-        "none": "none"
-    }
+    "product": "model-output"
 }

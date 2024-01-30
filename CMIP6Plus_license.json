@@ -7,10 +7,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "Contents will be updated in branch main only.",
-            "license_update_commit": "",
-            "license_modified": "",
-            "license_note": ""
+            "checksum": "checksum",
+            "license_update_commit": "fb75427284ce34ee8e6c2ce06067e683ba2f5d22",
+            "license_modified": "Sun Jan 28 18:32:32 2024 +0000",
+            "license_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
