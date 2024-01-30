@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "license_update_commit": "f48871019e82a235a1f406a65e1a0271853da0b9",
-            "license_modified": "Tue Jan 30 11:59:01 2024 +0000",
+            "license_update_commit": "feaabbc7dc15cf32f14cbca302e86191f200c166",
+            "license_modified": "Tue Jan 30 12:08:24 2024 +0000",
             "license_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
