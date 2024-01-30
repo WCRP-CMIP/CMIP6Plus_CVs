@@ -7,9 +7,9 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "checksum",
-            "required_global_attributes_update_commit": "0a5ce01b657727a8427a5e8613d7e4ca7f3beca1",
-            "required_global_attributes_modified": "Tue Jan 30 11:49:08 2024 +0000",
+            "checksum": "md5: 707ac1977a119878fc4fa113b3e2e67f",
+            "required_global_attributes_update_commit": "f55f9a2b029b070615bcc41cd5b13f2ec8f5affb",
+            "required_global_attributes_modified": "Tue Jan 30 12:15:25 2024 +0000",
             "required_global_attributes_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
