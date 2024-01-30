@@ -8,8 +8,8 @@
         },
         "file": {
             "checksum": "checksum",
-            "sub_experiment_id_update_commit": "022c4f52218910c9bb3f3d9cf029d6e1d9a6dc29",
-            "sub_experiment_id_modified": "Tue Jan 30 12:08:24 2024 +0000",
+            "sub_experiment_id_update_commit": "d7f36bb5cd31961b8735b8b5edf466bd9a7fa777",
+            "sub_experiment_id_modified": "Tue Jan 30 12:10:25 2024 +0000",
             "sub_experiment_id_note": "Update branch name in version_update.yml"
         },
         "author": "Daniel Ellis",
