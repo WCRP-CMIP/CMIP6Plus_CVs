@@ -1,23 +1,11 @@
 name: Generate CV file
 
 on:
-  workflow_run:
-    workflows: ["Untrack File on Pull Request","File Versioning"]
-    types:
-      - completed
-
-
   push:
     branches:
       - '*'
     tags:
       - '*'
-
-      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -vact -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -v
-
-      # act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -b -W .github/workflows/gen_CV.yml 
-
-      # docker exec -it act-Generate-CV-file-create-branch-and-update-files-cabe81e196626eaf2f1a205b6f6f95341b0aa587d4d7127baba6ccfa7bef525a /bin/bash
 
 jobs:
   generate_cv:
@@ -38,8 +26,8 @@ jobs:
       statuses: write
 
     env:
-        API_KEY: ${{ secrets.API_KEY }}
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+      API_KEY: ${{ secrets.API_KEY }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Check out the repository
@@ -47,35 +35,36 @@ jobs:
 
       - name: Is run necessary
         run: |
-          # This is a useful way to only run the script on branches that need it. 
-          file_path="CVs/CMIP6Plus_CV.json"
+          # Create the CVs directory if it does not exist
+          mkdir -p CVs
 
-          # Get the latest commit date for the repository
+          # Check if the script should be run based on file modification date and name
+          file_path_pattern="CVs/CMIP6Plus_CV_$(git rev-parse --abbrev-ref HEAD).json"
           latest_commit_date=$(git log -n 1 --format=%cd)
-
-          # Get the last modification date for the specified file
-          last_modification_date=$(git log -1 --format=%ad -- "$file_path")
-
-          # Compare the dates
-          if [ "$latest_commit_date" \< "$last_modification_date" ]; then
-            echo "The latest commit is older than the last modification date for the file. "
-
-            echo "EXIT=true" >> $GITHUB_ENV
-            
-          else
-            echo "The latest commit is not older than the last modification date for the file."
-          fi
           
+          # Check if the file exists
+          if [ -e "$file_path_pattern" ]; then
+            last_modification_date=$(git log -1 --format=%ad -- "$file_path_pattern")
+            
+            # Compare the dates
+            if [ "$latest_commit_date" \< "$last_modification_date" ]; then
+              echo "The latest commit is older than the last modification date for the file."
+              echo "EXIT=true" >> $GITHUB_ENV
+            else
+              echo "The latest commit is not older than the last modification date for the file."
+            fi
+          else
+            echo "File $file_path_pattern not found."
 
-              
-
-
-
-      # - name: Install NPM
-      #   uses: actions/setup-node@v3
+            # Create an empty CV file or perform any necessary initialization
+            touch "$file_path_pattern"
+      
+            # echo "EXIT=false" >> $GITHUB_ENV
+          fi
 
       - name: Set up Git
         run: |
+          # Configure Git settings
           git config user.email "actions@wcrp-cmip.org"
           git config user.name "CMIP-IPO: Automated GitHub Action"
           git config credential.helper store
@@ -85,73 +74,40 @@ jobs:
           GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
           echo "GH_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
           echo "GITHUB_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
-          git pull 
-        shell: bash
+          git pull
 
       - name: Set GIT repo environment variables
         run: |
+          # Set environment variables related to Git repository
           echo "COMMIT_HASH=${GITHUB_SHA}" >> $GITHUB_ENV
-
-          # if [ -n "${GITHUB_REF}" ]; then
-          #   TAG=$(echo "${GITHUB_REF}" | sed -n 's|refs/tags/\(.*\)|\1|p')
-          # else
-          #   # If no tag, get the tag associated with the main branch using GitHub API
-            TAG=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
-          # fi
-
+          TAG=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
           echo "TAG_VERSION=${TAG}" >> $GITHUB_ENV
-
-          # Use GitHub API to get commit information
-          COMMIT_DATE=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
-                          "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}" | \
-                        jq -r '.commit.author.date')
-
+          COMMIT_DATE=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}" | jq -r '.commit.author.date')
           echo "COMMIT_DATE=${COMMIT_DATE}" >> $GITHUB_ENV
-        shell: bash
 
       - name: Display GIT environment variables
         run: |
+          # Display Git environment variables for debugging
           echo "Commit Hash: $COMMIT_HASH"
           echo "Tag Version: $TAG_VERSION"
           echo "Commit Date: $COMMIT_DATE"
           echo "${{github.repository}}"
 
-
-
-      - name: Clear previous
-        run: |
-          if [ -z "$ACT" ]; then
-            echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-
-            if [ ! "$EXIT" ]; then
-              if [ -e "CVs/CMIP6Plus_CV.json" ]; then
-                echo "Removing output CMIP6Plus_CV.json"
-                rm -f CVs/CMIP6Plus_CV.json
-                git add -A 
-                git commit -m 'Remove CMIP6Plus_CV.json'
-                git push origin $(git rev-parse --abbrev-ref HEAD)
-              else
-                mkdir -p CVs
-              fi
-            fi
-          else
-            echo "Skipping this step in 'act' environment."
-          fi
-        shell: bash
-
-
       - name: Print latest commit SHA
         id: commit_sha
         run: |
+          # Print the latest commit SHA
           echo "commit=$(git rev-parse HEAD)" >> $GITHUB_ENV
-        shell: bash
-  
+          echo "CVs/CMIP6Plus_CV_$(git rev-parse --abbrev-ref HEAD).json"
 
       - name: Run Python Check
         id: 'run-python-script'
         run: |
+          # Run Python script if necessary
+          
           if [ ! "$EXIT" ]; then
-            python create_cv.py -c "${COMMIT_HASH}" -b $(git rev-parse --abbrev-ref HEAD) -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
+            file_path_pattern="$(git rev-parse --abbrev-ref HEAD)"
+            python create_cv.py -c "${COMMIT_HASH}" -b "$file_path_pattern" -t "${TAG_VERSION}" -d "${COMMIT_DATE}" -a "${GH_TOKEN}"
           fi
         working-directory: .github/libs
         env:
@@ -159,58 +115,23 @@ jobs:
           PYTHON_SCRIPT_ERROR: ${{ steps.run-python-script.outputs.stderr }}
         continue-on-error: false
 
-
-
-
-
-      # - name: Print output
-      #   run: |
-      #     echo "::set-output name=PYSTD::$PYTHON_SCRIPT_OUTPUT"
-      #     echo "::set-output name=PYERR::$PYTHON_SCRIPT_ERROR"        
-
-      # - name: Check Python script output
-      #   run: |
-      #     echo "Python script output: $PYTHON_SCRIPT_OUTPUT"
-      #     if [[ "$PYTHON_SCRIPT_OUTPUT" == "FAILED"* ]]; then
-      #       echo "Issue processing failed. Closing the issue..."
-      #       gh issue close "${{ github.event.issue.number }}"
-      #       gh issue comment "${{ github.event.issue.number }}" --body "Processing failed with the following error: $PYTHON_SCRIPT_OUTPUT"
-      #     else
-      #       echo "Issue processed successfully."
-      #     fi
-      #   shell: bash
-
-
       - name: Write new CV
         run: |
+          # Write new CV if necessary
           if [ -z "$ACT" ]; then
             if [ ! "$EXIT" ]; then
               echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-              if [ -e "CVs/CMIP6Plus_CV.json" ]; then
+              file="CVs/CMIP6Plus_CV_$(git rev-parse --abbrev-ref HEAD).json"
+              
+              if [ -e $file ]; then
                 current_datetime=$(date +"%Y-%m-%d %H:%M")
-                git add -A 
-                git add -f CVs/CMIP6Plus_CV.json
-                git commit -m "Automatically generated *_CV.json: $current_datetime"
+                git add -A
+                git add -f $file
+                git commit -m "Automatically generated $file: $current_datetime"
                 git push origin $(git rev-parse --abbrev-ref HEAD)
               fi
             fi
           else
             echo "Skipping this step in 'act' environment."
           fi
-        shell: bash
         continue-on-error: true
-
-
-
-      - name: Debug current working directory
-        run: |
-          pwd
-          ls -al
-
-
-      - name: If using act detach -b for debugging
-        run: |
-          if [ -n "$ACT" ]; then
-            echo "Delaying by 360 seconds for testing with act"
-            sleep 360
-          fi

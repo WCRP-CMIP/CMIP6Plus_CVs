@@ -320,20 +320,25 @@ print(args.branch)
 if branch == 'main':
     branch = ''
     print('removing branched CVs')
+    os.popen(f' touch {relative}CVs/CMIP6Plus_CV_*.json').read()
     os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json').read()
 else:
     branch = f"_{branch}"
     
-    
+#  the missing _ is intentional 
 file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
 
 CV['CV'] = calculate_checksum(CV['CV'])
 
 if os.path.exists(file_path):
     with open(file_path, 'r') as f:
-        oldcv = json.load(f)
-        if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
-            sys.exit('CV content unchanged. Exiting')
+        try:
+            oldcv = json.load(f)
+        
+            if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
+                sys.exit('CV content unchanged. Exiting')
+        except: 
+            ...
 
 # Write the JSON data to the file with an indentation of 4 spaces and sorted keys
 f = open(file_path, 'w')
