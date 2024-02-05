@@ -217,7 +217,7 @@ for entry in structure:
         if 'experiment_id' in entry:
 
             # select only those that appear
-            CV['source_type'] = list(set(CV['source_type']).union(set(component for experiment in CV[entry].values() if "required_model_components" in experiment for component in experiment["required_model_components"]+experiment["additional_allowed_model_components"])))
+            CV['source_type'] = sorted(set(CV['source_type']).union(set(component for experiment in CV[entry].values() if "required_model_components" in experiment for component in experiment["required_model_components"]+experiment["additional_allowed_model_components"])))
     
                             
             if entry == 'experiment_id':
