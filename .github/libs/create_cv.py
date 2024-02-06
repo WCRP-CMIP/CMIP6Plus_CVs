@@ -225,6 +225,11 @@ for entry in structure:
                 CV[entry] = listify(CV[ entry],['parent_experiment_id','parent)sub_experiment_id','parent_activity_id'])
 
                 CV[entry] = notnull(CV[entry],['parent_experiment_id','parent)sub_experiment_id'], 'no parent')
+                
+                for expnt in CV[entry]: 
+                    # remove start and end times from the CV
+                    for d in 'end start min_number_yrs_per_sim'.split():
+                            del CV[entry][expnt][d]
 
         elif entry == 'activity_id':
             CV[entry] = {f"{key}": value["long_name"] for key, value in CV[entry].items()}
@@ -250,7 +255,8 @@ for entry in structure:
                 components_str = "\n".join(components)
 
                 CV[entry][model]['source'] = f"{model_info['source_id']} ({model_info['release_year']}: \n{components_str})"
-
+                
+                
                 for d in 'model_component release_year label label_extended'.split():
                     del CV[entry][model][d]
 

@@ -26,10 +26,8 @@
                     "BGC"
                 ],
                 "description": "DECK: 1pctCO2",
-                "end": "",
                 "experiment": "1 percent per year increase in CO2",
                 "experiment_id": "1pctCO2",
-                "min_number_yrs_per_sim": 150,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -39,7 +37,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -55,10 +52,8 @@
                     "BGC"
                 ],
                 "description": "DECK: abrupt-4xCO2",
-                "end": "",
                 "experiment": "abrupt quadrupling of CO2",
                 "experiment_id": "abrupt-4xCO2",
-                "min_number_yrs_per_sim": 150,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -68,7 +63,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -84,10 +78,8 @@
                     "BGC"
                 ],
                 "description": "DECK: AMIP",
-                "end": 2022,
                 "experiment": "AMIP",
                 "experiment_id": "amip",
-                "min_number_yrs_per_sim": 43,
                 "parent_activity_id": [
                     "no parent"
                 ],
@@ -97,7 +89,6 @@
                 "required_model_components": [
                     "AGCM"
                 ],
-                "start": 1979,
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -112,10 +103,8 @@
                     "CHEM"
                 ],
                 "description": "CMIP6 historical (CO2 emission-driven)",
-                "end": "2014",
                 "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
                 "experiment_id": "esm-hist",
-                "min_number_yrs_per_sim": 165,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -126,7 +115,6 @@
                     "AOGCM",
                     "BGC"
                 ],
-                "start": "1850",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -141,10 +129,8 @@
                     "CHEM"
                 ],
                 "description": "DECK: control (emission-driven)",
-                "end": "",
                 "experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
                 "experiment_id": "esm-piControl",
-                "min_number_yrs_per_sim": 500,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -155,7 +141,6 @@
                     "AOGCM",
                     "BGC"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -170,10 +155,8 @@
                     "CHEM"
                 ],
                 "description": "DECK: spin-up portion of the control (emission-driven)",
-                "end": "",
                 "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
                 "experiment_id": "esm-piControl-spinup",
-                "min_number_yrs_per_sim": 100,
                 "parent_activity_id": [
                     "no parent"
                 ],
@@ -184,7 +167,6 @@
                     "AOGCM",
                     "BGC"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -200,10 +182,8 @@
                     "BGC"
                 ],
                 "description": "As hist-aer but with updated forcings",
-                "end": 2024,
                 "experiment": "future anthropogenic aerosols-only run",
                 "experiment_id": "fut-Aer",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "LESFMIP"
                 ],
@@ -213,7 +193,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -229,10 +208,8 @@
                     "BGC"
                 ],
                 "description": "As hist-GHG but with updated forcings",
-                "end": 2024,
                 "experiment": "future well-mixed GHG-only run",
                 "experiment_id": "fut-GHG",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "LESFMIP"
                 ],
@@ -242,7 +219,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -258,10 +234,8 @@
                     "BGC"
                 ],
                 "description": "As hist-lu but with updated forcings",
-                "end": 2024,
                 "experiment": "Single forcing projections",
                 "experiment_id": "fut-lu",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -271,7 +245,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -287,10 +260,8 @@
                     "BGC"
                 ],
                 "description": "As hist-sol but with updated forcings",
-                "end": 2024,
                 "experiment": "future solar-only run",
                 "experiment_id": "fut-sol",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "LESFMIP"
                 ],
@@ -300,7 +271,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -316,10 +286,8 @@
                     "BGC"
                 ],
                 "description": "As hist-totalO3 but with updated forcings",
-                "end": 2024,
                 "experiment": "future total ozone-only run",
                 "experiment_id": "fut-totalO3",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "LESFMIP"
                 ],
@@ -329,7 +297,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -345,10 +312,8 @@
                     "BGC"
                 ],
                 "description": "As hist-volc but with updated forcings",
-                "end": 2024,
                 "experiment": "future volcanic-only run",
                 "experiment_id": "fut-volc",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "LESFMIP"
                 ],
@@ -358,7 +323,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 2015,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -374,10 +338,8 @@
                     "BGC"
                 ],
                 "description": "Well-mixed greenhouse-gas-only historical simulations",
-                "end": 2020,
                 "experiment": "historical well-mixed GHG-only run",
                 "experiment_id": "hist-GHG",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -387,7 +349,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -403,10 +364,8 @@
                     "BGC"
                 ],
                 "description": "Anthropogenic-aerosol-only historical simulations",
-                "end": 2020,
                 "experiment": "historical anthropogenic aerosols-only run",
                 "experiment_id": "hist-aer",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -416,7 +375,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -432,10 +390,8 @@
                     "BGC"
                 ],
                 "description": "Historical simulations with only land use changes",
-                "end": 2020,
                 "experiment": "Single forcing historical simulations",
                 "experiment_id": "hist-lu",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -445,7 +401,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -461,10 +416,8 @@
                     "BGC"
                 ],
                 "description": "Natural forcings (solar + volcanic)",
-                "end": 2020,
                 "experiment": "historical natural-only run",
                 "experiment_id": "hist-nat",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -474,7 +427,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -490,10 +442,8 @@
                     "BGC"
                 ],
                 "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
-                "end": 2020,
                 "experiment": "historical with no land-use change",
                 "experiment_id": "hist-noLu",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -503,7 +453,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -519,10 +468,8 @@
                     "BGC"
                 ],
                 "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
-                "end": 2020,
                 "experiment": "historical forcing but with pre-industrial GHG",
                 "experiment_id": "hist-piGHG",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -532,7 +479,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -548,10 +494,8 @@
                     "BGC"
                 ],
                 "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
-                "end": 2020,
                 "experiment": "historical forcing, but with pre-industrial aerosol emissions",
                 "experiment_id": "hist-piAer",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -561,7 +505,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -577,10 +520,8 @@
                     "BGC"
                 ],
                 "description": "historical simulations with 1850 solar forcing",
-                "end": 2020,
                 "experiment": "historical all-but-solar run",
                 "experiment_id": "hist-piSol",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -590,7 +531,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -606,10 +546,8 @@
                     "BGC"
                 ],
                 "description": "historical simulations with 1850 total ozone",
-                "end": 2020,
                 "experiment": "historical all-but-ozone run",
                 "experiment_id": "hist-piTotalO3",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -619,7 +557,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -635,10 +572,8 @@
                     "BGC"
                 ],
                 "description": "historical simulations with 1850 volcanic emissions",
-                "end": 2020,
                 "experiment": "historical all-but-volcanic run",
                 "experiment_id": "hist-piVolc",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -648,7 +583,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -664,10 +598,8 @@
                     "BGC"
                 ],
                 "description": "Solar-only historical simulations",
-                "end": 2020,
                 "experiment": "historical solar-only run",
                 "experiment_id": "hist-sol",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -677,7 +609,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -693,10 +624,8 @@
                     "BGC"
                 ],
                 "description": "Ozone-only historical simulations",
-                "end": 2020,
                 "experiment": "historical total ozone-only run",
                 "experiment_id": "hist-totalO3",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -706,7 +635,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -722,10 +650,8 @@
                     "BGC"
                 ],
                 "description": "Volcanic-only historical simulations",
-                "end": 2020,
                 "experiment": "historical volcanic-only run",
                 "experiment_id": "hist-volc",
-                "min_number_yrs_per_sim": "none",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -735,7 +661,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": 1850,
                 "sub_experiment_id": [
                     "f2023"
                 ],
@@ -751,10 +676,8 @@
                     "BGC"
                 ],
                 "description": "CMIP6 historical",
-                "end": "2014",
                 "experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
                 "experiment_id": "historical",
-                "min_number_yrs_per_sim": 165,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -764,7 +687,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": "1850",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -780,10 +702,8 @@
                     "BGC"
                 ],
                 "description": "DECK: control",
-                "end": "",
                 "experiment": "pre-industrial control (CO2 concentration-driven)",
                 "experiment_id": "piControl",
-                "min_number_yrs_per_sim": 500,
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -793,7 +713,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -809,10 +728,8 @@
                     "BGC"
                 ],
                 "description": "DECK: spin-up portion of the control",
-                "end": "",
                 "experiment": "pre-industrial control (spin-up)",
                 "experiment_id": "piControl-spinup",
-                "min_number_yrs_per_sim": 100,
                 "parent_activity_id": [
                     "no parent"
                 ],
@@ -822,7 +739,6 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start": "",
                 "sub_experiment_id": [
                     "none"
                 ],
@@ -1165,12 +1081,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Mon Feb 05 2024 20:49 UTC",
+            "file_updated": "Tue Feb 06 2024 19:20 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-02-05T20:49:03Z",
-                "tag": "v6.5.0.0",
-                "commit": "a3c838fc094739f02e07c73dbcd9b24cdf0bc423"
+                "updated": null,
+                "tag": null,
+                "commit": null
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
