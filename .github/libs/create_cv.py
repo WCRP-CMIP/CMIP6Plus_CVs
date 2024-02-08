@@ -217,7 +217,7 @@ for entry in structure:
         if 'experiment_id' in entry:
 
             # select only those that appear
-            CV['source_type'] = list(set(CV['source_type']).union(set(component for experiment in CV[entry].values() if "required_model_components" in experiment for component in experiment["required_model_components"]+experiment["additional_allowed_model_components"])))
+            CV['source_type'] = sorted(set(CV['source_type']).union(set(component for experiment in CV[entry].values() if "required_model_components" in experiment for component in experiment["required_model_components"]+experiment["additional_allowed_model_components"])))
     
                             
             if entry == 'experiment_id':
@@ -225,6 +225,11 @@ for entry in structure:
                 CV[entry] = listify(CV[ entry],['parent_experiment_id','parent)sub_experiment_id','parent_activity_id'])
 
                 CV[entry] = notnull(CV[entry],['parent_experiment_id','parent)sub_experiment_id'], 'no parent')
+                
+                for expnt in CV[entry]: 
+                    # remove start and end times from the CV
+                    for d in 'end start min_number_yrs_per_sim'.split():
+                            del CV[entry][expnt][d]
 
         elif entry == 'activity_id':
             CV[entry] = {f"{key}": value["long_name"] for key, value in CV[entry].items()}
@@ -250,7 +255,8 @@ for entry in structure:
                 components_str = "\n".join(components)
 
                 CV[entry][model]['source'] = f"{model_info['source_id']} ({model_info['release_year']}: \n{components_str})"
-
+                
+                
                 for d in 'model_component release_year label label_extended'.split():
                     del CV[entry][model][d]
 
@@ -320,20 +326,25 @@ print(args.branch)
 if branch == 'main':
     branch = ''
     print('removing branched CVs')
+    os.popen(f' touch {relative}CVs/CMIP6Plus_CV_*.json').read()
     os.popen(f' rm {relative}CVs/CMIP6Plus_CV_*.json').read()
 else:
     branch = f"_{branch}"
     
-    
+#  the missing _ is intentional 
 file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
 
 CV['CV'] = calculate_checksum(CV['CV'])
 
 if os.path.exists(file_path):
     with open(file_path, 'r') as f:
-        oldcv = json.load(f)
-        if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
-            sys.exit('CV content unchanged. Exiting')
+        try:
+            oldcv = json.load(f)
+        
+            if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
+                sys.exit('CV content unchanged. Exiting')
+        except: 
+            ...
 
 # Write the JSON data to the file with an indentation of 4 spaces and sorted keys
 f = open(file_path, 'w')
