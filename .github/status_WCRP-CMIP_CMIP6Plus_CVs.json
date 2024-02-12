@@ -1,23 +1,47 @@
 {
     "repo": {
         "mipera": "CMIP6Plus",
-        "name": "CMIP6Plus_CVs",
+        "repo": "CMIP6Plus_CVs",
         "url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
-        "version": "v6.5.0.0"
+        "version": "v6.5.1.0"
     },
     "changelog": {
-        "last_changed": "2024/02/09 20:37 UTC",
-        "comment": ""
+        "last_changed": "2024/02/12 16:13 UTC",
+        "comment": [
+            "",
+            "",
+            "## Version Updated: v6.5.0.0 \u2192 v6.5.1.0",
+            "",
+            ">> \\` v\\{w\\}.\\{x\\}.\\{y\\}.\\{z\\} \\`",
+            "For further information: [see the wiki](https://wiki.mipcvs.dev)",
+            "",
+            " ",
+            "#### <ins>Updating version index \"y\"</ins>",
+            ">[!NOTE]  ",
+            "__A change in y resets z values__",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-piVolc)*",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-piSol)*",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-piAer)*",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-noLu)*",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-piGHG)*",
+            "- [x] **y** version number \u2191 :: *experiment_id (hist-piTotalO3)*",
+            "#### <ins>Updating version index \"z\"</ins>",
+            "- [x] **z** version number \u2191 :: *source_id (MIROC6)*",
+            "- [x] **z** version number \u2191 :: *source_id (MPI-ESM1-2-HR)*",
+            "- [x] **z** version number \u2191 :: *source_id (MPI-ESM1-2-LR)*"
+        ]
     },
-    "activity_id": {
-        "counts": 0,
+    "source_id": {
+        "counts": 4,
         "keys": [
-            "CMIP",
-            "LESFMIP"
+            "HadGEM3-GC31-LL",
+            "MPI-ESM1-2-LR",
+            "MPI-ESM1-2-HR",
+            "MIROC6"
         ]
     },
     "experiment_id": {
-        "counts": 0,
+        "counts": 28,
         "keys": [
             "1pctCO2",
             "abrupt-4xCO2",
@@ -35,6 +59,12 @@
             "hist-aer",
             "hist-lu",
             "hist-nat",
+            "hist-noLu",
+            "hist-piGHG",
+            "hist-piAer",
+            "hist-piSol",
+            "hist-piTotalO3",
+            "hist-piVolc",
             "hist-sol",
             "hist-totalO3",
             "hist-volc",
@@ -43,10 +73,11 @@
             "piControl-spinup"
         ]
     },
-    "source_id": {
-        "counts": 0,
+    "activity_id": {
+        "counts": 2,
         "keys": [
-            "HadGEM3-GC31-LL"
+            "CMIP",
+            "LESFMIP"
         ]
     }
 }
