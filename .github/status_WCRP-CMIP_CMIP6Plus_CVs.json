@@ -1,0 +1,52 @@
+{
+    "repo": {
+        "mipera": "CMIP6Plus",
+        "name": "CMIP6Plus_CVs",
+        "url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
+        "version": "v6.5.0.0"
+    },
+    "changelog": {
+        "last_changed": "2024/02/09 20:37 UTC",
+        "comment": ""
+    },
+    "activity_id": {
+        "counts": 0,
+        "keys": [
+            "CMIP",
+            "LESFMIP"
+        ]
+    },
+    "experiment_id": {
+        "counts": 0,
+        "keys": [
+            "1pctCO2",
+            "abrupt-4xCO2",
+            "amip",
+            "esm-hist",
+            "esm-piControl",
+            "esm-piControl-spinup",
+            "fut-Aer",
+            "fut-GHG",
+            "fut-lu",
+            "fut-sol",
+            "fut-totalO3",
+            "fut-volc",
+            "hist-GHG",
+            "hist-aer",
+            "hist-lu",
+            "hist-nat",
+            "hist-sol",
+            "hist-totalO3",
+            "hist-volc",
+            "historical",
+            "piControl",
+            "piControl-spinup"
+        ]
+    },
+    "source_id": {
+        "counts": 0,
+        "keys": [
+            "HadGEM3-GC31-LL"
+        ]
+    }
+}

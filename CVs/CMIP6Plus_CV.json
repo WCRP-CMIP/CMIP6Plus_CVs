@@ -1081,12 +1081,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Feb 08 2024 16:27 UTC",
+            "file_updated": "Sat Feb 10 2024 01:13 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-02-08T16:27:08Z",
-                "tag": "v6.5.0.0",
-                "commit": "9df0dad981ac5fadb2f0481f5ae748ddc62d492a"
+                "updated": "2024-02-10T01:12:43Z",
+                "tag": "v6.5.6.0",
+                "commit": "88ed8d1589e0b9597cfdf79c787f09b433172a7e"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
