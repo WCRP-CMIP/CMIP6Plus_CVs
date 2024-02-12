@@ -21,8 +21,14 @@ import argparse
 from urllib.request import Request, urlopen
 from checksum_tools import validate_checksum,calculate_checksum
 from datetime import datetime
+import tag
+import release
 
-prefix = 'CMIP6Plus_'
+import sys 
+# sys.exit(tag.NEWVERSION)
+
+mip = 'CMIP6Plus'
+prefix = f'{mip}_'
 main = 'main'
 metadata_loc = 'Header'
 
@@ -43,38 +49,43 @@ maintainers = json.loads(raw_data.decode('utf-8'))
 # get repo information
 ##########################################
 
-tag = os.popen("git describe --tags --abbrev=0 --always").read().strip() or ''
-# release_date = subprocess.check_output(["git", "log", "-1", "--format=%aI", tag]).strip().decode("utf-8")
+# tag_number = os.popen("git describe --tag_numbers --abbrev=0 --always").read().strip() or ''
+
+# release_date = subprocess.check_output(["git", "log", "-1", "--format=%aI", tag_number]).strip().decode("utf-8")
 
 files = glob.glob(f'{prefix}*.json')
 
 ##########################################
 # read api keys
 ##########################################
-parser = argparse.ArgumentParser(description="Retrieve details for the latest tag of a GitHub repository.")
+parser = argparse.ArgumentParser(description="Retrieve details for the latest tag_number of a GitHub repository.")
 parser.add_argument("-t","--token" ,help="token number")
 parser.add_argument("-b","--branch" ,help="branch name")
 parser.add_argument('-a','--all', action='store_false',help='If added, we will overwrite ALL the files. ')
 
 args = parser.parse_args()
 
+if tag.UPDATE_REQUIRED:
+    args.all=True
+    release.clean()
+
 
     ##########################################
-    # Get the Tag information from the CVs
+    # Get the Tag_number information from the CVs
     ##########################################
 def get_latest_repo(repo_owner, repo_name, github_token=None):
-    tags_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
+    tag_numbers_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
     headers = {"Authorization": f"Bearer {github_token}"} if github_token else {}
 
     try:
-        # Get the list of tags
-        request = Request(tags_url, headers=headers)
+        # Get the list of tag_numbers
+        request = Request(tag_numbers_url, headers=headers)
         with urlopen(request) as response:
-            tags_data = json.loads(response.read())
+            tag_data = json.loads(response.read())
 
-        if tags_data:
-            # Select the latest tag
-            latest_tag = tags_data
+        if tag_data:
+            # Select the latest tag_number
+            latest_tag = tag_data
             tag_name = latest_tag['tag_name']
             published = latest_tag['published_at']
             # commit_sha = latest_tag['commit']['sha']
@@ -90,6 +101,9 @@ def get_latest_repo(repo_owner, repo_name, github_token=None):
 
 CVs = get_latest_repo('WCRP-CMIP','CMIP6Plus_CVs',args.token)
 
+if tag.UPDATE_REQUIRED:
+    CVs['tag_name'] = tag.NEWVERSION 
+
 
     ##########################################
     # iterate over all the files. 
@@ -103,8 +117,11 @@ for f in files:
     if metadata_loc not in contents or not args.all:
         contents[metadata_loc] = dict(file = {"checksum":''},commit='')
         print('setting blank header on ',f)
-
-    if validate_checksum(contents,metadata_loc):
+    
+    
+    
+    if validate_checksum(contents,metadata_loc) and not tag.UPDATE_REQUIRED:
+        # if correct, leave, however if we are updating the release - ignore this, 
         continue
 
 
@@ -117,16 +134,6 @@ for f in files:
     commit_info = False
     
     
-    '''
-    commit 8f25db6f5551574eb826c21ce404d2e111bd2db2
-    Merge: caa0888 124d96c
-    Author: Daniel Ellis <daniel.ellis@ext.esa.int>
-    Date:   Fri Jan 26 16:03:55 2024 +0000
-
-    Merge remote-tracking branch 'origin/source_id_MPI-ESM1-2-LR' into merge_src_pull_requests
-
-
-    '''
 
     commit_blocks = re.split(r'\n(?=commit\s)', full)
     for c in commit_blocks:
@@ -251,8 +258,8 @@ for f in files:
     # keep the individualised commit messages
     ##########################################
 
-    timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
-    formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
+    # timestamp_obj = datetime.strptime(commit_dict['commit_date'].lstrip(), "%a %b %d %H:%M:%S %Y %z")
+    # formatted_timestamp = timestamp_obj.strftime("%y/%m/%d %H:%M")
     print(author_match.group(1))
     print(commit_dict['commit_message'])
 
@@ -261,17 +268,37 @@ for f in files:
     os.popen(f'git commit --author="{author_match.group(1)}" -m "{commit_dict["commit_message"]}"').read()
 
     
-    
+
     
 print(os.popen(f'git push').read())
 
-# checksum. If checksum is not the same, update.
+if tag.UPDATE_REQUIRED and tag.branch == 'main':
+    
+    
+    '''
+    Update CV file
+    '''
+    print(os.popen(f'git pull').read())
+    f = f'CVs/{prefix}CV.json'
+    # Load JSON data
+    data = json.load(open(f,'r'))
 
+    # Replace tag version and commit SHA
+    data["CV"]["version_metadata"]["CVs"]["tag"] = tag.NEWVERSION
+    data["CV"]["version_metadata"]["CVs"]["commit"] = os.popen('git rev-parse HEAD').read().strip()
+    # Convert the updated data back to JSON
+    json.dump(data, open(f,'w'), indent=4)
 
+    email = "actions@wcrp-cmip.org"
+    author = "CMIP-IPO: Automated GitHub Action"
+    message = tag.NEWVERSION
 
-'''
-export PATH="${HOME}/Applications/Docker.app/Contents/Resources/bin:$PATH"
-
-act -s GITHUB_TOKEN="$(gh auth token)" --container-architecture linux/amd64 -b & sleep 4 
-
-'''
+    os.popen(f"git add {f}").read()
+    os.popen(f'git commit --author="{author} <{email}>" -m "{message}"').read()
+    print(os.popen(f'git push').read())
+    
+    '''
+    Create a new release
+    '''
+    
+    release.newrelease(tag.owner,tag.repo,tag.NEWVERSION,'\n'.join(tag.CONTENTS),title=f'{mip} (Controlled Vocabularies) {tag.NEWVERSION}')

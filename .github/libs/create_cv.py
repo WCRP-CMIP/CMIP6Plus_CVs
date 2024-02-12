@@ -335,13 +335,14 @@ else:
 file_path = f'{relative}CVs/CMIP6Plus_CV{branch}.json'
 
 CV['CV'] = calculate_checksum(CV['CV'])
+print(CV['CV']['version_metadata'])
 
 if os.path.exists(file_path):
     with open(file_path, 'r') as f:
         try:
             oldcv = json.load(f)
         
-            if calculate_checksum(CV['CV']) == calculate_checksum(oldcv['CV']):
+            if CV['CV'] == calculate_checksum(oldcv['CV'],True):
                 sys.exit('CV content unchanged. Exiting')
         except: 
             ...

@@ -4,8 +4,12 @@ on:
   push:
     branches:
       - '*'
-    tags:
-      - '*'
+    # tags:
+    #   - '*'
+  workflow_run:
+    workflows: ["Generate CV file"]
+    types:
+      - completed
 
 jobs:
   update_versioning:
@@ -22,12 +26,12 @@ jobs:
       deployments: write
       id-token: write
       issues: write
-      discussions: write
+      # discussions: write
       packages: write
       pages: write
       pull-requests: write
       repository-projects: write
-      security-events: write
+      # security-events: write
       statuses: write
 
     steps:
