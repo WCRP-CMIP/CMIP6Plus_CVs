@@ -1,16 +1,16 @@
 {
     "Header": {
         "collection": {
-            "CV_collection_version": "v6.5.6.0",
+            "CV_collection_version": "v6.5.1.0",
             "CV_collection_modified": "2023-11-20T16:32:10Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.0.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "checksum": "md5: 6239ce228dc3dc4f7aca7035ddced0c2",
-            "license_update_commit": "4e72c06f0b0d9958816461b6d1b777adede0e51f",
-            "license_modified": "Tue Jan 30 12:52:57 2024 +0000",
-            "license_note": "Workflow order and checksum switch update.  (#52)"
+            "license_update_commit": "8a5ecc14d6a5d84c4a828f67fd537f4daf80d761",
+            "license_modified": "Mon Feb 12 16:11:03 2024 +0000",
+            "license_note": "Tag and Release (#56)"
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
