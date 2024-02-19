@@ -36,13 +36,12 @@ except:
     
 w,x,y,z = map(int,version.strip('v').strip().split('.'))
 
+MIPERA = 'CMIP6Plus'
+new = OrderedDict(repo=dict(mipera=MIPERA,repo=repo,url=url),changelog={})
+comment = ''
 
 if branch == 'main':
-
-    MIPERA = 'CMIP6Plus'
-    new = OrderedDict(repo=dict(mipera=MIPERA,repo=repo,url=url),changelog={})
-    comment = ''
-
+  
     #  If not wcrp-cmip, do not create this. 
 
     files = ['activity_id','experiment_id','source_id']
