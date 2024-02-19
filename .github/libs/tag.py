@@ -39,6 +39,7 @@ w,x,y,z = map(int,version.strip('v').strip().split('.'))
 MIPERA = 'CMIP6Plus'
 new = OrderedDict(repo=dict(mipera=MIPERA,repo=repo,url=url),changelog={})
 comment = ''
+new['repo']['version'] = 'none'
 
 if branch == 'main':
   
