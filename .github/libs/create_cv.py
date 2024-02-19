@@ -151,8 +151,11 @@ for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json'),**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
 
 def mapinst(i):
-    if i in institutions: 
-        return f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}"
+    if i in institutions:
+        if institutions[i]['indentifiers']['ror']:
+            return f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}"
+        else:
+            return f"{institutions[i]['indentifiers']['institution_name']}"
     elif i in institutions['consortiums']:
         return f"{i} - {institutions['consortiums'][i]['name']} [consortium]"
     else: 
@@ -254,7 +257,7 @@ for entry in structure:
 
                 components_str = "\n".join(components)
 
-                CV[entry][model]['source'] = f"{model_info['source_id']} ({model_info['release_year']}: \n{components_str})"
+                CV[entry][model]['source'] = f"{model_info['source_id']} ({model_info['release_year']}): \n{components_str})"
                 
                 
                 for d in 'model_component release_year label label_extended'.split():
