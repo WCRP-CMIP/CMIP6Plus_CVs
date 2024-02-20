@@ -2,15 +2,15 @@
     "Header": {
         "collection": {
             "CV_collection_version": "v6.5.1.0",
-            "CV_collection_modified": "2023-11-20T16:32:10Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.0.0",
+            "CV_collection_modified": "2024-02-12T16:13:34Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.1.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "checksum": "md5: 15ab5b39a4b62012e371f14e3c2afbfc",
-            "mip_era_update_commit": "8a5ecc14d6a5d84c4a828f67fd537f4daf80d761",
-            "mip_era_modified": "Mon Feb 12 16:11:03 2024 +0000",
-            "mip_era_note": "Tag and Release (#56)"
+            "mip_era_update_commit": "",
+            "mip_era_modified": "",
+            "mip_era_note": ""
         },
         "author": "Daniel Ellis",
         "institution_id": "CMIP-IPO"
