@@ -6,12 +6,18 @@
         "version": "v6.5.1.1"
     },
     "changelog": {
-        "last_changed": "2024/02/22 16:32 UTC",
+        "last_changed": "2024/02/22 17:15 UTC",
         "comment": [
-            "## Minor Version Update: v6.5.1.0 \u2192 v6.5.1.1",
+            "",
+            "",
+            "## Version Updated: v6.5.1.1 \u2192 v6.5.1.1",
+            "",
+            ">> \\` v{w}.{x}.{y}.{z} \\`",
+            "For further information: [see the wiki](https://wiki.mipcvs.dev)",
+            "",
+            "- 32d73d8 Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59) ",
             "- ecc2e57 manual release and formatting change on tag release notes",
-            "- 32d73d8 Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)"
-
+            "## Minor Version Update: v6.5.1.0 \u2192 v6.5.1.1"
         ]
     },
     "source_id": {
