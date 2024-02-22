@@ -1085,8 +1085,8 @@
             "checksum": "",
             "CVs": {
                 "updated": "2024-02-22T16:20:40Z",
-                "tag": "v6.5.1.0",
-                "commit": "ecc2e571d0f182de90cb3a1df6d8322aa04418e7"
+                "tag": "v6.5.1.1",
+                "commit": "f07525678292d63c3e338d30a958ca06546f1a1b"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",
