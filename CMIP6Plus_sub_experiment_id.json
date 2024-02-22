@@ -1,19 +1,19 @@
 {
     "Header": {
         "collection": {
-            "CV_collection_version": "v6.5.1.0",
+            "CV_collection_version": "v6.5.1.1",
             "CV_collection_modified": "2024-02-12T16:13:34Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.1.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "checksum": "md5: 96bc2528e51412d3d8ab2889170bd0ed",
-            "sub_experiment_id_update_commit": "",
-            "sub_experiment_id_modified": "",
-            "sub_experiment_id_note": ""
+            "sub_experiment_id_update_commit": "32d73d868092ba13c70cbef90ff2a524d3a309f4",
+            "sub_experiment_id_modified": "Tue Feb 20 16:05:16 2024 +0000",
+            "sub_experiment_id_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)"
         },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
     "sub_experiment_id": {
         "f2023": "Forcings 2023",
