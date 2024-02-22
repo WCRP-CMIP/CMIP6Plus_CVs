@@ -67,7 +67,7 @@ args = parser.parse_args()
 
 if tag.UPDATE_REQUIRED:
     args.all=True
-    release.clean()
+
 
 
     ##########################################

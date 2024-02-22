@@ -26,10 +26,12 @@ try:
     tvers = os.popen('git tag -l').read().strip().split('\n')[-1]
     if version > tvers:
         print('WARNING VERSION MISMATCH',version, tvers)
+        UPDATE_REQUIRED = True
     else: 
         version = tvers
     
-except:
+except Exception as err:
+    print(err)
     old = None
     version = os.popen('git tag -l').read().strip().split('\n')[-1]
     UPDATE_REQUIRED = True
@@ -85,7 +87,7 @@ if branch == 'main':
 
     if UPDATE_REQUIRED:
         
-        comment += " \n\nFor further information: [see the wiki](https://wiki.mipcvs.dev)\n>> \` v\{w\}.\{x\}.\{y\}.\{z\} \`\n\n"
+        comment += " \n\nFor further information: [see the wiki](https://wiki.mipcvs.dev)\n>> \` v{w}.{x}.{y}.{z} \`\n\n"
         
         comment += f"## Version Updated: {version} \u2192 {new['repo']['version']}\n\n"
         comment = comment.split('\n')
@@ -113,6 +115,8 @@ if UPDATE_REQUIRED and branch == 'main':
     
 elif old:
     if old['repo']['version'] != new['repo']['version']:
+        # this does not trigger if old version is already updated
+        # thus update triggered at the start. 
         UPDATE_REQUIRED = True
         print('\n'.join(old['changelog']['comment']))
         new = old

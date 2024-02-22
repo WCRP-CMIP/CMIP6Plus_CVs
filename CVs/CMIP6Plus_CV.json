@@ -818,7 +818,7 @@
         ],
         "institution_id": {
             "MIROC": "MIROC - MIROC [consortium]",
-            "MOHC": " - Met Office Hadley Centre",
+            "MOHC": "Met Office Hadley Centre",
             "MPI-M": "05esem239 - Max Planck Institute for Meteorology",
             "NERC": "02b5d8509 - Natural Environment Research Council"
         },
@@ -912,7 +912,7 @@
                     "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "HadGEM3-GC31-LL",
-                "source": "HadGEM3-GC31-LL (2016: \naerosol: UKCA-GLOMAP-mode\natmos: MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)\natmosChem: none\nland: JULES-HadGEM3-GL7.1\nlandIce: none\nocean: NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude))"
+                "source": "HadGEM3-GC31-LL (2016): \naerosol: UKCA-GLOMAP-mode\natmos: MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)\natmosChem: none\nland: JULES-HadGEM3-GL7.1\nlandIce: none\nocean: NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude))"
             },
             "MPI-ESM1-2-LR": {
                 "activity_participation": [
@@ -933,7 +933,7 @@
                     "source_specific_info": ""
                 },
                 "source_id": "MPI-ESM1-2-LR",
-                "source": "MPI-ESM1-2-LR (2017: \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
+                "source": "MPI-ESM1-2-LR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
             },
             "MPI-ESM1-2-HR": {
                 "activity_participation": [
@@ -954,7 +954,7 @@
                     "source_specific_info": ""
                 },
                 "source_id": "MPI-ESM1-2-HR",
-                "source": "MPI-ESM1-2-HR (2017: \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
+                "source": "MPI-ESM1-2-HR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
             },
             "MIROC6": {
                 "activity_participation": [
@@ -975,7 +975,7 @@
                     "source_specific_info": ""
                 },
                 "source_id": "MIROC6",
-                "source": "MIROC6 (2017: \naerosol: SPRINTARS6.0\natmos: CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)\nland: MATSIRO6.0\nocean: COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)\nseaIce: COCO4.9)"
+                "source": "MIROC6 (2017): \naerosol: SPRINTARS6.0\natmos: CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)\nland: MATSIRO6.0\nocean: COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)\nseaIce: COCO4.9)"
             }
         },
         "source_type": [
@@ -1081,12 +1081,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Sat Feb 10 2024 01:13 UTC",
+            "file_updated": "Thu Feb 22 2024 16:30 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-02-10T01:12:43Z",
+                "updated": "2024-02-22T16:20:40Z",
                 "tag": "v6.5.1.0",
-                "commit": "58de60b0b474247465812fcc53c3ba01620e4ed6"
+                "commit": "ecc2e571d0f182de90cb3a1df6d8322aa04418e7"
             },
             "MIP tables": {
                 "updated": "2023-11-30T15:33:29Z",

@@ -1,26 +1,14 @@
 import os
 
 
-def clean():
-#     print('clean automated:',os.popen('git pull').read())
-#     cmd = '''git filter-branch -f --commit-filter '
-# 	if [ "$GIT_AUTHOR_EMAIL" = "actions@wcrp-cmip.org" ] || [ "$GIT_COMMITTER_EMAIL" = "actions@wcrp-cmip.org" ];
-# 	then
-# 		skip_commit "$@";
-# 	else
-# 		git commit-tree "$@";
-# 	fi' HEAD
-# '''
-#     print(os.popen(cmd).read())
-#     print(os.popen('git push -f origin main').read())
-    ...
-    
+
 
 def newrelease(owner,repo,version,content,title=''):
     print('release')
     print(os.popen(f'gh repo set-default {owner}/{repo}').read())
     release = f'gh release create "{version}" -n "{content}" -t "{title}"'
     print(os.popen(release).read())
+
 
 
 # import json
