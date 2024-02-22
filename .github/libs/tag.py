@@ -20,6 +20,14 @@ url = os.popen('git config --get remote.origin.url').read().strip()
 owner,repo = url.replace('.git','').split('/')[-2:]
 
 store = f'.github/status_{owner}_{repo}.json'
+
+
+MIPERA = 'CMIP6Plus'
+new = OrderedDict(repo=dict(mipera=MIPERA,repo=repo,url=url),changelog={})
+comment = ''
+new['repo']['version'] = 'none'
+
+
 try:
     old = json.load(open(store,'r'))
     version = old['repo']['version']
@@ -27,6 +35,8 @@ try:
     if version > tvers:
         print('WARNING VERSION MISMATCH',version, tvers)
         UPDATE_REQUIRED = True
+        new.update(old)
+        comment = '\n'.join(new['changelog'].get('comment',''))
     else: 
         version = tvers
     
@@ -37,11 +47,6 @@ except Exception as err:
     UPDATE_REQUIRED = True
     
 w,x,y,z = map(int,version.strip('v').strip().split('.'))
-
-MIPERA = 'CMIP6Plus'
-new = OrderedDict(repo=dict(mipera=MIPERA,repo=repo,url=url),changelog={})
-comment = ''
-new['repo']['version'] = 'none'
 
 if branch == 'main':
   
@@ -113,13 +118,14 @@ if UPDATE_REQUIRED and branch == 'main':
     print(os.popen(f'git push').read())
     
     
-elif old:
-    if old['repo']['version'] != new['repo']['version']:
-        # this does not trigger if old version is already updated
-        # thus update triggered at the start. 
-        UPDATE_REQUIRED = True
-        print('\n'.join(old['changelog']['comment']))
-        new = old
+# elif old:
+#     if old['repo']['version'] != new['repo']['version']:
+#         # this does not trigger if old version is already updated
+#         # thus update triggered at the start. 
+#         UPDATE_REQUIRED = True
+#         print('\n'.join(old['changelog']['comment']))
+#         new = old
+
         
 NEWVERSION = new['repo']['version']
 print(f'\n\n{NEWVERSION} :: needs update: {UPDATE_REQUIRED}')
