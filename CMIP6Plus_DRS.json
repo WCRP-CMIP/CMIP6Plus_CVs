@@ -1,19 +1,19 @@
 {
     "Header": {
         "collection": {
-            "CV_collection_version": "v6.5.1.0",
+            "CV_collection_version": "v6.5.1.1",
             "CV_collection_modified": "2024-02-12T16:13:34Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.1.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "checksum": "md5: 87c4ebd7d94fc626cbbf6c848a978996",
-            "DRS_update_commit": "",
-            "DRS_modified": "",
-            "DRS_note": ""
+            "DRS_update_commit": "32d73d868092ba13c70cbef90ff2a524d3a309f4",
+            "DRS_modified": "Tue Feb 20 16:05:16 2024 +0000",
+            "DRS_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)"
         },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
     "DRS": {
         "directory_path_example": "CMIP6Plus/CMIP/MOHC/HadGEM3-GC31-MM/historical/r1i1p1f3/Amon/tas/gn/v20191207/",
