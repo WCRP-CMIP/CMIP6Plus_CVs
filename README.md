@@ -28,7 +28,7 @@ Core Controlled Vocabularies (CVs) for use in CMIP6Plus
             <td><strong>Repository Contents</strong></td>
 <td><img src='https://img.shields.io/badge/Activities-%202%20-purple'>
 <img src='https://img.shields.io/badge/Experiments-%2028%20-coral'>
-<img src='https://img.shields.io/badge/Sources-%204%20-blue'></td></tr end>
+<img src='https://img.shields.io/badge/Sources-%205%20-blue'></td></tr end>
         <tr>
             <td><strong>Interactions</strong></td>
             <td> <a href='https://github.com/WCRP-CMIP/CMIP6Plus_CVs/discussions'><img src='https://img.shields.io/github/discussions/WCRP-CMIP/CMIP6Plus_CVs?label=Discussions'></a>
