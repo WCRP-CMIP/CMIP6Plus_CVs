@@ -152,10 +152,10 @@ institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_pr
 
 def mapinst(i):
     if i in institutions:
-        if institutions[i]['indentifiers']['ror']:
-            return f"{institutions[i]['indentifiers']['ror']} - {institutions[i]['indentifiers']['institution_name']}"
+        if institutions[i]['identifiers']['ror']:
+            return f"{institutions[i]['identifiers']['ror']} - {institutions[i]['identifiers']['institution_name']}"
         else:
-            return f"{institutions[i]['indentifiers']['institution_name']}"
+            return f"{institutions[i]['identifiers']['institution_name']}"
     elif i in institutions['consortiums']:
         return f"{i} - {institutions['consortiums'][i]['name']} [consortium]"
     else: 
