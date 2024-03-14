@@ -62,6 +62,21 @@ With every update to this repository a new CV file is generated to reflect the c
 
 With every new release (see versioning description), a copy of the latest active `CMIP6PLUS_CV.json` will be archived in the CVs directory with the format: `CMIP6PLUS_CV_<tag_number>.json`.
 
+## Publishing to ESGF
+
+- In order to publish, you will need `v5.2.1` of the esg-publisher software or later.  `pip install esgcet`
+
+- Add the following entries to your `esg.yaml` file.
+
+```
+user_project_config:
+  cmip6plus:
+    CONST_ATTR:
+      project: CMIP6Plus
+    pid_prefix: '21.14100'
+cmip6_clone: cmip6plus
+```
+- When running the `esgpublish` CLI ensure you have the `--project cmip6plus` in the command line.
 
 ## Contributors
 
