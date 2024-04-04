@@ -2,18 +2,18 @@
     "Header": {
         "collection": {
             "CV_collection_version": "v6.5.1.2",
-            "CV_collection_modified": "2024-02-22T17:16:03Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.1.1",
+            "CV_collection_modified": "2024-03-14T21:34:13Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.1.2",
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: c6e0e6e0cebfb6c0dcd1965302fe6f1f",
-            "source_id_update_commit": "870a28d0fa551d8d0ef4ab360b83e3672be11562",
-            "source_id_modified": "Thu Mar 14 21:33:53 2024 +0000",
-            "source_id_note": "Adding NorESM2-LM to source_id (#62)"
+            "checksum": "md5: 95ebe8fda3e35bea0c34e0a6520c2f6f",
+            "source_id_update_commit": "4d8625bcb93ef455dbb05418b332d0eeda66acdf",
+            "source_id_modified": "Thu Apr 4 14:22:23 2024 +0100",
+            "source_id_note": "Add resolution units."
         },
-        "author": "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
-        "institution_id": "unlisted"
+        "author": "Daniel Ellis",
+        "institution_id": "CMIP-IPO"
     },
     "source_id": {
         "HadGEM3-GC31-LL": {
