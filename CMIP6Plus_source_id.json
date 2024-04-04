@@ -16,6 +16,61 @@
         "institution_id": "CMIP-IPO"
     },
     "source_id": {
+        "GISS-E2-1-G": {
+            "activity_participation": [
+                "LESFMIP",
+                "CMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "NASA-GISS"
+            ],
+            "label": "GISS-E2.1G",
+            "label_extended": "GISS-E2.1G",
+            "license_info": {
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
+                "source_specific_info": ""
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "Varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)",
+                    "version": "none",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmos": {
+                    "description": "GISS-E2.1 (2.5x2 degree; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+                    "version": "none",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmosChem": {
+                    "description": "Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+                    "version": "none",
+                    "native_nominal_resolution": "250 km"
+                },
+                "land": {
+                    "description": "GISS LSM",
+                    "version": "none",
+                    "native_nominal_resolution": "250 km"
+                },
+                "ocean": {
+                    "description": "GISS Ocean (GO1, 1 degree; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10 m)",
+                    "version": "none",
+                    "native_nominal_resolution": "100 km"
+                },
+                "seaIce": {
+                    "description": "GISS SI",
+                    "version": "none",
+                    "native_nominal_resolution": "250 km"
+                }
+            },
+            "release_year": 2019,
+            "source_id": "GISS-E2-1-G"
+        },
         "HadGEM3-GC31-LL": {
             "activity_participation": [
                 "CMIP",
@@ -251,7 +306,7 @@
                 "LESFMIP"
             ],
             "cohort": [
-                "unknown"
+                "Published"
             ],
             "institution_id": [
                 "NCC"
