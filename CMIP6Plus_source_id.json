@@ -99,27 +99,27 @@
                 "aerosol": {
                     "description": "SPRINTARS6.0",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "atmos": {
                     "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250km"
                 },
                 "land": {
                     "description": "MATSIRO6.0",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "ocean": {
                     "description": "COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "seaIce": {
                     "description": "COCO4.9",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 }
             },
             "release_year": 2017,
@@ -149,17 +149,17 @@
                 "aerosol": {
                     "description": ", prescribed MACv2-SP",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "atmos": {
                     "description": "ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "land": {
                     "description": "JSBACH3.20",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "landIce": {
                     "description": "prescribed",
@@ -169,17 +169,17 @@
                 "ocean": {
                     "description": "MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)",
                     "version": "none",
-                    "native_nominal_resolution": "50"
+                    "native_nominal_resolution": "50 km"
                 },
                 "ocnBgchem": {
                     "description": "HAMOCC6",
                     "version": "none",
-                    "native_nominal_resolution": "50"
+                    "native_nominal_resolution": "50 km"
                 },
                 "seaIce": {
                     "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
                     "version": "none",
-                    "native_nominal_resolution": "50"
+                    "native_nominal_resolution": "50 km"
                 }
             },
             "release_year": 2017,
@@ -209,17 +209,17 @@
                 "aerosol": {
                     "description": ", prescribed MACv2-SP",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "atmos": {
                     "description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "land": {
                     "description": "JSBACH3.20",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "landIce": {
                     "description": "prescribed",
@@ -229,17 +229,17 @@
                 "ocean": {
                     "description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "ocnBgchem": {
                     "description": "HAMOCC6",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "seaIce": {
                     "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 }
             },
             "release_year": 2017,
@@ -269,42 +269,42 @@
                 "aerosol": {
                     "description": "OsloAero",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "atmos": {
                     "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "atmosChem": {
                     "description": "OsloChemSimp",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "land": {
                     "description": "CLM",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "landIce": {
                     "description": "CISM",
                     "version": "none",
-                    "native_nominal_resolution": "250"
+                    "native_nominal_resolution": "250 km"
                 },
                 "ocean": {
                     "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "ocnBgchem": {
                     "description": "HAMOCC",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 },
                 "seaIce": {
                     "description": "CICE",
                     "version": "none",
-                    "native_nominal_resolution": "100"
+                    "native_nominal_resolution": "100 km"
                 }
             },
             "release_year": 2017,
