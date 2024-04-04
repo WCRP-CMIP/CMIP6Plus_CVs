@@ -3,26 +3,27 @@
         "mipera": "CMIP6Plus",
         "repo": "CMIP6Plus_CVs",
         "url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
-        "version": "v6.5.1.2"
+        "version": "v6.5.1.3"
     },
     "changelog": {
-        "last_changed": "2024/03/14 21:34 UTC",
+        "last_changed": "2024/04/04 20:26 UTC",
         "comment": [
             "",
             "",
-            "## Version Updated: v6.5.1.1 \u2192 v6.5.1.2",
+            "## Version Updated: v6.5.1.2 \u2192 v6.5.1.3",
             "",
             ">> \\` v{w}.{x}.{y}.{z} \\`",
             "For further information: [see the wiki](https://wiki.mipcvs.dev)",
             "",
             " ",
             "#### <ins>Updating version index \"z\"</ins>",
-            "- [x] **z** version number \u2191 :: *source_id (NorESM2-LM)*"
+            "- [x] **z** version number \u2191 :: *source_id (GISS-E2-1-G)*"
         ]
     },
     "source_id": {
-        "counts": 5,
+        "counts": 6,
         "keys": [
+            "GISS-E2-1-G",
             "HadGEM3-GC31-LL",
             "MIROC6",
             "MPI-ESM1-2-HR",
