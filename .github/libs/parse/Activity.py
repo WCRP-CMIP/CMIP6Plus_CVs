@@ -15,7 +15,7 @@ data = json.loads(str(data))
 
 # Load Existing
 activities = jr(getfile('activity_id')[0])
-alist = activities['activities']
+alist = activities['activity_id']
 
 
 import urllib.request
@@ -41,7 +41,7 @@ if not url_exists(data['url']):
 # add
 alist[data['name']] = OrderedDict({'URL': data['url'],'long_name': data['long_name']})
 # sort and update
-activities['activities'] = OrderedDict(sorted(alist.items()))
+activities['activity_id'] = OrderedDict(sorted(alist.items()))
 
 
 
