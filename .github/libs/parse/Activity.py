@@ -40,7 +40,7 @@ if not url_exists(data['url']):
 
 # add
 alist[data['name']] = OrderedDict({'URL': data['url'],'long_name': data['long_name']})
-pp(alist[data['name']])
+pp(dict(alist[data['name']]))
 # sort and update
 activities['activity_id'] = OrderedDict(sorted(alist.items()))
 
