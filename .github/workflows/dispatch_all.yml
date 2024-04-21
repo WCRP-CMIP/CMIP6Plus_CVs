@@ -121,5 +121,6 @@ jobs:
               \`\`\`
               
               Resolves #$ISSUE
-              " --reviewer $GITHUB_REPOSITORY_OWNER
+              " 
+              # --reviewer $GITHUB_REPOSITORY_OWNER
             fi
