@@ -1,0 +1,123 @@
+name: New Dispatch Action (+ data)
+on:
+  repository_dispatch:
+    types:
+      - Consortium
+      - Institution
+
+jobs:
+  process-payload:
+    runs-on: ubuntu-latest
+    permissions:
+          actions: write
+          checks: write
+          contents: write
+          deployments: write
+          id-token: write
+          issues: write
+          # discussions: write
+          packages: write
+          pages: write
+          pull-requests: write
+          repository-projects: write
+          # security-events: write
+          statuses: write
+          
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Print Payload
+        run: |
+          echo "kind of aciton: ${{ github.event.action }}"
+          echo "Received Payload from"
+          echo "author: ${{ github.event.client_payload.author }}"
+          echo "Received Payload:"
+          echo "${{ toJson(github.event.client_payload) }}"
+
+      - name: Create Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQ_AUTHOR: ${{ github.event.client_payload.author }}
+          PAYLOAD_DATA: ${{ github.event.client_payload.data }}
+          NAME: ${{ github.event.client_payload.name }}
+          ISSUE: ${{ github.event.client_payload.issue }}
+          KIND: ${{ github.event.action }}
+          
+        run: |
+            base_branch="main"
+            feature_branch="consortium_$NAME"
+            
+            git pull
+            
+            remote_branch='origin/$feature_branch'
+            branch_info=$(git rev-parse --verify '$remote_branch' >/dev/null 2>&1 || true)
+            echo "branch info: $branch_info"
+            
+            if [ -n "$branch_info" ]; then
+              echo "checkout existing"
+              git checkout $feature_branch
+              git reset --hard origin/main
+            else
+              echo "checkout new"
+              git checkout -b $feature_branch
+            fi
+
+            # debug uncomment
+            # python .github/libs/parse/${KIND}.py
+
+            content=$( python .github/libs/parse/${KIND}.py )
+
+            
+            echo "${REQ_AUTHOR}"
+            git config --global user.email "${REQ_AUTHOR}@users.noreply.github.com"
+            git config --global user.name "${REQ_AUTHOR}"
+            
+            git add -A
+            git commit -m "Adding $NAME to ${KiND}"
+            git push origin $feature_branch --force
+            
+            if [ -n "$branch_info" ]; then
+              pull_requests=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/${{ github.repository }}/pulls?state=open&head=$feature_branch" | jq -r '.[].number')
+            
+              echo "pull requests ${pull_requests}"
+            
+              for pr_number in $pull_requests; do
+                echo "running pull request $pr_number"
+            
+                comment_body="This pull request (#$pr_number) was automatically updated by a GitHub Actions workflow.
+            
+                Data submitted by @$REQ_AUTHOR
+                
+                Adding the following updated data.
+                
+                \`\`\`js
+                $content
+                \`\`\`
+                
+                
+                Resolves #$ISSUE
+                "
+            
+                echo "comment- $comment_body"
+            
+                gh pr comment $pr_number --body "$comment_body"
+                echo "Comment added to pull request #$pr_number"
+              done
+            else
+              echo "clean pull"
+              gh pr create --base $base_branch --head $feature_branch --title "New $KIND - add $NAME" --body \
+                "This pull request was automatically created by a GitHub Actions workflow.
+            
+              Data submitted by @$REQ_AUTHOR
+              
+              Adding the following new data.
+              
+              \`\`\`js
+              $content
+              \`\`\`
+              
+              Resolves #$ISSUE
+              " --reviewer $GITHUB_REPOSITORY_OWNER
+            fi
