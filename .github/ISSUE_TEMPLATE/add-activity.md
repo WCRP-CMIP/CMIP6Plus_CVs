@@ -11,7 +11,7 @@ assignees: ''
 
 To request a new item please ammend the following template below to reflect the items you are interested in. 
 
-Conditions on naming conventions and permissable items can be found on the (WIKI)[https://wiki.mipcvs.dev/CMIP6Plus/Rules/activity_id/]
+Conditions on naming conventions and permissable items can be found on the [WIKI/activity_id](https://wiki.mipcvs.dev/CMIP6Plus/Rules/activity_id/)
 
 <!---  info 
 
