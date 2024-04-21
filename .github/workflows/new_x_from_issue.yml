@@ -1,0 +1,85 @@
+name: New Issue Processing
+
+on:
+  issues:
+    types: [edited, labeled]
+    # opened
+
+jobs:
+
+  process_template:
+    runs-on: ubuntu-latest
+    permissions:
+          actions: write
+          checks: write
+          contents: write
+          deployments: write
+          id-token: write
+          issues: write
+          # discussions: write
+          packages: write
+          pages: write
+          pull-requests: write
+          repository-projects: write
+          # security-events: write
+          statuses: write
+          
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+  
+      - name: Read issue details
+        id: read_issue
+        run: |
+          repo_owner=${{ github.event.repository.owner.login }}
+          repo_name=${{ github.event.repository.name }}
+          repo_url="https://github.com/${repo_owner}/${repo_name}"
+          
+          echo "::set-output name=title::${{ github.event.issue.title }}"
+          echo "::set-output name=submitter::${{ github.event.issue.user.login }}"
+          echo "::set-output name=url::$repo_url"
+  
+      - name: Determine script to run
+        id: determine_script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # title=$(echo "${{ steps.read_issue.outputs.title }}" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | tr -d ' ')
+          # # this flattens the title and removed spaces, punctuation and case
+          # if [[ "$title" == *"addconsortium"* ]]; then
+
+          labels=$(gh issue view ${{ github.event.issue.number }} --json labels --jq '.labels[].name')
+          # {{github.event.issue.labels}}
+          
+          for label in $labels; do
+            echo "$label"
+            if [[ "$label" == *"activity"* ]]; then
+              echo "::set-output name=script::add/Activity.py"
+              break
+            # elif [[ "$label" == *"consortium"* ]]; then
+            #   # echo "'$label' contains 'add_component'"
+            #   echo "::set-output name=script::add/Consortium.py"
+            #   break
+            fi
+          done
+          
+
+      - name: Run Python script
+        id: run_python
+        env:
+          ISSUE_TITLE: ${{ steps.read_issue.outputs.title }}
+          ISSUE_BODY: |
+              ${{ github.event.issue.body }}
+          # pipe should preseve newline properties for multilines
+          ISSUE_SUBMITTER: ${{ steps.read_issue.outputs.submitter }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ steps.read_issue.outputs.url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          script="${{ steps.determine_script.outputs.script }}"
+          if [ "$script" == "default" ]; then
+            echo "No specific script found for this issue."
+          else
+            python ".github/libs/$script" 
+          fi
+  
