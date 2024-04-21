@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# Add Consortium Template
+# Add Activity Template
 
 To request a new item please ammend the following template below to reflect the items you are interested in. 
 

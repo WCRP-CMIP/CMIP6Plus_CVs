@@ -2,8 +2,10 @@ name: New Dispatch Action (+ data)
 on:
   repository_dispatch:
     types:
-      - Consortium
-      - Institution
+      - Activity
+      - Experiment
+      - Source
+      - Component
 
 jobs:
   process-payload:
