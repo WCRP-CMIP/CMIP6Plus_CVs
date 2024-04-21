@@ -48,7 +48,7 @@ jobs:
           
         run: |
             base_branch="main"
-            feature_branch="consortium_$NAME"
+            feature_branch="$KIND_$NAME"
             
             git pull
             
