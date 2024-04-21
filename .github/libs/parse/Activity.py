@@ -5,7 +5,7 @@ from collections import OrderedDict
 parent_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 sys.path.append(parent_dir)
 
-from action_functions import update_issue,jr,jw,getfile,close_issue
+from action_functions import update_issue,jr,jw,getfile,close_issue,pp
 
 # data
 issue_number = os.environ['ISSUE']
@@ -40,6 +40,7 @@ if not url_exists(data['url']):
 
 # add
 alist[data['name']] = OrderedDict({'URL': data['url'],'long_name': data['long_name']})
+pp(alist[data['name']])
 # sort and update
 activities['activity_id'] = OrderedDict(sorted(alist.items()))
 
