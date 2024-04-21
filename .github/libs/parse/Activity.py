@@ -35,7 +35,7 @@ if data['name'] in activities:
   close_issue(issue_number,f'# Closing issue. \n {data["name"]} already exists in the activity list. \n\n Please review request and resubmit.')
       
 if not url_exists(data['url']):
-  update_issue(issue_number,f'#Invalid URL \n {data['url']} does not appear to be valid')
+  update_issue(issue_number,f"#Invalid URL \n {data['url']} does not appear to be valid")
 
 
 # add
