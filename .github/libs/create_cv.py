@@ -148,7 +148,7 @@ for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 
     CV.update(read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}{key}.json'))
 
-institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json'),**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
+institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json')['institutions'],**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
 
 def mapinst(i):
     if i in institutions:
