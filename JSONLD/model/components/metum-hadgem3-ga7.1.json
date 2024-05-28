@@ -1,0 +1,13 @@
+{
+    "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1",
+    "@type": "cmip:model_component",
+    "model_component:id": "MetUM-HadGEM3-GA7.1",
+    "model_component:description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+    "model_component:nominal_resolution": {
+        "@id": "cmip6plus:model/nominal_resolution/250km"
+    },
+    "model_component:version": -999,
+    "model_component:realm": {
+        "@id": "cmip6plus:model/realms/atmos"
+    }
+}

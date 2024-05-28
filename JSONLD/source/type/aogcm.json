@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/aogcm",
+    "@type": "cmip:source_type",
+    "source_type:name": "AOGCM",
+    "source_type:description": "coupled atmosphere-ocean global climate model, additionally including explicit representation of at least the land and sea ice"
+}

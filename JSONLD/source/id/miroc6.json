@@ -1,0 +1,53 @@
+{
+    "@id": "cmip6plus:source/id/miroc6",
+    "@type": "cmip:source_id",
+    "source_id:source_id": "MIROC6",
+    "source_id:label": "MIROC6",
+    "source_id:label_extended": "MIROC6",
+    "source_id:release_year": 2017,
+    "source_id:activity_participation": {
+        "@set": [
+            {
+                "@id": "cmip6plus:activity/CMIP"
+            },
+            {
+                "@id": "cmip6plus:activity/LESFMIP"
+            }
+        ]
+    },
+    "source_id:cohort": "published",
+    "source_id:institution_id": {
+        "@id": "mip-cmor-tables:institutions/miroc"
+    },
+    "source_id:contributers": {
+        "@set": {}
+    },
+    "source_id:license": {
+        "@nest": {
+            "license:type": {
+                "@id": "mip-cmor-tables:license/cc-by-4.0"
+            },
+            "license:exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+            "license:source_specific_info": ""
+        }
+    },
+    "source_id:model_component": {
+        "@list": [
+            {
+                "@id": "cmip6plus:model/componets/sprintars6.0"
+            },
+            {
+                "@id": "cmip6plus:model/componets/ccsr_agcm"
+            },
+            {
+                "@id": "cmip6plus:model/componets/matsiro6.0"
+            },
+            {
+                "@id": "cmip6plus:model/componets/coco4.9"
+            },
+            {
+                "@id": "cmip6plus:model/componets/coco4.9"
+            }
+        ]
+    }
+}

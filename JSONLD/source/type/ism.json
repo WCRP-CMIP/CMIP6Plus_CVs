@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/ism",
+    "@type": "cmip:source_type",
+    "source_type:name": "ISM",
+    "source_type:description": "ice-sheet model that includes ice-flow"
+}

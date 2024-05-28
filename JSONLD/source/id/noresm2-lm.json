@@ -1,0 +1,62 @@
+{
+    "@id": "cmip6plus:source/id/noresm2-lm",
+    "@type": "cmip:source_id",
+    "source_id:source_id": "NorESM2-LM",
+    "source_id:label": "NorESM2-LM",
+    "source_id:label_extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
+    "source_id:release_year": 2017,
+    "source_id:activity_participation": {
+        "@set": [
+            {
+                "@id": "cmip6plus:activity/CMIP"
+            },
+            {
+                "@id": "cmip6plus:activity/LESFMIP"
+            }
+        ]
+    },
+    "source_id:cohort": "published",
+    "source_id:institution_id": {
+        "@id": "mip-cmor-tables:institutions/ncc"
+    },
+    "source_id:contributers": {
+        "@set": {}
+    },
+    "source_id:license": {
+        "@nest": {
+            "license:type": {
+                "@id": "mip-cmor-tables:license/cc-by-4.0"
+            },
+            "license:exceptions_contact": "@met.no <- noresm-ncc",
+            "license:source_specific_info": ""
+        }
+    },
+    "source_id:model_component": {
+        "@list": [
+            {
+                "@id": "cmip6plus:model/componets/osloaero"
+            },
+            {
+                "@id": "cmip6plus:model/componets/cam-oslo"
+            },
+            {
+                "@id": "cmip6plus:model/componets/oslochemsimp"
+            },
+            {
+                "@id": "cmip6plus:model/componets/clm"
+            },
+            {
+                "@id": "cmip6plus:model/componets/cism"
+            },
+            {
+                "@id": "cmip6plus:model/componets/micom"
+            },
+            {
+                "@id": "cmip6plus:model/componets/hamocc"
+            },
+            {
+                "@id": "cmip6plus:model/componets/cice"
+            }
+        ]
+    }
+}

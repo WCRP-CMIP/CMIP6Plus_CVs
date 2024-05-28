@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "@id": {
+            "type": "string"
+        },
+        "@type": {
+            "type": "string"
+        },
+        "activity_id:name": {
+            "type": "string",
+            "pattern": "^[\\w]+$"
+        },
+        "activity_id:URL": {
+            "type": "string",
+            "format": "uri"
+        },
+        "activity_id:description": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "@id",
+        "@type",
+        "activity_id:name",
+        "activity_id:URL",
+        "activity_id:description"
+    ]
+}

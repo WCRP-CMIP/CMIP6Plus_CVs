@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/slab",
+    "@type": "cmip:source_type",
+    "source_type:name": "SLAB",
+    "source_type:description": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system"
+}

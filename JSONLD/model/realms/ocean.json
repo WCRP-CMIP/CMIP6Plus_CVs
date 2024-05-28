@@ -1,0 +1,20 @@
+{
+    "@id": "cmip6plus:model/realms/ocean",
+    "@type": "cmip:realm",
+    "realm:name": "ocean",
+    "realm:description": "Ocean",
+    "realm:mips": {
+        "@container": "@set",
+        "@value": [
+            {
+                "@id": "MIP:CMIP6Plus"
+            },
+            {
+                "@id": "MIP:CMIP6"
+            },
+            {
+                "@id": "MIP:CMIP5"
+            }
+        ]
+    }
+}

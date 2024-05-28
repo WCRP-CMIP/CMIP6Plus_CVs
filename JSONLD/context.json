@@ -1,0 +1,5 @@
+{"@context": {
+    "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs"
+  },
+  "basepath": "cmip6plus"
+}

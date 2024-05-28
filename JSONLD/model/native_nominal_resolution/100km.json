@@ -1,0 +1,8 @@
+{
+    "@id": "cmip6plus:model/native_nominal_resolution/100km",
+    "@type": "cmip:native_nominal_resolution",
+    "value": "100",
+    "cf:unit": {
+        "@id": "si:km"
+    }
+}

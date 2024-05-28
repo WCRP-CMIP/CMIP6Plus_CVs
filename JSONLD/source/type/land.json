@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/land",
+    "@type": "cmip:source_type",
+    "source_type:name": "LAND",
+    "source_type:description": "land model run uncoupled from the atmosphere"
+}

@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/bgc",
+    "@type": "cmip:source_type",
+    "source_type:name": "BGC",
+    "source_type:description": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean"
+}

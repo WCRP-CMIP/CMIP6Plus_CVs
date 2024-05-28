@@ -1,0 +1,67 @@
+{
+    "@id": "cmip6plus:experiment/id/esm-hist",
+    "@type": "cmip:experiment_id",
+    "experiment_id:experiment_id": "esm-hist",
+    "experiment_id:experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
+    "experiment_id:description": "CMIP6 historical (CO2 emission-driven)",
+    "experiment_id:activity_id": {
+        "@set": [
+            {
+                "@id": "cmip6plus:activity/cmip"
+            }
+        ]
+    },
+    "experiment_id:model_components": {
+        "@nest": {
+            "experiment_id:required": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:source/type/aogcm"
+                    },
+                    {
+                        "@id": "cmip6plus:source/type/bgc"
+                    }
+                ]
+            },
+            "experiment_id:additional_allowed": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:source/type/aer"
+                    },
+                    {
+                        "@id": "cmip6plus:source/type/chem"
+                    }
+                ]
+            }
+        },
+        "experiment_id:parameters": {
+            "@nest": {
+                "experiment_id:start": 1850,
+                "experiment_id:end": 2014,
+                "experiment_id:'min_number_yrs_per_sim'": 165
+            }
+        },
+        "experiment_id:parent": {
+            "@nest": {
+                "experiment_id:activity_id": {
+                    "@set": [
+                        {
+                            "@id": "cmip6plus:activity/cmip"
+                        }
+                    ]
+                },
+                "experiment_id:experiment_id": {
+                    "@set": [
+                        {
+                            "@id": "cmip6:experiment/id/esm-picontrol"
+                        }
+                    ]
+                }
+            }
+        },
+        "experiment_id:sub_experiment_id": {
+            "@id": "cmip6plus:experiment/sub_id/none"
+        },
+        "experiment_id:tier": 1
+    }
+}

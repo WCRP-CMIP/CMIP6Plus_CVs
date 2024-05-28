@@ -1,0 +1,13 @@
+{
+    "@id": "cmip6plus:model/component/giss_lsm",
+    "@type": "cmip:model_component",
+    "model_component:id": "GISS_LSM",
+    "model_component:description": "GISS LSM",
+    "model_component:nominal_resolution": {
+        "@id": "cmip6plus:model/nominal_resolution/250km"
+    },
+    "model_component:version": -999,
+    "model_component:realm": {
+        "@id": "cmip6plus:model/realms/land"
+    }
+}

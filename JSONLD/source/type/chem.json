@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/chem",
+    "@type": "cmip:source_type",
+    "source_type:name": "CHEM",
+    "source_type:description": "chemistry treatment in an atmospheric model that calculates atmospheric oxidant concentrations (including at least ozone), rather than prescribing them"
+}

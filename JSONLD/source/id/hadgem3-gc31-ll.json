@@ -1,0 +1,53 @@
+{
+    "@id": "cmip6plus:source/id/hadgem3-gc31-ll",
+    "@type": "cmip:source_id",
+    "source_id:source_id": "HadGEM3-GC31-LL",
+    "source_id:label": "HadGEM3-GC31-LL",
+    "source_id:label_extended": "HadGEM3-GC3.1-N96ORCA1",
+    "source_id:release_year": 2016,
+    "source_id:activity_participation": {
+        "@set": [
+            {
+                "@id": "cmip6plus:activity/CMIP"
+            },
+            {
+                "@id": "cmip6plus:activity/LESFMIP"
+            }
+        ]
+    },
+    "source_id:cohort": "published",
+    "source_id:institution_id": {
+        "@id": "mip-cmor-tables:institutions/mohc"
+    },
+    "source_id:contributers": {
+        "@set": {}
+    },
+    "source_id:license": {
+        "@nest": {
+            "license:type": {
+                "@id": "mip-cmor-tables:license/cc-by-4.0"
+            },
+            "license:exceptions_contact": "@metoffice.gov.uk <- cmip6.hadgem3",
+            "license:source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
+        }
+    },
+    "source_id:model_component": {
+        "@list": [
+            {
+                "@id": "cmip6plus:model/componets/ukca-glomap-mode"
+            },
+            {
+                "@id": "cmip6plus:model/componets/metum-hadgem3-ga7.1"
+            },
+            {
+                "@id": "cmip6plus:model/componets/jules-hadgem3-gl7.1"
+            },
+            {
+                "@id": "cmip6plus:model/componets/nemo-hadgem3-go6.0"
+            },
+            {
+                "@id": "cmip6plus:model/componets/cice-hadgem3-gsi8"
+            }
+        ]
+    }
+}

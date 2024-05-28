@@ -1,0 +1,67 @@
+{
+    "@id": "cmip6plus:experiment/id/hist-nat",
+    "@type": "cmip:experiment_id",
+    "experiment_id:experiment_id": "hist-nat",
+    "experiment_id:experiment": "historical natural-only run",
+    "experiment_id:description": "Natural forcings (solar + volcanic)",
+    "experiment_id:activity_id": {
+        "@set": [
+            {
+                "@id": "cmip6plus:activity/lesfmip"
+            }
+        ]
+    },
+    "experiment_id:model_components": {
+        "@nest": {
+            "experiment_id:required": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:source/type/aogcm"
+                    }
+                ]
+            },
+            "experiment_id:additional_allowed": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:source/type/aer"
+                    },
+                    {
+                        "@id": "cmip6plus:source/type/chem"
+                    },
+                    {
+                        "@id": "cmip6plus:source/type/bgc"
+                    }
+                ]
+            }
+        },
+        "experiment_id:parameters": {
+            "@nest": {
+                "experiment_id:start": 1850,
+                "experiment_id:end": 2020,
+                "experiment_id:'min_number_yrs_per_sim'": "none"
+            }
+        },
+        "experiment_id:parent": {
+            "@nest": {
+                "experiment_id:activity_id": {
+                    "@set": [
+                        {
+                            "@id": "cmip6plus:activity/cmip"
+                        }
+                    ]
+                },
+                "experiment_id:experiment_id": {
+                    "@set": [
+                        {
+                            "@id": "cmip6:experiment/id/picontrol"
+                        }
+                    ]
+                }
+            }
+        },
+        "experiment_id:sub_experiment_id": {
+            "@id": "cmip6plus:experiment/sub_id/f2023"
+        },
+        "experiment_id:tier": 3
+    }
+}

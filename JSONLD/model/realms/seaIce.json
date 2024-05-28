@@ -1,0 +1,20 @@
+{
+    "@id": "cmip6plus:model/realms/seaIce",
+    "@type": "cmip:realm",
+    "realm:name": "seaIce",
+    "realm:description": "Sea Ice",
+    "realm:mips": {
+        "@container": "@set",
+        "@value": [
+            {
+                "@id": "MIP:CMIP6Plus"
+            },
+            {
+                "@id": "MIP:CMIP6"
+            },
+            {
+                "@id": "MIP:CMIP5"
+            }
+        ]
+    }
+}

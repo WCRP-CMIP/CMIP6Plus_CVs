@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/aer",
+    "@type": "cmip:source_type",
+    "source_type:name": "AER",
+    "source_type:description": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)"
+}

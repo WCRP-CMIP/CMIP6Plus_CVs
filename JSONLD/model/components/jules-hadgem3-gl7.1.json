@@ -1,0 +1,13 @@
+{
+    "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1",
+    "@type": "cmip:model_component",
+    "model_component:id": "JULES-HadGEM3-GL7.1",
+    "model_component:description": "JULES-HadGEM3-GL7.1",
+    "model_component:nominal_resolution": {
+        "@id": "cmip6plus:model/nominal_resolution/250km"
+    },
+    "model_component:version": -999,
+    "model_component:realm": {
+        "@id": "cmip6plus:model/realms/land"
+    }
+}

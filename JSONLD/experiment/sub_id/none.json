@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:experiment/sub_id/none",
+    "@type": "cmip:sub_experiment_id",
+    "sub_experiment_id:sub_experiment_id": "none",
+    "sub_experiment_id:description": "none"
+}

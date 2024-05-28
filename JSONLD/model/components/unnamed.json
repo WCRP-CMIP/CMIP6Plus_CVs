@@ -1,0 +1,13 @@
+{
+    "@id": "cmip6plus:model/component/unnamed",
+    "@type": "cmip:model_component",
+    "model_component:id": "unnamed",
+    "model_component:description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+    "model_component:nominal_resolution": {
+        "@id": "cmip6plus:model/nominal_resolution/250km"
+    },
+    "model_component:version": -999,
+    "model_component:realm": {
+        "@id": "cmip6plus:model/realms/seaIce"
+    }
+}

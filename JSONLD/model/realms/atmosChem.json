@@ -1,0 +1,20 @@
+{
+    "@id": "cmip6plus:model/realms/atmosChem",
+    "@type": "cmip:realm",
+    "realm:name": "atmosChem",
+    "realm:description": "Atmospheric Chemistry",
+    "realm:mips": {
+        "@container": "@set",
+        "@value": [
+            {
+                "@id": "MIP:CMIP6Plus"
+            },
+            {
+                "@id": "MIP:CMIP6"
+            },
+            {
+                "@id": "MIP:CMIP5"
+            }
+        ]
+    }
+}

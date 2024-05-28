@@ -1,0 +1,8 @@
+{
+    "model_component": {
+        "@context": {
+            "@vocab": "native_nominal:",
+            "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSON_LD/model/native_nominal_resloution/"
+        }
+    }
+}

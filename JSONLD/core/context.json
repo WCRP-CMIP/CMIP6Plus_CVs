@@ -1,0 +1,6 @@
+{
+    "@context": {
+        "@vocab": "core:",
+        "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "@id": "cmip6plus:source/type/ogcm",
+    "@type": "cmip:source_type",
+    "source_type:name": "OGCM",
+    "source_type:description": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model"
+}
