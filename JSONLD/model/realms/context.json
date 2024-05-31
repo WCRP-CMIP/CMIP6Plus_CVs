@@ -1,8 +1,6 @@
 {
-    "model_component": {
-        "@context": {
-            "@vocab": "realm:",
-            "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSON_LD/model/realm/"
-        }
+    "@context": {
+        "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
+        "@vocab": "realm:"
     }
 }

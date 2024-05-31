@@ -1,26 +1,26 @@
 {
     "@id": "cmip6plus:experiment/id/amip",
     "@type": "cmip:experiment_id",
-    "experiment_id:experiment_id": "amip",
-    "experiment_id:experiment": "AMIP",
-    "experiment_id:description": "DECK: AMIP",
-    "experiment_id:activity_id": {
+    "experiment-id:experiment_id": "amip",
+    "experiment-id:experiment": "AMIP",
+    "experiment-id:description": "DECK: AMIP",
+    "experiment-id:activity_id": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/cmip"
             }
         ]
     },
-    "experiment_id:model_components": {
+    "experiment-id:model_components": {
         "@nest": {
-            "experiment_id:required": {
+            "experiment-id:required": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/agcm"
                     }
                 ]
             },
-            "experiment_id:additional_allowed": {
+            "experiment-id:additional_allowed": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aer"
@@ -34,23 +34,23 @@
                 ]
             }
         },
-        "experiment_id:parameters": {
+        "experiment-id:parameters": {
             "@nest": {
-                "experiment_id:start": 1979,
-                "experiment_id:end": 2022,
-                "experiment_id:'min_number_yrs_per_sim'": 43
+                "experiment-id:start": 1979,
+                "experiment-id:end": 2022,
+                "experiment-id:min_number_yrs_per_sim": 43
             }
         },
-        "experiment_id:parent": {
+        "experiment-id:parent": {
             "@nest": {
-                "experiment_id:activity_id": {
+                "experiment-id:activity_id": {
                     "@set": [
                         {
                             "@id": "cmip6plus:activity/no parent"
                         }
                     ]
                 },
-                "experiment_id:experiment_id": {
+                "experiment-id:experiment_id": {
                     "@set": [
                         {
                             "@id": "cmip6:experiment/id/no parent"
@@ -59,9 +59,9 @@
                 }
             }
         },
-        "experiment_id:sub_experiment_id": {
+        "experiment-id:sub_experiment_id": {
             "@id": "cmip6plus:experiment/sub_id/none"
         },
-        "experiment_id:tier": 1
+        "experiment-id:tier": 1
     }
 }

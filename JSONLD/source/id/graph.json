@@ -1,0 +1,360 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/source/id",
+    "@type": "cmip:graph",
+    "@vocab": "",
+    "ldroot": "./source/id",
+    "files": {
+        "@nest": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:source/id/mpi-esm1-2-lr",
+            "@type": "cmip:source_id",
+            "source-id:name": "MPI-ESM1-2-LR",
+            "source-id:label": "MPI-ESM1-2-LR",
+            "source-id:label_extended": "MPI-ESM1.2-LR",
+            "source-id:release_year": 2017,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/mpi-m"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+                    "license:source_specific_info": ""
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/,_prescribed_macv2-sp"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/echam6.3"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/jsbach3.20"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/prescribed"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/mpiom1.63"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/hamocc6"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/unnamed"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "cmip6plus:source/id/mpi-esm1-2-hr",
+            "@type": "cmip:source_id",
+            "source-id:name": "MPI-ESM1-2-HR",
+            "source-id:label": "MPI-ESM1.2-HR",
+            "source-id:label_extended": "MPI-ESM1.2-HR",
+            "source-id:release_year": 2017,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/mpi-m"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+                    "license:source_specific_info": ""
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/,_prescribed_macv2-sp"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/echam6.3"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/jsbach3.20"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/prescribed"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/mpiom1.63"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/hamocc6"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/unnamed"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "cmip6plus:source/id/noresm2-lm",
+            "@type": "cmip:source_id",
+            "source-id:name": "NorESM2-LM",
+            "source-id:label": "NorESM2-LM",
+            "source-id:label_extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
+            "source-id:release_year": 2017,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/ncc"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@met.no <- noresm-ncc",
+                    "license:source_specific_info": ""
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/osloaero"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/cam-oslo"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/oslochemsimp"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/clm"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/cism"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/micom"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/hamocc"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/cice"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "cmip6plus:source/id/miroc6",
+            "@type": "cmip:source_id",
+            "source-id:name": "MIROC6",
+            "source-id:label": "MIROC6",
+            "source-id:label_extended": "MIROC6",
+            "source-id:release_year": 2017,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/miroc"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+                    "license:source_specific_info": ""
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/sprintars6.0"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/ccsr_agcm"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/matsiro6.0"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/coco4.9"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/coco4.9"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "cmip6plus:source/id/giss-e2-1-g",
+            "@type": "cmip:source_id",
+            "source-id:name": "GISS-E2-1-G",
+            "source-id:label": "GISS-E2.1G",
+            "source-id:label_extended": "GISS-E2.1G",
+            "source-id:release_year": 2019,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/nasa-giss"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
+                    "license:source_specific_info": ""
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/varies_with_physics-version"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/giss-e2.1"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/varies_with_physics-version"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/giss_lsm"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/giss_ocean"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/giss_si"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "cmip6plus:source/id/hadgem3-gc31-ll",
+            "@type": "cmip:source_id",
+            "source-id:name": "HadGEM3-GC31-LL",
+            "source-id:label": "HadGEM3-GC31-LL",
+            "source-id:label_extended": "HadGEM3-GC3.1-N96ORCA1",
+            "source-id:release_year": 2016,
+            "source-id:activity_participation": {
+                "@set": [
+                    {
+                        "@id": "cmip6plus:activity/CMIP"
+                    },
+                    {
+                        "@id": "cmip6plus:activity/LESFMIP"
+                    }
+                ]
+            },
+            "source-id:cohort": "published",
+            "source-id:institution_id": {
+                "@id": "mip-cmor-tables:institutions/mohc"
+            },
+            "source-id:contributers": {
+                "@set": {}
+            },
+            "source-id:license": {
+                "@nest": {
+                    "license:type": {
+                        "@id": "mip-cmor-tables:license/cc-by-4.0"
+                    },
+                    "license:exceptions_contact": "@metoffice.gov.uk <- cmip6.hadgem3",
+                    "license:source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
+                }
+            },
+            "source-id:model_component": {
+                "@list": [
+                    {
+                        "@id": "cmip6plus:model/componets/ukca-glomap-mode"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/metum-hadgem3-ga7.1"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/jules-hadgem3-gl7.1"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/nemo-hadgem3-go6.0"
+                    },
+                    {
+                        "@id": "cmip6plus:model/componets/cice-hadgem3-gsi8"
+                    }
+                ]
+            }
+        }
+    ]
+}

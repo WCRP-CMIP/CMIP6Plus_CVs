@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/cice-hadgem3-gsi8",
     "@type": "cmip:model_component",
-    "model_component:id": "CICE-HadGEM3-GSI8",
-    "model_component:description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
-    "model_component:nominal_resolution": {
+    "model-component:id": "CICE-HadGEM3-GSI8",
+    "model-component:description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/100km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/seaIce"
     }
 }

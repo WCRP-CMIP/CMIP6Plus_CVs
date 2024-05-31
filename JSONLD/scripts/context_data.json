@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
+        "@vocab": "model-component:"
+    },
+    "basepath": "cmip6plus",
+    "@vocab": "core:",
+    "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/",
+    "@depends": [
+        "mip-cmor-tables:license",
+        "cmip6plus:model/components",
+        "cmip6plus_cvs:activity",
+        "cmip6plus_cvs:source/type"
+    ],
+    "license": {
+        "@vocab": "license"
+    }
+}

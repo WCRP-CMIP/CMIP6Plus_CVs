@@ -1,26 +1,26 @@
 {
     "@id": "cmip6plus:experiment/id/fut-ghg",
     "@type": "cmip:experiment_id",
-    "experiment_id:experiment_id": "fut-GHG",
-    "experiment_id:experiment": "future well-mixed GHG-only run",
-    "experiment_id:description": "As hist-GHG but with updated forcings",
-    "experiment_id:activity_id": {
+    "experiment-id:experiment_id": "fut-GHG",
+    "experiment-id:experiment": "future well-mixed GHG-only run",
+    "experiment-id:description": "As hist-GHG but with updated forcings",
+    "experiment-id:activity_id": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/lesfmip"
             }
         ]
     },
-    "experiment_id:model_components": {
+    "experiment-id:model_components": {
         "@nest": {
-            "experiment_id:required": {
+            "experiment-id:required": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aogcm"
                     }
                 ]
             },
-            "experiment_id:additional_allowed": {
+            "experiment-id:additional_allowed": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aer"
@@ -34,23 +34,23 @@
                 ]
             }
         },
-        "experiment_id:parameters": {
+        "experiment-id:parameters": {
             "@nest": {
-                "experiment_id:start": 2015,
-                "experiment_id:end": 2024,
-                "experiment_id:'min_number_yrs_per_sim'": "none"
+                "experiment-id:start": 2015,
+                "experiment-id:end": 2024,
+                "experiment-id:min_number_yrs_per_sim": "none"
             }
         },
-        "experiment_id:parent": {
+        "experiment-id:parent": {
             "@nest": {
-                "experiment_id:activity_id": {
+                "experiment-id:activity_id": {
                     "@set": [
                         {
                             "@id": "cmip6plus:activity/lesfmip"
                         }
                     ]
                 },
-                "experiment_id:experiment_id": {
+                "experiment-id:experiment_id": {
                     "@set": [
                         {
                             "@id": "cmip6:experiment/id/hist-ghg"
@@ -59,9 +59,9 @@
                 }
             }
         },
-        "experiment_id:sub_experiment_id": {
+        "experiment-id:sub_experiment_id": {
             "@id": "cmip6plus:experiment/sub_id/f2023"
         },
-        "experiment_id:tier": 2
+        "experiment-id:tier": 2
     }
 }

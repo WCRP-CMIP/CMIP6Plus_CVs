@@ -1,0 +1,28 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/activity",
+    "@type": "cmip:graph",
+    "@vocab": "activity-id:",
+    "ldroot": "./activity",
+    "files": {
+        "@nest": [
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:activity/cmip",
+            "@type": "cmip:activity_id",
+            "activity-id:name": "CMIP",
+            "activity-id:URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
+            "activity-id:description": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+        },
+        {
+            "@id": "cmip6plus:activity/lesfmip",
+            "@type": "cmip:activity_id",
+            "activity-id:name": "LESFMIP",
+            "activity-id:URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
+            "activity-id:description": "The Large Ensemble Single Forcing Model Intercomparison Project"
+        }
+    ]
+}

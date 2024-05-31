@@ -1,0 +1,418 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/model/components",
+    "@type": "cmip:graph",
+    "@vocab": "",
+    "ldroot": "./model/components",
+    "files": {
+        "@nest": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:model/component/cice",
+            "@type": "cmip:model_component",
+            "model-component:id": "CICE",
+            "model-component:description": "CICE",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/seaIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/cism",
+            "@type": "cmip:model_component",
+            "model-component:id": "CISM",
+            "model-component:description": "CISM",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/landIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/giss_lsm",
+            "@type": "cmip:model_component",
+            "model-component:id": "GISS_LSM",
+            "model-component:description": "GISS LSM",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/land"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/unnamed",
+            "@type": "cmip:model_component",
+            "model-component:id": "unnamed",
+            "model-component:description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/seaIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/nemo-hadgem3-go6.0",
+            "@type": "cmip:model_component",
+            "model-component:id": "NEMO-HadGEM3-GO6.0",
+            "model-component:description": "NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocean"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/osloaero",
+            "@type": "cmip:model_component",
+            "model-component:id": "OsloAero",
+            "model-component:description": "OsloAero",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/aerosol"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/matsiro6.0",
+            "@type": "cmip:model_component",
+            "model-component:id": "MATSIRO6.0",
+            "model-component:description": "MATSIRO6.0",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/land"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/giss_si",
+            "@type": "cmip:model_component",
+            "model-component:id": "GISS_SI",
+            "model-component:description": "GISS SI",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/seaIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/varies_with_physics-version",
+            "@type": "cmip:model_component",
+            "model-component:id": "Varies_with_physics-version",
+            "model-component:description": "Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmosChem"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/hamocc",
+            "@type": "cmip:model_component",
+            "model-component:id": "HAMOCC",
+            "model-component:description": "HAMOCC",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocnBgchem"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/,_prescribed_macv2-sp",
+            "@type": "cmip:model_component",
+            "model-component:id": ",_prescribed_MACv2-SP",
+            "model-component:description": ", prescribed MACv2-SP",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/aerosol"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/oslochemsimp",
+            "@type": "cmip:model_component",
+            "model-component:id": "OsloChemSimp",
+            "model-component:description": "OsloChemSimp",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmosChem"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/cice-hadgem3-gsi8",
+            "@type": "cmip:model_component",
+            "model-component:id": "CICE-HadGEM3-GSI8",
+            "model-component:description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/seaIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/micom",
+            "@type": "cmip:model_component",
+            "model-component:id": "MICOM",
+            "model-component:description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocean"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/echam6.3",
+            "@type": "cmip:model_component",
+            "model-component:id": "ECHAM6.3",
+            "model-component:description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmos"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/coco4.9",
+            "@type": "cmip:model_component",
+            "model-component:id": "COCO4.9",
+            "model-component:description": "COCO4.9",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/seaIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1",
+            "@type": "cmip:model_component",
+            "model-component:id": "MetUM-HadGEM3-GA7.1",
+            "model-component:description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmos"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/giss-e2.1",
+            "@type": "cmip:model_component",
+            "model-component:id": "GISS-E2.1",
+            "model-component:description": "GISS-E2.1 (2.5x2 degree; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmos"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/mpiom1.63",
+            "@type": "cmip:model_component",
+            "model-component:id": "MPIOM1.63",
+            "model-component:description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocean"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/sprintars6.0",
+            "@type": "cmip:model_component",
+            "model-component:id": "SPRINTARS6.0",
+            "model-component:description": "SPRINTARS6.0",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/aerosol"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/ccsr_agcm",
+            "@type": "cmip:model_component",
+            "model-component:id": "CCSR_AGCM",
+            "model-component:description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmos"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/cam-oslo",
+            "@type": "cmip:model_component",
+            "model-component:id": "CAM-OSLO",
+            "model-component:description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/atmos"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/ukca-glomap-mode",
+            "@type": "cmip:model_component",
+            "model-component:id": "UKCA-GLOMAP-mode",
+            "model-component:description": "UKCA-GLOMAP-mode",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/aerosol"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1",
+            "@type": "cmip:model_component",
+            "model-component:id": "JULES-HadGEM3-GL7.1",
+            "model-component:description": "JULES-HadGEM3-GL7.1",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/land"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/hamocc6",
+            "@type": "cmip:model_component",
+            "model-component:id": "HAMOCC6",
+            "model-component:description": "HAMOCC6",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocnBgchem"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/jsbach3.20",
+            "@type": "cmip:model_component",
+            "model-component:id": "JSBACH3.20",
+            "model-component:description": "JSBACH3.20",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/land"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/prescribed",
+            "@type": "cmip:model_component",
+            "model-component:id": "prescribed",
+            "model-component:description": "prescribed",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/none"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/landIce"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/clm",
+            "@type": "cmip:model_component",
+            "model-component:id": "CLM",
+            "model-component:description": "CLM",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/250km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/land"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/component/giss_ocean",
+            "@type": "cmip:model_component",
+            "model-component:id": "GISS_Ocean",
+            "model-component:description": "GISS Ocean (GO1, 1 degree; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10 m)",
+            "model-component:nominal_resolution": {
+                "@id": "cmip6plus:model/nominal_resolution/100km"
+            },
+            "model-component:version": -999,
+            "model-component:realm": {
+                "@id": "cmip6plus:model/realms/ocean"
+            }
+        }
+    ]
+}

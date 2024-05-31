@@ -1,19 +1,19 @@
 {
     "@id": "cmip6plus:experiment/id/esm-picontrol",
     "@type": "cmip:experiment_id",
-    "experiment_id:experiment_id": "esm-piControl",
-    "experiment_id:experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
-    "experiment_id:description": "DECK: control (emission-driven)",
-    "experiment_id:activity_id": {
+    "experiment-id:experiment_id": "esm-piControl",
+    "experiment-id:experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
+    "experiment-id:description": "DECK: control (emission-driven)",
+    "experiment-id:activity_id": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/cmip"
             }
         ]
     },
-    "experiment_id:model_components": {
+    "experiment-id:model_components": {
         "@nest": {
-            "experiment_id:required": {
+            "experiment-id:required": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aogcm"
@@ -23,7 +23,7 @@
                     }
                 ]
             },
-            "experiment_id:additional_allowed": {
+            "experiment-id:additional_allowed": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aer"
@@ -34,23 +34,23 @@
                 ]
             }
         },
-        "experiment_id:parameters": {
+        "experiment-id:parameters": {
             "@nest": {
-                "experiment_id:start": -999,
-                "experiment_id:end": -999,
-                "experiment_id:'min_number_yrs_per_sim'": 500
+                "experiment-id:start": -999,
+                "experiment-id:end": -999,
+                "experiment-id:min_number_yrs_per_sim": 500
             }
         },
-        "experiment_id:parent": {
+        "experiment-id:parent": {
             "@nest": {
-                "experiment_id:activity_id": {
+                "experiment-id:activity_id": {
                     "@set": [
                         {
                             "@id": "cmip6plus:activity/cmip"
                         }
                     ]
                 },
-                "experiment_id:experiment_id": {
+                "experiment-id:experiment_id": {
                     "@set": [
                         {
                             "@id": "cmip6:experiment/id/esm-picontrol-spinup"
@@ -59,9 +59,9 @@
                 }
             }
         },
-        "experiment_id:sub_experiment_id": {
+        "experiment-id:sub_experiment_id": {
             "@id": "cmip6plus:experiment/sub_id/none"
         },
-        "experiment_id:tier": 1
+        "experiment-id:tier": 1
     }
 }

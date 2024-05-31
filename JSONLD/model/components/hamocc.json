@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/hamocc",
     "@type": "cmip:model_component",
-    "model_component:id": "HAMOCC",
-    "model_component:description": "HAMOCC",
-    "model_component:nominal_resolution": {
+    "model-component:id": "HAMOCC",
+    "model-component:description": "HAMOCC",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/100km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/ocnBgchem"
     }
 }

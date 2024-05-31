@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/micom",
     "@type": "cmip:model_component",
-    "model_component:id": "MICOM",
-    "model_component:description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
-    "model_component:nominal_resolution": {
+    "model-component:id": "MICOM",
+    "model-component:description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/100km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/ocean"
     }
 }

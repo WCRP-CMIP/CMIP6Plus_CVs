@@ -1,0 +1,4 @@
+{
+    "@base": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs",
+    "@vocab": "sub-experiment-id:"
+}

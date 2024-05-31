@@ -1,7 +1,7 @@
 {
     "@id": "cmip6plus:activity/lesfmip",
     "@type": "cmip:activity_id",
-    "activity_id:name": "LESFMIP",
-    "activity_id:URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
-    "activity_id:description": "The Large Ensemble Single Forcing Model Intercomparison Project"
+    "activity-id:name": "LESFMIP",
+    "activity-id:URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
+    "activity-id:description": "The Large Ensemble Single Forcing Model Intercomparison Project"
 }

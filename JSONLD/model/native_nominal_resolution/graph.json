@@ -1,0 +1,39 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/model/native_nominal_resolution",
+    "@type": "cmip:graph",
+    "@vocab": "",
+    "ldroot": "./model/native_nominal_resolution",
+    "files": {
+        "@nest": [
+            {},
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:model/native_nominal_resolution/50km",
+            "@type": "cmip:native_nominal_resolution",
+            "value": "50",
+            "cf:unit": {
+                "@id": "si:km"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/native_nominal_resolution/100km",
+            "@type": "cmip:native_nominal_resolution",
+            "value": "100",
+            "cf:unit": {
+                "@id": "si:km"
+            }
+        },
+        {
+            "@id": "cmip6plus:model/native_nominal_resolution/250km",
+            "@type": "cmip:native_nominal_resolution",
+            "value": "250",
+            "cf:unit": {
+                "@id": "si:km"
+            }
+        }
+    ]
+}

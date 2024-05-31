@@ -1,0 +1,54 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/model/realms",
+    "@type": "cmip:graph",
+    "@vocab": "",
+    "ldroot": "./model/realms",
+    "files": {
+        "@nest": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:model/realms/ocean",
+            "@type": "cmip:realm",
+            "realm:name": "ocean",
+            "realm:description": "Ocean"
+        },
+        {
+            "@id": "cmip6plus:model/realms/land",
+            "@type": "cmip:realm",
+            "realm:name": "land",
+            "realm:description": "Land Surface"
+        },
+        {
+            "@id": "cmip6plus:model/realms/aerosol",
+            "@type": "cmip:realm",
+            "realm:name": "aerosol",
+            "realm:description": "Aerosol"
+        },
+        {
+            "@id": "cmip6plus:model/realms/atmos",
+            "@type": "cmip:realm",
+            "realm:name": "atmos",
+            "realm:description": "Atmosphere"
+        },
+        {
+            "@id": "cmip6plus:model/realms/seaIce",
+            "@type": "cmip:realm",
+            "realm:name": "seaIce",
+            "realm:description": "Sea Ice"
+        },
+        {
+            "@id": "cmip6plus:model/realms/atmosChem",
+            "@type": "cmip:realm",
+            "realm:name": "atmosChem",
+            "realm:description": "Atmospheric Chemistry"
+        }
+    ]
+}

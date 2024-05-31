@@ -5,16 +5,16 @@
     "required": [
         "@id",
         "@type",
-        "source_id:source_id",
-        "source_id:label",
-        "source_id:label_extended",
-        "source_id:release_year",
-        "source_id:activity_participation",
-        "source_id:cohort",
-        "source_id:institution_id",
-        "source_id:contributers",
-        "source_id:license",
-        "source_id:model_component"
+        "source-id:name",
+        "source-id:label",
+        "source-id:label_extended",
+        "source-id:release_year",
+        "source-id:activity_participation",
+        "source-id:cohort",
+        "source-id:institution_id",
+        "source-id:contributers",
+        "source-id:license",
+        "source-id:model_component"
     ],
     "properties": {
         "@id": {
@@ -26,21 +26,21 @@
             "type": "string",
             "pattern": "^cmip:source_id$"
         },
-        "source_id:source_id": {
+        "source-id:name": {
             "type": "string"
         },
-        "source_id:label": {
+        "source-id:label": {
             "type": "string"
         },
-        "source_id:label_extended": {
+        "source-id:label_extended": {
             "type": "string"
         },
-        "source_id:release_year": {
+        "source-id:release_year": {
             "type": "integer",
             "minimum": 2000,
             "maximum": 2100
         },
-        "source_id:activity_participation": {
+        "source-id:activity_participation": {
             "type": "object",
             "properties": {
                 "@set": {
@@ -51,7 +51,7 @@
                             "@id": {
                                 "type": "string",
                                 "format": "uri",
-                                "pattern": "^cmip6plus_cvs:activity/.+$"
+                                "pattern": "^cmip6plus:activity/.+$"
                             }
                         },
                         "required": [
@@ -65,13 +65,13 @@
             ],
             "additionalProperties": false
         },
-        "source_id:cohort": {
+        "source-id:cohort": {
             "type": "string",
             "enum": [
                 "published"
             ]
         },
-        "source_id:institution_id": {
+        "source-id:institution_id": {
             "type": "object",
             "properties": {
                 "@id": {
@@ -85,7 +85,7 @@
             ],
             "additionalProperties": false
         },
-        "source_id:contributers": {
+        "source-id:contributers": {
             "type": "object",
             "properties": {
                 "@set": {
@@ -94,10 +94,9 @@
             },
             "required": [
                 "@set"
-            ],
-            "additionalProperties": false
+            ]
         },
-        "source_id:license": {
+        "source-id:license": {
             "type": "object",
             "properties": {
                 "@nest": {
@@ -137,7 +136,7 @@
             ],
             "additionalProperties": false
         },
-        "source_id:model_component": {
+        "source-id:model_component": {
             "type": "object",
             "properties": {
                 "@list": {

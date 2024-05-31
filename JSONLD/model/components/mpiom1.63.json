@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/mpiom1.63",
     "@type": "cmip:model_component",
-    "model_component:id": "MPIOM1.63",
-    "model_component:description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
-    "model_component:nominal_resolution": {
+    "model-component:id": "MPIOM1.63",
+    "model-component:description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/250km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/ocean"
     }
 }

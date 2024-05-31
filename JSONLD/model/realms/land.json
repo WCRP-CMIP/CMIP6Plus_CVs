@@ -2,19 +2,5 @@
     "@id": "cmip6plus:model/realms/land",
     "@type": "cmip:realm",
     "realm:name": "land",
-    "realm:description": "Land Surface",
-    "realm:mips": {
-        "@container": "@set",
-        "@value": [
-            {
-                "@id": "MIP:CMIP6Plus"
-            },
-            {
-                "@id": "MIP:CMIP6"
-            },
-            {
-                "@id": "MIP:CMIP5"
-            }
-        ]
-    }
+    "realm:description": "Land Surface"
 }

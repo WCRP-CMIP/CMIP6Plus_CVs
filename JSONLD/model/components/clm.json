@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/clm",
     "@type": "cmip:model_component",
-    "model_component:id": "CLM",
-    "model_component:description": "CLM",
-    "model_component:nominal_resolution": {
+    "model-component:id": "CLM",
+    "model-component:description": "CLM",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/250km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/land"
     }
 }

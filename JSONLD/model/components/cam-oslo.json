@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/cam-oslo",
     "@type": "cmip:model_component",
-    "model_component:id": "CAM-OSLO",
-    "model_component:description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
-    "model_component:nominal_resolution": {
+    "model-component:id": "CAM-OSLO",
+    "model-component:description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/250km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/atmos"
     }
 }

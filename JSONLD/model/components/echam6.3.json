@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/echam6.3",
     "@type": "cmip:model_component",
-    "model_component:id": "ECHAM6.3",
-    "model_component:description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)",
-    "model_component:nominal_resolution": {
+    "model-component:id": "ECHAM6.3",
+    "model-component:description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/250km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/atmos"
     }
 }

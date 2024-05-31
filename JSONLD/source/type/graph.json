@@ -1,0 +1,82 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/source/type",
+    "@type": "cmip:graph",
+    "@vocab": "",
+    "ldroot": "./source/type",
+    "files": {
+        "@nest": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:source/type/rad",
+            "@type": "cmip:source_type",
+            "source-type:name": "RAD",
+            "source-type:description": "radiation component of an atmospheric model run 'offline'"
+        },
+        {
+            "@id": "cmip6plus:source/type/aer",
+            "@type": "cmip:source_type",
+            "source-type:name": "AER",
+            "source-type:description": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)"
+        },
+        {
+            "@id": "cmip6plus:source/type/chem",
+            "@type": "cmip:source_type",
+            "source-type:name": "CHEM",
+            "source-type:description": "chemistry treatment in an atmospheric model that calculates atmospheric oxidant concentrations (including at least ozone), rather than prescribing them"
+        },
+        {
+            "@id": "cmip6plus:source/type/bgc",
+            "@type": "cmip:source_type",
+            "source-type:name": "BGC",
+            "source-type:description": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean"
+        },
+        {
+            "@id": "cmip6plus:source/type/ogcm",
+            "@type": "cmip:source_type",
+            "source-type:name": "OGCM",
+            "source-type:description": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model"
+        },
+        {
+            "@id": "cmip6plus:source/type/land",
+            "@type": "cmip:source_type",
+            "source-type:name": "LAND",
+            "source-type:description": "land model run uncoupled from the atmosphere"
+        },
+        {
+            "@id": "cmip6plus:source/type/slab",
+            "@type": "cmip:source_type",
+            "source-type:name": "SLAB",
+            "source-type:description": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system"
+        },
+        {
+            "@id": "cmip6plus:source/type/ism",
+            "@type": "cmip:source_type",
+            "source-type:name": "ISM",
+            "source-type:description": "ice-sheet model that includes ice-flow"
+        },
+        {
+            "@id": "cmip6plus:source/type/aogcm",
+            "@type": "cmip:source_type",
+            "source-type:name": "AOGCM",
+            "source-type:description": "coupled atmosphere-ocean global climate model, additionally including explicit representation of at least the land and sea ice"
+        },
+        {
+            "@id": "cmip6plus:source/type/agcm",
+            "@type": "cmip:source_type",
+            "source-type:name": "AGCM",
+            "source-type:description": "atmospheric general circulation model run with prescribed ocean surface conditions and usually a model of the land surface"
+        }
+    ]
+}

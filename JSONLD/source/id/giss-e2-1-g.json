@@ -1,11 +1,11 @@
 {
     "@id": "cmip6plus:source/id/giss-e2-1-g",
     "@type": "cmip:source_id",
-    "source_id:source_id": "GISS-E2-1-G",
-    "source_id:label": "GISS-E2.1G",
-    "source_id:label_extended": "GISS-E2.1G",
-    "source_id:release_year": 2019,
-    "source_id:activity_participation": {
+    "source-id:name": "GISS-E2-1-G",
+    "source-id:label": "GISS-E2.1G",
+    "source-id:label_extended": "GISS-E2.1G",
+    "source-id:release_year": 2019,
+    "source-id:activity_participation": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/LESFMIP"
@@ -15,14 +15,14 @@
             }
         ]
     },
-    "source_id:cohort": "published",
-    "source_id:institution_id": {
+    "source-id:cohort": "published",
+    "source-id:institution_id": {
         "@id": "mip-cmor-tables:institutions/nasa-giss"
     },
-    "source_id:contributers": {
+    "source-id:contributers": {
         "@set": {}
     },
-    "source_id:license": {
+    "source-id:license": {
         "@nest": {
             "license:type": {
                 "@id": "mip-cmor-tables:license/cc-by-4.0"
@@ -31,7 +31,7 @@
             "license:source_specific_info": ""
         }
     },
-    "source_id:model_component": {
+    "source-id:model_component": {
         "@list": [
             {
                 "@id": "cmip6plus:model/componets/varies_with_physics-version"

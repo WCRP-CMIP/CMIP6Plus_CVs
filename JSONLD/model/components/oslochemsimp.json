@@ -1,13 +1,13 @@
 {
     "@id": "cmip6plus:model/component/oslochemsimp",
     "@type": "cmip:model_component",
-    "model_component:id": "OsloChemSimp",
-    "model_component:description": "OsloChemSimp",
-    "model_component:nominal_resolution": {
+    "model-component:id": "OsloChemSimp",
+    "model-component:description": "OsloChemSimp",
+    "model-component:nominal_resolution": {
         "@id": "cmip6plus:model/nominal_resolution/250km"
     },
-    "model_component:version": -999,
-    "model_component:realm": {
+    "model-component:version": -999,
+    "model-component:realm": {
         "@id": "cmip6plus:model/realms/atmosChem"
     }
 }

@@ -1,11 +1,11 @@
 {
     "@id": "cmip6plus:source/id/mpi-esm1-2-hr",
     "@type": "cmip:source_id",
-    "source_id:source_id": "MPI-ESM1-2-HR",
-    "source_id:label": "MPI-ESM1.2-HR",
-    "source_id:label_extended": "MPI-ESM1.2-HR",
-    "source_id:release_year": 2017,
-    "source_id:activity_participation": {
+    "source-id:name": "MPI-ESM1-2-HR",
+    "source-id:label": "MPI-ESM1.2-HR",
+    "source-id:label_extended": "MPI-ESM1.2-HR",
+    "source-id:release_year": 2017,
+    "source-id:activity_participation": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/CMIP"
@@ -15,14 +15,14 @@
             }
         ]
     },
-    "source_id:cohort": "published",
-    "source_id:institution_id": {
+    "source-id:cohort": "published",
+    "source-id:institution_id": {
         "@id": "mip-cmor-tables:institutions/mpi-m"
     },
-    "source_id:contributers": {
+    "source-id:contributers": {
         "@set": {}
     },
-    "source_id:license": {
+    "source-id:license": {
         "@nest": {
             "license:type": {
                 "@id": "mip-cmor-tables:license/cc-by-4.0"
@@ -31,7 +31,7 @@
             "license:source_specific_info": ""
         }
     },
-    "source_id:model_component": {
+    "source-id:model_component": {
         "@list": [
             {
                 "@id": "cmip6plus:model/componets/,_prescribed_macv2-sp"

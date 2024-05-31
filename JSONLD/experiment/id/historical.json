@@ -1,26 +1,26 @@
 {
     "@id": "cmip6plus:experiment/id/historical",
     "@type": "cmip:experiment_id",
-    "experiment_id:experiment_id": "historical",
-    "experiment_id:experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
-    "experiment_id:description": "CMIP6 historical",
-    "experiment_id:activity_id": {
+    "experiment-id:experiment_id": "historical",
+    "experiment-id:experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
+    "experiment-id:description": "CMIP6 historical",
+    "experiment-id:activity_id": {
         "@set": [
             {
                 "@id": "cmip6plus:activity/cmip"
             }
         ]
     },
-    "experiment_id:model_components": {
+    "experiment-id:model_components": {
         "@nest": {
-            "experiment_id:required": {
+            "experiment-id:required": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aogcm"
                     }
                 ]
             },
-            "experiment_id:additional_allowed": {
+            "experiment-id:additional_allowed": {
                 "@set": [
                     {
                         "@id": "cmip6plus:source/type/aer"
@@ -34,23 +34,23 @@
                 ]
             }
         },
-        "experiment_id:parameters": {
+        "experiment-id:parameters": {
             "@nest": {
-                "experiment_id:start": 1850,
-                "experiment_id:end": 2014,
-                "experiment_id:'min_number_yrs_per_sim'": 165
+                "experiment-id:start": 1850,
+                "experiment-id:end": 2014,
+                "experiment-id:min_number_yrs_per_sim": 165
             }
         },
-        "experiment_id:parent": {
+        "experiment-id:parent": {
             "@nest": {
-                "experiment_id:activity_id": {
+                "experiment-id:activity_id": {
                     "@set": [
                         {
                             "@id": "cmip6plus:activity/cmip"
                         }
                     ]
                 },
-                "experiment_id:experiment_id": {
+                "experiment-id:experiment_id": {
                     "@set": [
                         {
                             "@id": "cmip6:experiment/id/picontrol"
@@ -59,9 +59,9 @@
                 }
             }
         },
-        "experiment_id:sub_experiment_id": {
+        "experiment-id:sub_experiment_id": {
             "@id": "cmip6plus:experiment/sub_id/none"
         },
-        "experiment_id:tier": 1
+        "experiment-id:tier": 1
     }
 }

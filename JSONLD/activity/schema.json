@@ -7,23 +7,23 @@
         "@type": {
             "type": "string"
         },
-        "activity_id:name": {
+        "activity-id:name": {
             "type": "string",
             "pattern": "^[\\w]+$"
         },
-        "activity_id:URL": {
+        "activity-id:URL": {
             "type": "string",
             "format": "uri"
         },
-        "activity_id:description": {
+        "activity-id:description": {
             "type": "string"
         }
     },
     "required": [
         "@id",
         "@type",
-        "activity_id:name",
-        "activity_id:URL",
-        "activity_id:description"
+        "activity-id:name",
+        "activity-id:URL",
+        "activity-id:description"
     ]
 }

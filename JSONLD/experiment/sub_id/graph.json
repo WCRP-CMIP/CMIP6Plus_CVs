@@ -1,0 +1,26 @@
+{
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/experiment/sub_id",
+    "@type": "cmip:graph",
+    "@vocab": "sub-experiment-id:",
+    "ldroot": "./experiment/sub_id",
+    "files": {
+        "@nest": [
+            {},
+            {}
+        ]
+    },
+    "@graph": [
+        {
+            "@id": "cmip6plus:experiment/sub_id/none",
+            "@type": "cmip:sub_experiment_id",
+            "sub-experiment-id:sub_experiment_id": "none",
+            "sub-experiment-id:description": "none"
+        },
+        {
+            "@id": "cmip6plus:experiment/sub_id/f2023",
+            "@type": "cmip:sub_experiment_id",
+            "sub-experiment-id:sub_experiment_id": "f2023",
+            "sub-experiment-id:description": "Forcings 2023"
+        }
+    ]
+}
