@@ -1,0 +1,640 @@
+[
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/1pctco2.json",
+        "@type": "version",
+        "version:file": "1pctco2.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/1pctco2"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/abrupt-4xco2.json",
+        "@type": "version",
+        "version:file": "abrupt-4xco2.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/abrupt-4xco2"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/amip.json",
+        "@type": "version",
+        "version:file": "amip.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/amip"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/context.json",
+        "@type": "version",
+        "version:file": "context.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/context"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/esm-hist.json",
+        "@type": "version",
+        "version:file": "esm-hist.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/esm-hist"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/esm-picontrol-spinup.json",
+        "@type": "version",
+        "version:file": "esm-picontrol-spinup.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/esm-picontrol-spinup"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/esm-picontrol.json",
+        "@type": "version",
+        "version:file": "esm-picontrol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/esm-picontrol"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-aer.json",
+        "@type": "version",
+        "version:file": "fut-aer.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-aer"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-ghg.json",
+        "@type": "version",
+        "version:file": "fut-ghg.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-ghg"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-lu.json",
+        "@type": "version",
+        "version:file": "fut-lu.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-lu"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-sol.json",
+        "@type": "version",
+        "version:file": "fut-sol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-sol"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-totalo3.json",
+        "@type": "version",
+        "version:file": "fut-totalo3.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-totalo3"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/fut-volc.json",
+        "@type": "version",
+        "version:file": "fut-volc.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/fut-volc"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-aer.json",
+        "@type": "version",
+        "version:file": "hist-aer.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-aer"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-ghg.json",
+        "@type": "version",
+        "version:file": "hist-ghg.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-ghg"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-lu.json",
+        "@type": "version",
+        "version:file": "hist-lu.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-lu"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-nat.json",
+        "@type": "version",
+        "version:file": "hist-nat.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-nat"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-nolu.json",
+        "@type": "version",
+        "version:file": "hist-nolu.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-nolu"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-piaer.json",
+        "@type": "version",
+        "version:file": "hist-piaer.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-piaer"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-pighg.json",
+        "@type": "version",
+        "version:file": "hist-pighg.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-pighg"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-pisol.json",
+        "@type": "version",
+        "version:file": "hist-pisol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-pisol"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-pitotalo3.json",
+        "@type": "version",
+        "version:file": "hist-pitotalo3.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-pitotalo3"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-pivolc.json",
+        "@type": "version",
+        "version:file": "hist-pivolc.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-pivolc"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-sol.json",
+        "@type": "version",
+        "version:file": "hist-sol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-sol"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-totalo3.json",
+        "@type": "version",
+        "version:file": "hist-totalo3.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-totalo3"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/hist-volc.json",
+        "@type": "version",
+        "version:file": "hist-volc.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/hist-volc"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/historical.json",
+        "@type": "version",
+        "version:file": "historical.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/historical"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/picontrol-spinup.json",
+        "@type": "version",
+        "version:file": "picontrol-spinup.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/picontrol-spinup"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/experiment/id/picontrol.json",
+        "@type": "version",
+        "version:file": "picontrol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:experiment/id/picontrol"
+        }
+    }
+]

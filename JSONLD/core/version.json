@@ -1,0 +1,68 @@
+[
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/core/mip_era.json",
+        "@type": "version",
+        "version:file": "mip_era.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:core/mip_era"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/core/required_global_attributes.json",
+        "@type": "version",
+        "version:file": "required_global_attributes.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:core/required_global_attribute"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/core/tracking_id.json",
+        "@type": "version",
+        "version:file": "tracking_id.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:core/tracking_id"
+        }
+    }
+]

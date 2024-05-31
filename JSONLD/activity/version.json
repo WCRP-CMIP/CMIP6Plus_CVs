@@ -1,0 +1,46 @@
+[
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/activity/cmip.json",
+        "@type": "version",
+        "version:file": "cmip.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:activity/cmip"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/activity/lesfmip.json",
+        "@type": "version",
+        "version:file": "lesfmip.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:activity/lesfmip"
+        }
+    }
+]

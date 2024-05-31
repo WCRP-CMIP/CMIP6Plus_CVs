@@ -1,14 +1,8 @@
 {
-    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/activity",
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/activity",
     "@type": "cmip:graph",
-    "@vocab": "activity-id:",
+    "@vocab": "",
     "ldroot": "./activity",
-    "files": {
-        "@nest": [
-            {},
-            {}
-        ]
-    },
     "@graph": [
         {
             "@id": "cmip6plus:activity/cmip",
@@ -24,5 +18,9 @@
             "activity-id:URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
             "activity-id:description": "The Large Ensemble Single Forcing Model Intercomparison Project"
         }
+    ],
+    "files": [
+        "cmip.json",
+        "lesfmip.json"
     ]
 }

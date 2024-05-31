@@ -1,0 +1,90 @@
+[
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/native_nominal_resolution/100km.json",
+        "@type": "version",
+        "version:file": "100km.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-28T14:33:12+01:00",
+        "version:commit": {
+            "hash": "4bbad7b",
+            "message": "jsonld",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/native_nominal_resolution/100km"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/native_nominal_resolution/250km.json",
+        "@type": "version",
+        "version:file": "250km.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-28T14:33:12+01:00",
+        "version:commit": {
+            "hash": "4bbad7b",
+            "message": "jsonld",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/native_nominal_resolution/250km"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/native_nominal_resolution/50km.json",
+        "@type": "version",
+        "version:file": "50km.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-05-28T14:33:12+01:00",
+        "version:commit": {
+            "hash": "4bbad7b",
+            "message": "jsonld",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/native_nominal_resolution/50km"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/native_nominal_resolution/context.json",
+        "@type": "version",
+        "version:file": "context.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/native_nominal_resolution/context"
+        }
+    }
+]

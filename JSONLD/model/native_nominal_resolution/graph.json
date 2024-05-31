@@ -1,24 +1,9 @@
 {
-    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/model/native_nominal_resolution",
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/native_nominal_resolution",
     "@type": "cmip:graph",
     "@vocab": "",
     "ldroot": "./model/native_nominal_resolution",
-    "files": {
-        "@nest": [
-            {},
-            {},
-            {}
-        ]
-    },
     "@graph": [
-        {
-            "@id": "cmip6plus:model/native_nominal_resolution/50km",
-            "@type": "cmip:native_nominal_resolution",
-            "value": "50",
-            "cf:unit": {
-                "@id": "si:km"
-            }
-        },
         {
             "@id": "cmip6plus:model/native_nominal_resolution/100km",
             "@type": "cmip:native_nominal_resolution",
@@ -34,6 +19,20 @@
             "cf:unit": {
                 "@id": "si:km"
             }
+        },
+        {
+            "@id": "cmip6plus:model/native_nominal_resolution/50km",
+            "@type": "cmip:native_nominal_resolution",
+            "value": "50",
+            "cf:unit": {
+                "@id": "si:km"
+            }
         }
+    ],
+    "files": [
+        "100km.json",
+        "250km.json",
+        "50km.json",
+        "context.json"
     ]
 }

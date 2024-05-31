@@ -1,0 +1,156 @@
+[
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/aerosol.json",
+        "@type": "version",
+        "version:file": "aerosol.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/aerosol"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/atmos.json",
+        "@type": "version",
+        "version:file": "atmos.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/atm"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/atmosChem.json",
+        "@type": "version",
+        "version:file": "atmosChem.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/atmosChem"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/context.json",
+        "@type": "version",
+        "version:file": "context.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/context"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/land.json",
+        "@type": "version",
+        "version:file": "land.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/land"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/ocean.json",
+        "@type": "version",
+        "version:file": "ocean.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/ocea"
+        }
+    },
+    {
+        "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD//blob/main/model/realms/seaIce.json",
+        "@type": "version",
+        "version:file": "seaIce.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-05-31T15:50:45+01:00",
+        "version:commit": {
+            "hash": "11557dd",
+            "message": "commit to test graph versioning",
+            "author": {
+                "name": "Daniel",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "cmip6plus:model/realms/seaIce"
+        }
+    }
+]

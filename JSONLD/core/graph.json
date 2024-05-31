@@ -1,22 +1,11 @@
 {
-    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/core",
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/core",
     "@type": "cmip:graph",
-    "@vocab": "core:",
+    "@vocab": "",
     "ldroot": "./core",
-    "files": {
-        "@nest": [
-            {},
-            {},
-            {}
-        ]
-    },
     "@graph": [
         {
             "@id": "mip-cmor-tables:auxillary/mip_era/cmip6plus"
-        },
-        {
-            "@id": "cmip6plus:tracking_id",
-            "core:tracking_id": "hdl:21.14100/.*"
         },
         {
             "@id": "cmip6plus_cvs:required_global_attributes",
@@ -53,6 +42,15 @@
                     "variant_label"
                 ]
             }
+        },
+        {
+            "@id": "cmip6plus:tracking_id",
+            "core:tracking_id": "hdl:21.14100/.*"
         }
+    ],
+    "files": [
+        "mip_era.json",
+        "required_global_attributes.json",
+        "tracking_id.json"
     ]
 }

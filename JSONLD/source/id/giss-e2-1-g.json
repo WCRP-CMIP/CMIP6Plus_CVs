@@ -8,10 +8,10 @@
     "source-id:activity_participation": {
         "@set": [
             {
-                "@id": "cmip6plus:activity/LESFMIP"
+                "@id": "cmip6plus:activity/lesfmip"
             },
             {
-                "@id": "cmip6plus:activity/CMIP"
+                "@id": "cmip6plus:activity/cmip"
             }
         ]
     },

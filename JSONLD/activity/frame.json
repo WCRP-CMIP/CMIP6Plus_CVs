@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "@vocab": "activity-id:"
+    },
+    "@type": "activity-id:activity_id",
+    "name": "CMIP",
+    "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
+    "description": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+}

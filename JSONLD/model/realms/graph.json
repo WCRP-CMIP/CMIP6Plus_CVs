@@ -1,31 +1,9 @@
 {
-    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/model/realms",
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/realms",
     "@type": "cmip:graph",
     "@vocab": "",
     "ldroot": "./model/realms",
-    "files": {
-        "@nest": [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {}
-        ]
-    },
     "@graph": [
-        {
-            "@id": "cmip6plus:model/realms/ocean",
-            "@type": "cmip:realm",
-            "realm:name": "ocean",
-            "realm:description": "Ocean"
-        },
-        {
-            "@id": "cmip6plus:model/realms/land",
-            "@type": "cmip:realm",
-            "realm:name": "land",
-            "realm:description": "Land Surface"
-        },
         {
             "@id": "cmip6plus:model/realms/aerosol",
             "@type": "cmip:realm",
@@ -39,16 +17,37 @@
             "realm:description": "Atmosphere"
         },
         {
-            "@id": "cmip6plus:model/realms/seaIce",
-            "@type": "cmip:realm",
-            "realm:name": "seaIce",
-            "realm:description": "Sea Ice"
-        },
-        {
             "@id": "cmip6plus:model/realms/atmosChem",
             "@type": "cmip:realm",
             "realm:name": "atmosChem",
             "realm:description": "Atmospheric Chemistry"
+        },
+        {
+            "@id": "cmip6plus:model/realms/land",
+            "@type": "cmip:realm",
+            "realm:name": "land",
+            "realm:description": "Land Surface"
+        },
+        {
+            "@id": "cmip6plus:model/realms/ocean",
+            "@type": "cmip:realm",
+            "realm:name": "ocean",
+            "realm:description": "Ocean"
+        },
+        {
+            "@id": "cmip6plus:model/realms/seaIce",
+            "@type": "cmip:realm",
+            "realm:name": "seaIce",
+            "realm:description": "Sea Ice"
         }
+    ],
+    "files": [
+        "aerosol.json",
+        "atmos.json",
+        "atmosChem.json",
+        "context.json",
+        "land.json",
+        "ocean.json",
+        "seaIce.json"
     ]
 }

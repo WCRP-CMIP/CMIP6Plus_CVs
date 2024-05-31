@@ -1,10 +1,10 @@
 {
-    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/",
+    "@id": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/",
     "@type": "cmip:graph",
     "@vocab": "",
     "ldroot": "./",
-    "files": {
-        "@nest": []
-    },
-    "@graph": []
+    "@graph": [],
+    "files": [
+        "context.json"
+    ]
 }
