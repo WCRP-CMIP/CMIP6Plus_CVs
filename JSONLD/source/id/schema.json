@@ -147,7 +147,7 @@
                             "@id": {
                                 "type": "string",
                                 "format": "uri",
-                                "pattern": "^cmip6plus:model/componets/.+$"
+                                "pattern": "^cmip6plus:model/component/.+$"
                             }
                         },
                         "required": [

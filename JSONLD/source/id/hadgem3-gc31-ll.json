@@ -34,19 +34,19 @@
     "source-id:model_component": {
         "@list": [
             {
-                "@id": "cmip6plus:model/componets/ukca-glomap-mode"
+                "@id": "cmip6plus:model/component/ukca-glomap-mode"
             },
             {
-                "@id": "cmip6plus:model/componets/metum-hadgem3-ga7.1"
+                "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1"
             },
             {
-                "@id": "cmip6plus:model/componets/jules-hadgem3-gl7.1"
+                "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1"
             },
             {
-                "@id": "cmip6plus:model/componets/nemo-hadgem3-go6.0"
+                "@id": "cmip6plus:model/component/nemo-hadgem3-go6.0"
             },
             {
-                "@id": "cmip6plus:model/componets/cice-hadgem3-gsi8"
+                "@id": "cmip6plus:model/component/cice-hadgem3-gsi8"
             }
         ]
     }

@@ -34,28 +34,28 @@
     "source-id:model_component": {
         "@list": [
             {
-                "@id": "cmip6plus:model/componets/osloaero"
+                "@id": "cmip6plus:model/component/osloaero"
             },
             {
-                "@id": "cmip6plus:model/componets/cam-oslo"
+                "@id": "cmip6plus:model/component/cam-oslo"
             },
             {
-                "@id": "cmip6plus:model/componets/oslochemsimp"
+                "@id": "cmip6plus:model/component/oslochemsimp"
             },
             {
-                "@id": "cmip6plus:model/componets/clm"
+                "@id": "cmip6plus:model/component/clm"
             },
             {
-                "@id": "cmip6plus:model/componets/cism"
+                "@id": "cmip6plus:model/component/cism"
             },
             {
-                "@id": "cmip6plus:model/componets/micom"
+                "@id": "cmip6plus:model/component/micom"
             },
             {
-                "@id": "cmip6plus:model/componets/hamocc"
+                "@id": "cmip6plus:model/component/hamocc"
             },
             {
-                "@id": "cmip6plus:model/componets/cice"
+                "@id": "cmip6plus:model/component/cice"
             }
         ]
     }

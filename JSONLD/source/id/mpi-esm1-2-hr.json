@@ -34,25 +34,25 @@
     "source-id:model_component": {
         "@list": [
             {
-                "@id": "cmip6plus:model/componets/,_prescribed_macv2-sp"
+                "@id": "cmip6plus:model/component/,_prescribed_macv2-sp"
             },
             {
-                "@id": "cmip6plus:model/componets/echam6.3"
+                "@id": "cmip6plus:model/component/echam6.3"
             },
             {
-                "@id": "cmip6plus:model/componets/jsbach3.20"
+                "@id": "cmip6plus:model/component/jsbach3.20"
             },
             {
-                "@id": "cmip6plus:model/componets/prescribed"
+                "@id": "cmip6plus:model/component/prescribed"
             },
             {
-                "@id": "cmip6plus:model/componets/mpiom1.63"
+                "@id": "cmip6plus:model/component/mpiom1.63"
             },
             {
-                "@id": "cmip6plus:model/componets/hamocc6"
+                "@id": "cmip6plus:model/component/hamocc6"
             },
             {
-                "@id": "cmip6plus:model/componets/unnamed"
+                "@id": "cmip6plus:model/component/unnamed"
             }
         ]
     }

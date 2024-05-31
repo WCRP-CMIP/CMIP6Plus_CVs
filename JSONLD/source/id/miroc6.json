@@ -34,19 +34,19 @@
     "source-id:model_component": {
         "@list": [
             {
-                "@id": "cmip6plus:model/componets/sprintars6.0"
+                "@id": "cmip6plus:model/component/sprintars6.0"
             },
             {
-                "@id": "cmip6plus:model/componets/ccsr_agcm"
+                "@id": "cmip6plus:model/component/ccsr_agcm"
             },
             {
-                "@id": "cmip6plus:model/componets/matsiro6.0"
+                "@id": "cmip6plus:model/component/matsiro6.0"
             },
             {
-                "@id": "cmip6plus:model/componets/coco4.9"
+                "@id": "cmip6plus:model/component/coco4.9"
             },
             {
-                "@id": "cmip6plus:model/componets/coco4.9"
+                "@id": "cmip6plus:model/component/coco4.9"
             }
         ]
     }

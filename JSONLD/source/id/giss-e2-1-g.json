@@ -34,22 +34,22 @@
     "source-id:model_component": {
         "@list": [
             {
-                "@id": "cmip6plus:model/componets/varies_with_physics-version"
+                "@id": "cmip6plus:model/component/varies_with_physics-version"
             },
             {
-                "@id": "cmip6plus:model/componets/giss-e2.1"
+                "@id": "cmip6plus:model/component/giss-e2.1"
             },
             {
-                "@id": "cmip6plus:model/componets/varies_with_physics-version"
+                "@id": "cmip6plus:model/component/varies_with_physics-version"
             },
             {
-                "@id": "cmip6plus:model/componets/giss_lsm"
+                "@id": "cmip6plus:model/component/giss_lsm"
             },
             {
-                "@id": "cmip6plus:model/componets/giss_ocean"
+                "@id": "cmip6plus:model/component/giss_ocean"
             },
             {
-                "@id": "cmip6plus:model/componets/giss_si"
+                "@id": "cmip6plus:model/component/giss_si"
             }
         ]
     }
