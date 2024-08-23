@@ -1,0 +1,68 @@
+[
+    {
+        "@id": "././https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/core/index.json",
+        "@type": "version",
+        "version:file": "././JSONLD/core/index.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-08-03T23:15:57+01:00",
+        "version:commit": {
+            "hash": "097112adbe85bc6e36d8a84190d1dc0e35f8665a",
+            "message": "Making files JSONLD compatible",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "././core/index"
+        }
+    },
+    {
+        "@id": "././https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/core/drs.json",
+        "@type": "version",
+        "version:file": "././JSONLD/core/drs.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-07-26T17:40:49+01:00",
+        "version:commit": {
+            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "././core/drs"
+        }
+    },
+    {
+        "@id": "././https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/core/descriptors.json",
+        "@type": "version",
+        "version:file": "././JSONLD/core/descriptors.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-08-03T23:15:57+01:00",
+        "version:commit": {
+            "hash": "097112adbe85bc6e36d8a84190d1dc0e35f8665a",
+            "message": "Making files JSONLD compatible",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "././core/descriptors"
+        }
+    }
+]

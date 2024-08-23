@@ -1,0 +1,6 @@
+{
+  "@id": "cmip6plus:experiment/sub-id/f2023",
+  "@type": "sub-experiment-id",
+  "description": "Forcings 2023",
+  "name": "f2023"
+}

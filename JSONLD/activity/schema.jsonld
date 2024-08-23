@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "@id": {
+            "type": "string"
+        },
+        "@type": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string",
+            "pattern": "^[\\w]+$"
+        },
+        "URL": {
+            "type": "string",
+            "format": "uri"
+        },
+        "description": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "@id",
+        "@type",
+        "name",
+        "URL",
+        "description"
+    ]
+}
