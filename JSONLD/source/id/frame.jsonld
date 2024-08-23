@@ -1,0 +1,60 @@
+{
+    "@context": {
+        "@vocab": "source-id",
+        "@base": "cmip6plus:source/id"
+    },
+    "@embed": "@always",
+    "@explicit": true,
+    "@type": "mip:source-id",
+    "source-id:activity-participation": {
+        "activity-id:description": "",
+        "activity-id:name": "",
+        "activity-id:url": "",
+        "@type": "mip:activity-id",
+        "@context": {
+            "@vocab": "activity-id",
+            "@base": "cmip6plus:activity"
+        },
+        "@embed": "@always",
+        "@explicit": true
+    },
+    "source-id:cohort": "",
+    "source-id:label": "",
+    "source-id:label-extended": "",
+    "source-id:license": {
+        "source-id:license:exceptions-contact": "",
+        "source-id:license:kind": {},
+        "source-id:license:source-specific-info": ""
+    },
+    "source-id:model-component": {
+        "model-component:description": "",
+        "model-component:name": "",
+        "model-component:nominal-resolution": {},
+        "model-component:realm": {},
+        "model-component:version": "",
+        "@type": "mip:model-component",
+        "@context": {
+            "@vocab": "model-component",
+            "@base": "cmip6plus:model/component"
+        },
+        "@embed": "@always",
+        "@explicit": true
+    },
+    "source-id:name": "",
+    "source-id:organisation-id": {
+        "consortium:changes": "",
+        "consortium:cmip-acronym": "",
+        "consortium:members": {},
+        "consortium:name": "",
+        "consortium:status": "",
+        "consortium:url": "",
+        "@type": "mip:consortium",
+        "@context": {
+            "@vocab": "consortium",
+            "@base": "mip-cmor-tables:organisations/consortia"
+        },
+        "@embed": "@always",
+        "@explicit": true
+    },
+    "source-id:release-year": ""
+}

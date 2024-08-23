@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@vocab": "sub-experiment-id",
+        "@base": "cmip6plus:experiment/sub-id"
+    },
+    "@embed": "@always",
+    "@explicit": true,
+    "@type": "mip:sub-experiment-id",
+    "sub-experiment-id:description": "",
+    "sub-experiment-id:name": ""
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/cam-oslo",
+  "@type": "model-component",
+  "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+  "name": "CAM-OSLO",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/atmos"
+  },
+  "version": -999
+}

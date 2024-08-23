@@ -1,0 +1,51 @@
+{
+  "@id": "cmip6plus:experiment/id/fut-aer",
+  "@type": "experiment-id",
+  "activity-id": [
+    {
+      "@id": "cmip6plus:activity/lesfmip"
+    }
+  ],
+  "description": "As hist-aer but with updated forcings",
+  "experiment": "future anthropogenic aerosols-only run",
+  "model-components": {
+    "additional-allowed": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+      }
+    ],
+    "required": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+      }
+    ]
+  },
+  "name": "fut-Aer",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015
+  },
+  "parent": {
+    "activity-id": [
+      {
+        "@id": "cmip6plus:activity/lesfmip"
+      }
+    ],
+    "experiment-id": [
+      {
+        "@id": "cmip6plus:experiment/id/hist-aer"
+      }
+    ]
+  },
+  "sub-experiment-id": {
+    "@id": "cmip6plus:experiment/sub-id/f2023"
+  },
+  "tier": 2
+}

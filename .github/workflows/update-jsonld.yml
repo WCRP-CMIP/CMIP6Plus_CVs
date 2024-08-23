@@ -1,0 +1,40 @@
+name: Update JSONLD
+on: 
+  push:
+    branches:
+      - '*' 
+      # - main  # Adjust this to your branch name if different
+jobs:
+  update-jsonld:
+    runs-on: ubuntu-latest  # Specify the machine type
+      
+    steps:
+
+    - name: Get a list of directories with updated files
+      id: install-cmipld
+      uses: WCRP-CMIP/CMIP-LD/actions/cmipld@main
+    
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Get a list of directories with updated files
+      id: updated-dirs
+      uses: WCRP-CMIP/CMIP-LD/actions/updated_dirs@main
+
+    - name: Compile JSONLD files, generate an RDF network and update frames
+      id: jsonld
+      uses: WCRP-CMIP/CMIP-LD/actions/jsonld@main
+      with:
+        dirs: ${{ env.updated_dirs }}
+        frames: "$PWD/compiled/graph_data.json"
+
+    - name: generate CV
+      id: generate_cv
+      run: |
+        if [[ "${{env.updated_dirs}}" == *"JSONLD"* ]]; then
+          gencv && git push origin HEAD
+        fi
+
+        

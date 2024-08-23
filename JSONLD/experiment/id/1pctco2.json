@@ -1,0 +1,51 @@
+{
+  "@id": "cmip6plus:experiment/id/1pctco2",
+  "@type": "experiment-id",
+  "activity-id": [
+    {
+      "@id": "cmip6plus:activity/cmip"
+    }
+  ],
+  "description": "DECK: 1pctCO2",
+  "experiment": "1 percent per year increase in CO2",
+  "model-components": {
+    "additional-allowed": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+      }
+    ],
+    "required": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+      }
+    ]
+  },
+  "name": "1pctCO2",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 150,
+    "start": -999
+  },
+  "parent": {
+    "activity-id": [
+      {
+        "@id": "cmip6plus:activity/cmip"
+      }
+    ],
+    "experiment-id": [
+      {
+        "@id": "cmip6plus:experiment/id/picontrol"
+      }
+    ]
+  },
+  "sub-experiment-id": {
+    "@id": "cmip6plus:experiment/sub-id/none"
+  },
+  "tier": 1
+}

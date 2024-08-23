@@ -1,0 +1,51 @@
+{
+  "@id": "cmip6plus:experiment/id/picontrol",
+  "@type": "experiment-id",
+  "activity-id": [
+    {
+      "@id": "cmip6plus:activity/cmip"
+    }
+  ],
+  "description": "DECK: control",
+  "experiment": "pre-industrial control (CO2 concentration-driven)",
+  "model-components": {
+    "additional-allowed": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+      }
+    ],
+    "required": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+      }
+    ]
+  },
+  "name": "piControl",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 500,
+    "start": -999
+  },
+  "parent": {
+    "activity-id": [
+      {
+        "@id": "cmip6plus:activity/cmip"
+      }
+    ],
+    "experiment-id": [
+      {
+        "@id": "cmip6plus:experiment/id/picontrol-spinup"
+      }
+    ]
+  },
+  "sub-experiment-id": {
+    "@id": "cmip6plus:experiment/sub-id/none"
+  },
+  "tier": 1
+}
