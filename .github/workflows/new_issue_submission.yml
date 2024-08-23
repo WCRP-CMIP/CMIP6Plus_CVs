@@ -50,10 +50,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         run: |
-          # repo_owner=${{ github.event.repository.owner.login }}
-          # repo_name=${{ github.event.repository.name }}
-          # REPO="https://github.com/${repo_owner}/${repo_name}"
-          
           new_element
 
           
