@@ -11,10 +11,10 @@
             "filename_sub_experiment_example": "tas_Amon_HadGEM3-GC31-MM_dcppA-hindcast_s1960-r1i1p1f2_gn_196011-196012.nc",
             "filename_template": "<variable_id>_<table_id>_<source_id>_<experiment_id >_<member_id>_<grid_label>[_<time_range>].nc"
         },
-        "activity_id": {
-            "CMIP": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
-            "LESFMIP": "The Large Ensemble Single Forcing Model Intercomparison Project"
-        },
+        "activity_id": [
+            "CMIP",
+            "LESFMIP"
+        ],
         "experiment_id": {
             "1pctCO2": {
                 "activity_id": [
@@ -1290,7 +1290,7 @@
             "file_modified": "2024-09-13",
             "CV": {
                 "version": "v6.5.1.4",
-                "git_commit": "7de11b77c8fc99a24d1fe6b7a0cf470a75b91794",
+                "git_commit": "545924c6fb179985d4d289da6f4745db7255b67d",
                 "gitbranch": "HEAD"
             },
             "future": "miptables, checksum, etc"
