@@ -5,7 +5,7 @@
         "@vocab": "sub-experiment-id",
         "@base": "cmip6plus:experiment/sub-id"
     },
-    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main//JSONLD/experiment/sub-id",
+    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/experiment/sub-id",
     ":ldroot": "/JSONLD/experiment/sub-id",
     "@graph": [
         {

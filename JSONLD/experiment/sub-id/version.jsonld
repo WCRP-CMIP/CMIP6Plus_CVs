@@ -1,6 +1,6 @@
 [
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/experiment/sub-id/f2023.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/experiment/sub-id/f2023.json",
         "@type": "version",
         "version:file": "./JSONLD/experiment/sub-id/f2023.json",
         "version:release": {
@@ -8,10 +8,10 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-08-23T11:59:17+01:00",
+        "version:date": "2024-09-13T21:47:44+01:00",
         "version:commit": {
-            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "hash": "ab81cba05c7719534fe6091fc0f4b8f2ca92901a",
+            "message": "CV generated",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
@@ -22,7 +22,7 @@
         }
     },
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/experiment/sub-id/none.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/experiment/sub-id/none.json",
         "@type": "version",
         "version:file": "./JSONLD/experiment/sub-id/none.json",
         "version:release": {
@@ -30,10 +30,10 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-08-23T11:59:17+01:00",
+        "version:date": "2024-09-13T21:47:44+01:00",
         "version:commit": {
-            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "hash": "ab81cba05c7719534fe6091fc0f4b8f2ca92901a",
+            "message": "CV generated",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"

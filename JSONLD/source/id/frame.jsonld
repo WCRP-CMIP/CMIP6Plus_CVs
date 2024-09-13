@@ -41,20 +41,6 @@
         "@explicit": true
     },
     "source-id:name": "",
-    "source-id:organisation-id": {
-        "consortium:changes": "",
-        "consortium:cmip-acronym": "",
-        "consortium:members": {},
-        "consortium:name": "",
-        "consortium:status": "",
-        "consortium:url": "",
-        "@type": "mip:consortium",
-        "@context": {
-            "@vocab": "consortium",
-            "@base": "mip-cmor-tables:organisations/consortia"
-        },
-        "@embed": "@always",
-        "@explicit": true
-    },
+    "source-id:organisation-id": {},
     "source-id:release-year": ""
 }
