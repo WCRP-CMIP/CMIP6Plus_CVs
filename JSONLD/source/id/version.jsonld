@@ -1,24 +1,24 @@
 [
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/mpi-esm1-2-lr.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/giss-e2-1-g.json",
         "@type": "version",
-        "version:file": "./JSONLD/source/id/mpi-esm1-2-lr.json",
+        "version:file": "./JSONLD/source/id/giss-e2-1-g.json",
         "version:release": {
             "mip-cmor-tables": "v6.5.0.2",
             "cmip6plus": "v6.5.1.4"
         },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
         "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
             }
         },
         "version:data": {
-            "@id": "./source/id/mpi-esm1-2-lr"
+            "@id": "./source/id/giss-e2-1-g"
         }
     },
     {
@@ -29,11 +29,11 @@
             "mip-cmor-tables": "v6.5.0.2",
             "cmip6plus": "v6.5.1.4"
         },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
         "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
@@ -44,6 +44,28 @@
         }
     },
     {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/hadgem3-gc31-ll.json",
+        "@type": "version",
+        "version:file": "./JSONLD/source/id/hadgem3-gc31-ll.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
+        "version:commit": {
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./source/id/hadgem3-gc31-ll"
+        }
+    },
+    {
         "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/noresm2-lm.json",
         "@type": "version",
         "version:file": "./JSONLD/source/id/noresm2-lm.json",
@@ -51,11 +73,11 @@
             "mip-cmor-tables": "v6.5.0.2",
             "cmip6plus": "v6.5.1.4"
         },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
         "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
@@ -73,11 +95,11 @@
             "mip-cmor-tables": "v6.5.0.2",
             "cmip6plus": "v6.5.1.4"
         },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
         "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
@@ -88,47 +110,25 @@
         }
     },
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/giss-e2-1-g.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/mpi-esm1-2-lr.json",
         "@type": "version",
-        "version:file": "./JSONLD/source/id/giss-e2-1-g.json",
+        "version:file": "./JSONLD/source/id/mpi-esm1-2-lr.json",
         "version:release": {
             "mip-cmor-tables": "v6.5.0.2",
             "cmip6plus": "v6.5.1.4"
         },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
+        "version:previous_updates": 1,
+        "version:date": "2024-08-23T11:59:17+01:00",
         "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
+            "hash": "509ab7d4950f51d4acc6cd30492ae866dae7f301",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
                 "email": "daniel.ellis@ext.esa.int"
             }
         },
         "version:data": {
-            "@id": "./source/id/giss-e2-1-g"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/source/id/hadgem3-gc31-ll.json",
-        "@type": "version",
-        "version:file": "./JSONLD/source/id/hadgem3-gc31-ll.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 3,
-        "version:date": "2024-08-05T22:50:42+01:00",
-        "version:commit": {
-            "hash": "341d00769b55ba40b8bdefc10516533e9c3ec263",
-            "message": "Frame updates and corrections.",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./source/id/hadgem3-gc31-ll"
+            "@id": "./source/id/mpi-esm1-2-lr"
         }
     }
 ]

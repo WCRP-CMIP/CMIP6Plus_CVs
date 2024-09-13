@@ -9,16 +9,16 @@
     ":ldroot": "/JSONLD/experiment/sub-id",
     "@graph": [
         {
-            "@id": "cmip6plus:experiment/sub-id/none",
-            "@type": "mip:sub-experiment-id",
-            "sub-experiment-id:description": "none",
-            "sub-experiment-id:name": "none"
-        },
-        {
             "@id": "cmip6plus:experiment/sub-id/f2023",
             "@type": "mip:sub-experiment-id",
             "sub-experiment-id:description": "Forcings 2023",
             "sub-experiment-id:name": "f2023"
+        },
+        {
+            "@id": "cmip6plus:experiment/sub-id/none",
+            "@type": "mip:sub-experiment-id",
+            "sub-experiment-id:description": "none",
+            "sub-experiment-id:name": "none"
         }
     ],
     ":files": [
