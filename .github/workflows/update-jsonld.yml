@@ -21,7 +21,7 @@ jobs:
 
     - name: Get a list of directories with updated files
       id: updated-dirs
-      uses: WCRP-CMIP/CMIP-LD/actions/updated_dirs@main
+      uses: WCRP-CMIP/CMIP-LD/actions/updated-dirs@main
 
     - name: Compile JSONLD files, generate an RDF network and update frames
       id: jsonld
