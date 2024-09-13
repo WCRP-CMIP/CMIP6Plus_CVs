@@ -11,10 +11,10 @@
             "filename_sub_experiment_example": "tas_Amon_HadGEM3-GC31-MM_dcppA-hindcast_s1960-r1i1p1f2_gn_196011-196012.nc",
             "filename_template": "<variable_id>_<table_id>_<source_id>_<experiment_id >_<member_id>_<grid_label>[_<time_range>].nc"
         },
-        "activity_id": [
-            "CMIP",
-            "LESFMIP"
-        ],
+        "activity_id": {
+            "CMIP": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
+            "LESFMIP": "The Large Ensemble Single Forcing Model Intercomparison Project"
+        },
         "experiment_id": {
             "1pctCO2": {
                 "activity_id": [
@@ -1185,18 +1185,18 @@
                 "source": "NorESM2-LM (2017): \n  OsloAero (aerosol)\n  CAM-OSLO (atmos)\n  OsloChemSimp (atmosChem)\n  CLM (land)\n  CISM (landIce)\n  MICOM (ocean)\n  HAMOCC (ocnBgchem)\n  CICE (seaIce)\n  "
             }
         },
-        "source_type": {
-            "AER": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
-            "AGCM": "atmospheric general circulation model run with prescribed ocean surface conditions and usually a model of the land surface",
-            "AOGCM": "coupled atmosphere-ocean global climate model, additionally including explicit representation of at least the land and sea ice",
-            "BGC": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean",
-            "CHEM": "chemistry treatment in an atmospheric model that calculates atmospheric oxidant concentrations (including at least ozone), rather than prescribing them",
-            "ISM": "ice-sheet model that includes ice-flow",
-            "LAND": "land model run uncoupled from the atmosphere",
-            "OGCM": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model",
-            "RAD": "radiation component of an atmospheric model run 'offline'",
-            "SLAB": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system"
-        },
+        "source_type": [
+            "AER",
+            "AGCM",
+            "AOGCM",
+            "BGC",
+            "CHEM",
+            "ISM",
+            "LAND",
+            "OGCM",
+            "RAD",
+            "SLAB"
+        ],
         "sub_experiment_id": {
             "f2023": "Forcings 2023",
             "none": "none"
@@ -1290,7 +1290,7 @@
             "file_modified": "2024-09-13",
             "CV": {
                 "version": "v6.5.1.4",
-                "git_commit": "545924c6fb179985d4d289da6f4745db7255b67d",
+                "git_commit": "1a7c2f887b17432c634cf8ee8421b3a299e735e7",
                 "gitbranch": "HEAD"
             },
             "future": "miptables, checksum, etc"
