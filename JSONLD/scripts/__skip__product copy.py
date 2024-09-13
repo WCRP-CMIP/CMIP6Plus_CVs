@@ -5,11 +5,9 @@ lddata = cmipld.sync(lddata)
 name = 'product'
 
 frame = {
-        "@type": f"mip:core-descriptors",
-
+        "@type": f"cmip6plusmip:core-descriptors",
         "@embed":"@always",
 }
-
 
 
 frame = cmipld.Frame(lddata,frame).clean(['rmld','untag'])

@@ -5,147 +5,9 @@
         "@vocab": "source-id",
         "@base": "cmip6plus:source/id"
     },
-    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main//JSONLD/source/id",
+    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/source/id",
     ":ldroot": "/JSONLD/source/id",
     "@graph": [
-        {
-            "@id": "cmip6plus:source/id/giss-e2-1-g",
-            "@type": "mip:source-id",
-            "source-id:activity-participation": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                },
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                }
-            ],
-            "source-id:cohort": "Published",
-            "source-id:contributors": {},
-            "source-id:label": "GISS-E2.1G",
-            "source-id:label-extended": "GISS-E2.1G",
-            "source-id:license": {
-                "source-id:license:exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
-                "source-id:license:kind": {
-                    "@id": "mip-cmor-tables:license/cc-by-4.0"
-                },
-                "source-id:license:source-specific-info": ""
-            },
-            "source-id:model-component": [
-                {
-                    "@id": "cmip6plus:model/component/varies-with-physics-version"
-                },
-                {
-                    "@id": "cmip6plus:model/component/giss-e2.1"
-                },
-                {
-                    "@id": "cmip6plus:model/component/varies-with-physics-version"
-                },
-                {
-                    "@id": "cmip6plus:model/component/giss-lsm"
-                },
-                {
-                    "@id": "cmip6plus:model/component/giss-ocean"
-                },
-                {
-                    "@id": "cmip6plus:model/component/giss-si"
-                }
-            ],
-            "source-id:name": "GISS-E2-1-G",
-            "source-id:organisation-id": {
-                "@id": "mip-cmor-tables:organisations/institutions/nasa-giss"
-            },
-            "source-id:release-year": 2019
-        },
-        {
-            "@id": "cmip6plus:source/id/miroc6",
-            "@type": "mip:source-id",
-            "source-id:activity-participation": [
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                },
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "source-id:cohort": "Published",
-            "source-id:contributors": {},
-            "source-id:label": "MIROC6",
-            "source-id:label-extended": "MIROC6",
-            "source-id:license": {
-                "source-id:license:exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
-                "source-id:license:kind": {
-                    "@id": "mip-cmor-tables:license/cc-by-4.0"
-                },
-                "source-id:license:source-specific-info": ""
-            },
-            "source-id:model-component": [
-                {
-                    "@id": "cmip6plus:model/component/sprintars6.0"
-                },
-                {
-                    "@id": "cmip6plus:model/component/ccsr-agcm"
-                },
-                {
-                    "@id": "cmip6plus:model/component/matsiro6.0"
-                },
-                {
-                    "@id": "cmip6plus:model/component/coco4.9"
-                },
-                {
-                    "@id": "cmip6plus:model/component/coco4.9"
-                }
-            ],
-            "source-id:name": "MIROC6",
-            "source-id:organisation-id": {
-                "@id": "mip-cmor-tables:organisations/consortia/miroc"
-            },
-            "source-id:release-year": 2017
-        },
-        {
-            "@id": "cmip6plus:source/id/hadgem3-gc31-ll",
-            "@type": "mip:source-id",
-            "source-id:activity-participation": [
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                },
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "source-id:cohort": "Published",
-            "source-id:contributors": {},
-            "source-id:label": "HadGEM3-GC31-LL",
-            "source-id:label-extended": "HadGEM3-GC3.1-N96ORCA1",
-            "source-id:license": {
-                "source-id:license:exceptions-contact": "@metoffice.gov.uk <- cmip6.hadgem3",
-                "source-id:license:kind": {
-                    "@id": "mip-cmor-tables:license/cc-by-4.0"
-                },
-                "source-id:license:source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
-            },
-            "source-id:model-component": [
-                {
-                    "@id": "cmip6plus:model/component/ukca-glomap-mode"
-                },
-                {
-                    "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1"
-                },
-                {
-                    "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1"
-                },
-                {
-                    "@id": "cmip6plus:model/component/nemo-hadgem3-go6.0"
-                },
-                {
-                    "@id": "cmip6plus:model/component/cice-hadgem3-gsi8"
-                }
-            ],
-            "source-id:name": "HadGEM3-GC31-LL",
-            "source-id:organisation-id": {
-                "@id": "mip-cmor-tables:organisations/institutions/mohc"
-            },
-            "source-id:release-year": 2016
-        },
         {
             "@id": "cmip6plus:source/id/noresm2-lm",
             "@type": "mip:source-id",
@@ -252,6 +114,144 @@
             "source-id:release-year": 2017
         },
         {
+            "@id": "cmip6plus:source/id/hadgem3-gc31-ll",
+            "@type": "mip:source-id",
+            "source-id:activity-participation": [
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                },
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "source-id:cohort": "Published",
+            "source-id:contributors": {},
+            "source-id:label": "HadGEM3-GC31-LL",
+            "source-id:label-extended": "HadGEM3-GC3.1-N96ORCA1",
+            "source-id:license": {
+                "source-id:license:exceptions-contact": "@metoffice.gov.uk <- cmip6.hadgem3",
+                "source-id:license:kind": {
+                    "@id": "mip-cmor-tables:license/cc-by-4.0"
+                },
+                "source-id:license:source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
+            },
+            "source-id:model-component": [
+                {
+                    "@id": "cmip6plus:model/component/ukca-glomap-mode"
+                },
+                {
+                    "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1"
+                },
+                {
+                    "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1"
+                },
+                {
+                    "@id": "cmip6plus:model/component/nemo-hadgem3-go6.0"
+                },
+                {
+                    "@id": "cmip6plus:model/component/cice-hadgem3-gsi8"
+                }
+            ],
+            "source-id:name": "HadGEM3-GC31-LL",
+            "source-id:organisation-id": {
+                "@id": "mip-cmor-tables:organisations/institutions/mohc"
+            },
+            "source-id:release-year": 2016
+        },
+        {
+            "@id": "cmip6plus:source/id/miroc6",
+            "@type": "mip:source-id",
+            "source-id:activity-participation": [
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                },
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "source-id:cohort": "Published",
+            "source-id:contributors": {},
+            "source-id:label": "MIROC6",
+            "source-id:label-extended": "MIROC6",
+            "source-id:license": {
+                "source-id:license:exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
+                "source-id:license:kind": {
+                    "@id": "mip-cmor-tables:license/cc-by-4.0"
+                },
+                "source-id:license:source-specific-info": ""
+            },
+            "source-id:model-component": [
+                {
+                    "@id": "cmip6plus:model/component/sprintars6.0"
+                },
+                {
+                    "@id": "cmip6plus:model/component/ccsr-agcm"
+                },
+                {
+                    "@id": "cmip6plus:model/component/matsiro6.0"
+                },
+                {
+                    "@id": "cmip6plus:model/component/coco4.9"
+                },
+                {
+                    "@id": "cmip6plus:model/component/coco4.9"
+                }
+            ],
+            "source-id:name": "MIROC6",
+            "source-id:organisation-id": {
+                "@id": "mip-cmor-tables:organisations/consortia/miroc"
+            },
+            "source-id:release-year": 2017
+        },
+        {
+            "@id": "cmip6plus:source/id/giss-e2-1-g",
+            "@type": "mip:source-id",
+            "source-id:activity-participation": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                },
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                }
+            ],
+            "source-id:cohort": "Published",
+            "source-id:contributors": {},
+            "source-id:label": "GISS-E2.1G",
+            "source-id:label-extended": "GISS-E2.1G",
+            "source-id:license": {
+                "source-id:license:exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
+                "source-id:license:kind": {
+                    "@id": "mip-cmor-tables:license/cc-by-4.0"
+                },
+                "source-id:license:source-specific-info": ""
+            },
+            "source-id:model-component": [
+                {
+                    "@id": "cmip6plus:model/component/varies-with-physics-version"
+                },
+                {
+                    "@id": "cmip6plus:model/component/giss-e2.1"
+                },
+                {
+                    "@id": "cmip6plus:model/component/varies-with-physics-version"
+                },
+                {
+                    "@id": "cmip6plus:model/component/giss-lsm"
+                },
+                {
+                    "@id": "cmip6plus:model/component/giss-ocean"
+                },
+                {
+                    "@id": "cmip6plus:model/component/giss-si"
+                }
+            ],
+            "source-id:name": "GISS-E2-1-G",
+            "source-id:organisation-id": {
+                "@id": "mip-cmor-tables:organisations/institutions/nasa-giss"
+            },
+            "source-id:release-year": 2019
+        },
+        {
             "@id": "cmip6plus:source/id/mpi-esm1-2-lr",
             "@type": "mip:source-id",
             "source-id:activity-participation": [
@@ -304,12 +304,12 @@
         }
     ],
     ":files": [
-        "mpi-esm1-2-lr.json",
+        "hadgem3-gc31-ll.json",
+        "schema.json",
         "mpi-esm1-2-hr.json",
         "noresm2-lm.json",
         "miroc6.json",
         "giss-e2-1-g.json",
-        "schema.json",
-        "hadgem3-gc31-ll.json"
+        "mpi-esm1-2-lr.json"
     ]
 }

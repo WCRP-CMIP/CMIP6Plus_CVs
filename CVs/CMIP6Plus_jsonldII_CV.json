@@ -1289,8 +1289,8 @@
         "version_metadata": {
             "file_modified": "2024-09-13",
             "CV": {
-                "version": "v6.5.1.4",
-                "git_commit": "82d5d7feeb02e85a30e14c8eddea031744b622b8",
+                "version": "fatal: No names found, cannot describe anything.",
+                "git_commit": "f074bc55864bce9a4dc050b287e96e12a52a4265",
                 "gitbranch": "jsonldII"
             },
             "future": "miptables, checksum, etc"

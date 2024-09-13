@@ -5,7 +5,7 @@
         "@vocab": "activity-id",
         "@base": "cmip6plus:activity"
     },
-    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main//JSONLD/activity",
+    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/activity",
     ":ldroot": "/JSONLD/activity",
     "@graph": [
         {
