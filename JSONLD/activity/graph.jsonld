@@ -5,22 +5,22 @@
         "@vocab": "activity-id",
         "@base": "cmip6plus:activity"
     },
-    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main//JSONLD/activity",
+    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/activity",
     ":ldroot": "/JSONLD/activity",
     "@graph": [
-        {
-            "@id": "cmip6plus:activity/lesfmip",
-            "@type": "mip:activity-id",
-            "activity-id:description": "The Large Ensemble Single Forcing Model Intercomparison Project",
-            "activity-id:name": "LESFMIP",
-            "activity-id:url": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full"
-        },
         {
             "@id": "cmip6plus:activity/cmip",
             "@type": "mip:activity-id",
             "activity-id:description": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
             "activity-id:name": "CMIP",
             "activity-id:url": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf"
+        },
+        {
+            "@id": "cmip6plus:activity/lesfmip",
+            "@type": "mip:activity-id",
+            "activity-id:description": "The Large Ensemble Single Forcing Model Intercomparison Project",
+            "activity-id:name": "LESFMIP",
+            "activity-id:url": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full"
         }
     ],
     ":files": [

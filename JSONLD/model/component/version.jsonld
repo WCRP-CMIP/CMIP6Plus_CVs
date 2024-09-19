@@ -1,534 +1,6 @@
 [
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/cism.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/cism.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/cism"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/,-prescribed-macv2-sp.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/,-prescribed-macv2-sp.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/,-prescribed-macv2-sp"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/cice.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/cice.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/cice"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/hamocc.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/hamocc.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/hamocc"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/nemo-hadgem3-go6.0.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/nemo-hadgem3-go6.0.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/nemo-hadgem3-go6.0"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/ccsr-agcm.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/ccsr-agcm.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/ccsr-agcm"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/unnamed.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/unnamed.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/unnamed"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/cice-hadgem3-gsi8.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/cice-hadgem3-gsi8.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/cice-hadgem3-gsi8"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/micom.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/micom.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/micom"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/giss-si.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/giss-si.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/giss-si"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/giss-lsm.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/giss-lsm.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/giss-lsm"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/osloaero.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/osloaero.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/osloaero"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/oslochemsimp.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/oslochemsimp.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/oslochemsimp"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/matsiro6.0.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/matsiro6.0.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/matsiro6.0"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/echam6.3.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/echam6.3.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/echam6.3"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/metum-hadgem3-ga7.1.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/metum-hadgem3-ga7.1.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/metum-hadgem3-ga7.1"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/sprintars6.0.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/sprintars6.0.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/sprintars6.0"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/cam-oslo.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/cam-oslo.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/cam-oslo"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/coco4.9.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/coco4.9.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/coco4.9"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/giss-e2.1.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/giss-e2.1.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/giss-e2.1"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/ukca-glomap-mode.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/ukca-glomap-mode.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/ukca-glomap-mode"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/hamocc6.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/hamocc6.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/hamocc6"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/clm.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/clm.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/clm"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/mpiom1.63.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/mpiom1.63.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/mpiom1.63"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/varies-with-physics-version.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/varies-with-physics-version.json",
         "@type": "version",
         "version:file": "./JSONLD/model/component/varies-with-physics-version.json",
         "version:release": {
@@ -536,9 +8,9 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
+        "version:date": "2024-09-13T23:30:08+01:00",
         "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
             "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
@@ -550,29 +22,7 @@
         }
     },
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/prescribed.json",
-        "@type": "version",
-        "version:file": "./JSONLD/model/component/prescribed.json",
-        "version:release": {
-            "mip-cmor-tables": "v6.5.0.2",
-            "cmip6plus": "v6.5.1.4"
-        },
-        "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
-        "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
-            "message": "Converting CMIKP6Plus contents into JSONLD",
-            "author": {
-                "name": "Daniel Ellis",
-                "email": "daniel.ellis@ext.esa.int"
-            }
-        },
-        "version:data": {
-            "@id": "./model/component/prescribed"
-        }
-    },
-    {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/jules-hadgem3-gl7.1.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/jules-hadgem3-gl7.1.json",
         "@type": "version",
         "version:file": "./JSONLD/model/component/jules-hadgem3-gl7.1.json",
         "version:release": {
@@ -580,9 +30,9 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
+        "version:date": "2024-09-13T23:30:08+01:00",
         "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
             "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
@@ -594,7 +44,205 @@
         }
     },
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/jsbach3.20.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/cice-hadgem3-gsi8.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/cice-hadgem3-gsi8.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/cice-hadgem3-gsi8"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/cam-oslo.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/cam-oslo.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 2,
+        "version:date": "2024-09-13T23:56:14+01:00",
+        "version:commit": {
+            "hash": "54e3b425c57d0bf8ffa98b015d047a59f7572ed3",
+            "message": "scripts and CV generation for JSONLD files",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/cam-oslo"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/oslochemsimp.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/oslochemsimp.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/oslochemsimp"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/,-prescribed-macv2-sp.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/,-prescribed-macv2-sp.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/,-prescribed-macv2-sp"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/mpiom1.63.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/mpiom1.63.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/mpiom1.63"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/cice.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/cice.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/cice"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/coco4.9.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/coco4.9.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/coco4.9"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/ccsr-agcm.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/ccsr-agcm.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/ccsr-agcm"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/matsiro6.0.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/matsiro6.0.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/matsiro6.0"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/jsbach3.20.json",
         "@type": "version",
         "version:file": "./JSONLD/model/component/jsbach3.20.json",
         "version:release": {
@@ -602,9 +250,9 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
+        "version:date": "2024-09-13T23:30:08+01:00",
         "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
             "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",
@@ -616,7 +264,359 @@
         }
     },
     {
-        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/model/component/giss-ocean.json",
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/giss-si.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/giss-si.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/giss-si"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/echam6.3.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/echam6.3.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/echam6.3"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/hamocc6.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/hamocc6.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/hamocc6"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/osloaero.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/osloaero.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/osloaero"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/cism.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/cism.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/cism"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/clm.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/clm.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/clm"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/metum-hadgem3-ga7.1.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/metum-hadgem3-ga7.1.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/metum-hadgem3-ga7.1"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/prescribed.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/prescribed.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/prescribed"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/ukca-glomap-mode.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/ukca-glomap-mode.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/ukca-glomap-mode"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/micom.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/micom.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/micom"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/giss-lsm.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/giss-lsm.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/giss-lsm"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/sprintars6.0.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/sprintars6.0.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/sprintars6.0"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/giss-e2.1.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/giss-e2.1.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/giss-e2.1"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/unnamed.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/unnamed.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/unnamed"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/hamocc.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/hamocc.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/hamocc"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/nemo-hadgem3-go6.0.json",
+        "@type": "version",
+        "version:file": "./JSONLD/model/component/nemo-hadgem3-go6.0.json",
+        "version:release": {
+            "mip-cmor-tables": "v6.5.0.2",
+            "cmip6plus": "v6.5.1.4"
+        },
+        "version:previous_updates": 1,
+        "version:date": "2024-09-13T23:30:08+01:00",
+        "version:commit": {
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
+            "message": "Converting CMIKP6Plus contents into JSONLD",
+            "author": {
+                "name": "Daniel Ellis",
+                "email": "daniel.ellis@ext.esa.int"
+            }
+        },
+        "version:data": {
+            "@id": "./model/component/nemo-hadgem3-go6.0"
+        }
+    },
+    {
+        "@id": "./https://github.com/WCRP-CMIP/CMIP6Plus_CVs/model/component/giss-ocean.json",
         "@type": "version",
         "version:file": "./JSONLD/model/component/giss-ocean.json",
         "version:release": {
@@ -624,9 +624,9 @@
             "cmip6plus": "v6.5.1.4"
         },
         "version:previous_updates": 1,
-        "version:date": "2024-07-26T17:40:49+01:00",
+        "version:date": "2024-09-13T23:30:08+01:00",
         "version:commit": {
-            "hash": "8b9b9c3a48ab487d2d1659f9e372c969a07cf143",
+            "hash": "62a1ad63a38638f1dee241bb4bbf632ae9d9364a",
             "message": "Converting CMIKP6Plus contents into JSONLD",
             "author": {
                 "name": "Daniel Ellis",

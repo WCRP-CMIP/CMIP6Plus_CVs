@@ -4,8 +4,8 @@
     "@context": {
         "@vocab": "core"
     },
-    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/main/JSONLD/core",
-    ":ldroot": "JSONLD/core",
+    ":url": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/JSONLD/core",
+    ":ldroot": "/JSONLD/core",
     "@graph": [
         {
             "@id": "cmip6plus:core/index",
