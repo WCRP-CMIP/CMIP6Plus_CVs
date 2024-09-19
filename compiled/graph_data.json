@@ -355,15 +355,15 @@
     ":ldroot": "/JSONLD/experiment/id",
     "@graph": [
         {
-            "@id": "cmip6plus:experiment/id/hist-lu",
+            "@id": "cmip6plus:experiment/id/hist-sol",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
                 {
                     "@id": "cmip6plus:activity/lesfmip"
                 }
             ],
-            "experiment-id:description": "Historical simulations with only land use changes",
-            "experiment-id:experiment": "Single forcing historical simulations",
+            "experiment-id:description": "Solar-only historical simulations",
+            "experiment-id:experiment": "historical solar-only run",
             "experiment-id:model-components": {
                 "experiment-id:additional-allowed": [
                     {
@@ -382,7 +382,7 @@
                     }
                 ]
             },
-            "experiment-id:name": "hist-lu",
+            "experiment-id:name": "hist-sol",
             "experiment-id:parameters": {
                 "experiment-id:end": 2020,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -433,7 +433,7 @@
                     }
                 ]
             },
-            "experiment-id:name": "fut-Aer",
+            "experiment-id:name": "fut-aer",
             "experiment-id:parameters": {
                 "experiment-id:end": 2024,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -504,15 +504,15 @@
             "experiment-id:tier": 2
         },
         {
-            "@id": "cmip6plus:experiment/id/hist-sol",
+            "@id": "cmip6plus:experiment/id/hist-lu",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
                 {
                     "@id": "cmip6plus:activity/lesfmip"
                 }
             ],
-            "experiment-id:description": "Solar-only historical simulations",
-            "experiment-id:experiment": "historical solar-only run",
+            "experiment-id:description": "Historical simulations with only land use changes",
+            "experiment-id:experiment": "Single forcing historical simulations",
             "experiment-id:model-components": {
                 "experiment-id:additional-allowed": [
                     {
@@ -531,7 +531,7 @@
                     }
                 ]
             },
-            "experiment-id:name": "hist-sol",
+            "experiment-id:name": "hist-lu",
             "experiment-id:parameters": {
                 "experiment-id:end": 2020,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -657,159 +657,6 @@
             "experiment-id:tier": 2
         },
         {
-            "@id": "cmip6plus:experiment/id/esm-hist",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                }
-            ],
-            "experiment-id:description": "CMIP6 historical (CO2 emission-driven)",
-            "experiment-id:experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ]
-            },
-            "experiment-id:name": "esm-hist",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2014,
-                "experiment-id:min-number-yrs-per-sim": 165,
-                "experiment-id:start": 1850
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/cmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/esm-picontrol"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/none"
-            },
-            "experiment-id:tier": 1
-        },
-        {
-            "@id": "cmip6plus:experiment/id/hist-pisol",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "experiment-id:description": "historical simulations with 1850 solar forcing",
-            "experiment-id:experiment": "historical all-but-solar run",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "hist-piSol",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2020,
-                "experiment-id:min-number-yrs-per-sim": 0,
-                "experiment-id:start": 1850
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/cmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/picontrol"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 3
-        },
-        {
-            "@id": "cmip6plus:experiment/id/fut-volc",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "experiment-id:description": "As hist-volc but with updated forcings",
-            "experiment-id:experiment": "future volcanic-only run",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "fut-volc",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2024,
-                "experiment-id:min-number-yrs-per-sim": 0,
-                "experiment-id:start": 2015
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/lesfmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/hist-volc"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 2
-        },
-        {
             "@id": "cmip6plus:experiment/id/1pctco2",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
@@ -912,15 +759,66 @@
             "experiment-id:tier": 1
         },
         {
-            "@id": "cmip6plus:experiment/id/hist-nolu",
+            "@id": "cmip6plus:experiment/id/esm-hist",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                }
+            ],
+            "experiment-id:description": "CMIP6 historical (CO2 emission-driven)",
+            "experiment-id:experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ]
+            },
+            "experiment-id:name": "esm-hist",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2014,
+                "experiment-id:min-number-yrs-per-sim": 165,
+                "experiment-id:start": 1850
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/cmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/esm-picontrol"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/none"
+            },
+            "experiment-id:tier": 1
+        },
+        {
+            "@id": "cmip6plus:experiment/id/hist-pisol",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
                 {
                     "@id": "cmip6plus:activity/lesfmip"
                 }
             ],
-            "experiment-id:description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
-            "experiment-id:experiment": "historical with no land-use change",
+            "experiment-id:description": "historical simulations with 1850 solar forcing",
+            "experiment-id:experiment": "historical all-but-solar run",
             "experiment-id:model-components": {
                 "experiment-id:additional-allowed": [
                     {
@@ -939,7 +837,7 @@
                     }
                 ]
             },
-            "experiment-id:name": "hist-noLu",
+            "experiment-id:name": "hist-piSol",
             "experiment-id:parameters": {
                 "experiment-id:end": 2020,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -1012,6 +910,57 @@
                 "@id": "cmip6plus:experiment/sub-id/f2023"
             },
             "experiment-id:tier": 2
+        },
+        {
+            "@id": "cmip6plus:experiment/id/hist-aer",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "experiment-id:description": "Anthropogenic-aerosol-only historical simulations",
+            "experiment-id:experiment": "historical anthropogenic aerosols-only run",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "hist-aer",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2020,
+                "experiment-id:min-number-yrs-per-sim": 0,
+                "experiment-id:start": 1850
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/cmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/picontrol"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/f2023"
+            },
+            "experiment-id:tier": 1
         },
         {
             "@id": "cmip6plus:experiment/id/hist-volc",
@@ -1116,15 +1065,15 @@
             "experiment-id:tier": 1
         },
         {
-            "@id": "cmip6plus:experiment/id/hist-aer",
+            "@id": "cmip6plus:experiment/id/fut-volc",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
                 {
                     "@id": "cmip6plus:activity/lesfmip"
                 }
             ],
-            "experiment-id:description": "Anthropogenic-aerosol-only historical simulations",
-            "experiment-id:experiment": "historical anthropogenic aerosols-only run",
+            "experiment-id:description": "As hist-volc but with updated forcings",
+            "experiment-id:experiment": "future volcanic-only run",
             "experiment-id:model-components": {
                 "experiment-id:additional-allowed": [
                     {
@@ -1143,7 +1092,58 @@
                     }
                 ]
             },
-            "experiment-id:name": "hist-aer",
+            "experiment-id:name": "fut-volc",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2024,
+                "experiment-id:min-number-yrs-per-sim": 0,
+                "experiment-id:start": 2015
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/lesfmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/hist-volc"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/f2023"
+            },
+            "experiment-id:tier": 2
+        },
+        {
+            "@id": "cmip6plus:experiment/id/hist-nolu",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "experiment-id:description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+            "experiment-id:experiment": "historical with no land-use change",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "hist-noLu",
             "experiment-id:parameters": {
                 "experiment-id:end": 2020,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -1164,7 +1164,7 @@
             "experiment-id:sub-experiment-id": {
                 "@id": "cmip6plus:experiment/sub-id/f2023"
             },
-            "experiment-id:tier": 1
+            "experiment-id:tier": 3
         },
         {
             "@id": "cmip6plus:experiment/id/hist-nat",
@@ -1195,6 +1195,159 @@
                 ]
             },
             "experiment-id:name": "hist-nat",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2020,
+                "experiment-id:min-number-yrs-per-sim": 0,
+                "experiment-id:start": 1850
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/cmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/picontrol"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/f2023"
+            },
+            "experiment-id:tier": 3
+        },
+        {
+            "@id": "cmip6plus:experiment/id/hist-pitotalo3",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "experiment-id:description": "historical simulations with 1850 total ozone",
+            "experiment-id:experiment": "historical all-but-ozone run",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "hist-piTotalO3",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2020,
+                "experiment-id:min-number-yrs-per-sim": 0,
+                "experiment-id:start": 1850
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/cmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/picontrol"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/f2023"
+            },
+            "experiment-id:tier": 3
+        },
+        {
+            "@id": "cmip6plus:experiment/id/fut-sol",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "experiment-id:description": "As hist-sol but with updated forcings",
+            "experiment-id:experiment": "future solar-only run",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "fut-sol",
+            "experiment-id:parameters": {
+                "experiment-id:end": 2024,
+                "experiment-id:min-number-yrs-per-sim": 0,
+                "experiment-id:start": 2015
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/lesfmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/hist-sol"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/f2023"
+            },
+            "experiment-id:tier": 2
+        },
+        {
+            "@id": "cmip6plus:experiment/id/hist-pivolc",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/lesfmip"
+                }
+            ],
+            "experiment-id:description": "historical simulations with 1850 volcanic emissions",
+            "experiment-id:experiment": "historical all-but-volcanic run",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "hist-piVolc",
             "experiment-id:parameters": {
                 "experiment-id:end": 2020,
                 "experiment-id:min-number-yrs-per-sim": 0,
@@ -1316,206 +1469,6 @@
             "experiment-id:tier": 1
         },
         {
-            "@id": "cmip6plus:experiment/id/hist-pitotalo3",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "experiment-id:description": "historical simulations with 1850 total ozone",
-            "experiment-id:experiment": "historical all-but-ozone run",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "hist-piTotalO3",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2020,
-                "experiment-id:min-number-yrs-per-sim": 0,
-                "experiment-id:start": 1850
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/cmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/picontrol"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 3
-        },
-        {
-            "@id": "cmip6plus:experiment/id/picontrol-spinup",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                }
-            ],
-            "experiment-id:description": "DECK: spin-up portion of the control",
-            "experiment-id:experiment": "pre-industrial control (spin-up)",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "piControl-spinup",
-            "experiment-id:parameters": {
-                "experiment-id:end": -999,
-                "experiment-id:min-number-yrs-per-sim": 100,
-                "experiment-id:start": -999
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    "no parent"
-                ],
-                "experiment-id:experiment-id": [
-                    "no parent"
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/none"
-            },
-            "experiment-id:tier": 2
-        },
-        {
-            "@id": "cmip6plus:experiment/id/fut-sol",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "experiment-id:description": "As hist-sol but with updated forcings",
-            "experiment-id:experiment": "future solar-only run",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "fut-sol",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2024,
-                "experiment-id:min-number-yrs-per-sim": 0,
-                "experiment-id:start": 2015
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/lesfmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/hist-sol"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 2
-        },
-        {
-            "@id": "cmip6plus:experiment/id/hist-pivolc",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/lesfmip"
-                }
-            ],
-            "experiment-id:description": "historical simulations with 1850 volcanic emissions",
-            "experiment-id:experiment": "historical all-but-volcanic run",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "hist-piVolc",
-            "experiment-id:parameters": {
-                "experiment-id:end": 2020,
-                "experiment-id:min-number-yrs-per-sim": 0,
-                "experiment-id:start": 1850
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/cmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/picontrol"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 3
-        },
-        {
             "@id": "cmip6plus:experiment/id/hist-ghg",
             "@type": "mip:experiment-id",
             "experiment-id:activity-id": [
@@ -1563,57 +1516,6 @@
             },
             "experiment-id:sub-experiment-id": {
                 "@id": "cmip6plus:experiment/sub-id/f2023"
-            },
-            "experiment-id:tier": 1
-        },
-        {
-            "@id": "cmip6plus:experiment/id/picontrol",
-            "@type": "mip:experiment-id",
-            "experiment-id:activity-id": [
-                {
-                    "@id": "cmip6plus:activity/cmip"
-                }
-            ],
-            "experiment-id:description": "DECK: control",
-            "experiment-id:experiment": "pre-industrial control (CO2 concentration-driven)",
-            "experiment-id:model-components": {
-                "experiment-id:additional-allowed": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
-                    },
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-                    }
-                ],
-                "experiment-id:required": [
-                    {
-                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-                    }
-                ]
-            },
-            "experiment-id:name": "piControl",
-            "experiment-id:parameters": {
-                "experiment-id:end": -999,
-                "experiment-id:min-number-yrs-per-sim": 500,
-                "experiment-id:start": -999
-            },
-            "experiment-id:parent": {
-                "experiment-id:activity-id": [
-                    {
-                        "@id": "cmip6plus:activity/cmip"
-                    }
-                ],
-                "experiment-id:experiment-id": [
-                    {
-                        "@id": "cmip6plus:experiment/id/picontrol-spinup"
-                    }
-                ]
-            },
-            "experiment-id:sub-experiment-id": {
-                "@id": "cmip6plus:experiment/sub-id/none"
             },
             "experiment-id:tier": 1
         },
@@ -1667,6 +1569,53 @@
                 "@id": "cmip6plus:experiment/sub-id/f2023"
             },
             "experiment-id:tier": 1
+        },
+        {
+            "@id": "cmip6plus:experiment/id/picontrol-spinup",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                }
+            ],
+            "experiment-id:description": "DECK: spin-up portion of the control",
+            "experiment-id:experiment": "pre-industrial control (spin-up)",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "piControl-spinup",
+            "experiment-id:parameters": {
+                "experiment-id:end": -999,
+                "experiment-id:min-number-yrs-per-sim": 100,
+                "experiment-id:start": -999
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    "no parent"
+                ],
+                "experiment-id:experiment-id": [
+                    "no parent"
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/none"
+            },
+            "experiment-id:tier": 2
         },
         {
             "@id": "cmip6plus:experiment/id/esm-picontrol",
@@ -1769,6 +1718,57 @@
                 "@id": "cmip6plus:experiment/sub-id/f2023"
             },
             "experiment-id:tier": 3
+        },
+        {
+            "@id": "cmip6plus:experiment/id/picontrol",
+            "@type": "mip:experiment-id",
+            "experiment-id:activity-id": [
+                {
+                    "@id": "cmip6plus:activity/cmip"
+                }
+            ],
+            "experiment-id:description": "DECK: control",
+            "experiment-id:experiment": "pre-industrial control (CO2 concentration-driven)",
+            "experiment-id:model-components": {
+                "experiment-id:additional-allowed": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+                    },
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+                    }
+                ],
+                "experiment-id:required": [
+                    {
+                        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+                    }
+                ]
+            },
+            "experiment-id:name": "piControl",
+            "experiment-id:parameters": {
+                "experiment-id:end": -999,
+                "experiment-id:min-number-yrs-per-sim": 500,
+                "experiment-id:start": -999
+            },
+            "experiment-id:parent": {
+                "experiment-id:activity-id": [
+                    {
+                        "@id": "cmip6plus:activity/cmip"
+                    }
+                ],
+                "experiment-id:experiment-id": [
+                    {
+                        "@id": "cmip6plus:experiment/id/picontrol-spinup"
+                    }
+                ]
+            },
+            "experiment-id:sub-experiment-id": {
+                "@id": "cmip6plus:experiment/sub-id/none"
+            },
+            "experiment-id:tier": 1
         }
     ],
     ":files": [
