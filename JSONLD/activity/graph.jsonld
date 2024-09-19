@@ -24,7 +24,7 @@
         }
     ],
     ":files": [
-        "cmip.json",
-        "lesfmip.json"
+        "lesfmip.json",
+        "cmip.json"
     ]
 }
