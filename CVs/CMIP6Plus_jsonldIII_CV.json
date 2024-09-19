@@ -202,37 +202,6 @@
                     "no parent"
                 ]
             },
-            "fut-Aer": {
-                "activity_id": [
-                    "LESFMIP"
-                ],
-                "description": "As hist-aer but with updated forcings",
-                "experiment": "future anthropogenic aerosols-only run",
-                "experiment_id": "fut-Aer",
-                "parameters": {
-                    "end": 2024,
-                    "min_number_yrs_per_sim": 0,
-                    "start": 2015
-                },
-                "sub_experiment_id": [
-                    "f2023"
-                ],
-                "tier": 2,
-                "additional_allowed_model_components": [
-                    "AER",
-                    "CHEM",
-                    "BGC"
-                ],
-                "required_model_components": [
-                    "AOGCM"
-                ],
-                "parent_activity_id": [
-                    "LESFMIP"
-                ],
-                "parent_experiment_id": [
-                    "hist-aer"
-                ]
-            },
             "fut-GHG": {
                 "activity_id": [
                     "LESFMIP"
@@ -262,6 +231,37 @@
                 ],
                 "parent_experiment_id": [
                     "hist-GHG"
+                ]
+            },
+            "fut-aer": {
+                "activity_id": [
+                    "LESFMIP"
+                ],
+                "description": "As hist-aer but with updated forcings",
+                "experiment": "future anthropogenic aerosols-only run",
+                "experiment_id": "fut-aer",
+                "parameters": {
+                    "end": 2024,
+                    "min_number_yrs_per_sim": 0,
+                    "start": 2015
+                },
+                "sub_experiment_id": [
+                    "f2023"
+                ],
+                "tier": 2,
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "parent_activity_id": [
+                    "LESFMIP"
+                ],
+                "parent_experiment_id": [
+                    "hist-aer"
                 ]
             },
             "fut-lu": {
@@ -1292,7 +1292,7 @@
             "file_modified": "2024-09-19",
             "CV": {
                 "version": "fatal: No names found, cannot describe anything.",
-                "git_commit": "8f1b9c55d0e64599ce305226c98686f79cbe4547",
+                "git_commit": "9c1ed26151a1dda34da93c7c95a71da1296b8cbb",
                 "gitbranch": "jsonldIII"
             },
             "future": "miptables, checksum, etc"
