@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/ccsr-agcm",
+  "@type": "model-component",
+  "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
+  "name": "CCSR_AGCM",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/atmos"
+  },
+  "version": -999
+}

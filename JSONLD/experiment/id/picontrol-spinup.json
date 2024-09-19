@@ -1,0 +1,47 @@
+{
+  "@id": "cmip6plus:experiment/id/picontrol-spinup",
+  "@type": "experiment-id",
+  "activity-id": [
+    {
+      "@id": "cmip6plus:activity/cmip"
+    }
+  ],
+  "description": "DECK: spin-up portion of the control",
+  "experiment": "pre-industrial control (spin-up)",
+  "model-components": {
+    "additional-allowed": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aer"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/chem"
+      },
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+      }
+    ],
+    "required": [
+      {
+        "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+      }
+    ]
+  },
+  "name": "piControl-spinup",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 100,
+    "start": -999
+  },
+  "parent": {
+    "activity-id": [
+     "no parent"
+    ],
+    "experiment-id": [
+      "no parent"
+    ]
+  },
+  "sub-experiment-id": {
+    "@id": "cmip6plus:experiment/sub-id/none"
+  },
+  "tier": 2
+}

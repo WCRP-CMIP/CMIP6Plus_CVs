@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/clm",
+  "@type": "model-component",
+  "description": "CLM",
+  "name": "CLM",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/land"
+  },
+  "version": -999
+}

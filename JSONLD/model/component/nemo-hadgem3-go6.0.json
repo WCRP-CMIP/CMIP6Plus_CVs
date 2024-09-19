@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/nemo-hadgem3-go6.0",
+  "@type": "model-component",
+  "description": "NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+  "name": "NEMO-HadGEM3-GO6.0",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/100km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/ocean"
+  },
+  "version": -999
+}

@@ -1,0 +1,51 @@
+{
+  "@id": "cmip6plus:source/id/mpi-esm1-2-lr",
+  "@type": "source-id",
+  "activity-participation": [
+    {
+      "@id": "cmip6plus:activity/cmip"
+    },
+    {
+      "@id": "cmip6plus:activity/lesfmip"
+    }
+  ],
+  "cohort": "Published",
+  "contributors": {},
+  "label": "MPI-ESM1-2-LR",
+  "label-extended": "MPI-ESM1.2-LR",
+  "license": {
+    "license:exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
+    "license:kind": {
+      "@id": "mip-cmor-tables:license/cc-by-4.0"
+    },
+    "license:source-specific-info": ""
+  },
+  "model-component": [
+    {
+      "@id": "cmip6plus:model/component/,-prescribed-macv2-sp"
+    },
+    {
+      "@id": "cmip6plus:model/component/echam6.3"
+    },
+    {
+      "@id": "cmip6plus:model/component/jsbach3.20"
+    },
+    {
+      "@id": "cmip6plus:model/component/prescribed"
+    },
+    {
+      "@id": "cmip6plus:model/component/mpiom1.63"
+    },
+    {
+      "@id": "cmip6plus:model/component/hamocc6"
+    },
+    {
+      "@id": "cmip6plus:model/component/unnamed"
+    }
+  ],
+  "name": "MPI-ESM1-2-LR",
+  "organisation-id": {
+    "@id": "mip-cmor-tables:organisations/institutions/mpi-m"
+  },
+  "release-year": 2017
+}

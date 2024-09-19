@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "@vocab": "model-component",
+        "@base": "cmip6plus:model/component"
+    },
+    "@embed": "@always",
+    "@explicit": true,
+    "@type": "mip:model-component",
+    "model-component:description": "",
+    "model-component:name": "",
+    "model-component:nominal-resolution": {},
+    "model-component:realm": {},
+    "model-component:version": ""
+}

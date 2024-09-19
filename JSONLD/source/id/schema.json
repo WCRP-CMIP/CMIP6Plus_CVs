@@ -1,0 +1,112 @@
+{}
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "type": "string"
+    },
+    "activity-participation": {
+      "items": {
+        "properties": {
+          "@id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "cohort": {
+      "type": "string"
+    },
+    "contributors": {
+      "additionalproperties": true,
+      "type": "object"
+    },
+    "label": {
+      "type": "string"
+    },
+    "label-extended": {
+      "type": "string"
+    },
+    "license": {
+      "properties": {
+        "exceptions-contact": {
+          "type": "string"
+        },
+        "kind": {
+          "properties": {
+            "@id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "@id"
+          ],
+          "type": "object"
+        },
+        "source-specific-info": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exceptions_contact",
+        "kind",
+        "source_specific_info"
+      ],
+      "type": "object"
+    },
+    "model-component": {
+      "items": {
+        "properties": {
+          "@id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "name": {
+      "type": "string"
+    },
+    "organisation-id": {
+      "properties": {
+        "@id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@id"
+      ],
+      "type": "object"
+    },
+    "release-year": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "activity-participation",
+    "cohort",
+    "contributors",
+    "label",
+    "label-extended",
+    "license",
+    "model-component",
+    "name",
+    "organisation-id",
+    "release-year"
+  ],
+  "type": "object"
+}

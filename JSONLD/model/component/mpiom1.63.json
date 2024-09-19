@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/mpiom1.63",
+  "@type": "model-component",
+  "description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
+  "name": "MPIOM1.63",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/ocean"
+  },
+  "version": -999
+}

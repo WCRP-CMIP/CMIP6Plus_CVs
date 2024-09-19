@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/osloaero",
+  "@type": "model-component",
+  "description": "OsloAero",
+  "name": "OsloAero",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/aerosol"
+  },
+  "version": -999
+}

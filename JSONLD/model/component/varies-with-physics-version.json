@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/varies-with-physics-version",
+  "@type": "model-component",
+  "description": "Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+  "name": "Varies_with_physics-version",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/atmoschem"
+  },
+  "version": -999
+}

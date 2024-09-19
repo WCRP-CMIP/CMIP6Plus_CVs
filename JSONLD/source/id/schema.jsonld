@@ -1,0 +1,166 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CMIP6 Source ID",
+    "type": "object",
+    "required": [
+        "@id",
+        "@type",
+        "name",
+        "label",
+        "label_extended",
+        "release_year",
+        "activity_participation",
+        "cohort",
+        "institution_id",
+        "contributers",
+        "license",
+        "model-component"
+    ],
+    "properties": {
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^cmip6plus:source/id/.+$"
+        },
+        "@type": {
+            "type": "string",
+            "pattern": "^cmip:source_id$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string"
+        },
+        "label_extended": {
+            "type": "string"
+        },
+        "release_year": {
+            "type": "integer",
+            "minimum": 2000,
+            "maximum": 2100
+        },
+        "activity_participation": {
+            "type": "object",
+            "properties": {
+                "@set": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "@id": {
+                                "type": "string",
+                                "format": "uri",
+                                "pattern": "^cmip6plus:activity/.+$"
+                            }
+                        },
+                        "required": [
+                            "@id"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "@set"
+            ],
+            "additionalProperties": false
+        },
+        "cohort": {
+            "type": "string",
+            "enum": [
+                "published"
+            ]
+        },
+        "institution_id": {
+            "type": "object",
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^mip-cmor-tables:institutions/.+$"
+                }
+            },
+            "required": [
+                "@id"
+            ],
+            "additionalProperties": false
+        },
+        "contributers": {
+            "type": "object",
+            "properties": {
+                "@set": {
+                    "type": "object"
+                }
+            },
+            "required": [
+                "@set"
+            ]
+        },
+        "license": {
+            "type": "object",
+            "properties": {
+                "@nest": {
+                    "type": "object",
+                    "properties": {
+                        "license:type": {
+                            "type": "object",
+                            "properties": {
+                                "@id": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^mip-cmor-tables:license/.+$"
+                                }
+                            },
+                            "required": [
+                                "@id"
+                            ],
+                            "additionalProperties": false
+                        },
+                        "license:exceptions_contact": {
+                            "type": "string"
+                        },
+                        "license:source_specific_info": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "license:type",
+                        "license:exceptions_contact",
+                        "license:source_specific_info"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "@nest"
+            ],
+            "additionalProperties": false
+        },
+        "model-component": {
+            "type": "object",
+            "properties": {
+                "@list": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "@id": {
+                                "type": "string",
+                                "format": "uri",
+                                "pattern": "^cmip6plus:model/component/.+$"
+                            }
+                        },
+                        "required": [
+                            "@id"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "@list"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
