@@ -230,7 +230,7 @@
                     "LESFMIP"
                 ],
                 "parent_experiment_id": [
-                    "hist-Aer"
+                    "hist-aer"
                 ]
             },
             "fut-GHG": {
@@ -388,13 +388,13 @@
                     "hist-volc"
                 ]
             },
-            "hist-Aer": {
+            "hist-GHG": {
                 "activity_id": [
                     "LESFMIP"
                 ],
-                "description": "Anthropogenic-aerosol-only historical simulations",
-                "experiment": "historical anthropogenic aerosols-only run",
-                "experiment_id": "hist-Aer",
+                "description": "Well-mixed greenhouse-gas-only historical simulations",
+                "experiment": "historical well-mixed GHG-only run",
+                "experiment_id": "hist-GHG",
                 "parameters": {
                     "end": 2020,
                     "min_number_yrs_per_sim": 0,
@@ -419,13 +419,13 @@
                     "piControl"
                 ]
             },
-            "hist-GHG": {
+            "hist-aer": {
                 "activity_id": [
                     "LESFMIP"
                 ],
-                "description": "Well-mixed greenhouse-gas-only historical simulations",
-                "experiment": "historical well-mixed GHG-only run",
-                "experiment_id": "hist-GHG",
+                "description": "Anthropogenic-aerosol-only historical simulations",
+                "experiment": "historical anthropogenic aerosols-only run",
+                "experiment_id": "hist-aer",
                 "parameters": {
                     "end": 2020,
                     "min_number_yrs_per_sim": 0,
@@ -1291,8 +1291,8 @@
         "version_metadata": {
             "file_modified": "2024-09-19",
             "CV": {
-                "version": "v6.5.1.4",
-                "git_commit": "a691fcf5212f262e59a1e254536ae581180d386f",
+                "version": "fatal: No names found, cannot describe anything.",
+                "git_commit": "8f1b9c55d0e64599ce305226c98686f79cbe4547",
                 "gitbranch": "jsonldIII"
             },
             "future": "miptables, checksum, etc"
