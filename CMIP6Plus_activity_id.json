@@ -12,9 +12,9 @@
     "version_metadata": {
         "version_tag": "v0.0.0",
         "checksum": "7fdaecf631639ac7287e25e8df30f05a",
-        "commit": "9e3e5243e32162e0ff38c4055e3f3a0ad1c1dab6",
-        "previous_commit": "54e3b425c57d0bf8ffa98b015d047a59f7572ed3",
-        "activity_id_modified": "Fri, 13 Sep 2024 23:10:43 +0000",
+        "commit": "8f1b9c55d0e64599ce305226c98686f79cbe4547",
+        "previous_commit": "75e070e92d21ad729977fdf6d208d156097efc2f",
+        "activity_id_modified": "Thu, 19 Sep 2024 18:24:25 +0000",
         "activity_id_note": "Automated update of JSONLD files, network and frames"
     }
 }
