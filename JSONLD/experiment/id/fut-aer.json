@@ -26,7 +26,7 @@
       }
     ]
   },
-  "name": "fut-Aer",
+  "name": "fut-aer",
   "parameters": {
     "end": 2024,
     "min-number-yrs-per-sim": 0,
