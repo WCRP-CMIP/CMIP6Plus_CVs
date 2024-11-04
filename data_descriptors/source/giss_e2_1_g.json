@@ -1,0 +1,49 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/source/_context",
+    "activity-participation": [
+        {
+            "@id": "cmip6plus:activity/lesfmip"
+        },
+        {
+            "@id": "cmip6plus:activity/cmip"
+        }
+    ],
+    "cohort": "Published",
+    "contributors": {},
+    "id": "giss_e2_1_g",
+    "label": "GISS-E2.1G",
+    "label-extended": "GISS-E2.1G",
+    "license": {
+        "license:exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
+        "license:kind": {
+            "@id": "mip-cmor-tables:license/cc-by-4.0"
+        },
+        "license:source-specific-info": ""
+    },
+    "model-component": [
+        {
+            "@id": "cmip6plus:model/component/varies-with-physics-version"
+        },
+        {
+            "@id": "cmip6plus:model/component/giss-e2.1"
+        },
+        {
+            "@id": "cmip6plus:model/component/varies-with-physics-version"
+        },
+        {
+            "@id": "cmip6plus:model/component/giss-lsm"
+        },
+        {
+            "@id": "cmip6plus:model/component/giss-ocean"
+        },
+        {
+            "@id": "cmip6plus:model/component/giss-si"
+        }
+    ],
+    "name": "GISS-E2-1-G",
+    "organisation-id": {
+        "@id": "mip-cmor-tables:organisations/institutions/nasa-giss"
+    },
+    "release-year": 2019,
+    "type": "source_id"
+}

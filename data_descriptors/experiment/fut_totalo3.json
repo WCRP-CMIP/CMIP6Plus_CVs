@@ -1,0 +1,52 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/experiment/_context",
+    "activity-id": [
+        {
+            "@id": "cmip6plus:activity/lesfmip"
+        }
+    ],
+    "description": "As hist-totalO3 but with updated forcings",
+    "experiment": "future total ozone-only run",
+    "id": "fut_totalo3",
+    "model-components": {
+        "additional-allowed": [
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/aer"
+            },
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/chem"
+            },
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+            }
+        ],
+        "required": [
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+            }
+        ]
+    },
+    "name": "fut-totalO3",
+    "parameters": {
+        "end": 2024,
+        "min-number-yrs-per-sim": 0,
+        "start": 2015
+    },
+    "parent": {
+        "activity-id": [
+            {
+                "@id": "cmip6plus:activity/lesfmip"
+            }
+        ],
+        "experiment-id": [
+            {
+                "@id": "cmip6plus:experiment/id/hist-totalo3"
+            }
+        ]
+    },
+    "sub-experiment-id": {
+        "@id": "cmip6plus:experiment/sub-id/f2023"
+    },
+    "tier": 2,
+    "type": "experiment_id"
+}
