@@ -1,0 +1,52 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/experiment/_context",
+    "activity-id": [
+        {
+            "@id": "cmip6plus:activity/lesfmip"
+        }
+    ],
+    "description": "historical simulations with 1850 total ozone",
+    "experiment": "historical all-but-ozone run",
+    "id": "hist_pitotalo3",
+    "model-components": {
+        "additional-allowed": [
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/aer"
+            },
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/chem"
+            },
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/bgc"
+            }
+        ],
+        "required": [
+            {
+                "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
+            }
+        ]
+    },
+    "name": "hist-piTotalO3",
+    "parameters": {
+        "end": 2020,
+        "min-number-yrs-per-sim": 0,
+        "start": 1850
+    },
+    "parent": {
+        "activity-id": [
+            {
+                "@id": "cmip6plus:activity/cmip"
+            }
+        ],
+        "experiment-id": [
+            {
+                "@id": "cmip6plus:experiment/id/picontrol"
+            }
+        ]
+    },
+    "sub-experiment-id": {
+        "@id": "cmip6plus:experiment/sub-id/f2023"
+    },
+    "tier": 3,
+    "type": "experiment_id"
+}

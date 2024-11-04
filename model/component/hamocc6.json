@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/hamocc6",
+  "@type": "model-component",
+  "description": "HAMOCC6",
+  "name": "HAMOCC6",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/ocnbgchem"
+  },
+  "version": -999
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/coco4.9",
+  "@type": "model-component",
+  "description": "COCO4.9",
+  "name": "COCO4.9",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/100km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/seaice"
+  },
+  "version": -999
+}

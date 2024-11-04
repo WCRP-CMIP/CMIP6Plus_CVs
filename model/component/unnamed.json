@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/unnamed",
+  "@type": "model-component",
+  "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+  "name": "unnamed",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/seaice"
+  },
+  "version": -999
+}

@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "@base": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/source/",
+        "@vocab": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/source/",
+        "id": "_context",
+        "type": "@type"
+    },
+    "@embed": "@always"
+}
