@@ -50,7 +50,7 @@ jobs:
             git commit -m "production push";
             # git push --force origin production;
             cd ../;
-            git subtree split --prefix=../data_descriptors -b subtree-branch
+            git subtree split --prefix=data_descriptors -b subtree-branch
             git push --force origin subtree-branch:production
 
 
