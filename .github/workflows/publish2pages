@@ -6,7 +6,7 @@ on:
       - 'jsonld_IV
       
 jobs:
-  update_versioning:
+  push2production:
     runs-on: ubuntu-latest
     env:
       API_KEY: ${{ secrets.API_KEY }}
@@ -24,9 +24,6 @@ jobs:
       statuses: write
     steps:
 
-      - name: Install CMIP-LD
-        id: install-cmipld
-        uses: WCRP-CMIP/CMIP-LD/actions/cmipld@main
 
       - name: Check out the repository
         uses: actions/checkout@v4
@@ -47,12 +44,11 @@ jobs:
       - name: content update
         id: push to production
         run: |
-        
-            cd data_descriptors
+            cd data_descriptors;
             find . -type f -name "*.json" -exec sh -c 'mv "$0" "${0%.json}"' {} \;
-            git add .
-            git commit -m "production push"
-            git push --force origin production
+            git add .;
+            git commit -m "production push";
+            git push --force origin production;
 
         shell: bash
       
