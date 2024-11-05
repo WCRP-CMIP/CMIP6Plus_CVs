@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
       - 'jsonld_IV
-      
+
 jobs:
   push2production:
     runs-on: ubuntu-latest
@@ -49,5 +49,5 @@ jobs:
             git add .;
             git commit -m "production push";
             git push --force origin production;
-        shell: bash
+
       
