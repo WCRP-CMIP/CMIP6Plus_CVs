@@ -60,7 +60,7 @@ for folder in folders:
         "@embed": "@always"
         }
                     
-    json.dump(context, open(f"{folder}_context.json", 'w'), indent=4)
+    json.dump(context, open(f"{folder}_context", 'w'), indent=4)
     
     
     os.system('rm -f ' + folder + '*.jsonld')
