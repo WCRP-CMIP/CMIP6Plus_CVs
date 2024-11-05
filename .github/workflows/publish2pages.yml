@@ -49,6 +49,5 @@ jobs:
             git add .;
             git commit -m "production push";
             git push --force origin production;
-
         shell: bash
       
