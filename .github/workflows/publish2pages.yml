@@ -2,9 +2,9 @@ name: publish_to_pages
 on:
   push:
     branches:
-      - 'main'
-      - 'jsonld_IV
-
+      - "main"
+      - "jsonld_IV"
+      
 jobs:
   push2production:
     runs-on: ubuntu-latest
