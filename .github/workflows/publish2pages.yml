@@ -48,6 +48,9 @@ jobs:
             find . -type f -name "*.json" -exec sh -c 'mv "$0" "${0%.json}"' {} \;
             git add .;
             git commit -m "production push";
-            git push --force origin production;
+            # git push --force origin production;
+            git subtree split --prefix=../data_descriptors -b subtree-branch
+            git push --force origin subtree-branch:production
+
 
       
