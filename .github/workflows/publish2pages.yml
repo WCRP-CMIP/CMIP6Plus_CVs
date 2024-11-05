@@ -42,7 +42,7 @@ jobs:
         shell: bash
 
       - name: content update
-        id: push to production
+        id: push_to_production
         run: |
             cd data_descriptors;
             find . -type f -name "*.json" -exec sh -c 'mv "$0" "${0%.json}"' {} \;
