@@ -190,6 +190,180 @@
             ],
             "tier": 2
         },
+        "esm-up2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp up with constant CO2 emissions",
+            "end": "",
+            "experiment": "ramp up simulation with constant CO2 emissions yielding a warming of approximately 2 K/century (see TIPMIP experiment protocol for details)",
+            "experiment_id": "esm-up2p0",
+            "min_number_yrs_per_sim": 215,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-piControl"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-up2p0-gwl2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL2",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl2p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-up2p0-gwl2p0-50y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp down after temporary overshoot to GWL2",
+            "end": "",
+            "experiment": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl2p0 after 50 years",
+            "experiment_id": "esm-up2p0-gwl2p0-50y-dn2p0",
+            "min_number_yrs_per_sim": 100,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-up2p0-gwl4p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL4",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 4K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl4p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-up2p0-gwl4p0-50y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp down after temporary overshoot to GWL4",
+            "end": "",
+            "experiment": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl4p0 after 50 years ",
+            "experiment_id": "esm-up2p0-gwl4p0-50y-dn2p0",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl4p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-swl4p0-50y-dn2p0",
+            "experiment_id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl4p0-50y-dn2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
         "fut-Aer": {
             "activity_id": [
                 "LESFMIP"
