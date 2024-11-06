@@ -1,51 +1,36 @@
 {
-  "@id": "cmip6plus:source/id/mpi-esm1-2-hr",
-  "@type": "source-id",
-  "activity-participation": [
-    {
-      "@id": "cmip6plus:activity/cmip"
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/_context",
+    "id": "mpi-esm1-2-hr",
+    "type": "source",
+    "@id": "cmip6plus:source/id/mpi-esm1-2-hr",
+    "@type": "source-id",
+    "activity-participation": {
+        "cmip": {},
+        "lesfmip": {}
     },
-    {
-      "@id": "cmip6plus:activity/lesfmip"
-    }
-  ],
-  "cohort": "Published",
-  "contributors": {},
-  "label": "MPI-ESM1.2-HR",
-  "label-extended": "MPI-ESM1.2-HR",
-  "license": {
-    "license:exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
-    "license:kind": {
-      "@id": "mip-cmor-tables:license/cc-by-4.0"
+    "cohort": "Published",
+    "contributors": {},
+    "label": "MPI-ESM1.2-HR",
+    "label-extended": "MPI-ESM1.2-HR",
+    "license": {
+        "license:exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
+        "license:kind": {
+            "@id": "mip-cmor-tables:license/cc-by-4.0"
+        },
+        "license:source-specific-info": ""
     },
-    "license:source-specific-info": ""
-  },
-  "model-component": [
-    {
-      "@id": "cmip6plus:model/component/,-prescribed-macv2-sp"
+    "model-component": {
+        ",-prescribed-macv2-sp": {},
+        "echam6.3": {},
+        "jsbach3.20": {},
+        "prescribed": {},
+        "mpiom1.63": {},
+        "hamocc6": {},
+        "unnamed": {}
     },
-    {
-      "@id": "cmip6plus:model/component/echam6.3"
+    "name": "MPI-ESM1-2-HR",
+    "organisation-id": {
+        "mpi-m": {}
     },
-    {
-      "@id": "cmip6plus:model/component/jsbach3.20"
-    },
-    {
-      "@id": "cmip6plus:model/component/prescribed"
-    },
-    {
-      "@id": "cmip6plus:model/component/mpiom1.63"
-    },
-    {
-      "@id": "cmip6plus:model/component/hamocc6"
-    },
-    {
-      "@id": "cmip6plus:model/component/unnamed"
-    }
-  ],
-  "name": "MPI-ESM1-2-HR",
-  "organisation-id": {
-    "@id": "mip-cmor-tables:organisations/institutions/mpi-m"
-  },
-  "release-year": 2017
+    "release-year": 2017
 }

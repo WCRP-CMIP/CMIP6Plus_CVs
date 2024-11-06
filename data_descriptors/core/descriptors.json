@@ -1,20 +1,21 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/core/_context",
-    "drs": {
-        "@id": "cmip6plus:core/drs"
-    },
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/core/_context",
     "id": "descriptors",
+    "type": "core",
+    "drs": {
+        "drs": {}
+    },
     "index": {
-        "@id": "cmip6plus:core/index"
+        "index": {}
     },
     "license": [
         "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
     ],
     "mip-era": {
-        "@id": "mip-cmor-tables:auxillary/mip-era/cmip6plus"
+        "cmip6plus": {}
     },
     "product": {
-        "@id": "mip-cmor-tables:auxillary/product/model-output"
+        "model-output": {}
     },
     "required-global-attributes": [
         "Conventions",
@@ -127,6 +128,5 @@
     ],
     "tracking-id": [
         "hdl:21.14100/.*"
-    ],
-    "type": "core_descriptors"
+    ]
 }

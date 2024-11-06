@@ -1,16 +1,13 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/source/_context",
-    "activity-participation": [
-        {
-            "@id": "cmip6plus:activity/cmip"
-        },
-        {
-            "@id": "cmip6plus:activity/lesfmip"
-        }
-    ],
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/_context",
+    "id": "miroc6",
+    "type": "source",
+    "activity-participation": {
+        "cmip": {},
+        "lesfmip": {}
+    },
     "cohort": "Published",
     "contributors": {},
-    "id": "miroc6",
     "label": "MIROC6",
     "label-extended": "MIROC6",
     "license": {
@@ -20,27 +17,15 @@
         },
         "license:source-specific-info": ""
     },
-    "model-component": [
-        {
-            "@id": "cmip6plus:model/component/sprintars6.0"
-        },
-        {
-            "@id": "cmip6plus:model/component/ccsr-agcm"
-        },
-        {
-            "@id": "cmip6plus:model/component/matsiro6.0"
-        },
-        {
-            "@id": "cmip6plus:model/component/coco4.9"
-        },
-        {
-            "@id": "cmip6plus:model/component/coco4.9"
-        }
-    ],
+    "model-component": {
+        "sprintars6.0": {},
+        "ccsr-agcm": {},
+        "matsiro6.0": {},
+        "coco4.9": {}
+    },
     "name": "MIROC6",
     "organisation-id": {
-        "@id": "mip-cmor-tables:organisations/consortia/miroc"
+        "miroc": {}
     },
-    "release-year": 2017,
-    "type": "source_id"
+    "release-year": 2017
 }

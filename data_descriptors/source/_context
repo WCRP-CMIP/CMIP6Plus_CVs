@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "@base": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/",
+        "@vocab": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/",
+        "id": "@id",
+        "type": "@type",
+        "mip-universe": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/",
+        "mip-variables": "https://wcrp-cmip.github.io/MIP_variables/",
+        "activity-participation": {
+            "@context": "cmip6plus:activity/_context",
+            "@container": "@index"
+        },
+        "model-component": {
+            "@context": "cmip6plus:model/component/_context",
+            "@container": "@index"
+        },
+        "organisation-id": {
+            "@context": "mip-cmor-tables:organisations/institutions/_context",
+            "@container": "@index"
+        }
+    },
+    "@embed": "@always"
+}

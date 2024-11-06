@@ -1,7 +1,7 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/sub-experiment/_context",
-    "description": "Forcings 2023",
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/sub-experiment/_context",
     "id": "f2023",
-    "name": "f2023",
-    "type": "sub_experiment_id"
+    "type": "sub-experiment",
+    "description": "Forcings 2023",
+    "name": "f2023"
 }
