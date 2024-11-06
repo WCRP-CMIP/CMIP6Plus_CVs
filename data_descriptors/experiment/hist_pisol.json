@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "hist_pisol",
+    "type": "experiment",
     "activity": [
         {
             "lesfmip": {}
         }
     ],
     "description": "historical simulations with 1850 solar forcing",
-    "id": "hist_pisol",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "f2023": {}
     },
-    "tier": 3,
-    "type": "experiment"
+    "tier": 3
 }

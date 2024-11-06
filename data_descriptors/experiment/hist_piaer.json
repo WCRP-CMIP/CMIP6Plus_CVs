@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "hist_piaer",
+    "type": "experiment",
     "activity": [
         {
             "lesfmip": {}
         }
     ],
     "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
-    "id": "hist_piaer",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "f2023": {}
     },
-    "tier": 3,
-    "type": "experiment"
+    "tier": 3
 }

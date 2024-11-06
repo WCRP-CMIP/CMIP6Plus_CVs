@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "fut_lu",
+    "type": "experiment",
     "activity": [
         {
             "lesfmip": {}
         }
     ],
     "description": "As hist-lu but with updated forcings",
-    "id": "fut_lu",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "f2023": {}
     },
-    "tier": 2,
-    "type": "experiment"
+    "tier": 2
 }

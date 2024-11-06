@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "picontrol_spinup",
+    "type": "experiment",
     "activity": [
         {
             "cmip": {}
         }
     ],
     "description": "DECK: spin-up portion of the control",
-    "id": "picontrol_spinup",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "none": {}
     },
-    "tier": 2,
-    "type": "experiment"
+    "tier": 2
 }

@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "hist_nat",
+    "type": "experiment",
     "activity": [
         {
             "lesfmip": {}
         }
     ],
     "description": "Natural forcings (solar + volcanic)",
-    "id": "hist_nat",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "f2023": {}
     },
-    "tier": 3,
-    "type": "experiment"
+    "tier": 3
 }

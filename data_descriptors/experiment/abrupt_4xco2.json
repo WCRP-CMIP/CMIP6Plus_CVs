@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "abrupt_4xco2",
+    "type": "experiment",
     "activity": [
         {
             "cmip": {}
         }
     ],
     "description": "DECK: abrupt-4xCO2",
-    "id": "abrupt_4xco2",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "none": {}
     },
-    "tier": 1,
-    "type": "experiment"
+    "tier": 1
 }

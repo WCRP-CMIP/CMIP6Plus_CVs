@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "picontrol",
+    "type": "experiment",
     "activity": [
         {
             "cmip": {}
         }
     ],
     "description": "DECK: control",
-    "id": "picontrol",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "none": {}
     },
-    "tier": 1,
-    "type": "experiment"
+    "tier": 1
 }

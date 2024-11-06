@@ -1,12 +1,13 @@
 {
     "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "hist_pighg",
+    "type": "experiment",
     "activity": [
         {
             "lesfmip": {}
         }
     ],
     "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
-    "id": "hist_pighg",
     "model_realms": {
         "aogcm": {
             "is_required": true
@@ -41,6 +42,5 @@
     "sub_experiment": {
         "f2023": {}
     },
-    "tier": 3,
-    "type": "experiment"
+    "tier": 3
 }
