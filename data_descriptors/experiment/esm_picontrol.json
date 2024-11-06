@@ -1,52 +1,46 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/experiment/_context",
-    "activity-id": [
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "activity": [
         {
-            "@id": "cmip6plus:activity/cmip"
+            "cmip": {}
         }
     ],
     "description": "DECK: control (emission-driven)",
-    "experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
     "id": "esm_picontrol",
-    "model-components": {
-        "additional-allowed": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aer"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/chem"
-            }
-        ],
-        "required": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-            }
-        ]
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "bgc": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        }
     },
     "name": "esm-piControl",
     "parameters": {
         "end": -999,
         "min-number-yrs-per-sim": 500,
-        "start": -999
+        "start": -999,
+        "id": "additional_parameters"
     },
-    "parent": {
-        "activity-id": [
-            {
-                "@id": "cmip6plus:activity/cmip"
-            }
-        ],
-        "experiment-id": [
-            {
-                "@id": "cmip6plus:experiment/id/esm-picontrol-spinup"
-            }
-        ]
-    },
-    "sub-experiment-id": {
-        "@id": "cmip6plus:experiment/sub-id/none"
+    "parent_activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "esm-picontrol-spinup": {}
+        }
+    ],
+    "sub_experiment": {
+        "none": {}
     },
     "tier": 1,
-    "type": "experiment_id"
+    "type": "experiment"
 }

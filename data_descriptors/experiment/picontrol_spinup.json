@@ -1,48 +1,46 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/experiment/_context",
-    "activity-id": [
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "activity": [
         {
-            "@id": "cmip6plus:activity/cmip"
+            "cmip": {}
         }
     ],
     "description": "DECK: spin-up portion of the control",
-    "experiment": "pre-industrial control (spin-up)",
     "id": "picontrol_spinup",
-    "model-components": {
-        "additional-allowed": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aer"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/chem"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-            }
-        ],
-        "required": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-            }
-        ]
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
     },
     "name": "piControl-spinup",
     "parameters": {
         "end": -999,
         "min-number-yrs-per-sim": 100,
-        "start": -999
+        "start": -999,
+        "id": "additional_parameters"
     },
-    "parent": {
-        "activity-id": [
-            "no parent"
-        ],
-        "experiment-id": [
-            "no parent"
-        ]
-    },
-    "sub-experiment-id": {
-        "@id": "cmip6plus:experiment/sub-id/none"
+    "parent_activity": [
+        {
+            "none": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "none": {}
+        }
+    ],
+    "sub_experiment": {
+        "none": {}
     },
     "tier": 2,
-    "type": "experiment_id"
+    "type": "experiment"
 }

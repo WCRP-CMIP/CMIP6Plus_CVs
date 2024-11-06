@@ -1,52 +1,46 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/experiment/_context",
-    "activity-id": [
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "activity": [
         {
-            "@id": "cmip6plus:activity/lesfmip"
+            "lesfmip": {}
         }
     ],
     "description": "Solar-only historical simulations",
-    "experiment": "historical solar-only run",
     "id": "hist_sol",
-    "model-components": {
-        "additional-allowed": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aer"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/chem"
-            },
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/bgc"
-            }
-        ],
-        "required": [
-            {
-                "@id": "mip-cmor-tables:auxillary/source-type/aogcm"
-            }
-        ]
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
     },
     "name": "hist-sol",
     "parameters": {
         "end": 2020,
         "min-number-yrs-per-sim": 0,
-        "start": 1850
+        "start": 1850,
+        "id": "additional_parameters"
     },
-    "parent": {
-        "activity-id": [
-            {
-                "@id": "cmip6plus:activity/cmip"
-            }
-        ],
-        "experiment-id": [
-            {
-                "@id": "cmip6plus:experiment/id/picontrol"
-            }
-        ]
-    },
-    "sub-experiment-id": {
-        "@id": "cmip6plus:experiment/sub-id/f2023"
+    "parent_activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "picontrol": {}
+        }
+    ],
+    "sub_experiment": {
+        "f2023": {}
     },
     "tier": 1,
-    "type": "experiment_id"
+    "type": "experiment"
 }
