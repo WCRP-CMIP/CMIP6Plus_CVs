@@ -50,10 +50,14 @@ jobs:
             git checkout production
             git checkout ${BRANCH} -- data_descriptors
 
+            find . -type f -name "*.json" -exec sh -c 'ln -s "$0" "${0%.json}"' {} \;
+
             git add -A;
             git commit -m "production push";
             git push --force origin production;
 
+            # mv data_descriptors/*/ ./
+            # rm -rf data_descriptors
             
             # cd data_descriptors;
             # find . -type f -name "*.json" -exec sh -c 'ln -s "$0" "${0%.json}"' {} \;
