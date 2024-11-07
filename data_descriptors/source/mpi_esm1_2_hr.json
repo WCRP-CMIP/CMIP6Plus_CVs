@@ -1,0 +1,36 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/_context",
+    "id": "mpi-esm1-2-hr",
+    "type": "source",
+    "@id": "cmip6plus:source/id/mpi-esm1-2-hr",
+    "@type": "source-id",
+    "activity-participation": {
+        "cmip": {},
+        "lesfmip": {}
+    },
+    "cohort": "Published",
+    "contributors": {},
+    "label": "MPI-ESM1.2-HR",
+    "label-extended": "MPI-ESM1.2-HR",
+    "license": {
+        "license:exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
+        "license:kind": {
+            "@id": "mip-cmor-tables:license/cc-by-4.0"
+        },
+        "license:source-specific-info": ""
+    },
+    "model-component": {
+        ",-prescribed-macv2-sp": {},
+        "echam6.3": {},
+        "jsbach3.20": {},
+        "prescribed": {},
+        "mpiom1.63": {},
+        "hamocc6": {},
+        "unnamed": {}
+    },
+    "name": "MPI-ESM1-2-HR",
+    "organisation-id": {
+        "mpi-m": {}
+    },
+    "release-year": 2017
+}

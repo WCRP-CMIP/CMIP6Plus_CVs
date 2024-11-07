@@ -1,0 +1,8 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/activity/_context",
+    "id": "lesfmip",
+    "type": "activity",
+    "description": "The Large Ensemble Single Forcing Model Intercomparison Project",
+    "name": "LESFMIP",
+    "url": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full"
+}

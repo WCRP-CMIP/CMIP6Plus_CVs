@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/jules-hadgem3-gl7.1",
+  "@type": "model-component",
+  "description": "JULES-HadGEM3-GL7.1",
+  "name": "JULES-HadGEM3-GL7.1",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/land"
+  },
+  "version": -999
+}

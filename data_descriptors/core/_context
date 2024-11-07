@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "@base": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/core/",
+        "@vocab": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/core/",
+        "id": "@id",
+        "type": "@type",
+        "mip-universe": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/",
+        "mip-variables": "https://wcrp-cmip.github.io/MIP_variables/",
+        "drs": {
+            "@context": "cmip6plus:core/_context",
+            "@container": "@index"
+        },
+        "index": {
+            "@context": "cmip6plus:core/_context",
+            "@container": "@index"
+        },
+        "mip-era": {
+            "@context": "mip-cmor-tables:auxillary/mip-era/_context",
+            "@container": "@index"
+        },
+        "product": {
+            "@context": "mip-cmor-tables:auxillary/product/_context",
+            "@container": "@index"
+        }
+    },
+    "@embed": "@always"
+}

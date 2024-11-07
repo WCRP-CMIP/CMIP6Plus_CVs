@@ -1,0 +1,46 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "hist_piaer",
+    "type": "experiment",
+    "activity": [
+        {
+            "lesfmip": {}
+        }
+    ],
+    "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "name": "hist-piAer",
+    "parameters": {
+        "end": 2020,
+        "min-number-yrs-per-sim": 0,
+        "start": 1850,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "picontrol": {}
+        }
+    ],
+    "sub_experiment": {
+        "f2023": {}
+    },
+    "tier": 3
+}
