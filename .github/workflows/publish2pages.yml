@@ -47,8 +47,8 @@ jobs:
         run: |
 
 
-            git checkout origin production
-            git checkout origin ${BRANCH} -- data_descriptors
+            git checkout production
+            git checkout ${BRANCH} -- data_descriptors
 
             git add -A;
             git commit -m "production push";
