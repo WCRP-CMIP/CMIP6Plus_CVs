@@ -1,9 +1,0 @@
-{
-    "@context": {
-        "@base": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/activity/",
-        "@vocab": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/data_descriptors/activity/",
-        "id": "@id",
-        "type": "@type"
-    },
-    "@embed": "@always"
-}
