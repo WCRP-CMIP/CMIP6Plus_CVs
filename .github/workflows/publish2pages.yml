@@ -41,17 +41,13 @@ jobs:
           echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
         shell: bash
 
-      - name: content update
+      - name: create symbolic link without extension 
         id: push_to_production
         run: |
             cd data_descriptors;
-            find . -type f -name "*.json" -exec sh -c 'mv "$0" "${0%.json}"' {} \;
+            find . -type f -name "*.json" -exec sh -c 'ln -s "$0" "${0%.json}"' {} \;
             git add .;
             git commit -m "production push";
-            # git push --force origin production;
-            cd ../;
-            git subtree split --prefix=data_descriptors -b subtree-branch
-            git push --force origin subtree-branch:production
-
+            git push --force origin production;
 
       
