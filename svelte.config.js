@@ -7,7 +7,7 @@ export default {
 			// these options are set automatically — see below
 			appDir: 'src',
 			pages: 'docs',
-			assets: 'docs',
+			assets: '../',
 			fallback: "404.html",
 			precompress: false,
 			strict: true
