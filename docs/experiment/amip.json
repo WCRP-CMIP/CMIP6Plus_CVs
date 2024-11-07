@@ -1,0 +1,46 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "amip",
+    "type": "experiment",
+    "activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "description": "DECK: AMIP",
+    "model_realms": {
+        "agcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "name": "amip",
+    "parameters": {
+        "end": 2022,
+        "min-number-yrs-per-sim": 43,
+        "start": 1979,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        {
+            "none": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "none": {}
+        }
+    ],
+    "sub_experiment": {
+        "none": {}
+    },
+    "tier": 1
+}

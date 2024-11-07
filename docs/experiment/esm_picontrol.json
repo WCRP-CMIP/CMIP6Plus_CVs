@@ -1,0 +1,46 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
+    "id": "esm_picontrol",
+    "type": "experiment",
+    "activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "description": "DECK: control (emission-driven)",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "bgc": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        }
+    },
+    "name": "esm-piControl",
+    "parameters": {
+        "end": -999,
+        "min-number-yrs-per-sim": 500,
+        "start": -999,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        {
+            "cmip": {}
+        }
+    ],
+    "parent_experiment": [
+        {
+            "esm-picontrol-spinup": {}
+        }
+    ],
+    "sub_experiment": {
+        "none": {}
+    },
+    "tier": 1
+}

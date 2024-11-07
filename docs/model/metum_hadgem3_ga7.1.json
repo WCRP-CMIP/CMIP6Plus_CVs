@@ -1,0 +1,13 @@
+{
+  "@id": "cmip6plus:model/component/metum-hadgem3-ga7.1",
+  "@type": "model-component",
+  "description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+  "name": "MetUM-HadGEM3-GA7.1",
+  "nominal-resolution": {
+    "@id": "mip-cmor-tables:auxillary/native-nominal-resolution/250km"
+  },
+  "realm": {
+    "@id": "mip-cmor-tables:auxillary/realm/atmos"
+  },
+  "version": -999
+}

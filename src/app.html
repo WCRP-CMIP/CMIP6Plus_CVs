@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="dark light" />
+		%sveltekit.head%
+
+		<!-- duplication with svelte.dev/static/shared.css needed, else styles aren't applied during local dev -->
+		<link rel="stylesheet" href="/shared.css" />
+	</head>
+	<body>
+		<div style="display: contents">%sveltekit.body%</div>
+
+		<script>
+			const theme = new URL(window.location).searchParams.get('theme');
+
+			document.documentElement.classList.remove('light', 'dark');
+			document.documentElement.classList.add(theme || 'light');
+		</script>
+	</body>
+</html>
+

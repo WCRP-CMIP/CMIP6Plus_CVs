@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="dark light" />
+		
+		<link rel="modulepreload" href="/src/immutable/entry/start.Bgwbtq5A.js">
+		<link rel="modulepreload" href="/src/immutable/chunks/entry.BiUVIlcG.js">
+		<link rel="modulepreload" href="/src/immutable/chunks/runtime.ZV5IRkQF.js">
+		<link rel="modulepreload" href="/src/immutable/entry/app.ClCekZFm.js">
+		<link rel="modulepreload" href="/src/immutable/chunks/store.DIK5jNRb.js">
+		<link rel="modulepreload" href="/src/immutable/chunks/disclose-version.GqxAujGl.js">
+
+		<!-- duplication with svelte.dev/static/shared.css needed, else styles aren't applied during local dev -->
+		<link rel="stylesheet" href="/shared.css" />
+	</head>
+	<body>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_hczmwt = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/src/immutable/entry/start.Bgwbtq5A.js"),
+						import("/src/immutable/entry/app.ClCekZFm.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+
+		<script>
+			const theme = new URL(window.location).searchParams.get('theme');
+
+			document.documentElement.classList.remove('light', 'dark');
+			document.documentElement.classList.add(theme || 'light');
+		</script>
+	</body>
+</html>
+

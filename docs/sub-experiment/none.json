@@ -1,0 +1,7 @@
+{
+    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/sub-experiment/_context",
+    "id": "none",
+    "type": "sub-experiment",
+    "description": "none",
+    "name": "none"
+}
