@@ -1,0 +1,3 @@
+no
+activity
+slug: {slug}
