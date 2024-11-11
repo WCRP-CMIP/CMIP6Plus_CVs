@@ -345,7 +345,7 @@
             ],
             "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
             "end": "",
-            "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-swl4p0-50y-dn2p0",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-gwl4p0-50y-dn2p0",
             "experiment_id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
             "min_number_yrs_per_sim": 300,
             "parent_activity_id": [
