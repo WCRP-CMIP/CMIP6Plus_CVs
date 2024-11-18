@@ -23,6 +23,10 @@
         "LESFMIP": {
             "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
             "long_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
+        },
+        "TIPMIP": {
+            "URL": "https://tipmip.pik-potsdam.de/",
+            "long_name": "Tipping Point Model Intercomparison Project"
         }
     }
 }
