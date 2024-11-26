@@ -1,31 +1,34 @@
 {
-  "@context": "_context_",
-  "id": "giss_e2_1_g",
-  "type": "source",
-  "activity-participation": [
-    "lesfmip",
-    "cmip"
-  ],
-  "cohort": "Published",
-  "contributors": [],
-  "label": "GISS-E2.1G",
-  "label-extended": "GISS-E2.1G",
-  "license": {
-    "cc-by-4.0": {
-      "exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
-      "source-specific-info": ""
-    }
-  },
-  "model-component": [
-    "varies-with-physics-version",
-    "giss-e2.1",
-    "giss-lsm",
-    "giss-ocean",
-    "giss-si"
-  ],
-  "name": "GISS-E2-1-G",
-  "organisation-id": [
-    "nasa-giss"
-  ],
-  "release-year": 2019
+    "@context": "_context_",
+    "id": "giss_e2_1_g",
+    "type": "source",
+    "activity-participation": [
+        "lesfmip",
+        "cmip",
+        "RAMIP",
+        "RAMIP",
+        "RAMIP"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "label": "GISS-E2.1G",
+    "label-extended": "GISS-E2.1G",
+    "license": {
+        "cc-by-4.0": {
+            "exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
+            "source-specific-info": ""
+        }
+    },
+    "model-component": [
+        "varies-with-physics-version",
+        "giss-e2.1",
+        "giss-lsm",
+        "giss-ocean",
+        "giss-si"
+    ],
+    "name": "GISS-E2-1-G",
+    "organisation-id": [
+        "nasa-giss"
+    ],
+    "release-year": 2019
 }

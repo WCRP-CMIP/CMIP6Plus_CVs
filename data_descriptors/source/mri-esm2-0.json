@@ -1,0 +1,40 @@
+{
+    "activity_participation": [
+        "CMIP",
+        "RAMIP"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "label": "MRI-ESM2.0",
+    "release_year": "2017",
+    "source_id": "MRI-ESM2-0",
+    "@context": "_context_",
+    "id": "mri_esm2_0",
+    "type": "source",
+    "organisation": [
+        "mri"
+    ],
+    "model-component": [
+        "MASINGAR",
+        "MRI-AGCM3.5",
+        "MRI-CCM2.1",
+        "HAL",
+        "none",
+        "MRI.COM4.4",
+        "MRI.COM4.4",
+        "MRI.COM4.4"
+    ],
+    "license": {
+        "cc-by-4.0": {
+            "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
+            "source-specific-info": ""
+        }
+    },
+    "label-extended": "MRI-ESM2.0",
+    "activity-participation": [
+        "cmip",
+        "ramip"
+    ],
+    "name": "MRI-ESM2-0"
+}

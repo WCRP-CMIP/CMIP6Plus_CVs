@@ -1,34 +1,37 @@
 {
-  "@context": "_context_",
-  "id": "noresm2_lm",
-  "type": "source",
-  "activity-participation": [
-    "cmip",
-    "lesfmip"
-  ],
-  "cohort": "Published",
-  "contributors": [],
-  "label": "NorESM2-LM",
-  "label-extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
-  "license": {
-    "cc-by-4.0": {
-      "exceptions-contact": "@met.no <- noresm-ncc",
-      "source-specific-info": ""
-    }
-  },
-  "model-component": [
-    "osloaero",
-    "cam-oslo",
-    "oslochemsimp",
-    "clm",
-    "cism",
-    "micom",
-    "hamocc",
-    "cice"
-  ],
-  "name": "NorESM2-LM",
-  "organisation-id": [
-    "ncc"
-  ],
-  "release-year": 2017
+    "@context": "_context_",
+    "id": "noresm2_lm",
+    "type": "source",
+    "activity-participation": [
+        "cmip",
+        "lesfmip",
+        "RAMIP",
+        "RAMIP",
+        "RAMIP"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "label": "NorESM2-LM",
+    "label-extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
+    "license": {
+        "cc-by-4.0": {
+            "exceptions-contact": "@met.no <- noresm-ncc",
+            "source-specific-info": ""
+        }
+    },
+    "model-component": [
+        "osloaero",
+        "cam-oslo",
+        "oslochemsimp",
+        "clm",
+        "cism",
+        "micom",
+        "hamocc",
+        "cice"
+    ],
+    "name": "NorESM2-LM",
+    "organisation-id": [
+        "ncc"
+    ],
+    "release-year": 2017
 }
