@@ -3,11 +3,9 @@
     "id": "noresm2_lm",
     "type": "source",
     "activity-participation": [
+        "RAMIP",
         "cmip",
-        "lesfmip",
-        "RAMIP",
-        "RAMIP",
-        "RAMIP"
+        "lesfmip"
     ],
     "cohort": "Published",
     "contributors": [],

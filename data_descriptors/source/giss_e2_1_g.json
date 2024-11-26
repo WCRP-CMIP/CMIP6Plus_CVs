@@ -3,11 +3,9 @@
     "id": "giss_e2_1_g",
     "type": "source",
     "activity-participation": [
-        "lesfmip",
+        "RAMIP",
         "cmip",
-        "RAMIP",
-        "RAMIP",
-        "RAMIP"
+        "lesfmip"
     ],
     "cohort": "Published",
     "contributors": [],

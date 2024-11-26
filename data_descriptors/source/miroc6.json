@@ -3,11 +3,9 @@
     "id": "miroc6",
     "type": "source",
     "activity-participation": [
+        "RAMIP",
         "cmip",
-        "lesfmip",
-        "RAMIP",
-        "RAMIP",
-        "RAMIP"
+        "lesfmip"
     ],
     "cohort": "Published",
     "contributors": [],
