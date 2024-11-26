@@ -130,5 +130,6 @@
     },
     "@embed": "@always",
     "@explicit": true
-  }
+  },
+  "@context": "_context_"
 }

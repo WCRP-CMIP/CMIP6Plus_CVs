@@ -1,32 +1,31 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/_context",
-    "id": "hadgem3_gc31_ll",
-    "type": "source",
-    "activity-participation": {
-        "cmip": {},
-        "lesfmip": {}
-    },
-    "cohort": "Published",
-    "contributors": {},
-    "label": "HadGEM3-GC31-LL",
-    "label-extended": "HadGEM3-GC3.1-N96ORCA1",
-    "license": {
-        "license:exceptions-contact": "@metoffice.gov.uk <- cmip6.hadgem3",
-        "license:kind": {
-            "@id": "mip-cmor-tables:license/cc-by-4.0"
-        },
-        "license:source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
-    },
-    "model-component": {
-        "ukca-glomap-mode": {},
-        "metum-hadgem3-ga7.1": {},
-        "jules-hadgem3-gl7.1": {},
-        "nemo-hadgem3-go6.0": {},
-        "cice-hadgem3-gsi8": {}
-    },
-    "name": "HadGEM3-GC31-LL",
-    "organisation-id": {
-        "mohc": {}
-    },
-    "release-year": 2016
+  "@context": "_context_",
+  "id": "hadgem3_gc31_ll",
+  "type": "source",
+  "activity-participation": [
+    "cmip",
+    "lesfmip"
+  ],
+  "cohort": "Published",
+  "contributors": [],
+  "label": "HadGEM3-GC31-LL",
+  "label-extended": "HadGEM3-GC3.1-N96ORCA1",
+  "license": {
+    "cc-by-4.0": {
+      "exceptions-contact": "@metoffice.gov.uk <- cmip6.hadgem3",
+      "source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
+    }
+  },
+  "model-component": [
+    "ukca-glomap-mode",
+    "metum-hadgem3-ga7.1",
+    "jules-hadgem3-gl7.1",
+    "nemo-hadgem3-go6.0",
+    "cice-hadgem3-gsi8"
+  ],
+  "name": "HadGEM3-GC31-LL",
+  "organisation-id": [
+    "mohc"
+  ],
+  "release-year": 2016
 }

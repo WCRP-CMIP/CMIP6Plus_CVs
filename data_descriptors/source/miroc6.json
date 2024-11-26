@@ -1,31 +1,30 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/source/_context",
-    "id": "miroc6",
-    "type": "source",
-    "activity-participation": {
-        "cmip": {},
-        "lesfmip": {}
-    },
-    "cohort": "Published",
-    "contributors": {},
-    "label": "MIROC6",
-    "label-extended": "MIROC6",
-    "license": {
-        "license:exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
-        "license:kind": {
-            "@id": "mip-cmor-tables:license/cc-by-4.0"
-        },
-        "license:source-specific-info": ""
-    },
-    "model-component": {
-        "sprintars6.0": {},
-        "ccsr-agcm": {},
-        "matsiro6.0": {},
-        "coco4.9": {}
-    },
-    "name": "MIROC6",
-    "organisation-id": {
-        "miroc": {}
-    },
-    "release-year": 2017
+  "@context": "_context_",
+  "id": "miroc6",
+  "type": "source",
+  "activity-participation": [
+    "cmip",
+    "lesfmip"
+  ],
+  "cohort": "Published",
+  "contributors": [],
+  "label": "MIROC6",
+  "label-extended": "MIROC6",
+  "license": {
+    "cc-by-4.0": {
+      "exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
+      "source-specific-info": ""
+    }
+  },
+  "model-component": [
+    "sprintars6.0",
+    "ccsr-agcm",
+    "matsiro6.0",
+    "coco4.9"
+  ],
+  "name": "MIROC6",
+  "organisation-id": [
+    "miroc"
+  ],
+  "release-year": 2017
 }

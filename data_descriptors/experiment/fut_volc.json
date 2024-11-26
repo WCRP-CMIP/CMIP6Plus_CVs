@@ -1,46 +1,40 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
-    "id": "fut_volc",
-    "type": "experiment",
-    "activity": [
-        {
-            "lesfmip": {}
-        }
-    ],
-    "description": "As hist-volc but with updated forcings",
-    "model_realms": {
-        "aogcm": {
-            "is_required": true
-        },
-        "aer": {
-            "is_required": false
-        },
-        "chem": {
-            "is_required": false
-        },
-        "bgc": {
-            "is_required": false
-        }
+  "@context": "_context_",
+  "id": "fut_volc",
+  "type": "experiment",
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-volc but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
     },
-    "name": "fut-volc",
-    "parameters": {
-        "end": 2024,
-        "min-number-yrs-per-sim": 0,
-        "start": 2015,
-        "id": "additional_parameters"
+    "aer": {
+      "is_required": false
     },
-    "parent_activity": [
-        {
-            "lesfmip": {}
-        }
-    ],
-    "parent_experiment": [
-        {
-            "hist-volc": {}
-        }
-    ],
-    "sub_experiment": {
-        "f2023": {}
+    "chem": {
+      "is_required": false
     },
-    "tier": 2
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-volc",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-volc"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
 }

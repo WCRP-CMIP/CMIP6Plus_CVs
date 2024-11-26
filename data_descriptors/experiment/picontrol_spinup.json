@@ -1,46 +1,40 @@
 {
-    "@context": "https://WCRP-CMIP.github.io/CMIP6Plus_CVs/experiment/_context",
-    "id": "picontrol_spinup",
-    "type": "experiment",
-    "activity": [
-        {
-            "cmip": {}
-        }
-    ],
-    "description": "DECK: spin-up portion of the control",
-    "model_realms": {
-        "aogcm": {
-            "is_required": true
-        },
-        "aer": {
-            "is_required": false
-        },
-        "chem": {
-            "is_required": false
-        },
-        "bgc": {
-            "is_required": false
-        }
+  "@context": "_context_",
+  "id": "picontrol_spinup",
+  "type": "experiment",
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: spin-up portion of the control",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
     },
-    "name": "piControl-spinup",
-    "parameters": {
-        "end": -999,
-        "min-number-yrs-per-sim": 100,
-        "start": -999,
-        "id": "additional_parameters"
+    "aer": {
+      "is_required": false
     },
-    "parent_activity": [
-        {
-            "none": {}
-        }
-    ],
-    "parent_experiment": [
-        {
-            "none": {}
-        }
-    ],
-    "sub_experiment": {
-        "none": {}
+    "chem": {
+      "is_required": false
     },
-    "tier": 2
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piControl-spinup",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 100,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "none"
+  ],
+  "parent_experiment": [
+    "none"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 2
 }

@@ -306,5 +306,6 @@
     "mip-cmor-tables:auxillary/native-nominal-resolution/250km",
     "mip-cmor-tables:auxillary/mip-era/cmip6plus",
     "mip-cmor-tables:auxillary/realm/ocnbgchem"
-  ]
+  ],
+  "@context": "_context_"
 }
