@@ -1,0 +1,39 @@
+{
+    "activity_id": [
+        "RAMIP"
+    ],
+    "description": "",
+    "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+    "@context": "_context_",
+    "id": "piclim-370-126aer",
+    "model_realms": {
+        "agcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": true
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "name": "piClim-370-126aer",
+    "parameters": {
+        "end": "2080",
+        "start": "2050",
+        "min_number_yrs_per_sim": 30,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        "CMIP"
+    ],
+    "parent_experiment": [
+        "piControl"
+    ],
+    "sub_experiment": [
+        "none"
+    ]
+}
