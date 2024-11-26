@@ -25,7 +25,7 @@
         "giss-si"
     ],
     "name": "GISS-E2-1-G",
-    "organisation-id": [
+    "organisation": [
         "nasa-giss"
     ],
     "release-year": 2019

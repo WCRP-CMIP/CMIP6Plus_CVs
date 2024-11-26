@@ -24,7 +24,7 @@
     "cice-hadgem3-gsi8"
   ],
   "name": "HadGEM3-GC31-LL",
-  "organisation-id": [
+  "organisation": [
     "mohc"
   ],
   "release-year": 2016

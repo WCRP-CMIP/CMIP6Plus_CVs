@@ -28,7 +28,7 @@
         "cice"
     ],
     "name": "NorESM2-LM",
-    "organisation-id": [
+    "organisation": [
         "ncc"
     ],
     "release-year": 2017

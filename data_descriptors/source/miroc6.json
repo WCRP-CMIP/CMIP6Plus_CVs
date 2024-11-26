@@ -24,7 +24,7 @@
         "coco4.9"
     ],
     "name": "MIROC6",
-    "organisation-id": [
+    "organisation": [
         "miroc"
     ],
     "release-year": 2017
