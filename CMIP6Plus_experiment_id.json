@@ -938,7 +938,7 @@
                 "none"
             ]
         },
-        "piClim-370-126aer_nh3nox":{
+        "piClim-370-126aer-nh3nox":{
             "activity_id":[
                 "RAMIP"
             ],
@@ -949,7 +949,7 @@
             "description": "",
             "end": "2080",
             "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
-            "experiment_id":"piClim-370-126aer_nh3nox",
+            "experiment_id":"piClim-370-126aer-nh3nox",
             "min_number_yrs_per_sim": 30,
             "parent_activity_id":[
                 "CMIP"
