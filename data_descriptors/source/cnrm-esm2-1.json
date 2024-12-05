@@ -13,7 +13,7 @@
     "id": "cnrm_esm2_1",
     "type": "source",
     "organisation": [
-        "cnrm-cerfacs"
+        "institutions/cnrm-cerfacs"
     ],
     "model-component": [
         "TACTIC_v2",
@@ -26,7 +26,7 @@
         "Gelato"
     ],
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions_contact": "@meteo.fr <- contact.cmip",
             "source-specific-info": ""
         }

@@ -1,0 +1,121 @@
+name: 'Add/Modify: Experiment'
+description: 'Type: experiment'
+title: 'Add/Modify: Experiment: <enter item name>'
+labels:
+- delta
+- experiment
+body:
+-   type: markdown
+    attributes:
+        value: Please fill in the form below.
+-   id: '@context'
+    attributes:
+        label: '@Context'
+        description: Context identifier, typically set to '_context_'
+    validations:
+        required: true
+    type: input
+-   id: activity
+    attributes:
+        label: Activity
+        description: Enter the activity
+        options:
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
+    validations:
+        required: true
+    type: dropdown
+-   id: description
+    attributes:
+        label: Description
+        description: Detailed description of the experiment
+    validations:
+        required: true
+    type: input
+-   id: model_realms
+    attributes:
+        label: Model Realms
+        description: Enter the model realms
+        options:
+        - aerosol
+        - atmos
+        - atmoschem
+        - land
+        - landice
+        - ocean
+        - ocnbgchem
+        - seaice
+    validations:
+        required: true
+    type: dropdown
+-   id: name
+    attributes:
+        label: Name
+        description: Human-readable name of the experiment
+    validations:
+        required: true
+    type: input
+-   id: parameters
+    attributes:
+        label: Parameters
+        description: Additional parameters for the experiment
+    validations:
+        required: true
+    type: input
+-   id: parent_activity
+    attributes:
+        label: Parent Activity
+        description: Enter the parent activity
+        options:
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
+    validations:
+        required: true
+    type: dropdown
+-   id: parent_experiment
+    attributes:
+        label: Parent Experiment
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/>
+            https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/ </a>. '
+    validations:
+        required: true
+    type: input
+-   id: sub_experiment
+    attributes:
+        label: Sub Experiment
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/>
+            https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/ </a>. '
+    validations:
+        required: true
+    type: input
+-   id: tier
+    attributes:
+        label: Tier
+        description: Tier level of the experiment
+    validations:
+        required: true
+    type: input

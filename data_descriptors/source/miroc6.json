@@ -12,7 +12,7 @@
     "label": "MIROC6",
     "label-extended": "MIROC6",
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
             "source-specific-info": ""
         }
@@ -25,7 +25,7 @@
     ],
     "name": "MIROC6",
     "organisation": [
-        "miroc"
+        "consortia/miroc"
     ],
     "release-year": 2017
 }

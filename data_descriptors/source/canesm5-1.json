@@ -13,7 +13,7 @@
     "id": "canesm5_1",
     "type": "source",
     "organisation": [
-        "cccma"
+        "institutions/cccma"
     ],
     "model-component": [
         "interactive",
@@ -26,7 +26,7 @@
         "LIM2"
     ],
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
             "source-specific-info": ""
         }

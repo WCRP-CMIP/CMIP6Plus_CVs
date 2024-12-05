@@ -4,10 +4,11 @@
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
   "id": "@id",
   "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/WCRP-CMIP/CF/",
+  "cf": "https://wcrp-cmip.github.io/CF/",
   "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
   "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "mip-variables": "https://wcrp-cmip.github.io/MIPvariables/",
+  "mip-variables": "https://wcrp-cmip.github.io/MIP-variables/",
+  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld//",
   "wcrp-universe": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/",
   "activity": {
     "@type": "@id",
@@ -147,6 +148,240 @@
     "none"
   ],
   "tier": 1
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "ramp down after temporary overshoot to GWL2",
+  "experiment": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl2p0 after 50 years",
+  "tier": 1,
+  "id": "esm-up2p0-gwl2p0-50y-dn2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl2p0-50y-dn2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 100,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "TIPMIP"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "stabilisation at GWL2",
+  "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0",
+  "tier": 1,
+  "id": "esm-up2p0-gwl2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "TIPMIP"
+  ],
+  "parent_experiment": [
+    "esm-up2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
+  "experiment": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-gwl4p0-50y-dn2p0",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "TIPMIP"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl4p0-50y-dn2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "ramp down after temporary overshoot to GWL4",
+  "experiment": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl4p0 after 50 years ",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0-50y-dn2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0-50y-dn2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 200,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "TIPMIP"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl4p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "stabilisation at GWL4",
+  "experiment": "zero CO2 emissions simulation starting at global warming level of 4K, branching off from esm-up2p0",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "TIPMIP"
+  ],
+  "parent_experiment": [
+    "esm-up2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "TIPMIP"
+  ],
+  "description": "ramp up with constant CO2 emissions",
+  "experiment": "ramp up simulation with constant CO2 emissions yielding a warming of approximately 2 K/century (see TIPMIP experiment protocol for details)",
+  "tier": 1,
+  "id": "esm-up2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 215,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "esm-piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
 }
     ,{
   "id": "esm_hist",
@@ -1046,6 +1281,272 @@
   "tier": 1
 }
     ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-126aer_nh3nox",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-126aer_nh3nox",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over Africa and the Middle East are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-afr126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-afr126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-eas126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-eas126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over North America and Europe are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-nae126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-nae126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+  "id": "piclim-370-sas126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-sas126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "",
+  "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions from SSP3-7.0.",
+  "id": "piclim-370",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
   "id": "picontrol",
   "type": "experiment",
   "activity": [
@@ -1122,6 +1623,357 @@
     "none"
   ],
   "tier": 2
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with anthropogenic aerosol and precursor emissions taken from SSP1-2.6.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions",
+  "tier": 1,
+  "id": "ssp370-126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx.",
+  "tier": "2",
+  "id": "ssp370-126aer_nh3nox",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-126aer_nh3nox",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Africa and the Middle East",
+  "tier": 1,
+  "id": "ssp370-afr126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-afr126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Asia is defined as the combination of the East Asian and South Asian regions used in ssp370-eas126aer and ssp370-sas126aer. ",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Asia.",
+  "tier": "2",
+  "id": "ssp370-asia126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-asia126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia",
+  "tier": 1,
+  "id": "ssp370-eas126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-eas126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe",
+  "tier": 1,
+  "id": "ssp370-nae126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-nae126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over sub-Saharan Africa.",
+  "tier": "2",
+  "id": "ssp370-saf126ca",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-saf126ca",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia",
+  "tier": 1,
+  "id": "ssp370-sas126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-sas126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
+}
+    ,{
+  "activity_id": [
+    "RAMIP"
+  ],
+  "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+  "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia.",
+  "tier": "2",
+  "id": "ssp370-sas126ca",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-sas126ca",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "CMIP"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ]
 }
   ]
 }

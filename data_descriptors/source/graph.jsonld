@@ -4,15 +4,16 @@
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
   "id": "@id",
   "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/WCRP-CMIP/CF/",
+  "cf": "https://wcrp-cmip.github.io/CF/",
   "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
   "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "mip-variables": "https://wcrp-cmip.github.io/MIPvariables/",
+  "mip-variables": "https://wcrp-cmip.github.io/MIP-variables/",
+  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld//",
   "wcrp-universe": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/",
-  "mip-universe": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/",
   "activity-participation": {
     "@context": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/activity/_context_",
-    "@type": "@id"
+    "@type": "@id",
+    "@reverse": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/activity/source_activity"
   },
   "license": {
     "@context": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/_context_",
@@ -21,26 +22,179 @@
   "model-component": {
     "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/_context_",
     "@container": "@id"
-  },
-  "organisation-id": {
-    "@context": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/organisations/_context_",
-    "@type": "@id"
   }
 },
   "@graph": [
     {
+  "activity_participation": [
+    "CMIP",
+    "LESFMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "CanESM5.1",
+  "release_year": "2022",
+  "source_id": "CanESM5-1",
+  "id": "canesm5_1",
+  "type": "source",
+  "organisation": [
+    "institutions/cccma"
+  ],
+  "model-component": [
+    "interactive",
+    "CanAM5.1",
+    "specified",
+    "CLASS3.6/CTEM1.2",
+    "specified",
+    "NEMO3.4.1",
+    "Canadian",
+    "LIM2"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
+      "source-specific-info": ""
+    }
+  },
+  "label-extended": "CanESM5.1",
+  "activity-participation": [
+    "cmip",
+    "lesfmip"
+  ],
+  "name": "CanESM5-1"
+}
+    ,{
+  "activity_participation": [
+    "CMIP",
+    "RAMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "CESM2",
+  "release_year": "2018",
+  "source_id": "CESM2",
+  "id": "cesm2",
+  "type": "source",
+  "organisation": [
+    "institutions/ncar"
+  ],
+  "model-component": [
+    "MAM4",
+    "CAM6",
+    "MAM4",
+    "CLM5",
+    "CISM2.1",
+    "POP2",
+    "MARBL",
+    "CICE5.1"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@ucar.edu <- cesm_cmip6",
+      "source-specific-info": ""
+    }
+  },
+  "label-extended": "CESM2",
+  "activity-participation": [
+    "cmip",
+    "ramip"
+  ],
+  "name": "CESM2"
+}
+    ,{
+  "activity_participation": [
+    "CMIP",
+    "RAMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "CNRM-ESM2-1",
+  "release_year": "2017",
+  "source_id": "CNRM-ESM2-1",
+  "id": "cnrm_esm2_1",
+  "type": "source",
+  "organisation": [
+    "institutions/cnrm-cerfacs"
+  ],
+  "model-component": [
+    "TACTIC_v2",
+    "Arpege",
+    "REPROBUS-C_v2",
+    "Surfex",
+    "none",
+    "Nemo",
+    "Pisces",
+    "Gelato"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@meteo.fr <- contact.cmip",
+      "source-specific-info": ""
+    }
+  },
+  "label-extended": "CNRM-ESM2-1",
+  "activity-participation": [
+    "cmip",
+    "ramip"
+  ],
+  "name": "CNRM-ESM2-1"
+}
+    ,{
+  "activity_participation": [
+    "CMIP",
+    "RAMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "EC-Earth3-AerChem",
+  "release_year": "2019",
+  "source_id": "EC-Earth3-AerChem",
+  "id": "ec_earth_aerchem",
+  "type": "source",
+  "organisation": [
+    "consortia/ec-earth-consortium"
+  ],
+  "model-component": [
+    "TM5",
+    "IFS",
+    "TM5",
+    "HTESSEL",
+    "none",
+    "NEMO3.6",
+    "none",
+    "LIM3"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@ec-earth.org <- cmip6-data",
+      "source-specific-info": ""
+    }
+  },
+  "label-extended": "EC-Earth3-AerChem",
+  "activity-participation": [
+    "cmip",
+    "ramip"
+  ],
+  "name": "EC-Earth3-AerChem"
+}
+    ,{
   "id": "giss_e2_1_g",
   "type": "source",
   "activity-participation": [
-    "lesfmip",
-    "cmip"
+    "RAMIP",
+    "cmip",
+    "lesfmip"
   ],
   "cohort": "Published",
   "contributors": [],
   "label": "GISS-E2.1G",
   "label-extended": "GISS-E2.1G",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@lists.nasa.gov <- cmip-giss-l",
       "source-specific-info": ""
     }
@@ -53,8 +207,8 @@
     "giss-si"
   ],
   "name": "GISS-E2-1-G",
-  "organisation-id": [
-    "nasa-giss"
+  "organisation": [
+    "institutions/nasa-giss"
   ],
   "release-year": 2019
 }
@@ -70,7 +224,7 @@
   "label": "HadGEM3-GC31-LL",
   "label-extended": "HadGEM3-GC3.1-N96ORCA1",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@metoffice.gov.uk <- cmip6.hadgem3",
       "source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
     }
@@ -83,8 +237,8 @@
     "cice-hadgem3-gsi8"
   ],
   "name": "HadGEM3-GC31-LL",
-  "organisation-id": [
-    "mohc"
+  "organisation": [
+    "institutions/mohc"
   ],
   "release-year": 2016
 }
@@ -92,6 +246,7 @@
   "id": "miroc6",
   "type": "source",
   "activity-participation": [
+    "RAMIP",
     "cmip",
     "lesfmip"
   ],
@@ -100,7 +255,7 @@
   "label": "MIROC6",
   "label-extended": "MIROC6",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
       "source-specific-info": ""
     }
@@ -112,8 +267,8 @@
     "coco4.9"
   ],
   "name": "MIROC6",
-  "organisation-id": [
-    "miroc"
+  "organisation": [
+    "consortia/miroc"
   ],
   "release-year": 2017
 }
@@ -129,7 +284,7 @@
   "label": "MPI-ESM1.2-HR",
   "label-extended": "MPI-ESM1.2-HR",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
       "source-specific-info": ""
     }
@@ -144,8 +299,8 @@
     "unnamed"
   ],
   "name": "MPI-ESM1-2-HR",
-  "organisation-id": [
-    "mpi-m"
+  "organisation": [
+    "institutions/mpi-m"
   ],
   "release-year": 2017
 }
@@ -161,7 +316,7 @@
   "label": "MPI-ESM1-2-LR",
   "label-extended": "MPI-ESM1.2-LR",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
       "source-specific-info": ""
     }
@@ -176,15 +331,55 @@
     "unnamed"
   ],
   "name": "MPI-ESM1-2-LR",
-  "organisation-id": [
-    "mpi-m"
+  "organisation": [
+    "institutions/mpi-m"
   ],
   "release-year": 2017
+}
+    ,{
+  "activity_participation": [
+    "CMIP",
+    "RAMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "MRI-ESM2.0",
+  "release_year": "2017",
+  "source_id": "MRI-ESM2-0",
+  "id": "mri_esm2_0",
+  "type": "source",
+  "organisation": [
+    "institutions/mri"
+  ],
+  "model-component": [
+    "MASINGAR",
+    "MRI-AGCM3.5",
+    "MRI-CCM2.1",
+    "HAL",
+    "none",
+    "MRI.COM4.4",
+    "MRI.COM4.4",
+    "MRI.COM4.4"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
+      "source-specific-info": ""
+    }
+  },
+  "label-extended": "MRI-ESM2.0",
+  "activity-participation": [
+    "cmip",
+    "ramip"
+  ],
+  "name": "MRI-ESM2-0"
 }
     ,{
   "id": "noresm2_lm",
   "type": "source",
   "activity-participation": [
+    "RAMIP",
     "cmip",
     "lesfmip"
   ],
@@ -193,7 +388,7 @@
   "label": "NorESM2-LM",
   "label-extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
   "license": {
-    "cc-by-4.0": {
+    "cc_by_4.0": {
       "exceptions-contact": "@met.no <- noresm-ncc",
       "source-specific-info": ""
     }
@@ -209,10 +404,49 @@
     "cice"
   ],
   "name": "NorESM2-LM",
-  "organisation-id": [
-    "ncc"
+  "organisation": [
+    "consortia/ncc"
   ],
   "release-year": 2017
+}
+    ,{
+  "activity_participation": [
+    "CMIP",
+    "RAMIP"
+  ],
+  "cohort": [
+    "Published"
+  ],
+  "label": "UKESM1.0-LL",
+  "release_year": "2018",
+  "source_id": "UKESM1-0-LL",
+  "id": "ukesm1_0_ll",
+  "type": "source",
+  "organisation": [
+    "institutions/mohc"
+  ],
+  "model-component": [
+    "UKCA-GLOMAP-mode",
+    "MetUM-HadGEM3-GA7.1",
+    "UKCA-StratTrop",
+    "JULES-ES-1.0",
+    "none",
+    "NEMO-HadGEM3-GO6.0",
+    "MEDUSA2",
+    "CICE-HadGEM3-GSI8"
+  ],
+  "license": {
+    "cc_by_4.0": {
+      "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
+      "source-specific-info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
+    }
+  },
+  "label-extended": "UKESM1.0-N96ORCA1",
+  "activity-participation": [
+    "cmip",
+    "ramip"
+  ],
+  "name": "UKESM1-0-LL"
 }
   ]
 }

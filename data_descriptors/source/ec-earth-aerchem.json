@@ -13,7 +13,7 @@
     "id": "ec_earth_aerchem",
     "type": "source",
     "organisation": [
-        "ec-earth-consortium"
+        "consortia/ec-earth-consortium"
     ],
     "model-component": [
         "TM5",
@@ -26,7 +26,7 @@
         "LIM3"
     ],
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions_contact": "@ec-earth.org <- cmip6-data",
             "source-specific-info": ""
         }

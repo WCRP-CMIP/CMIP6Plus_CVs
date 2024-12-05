@@ -13,7 +13,7 @@
     "id": "mri_esm2_0",
     "type": "source",
     "organisation": [
-        "mri"
+        "institutions/mri"
     ],
     "model-component": [
         "MASINGAR",
@@ -26,7 +26,7 @@
         "MRI.COM4.4"
     ],
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
             "source-specific-info": ""
         }

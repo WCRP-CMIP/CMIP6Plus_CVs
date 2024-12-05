@@ -13,7 +13,7 @@
     "id": "cesm2",
     "type": "source",
     "organisation": [
-        "ncar"
+        "institutions/ncar"
     ],
     "model-component": [
         "MAM4",
@@ -26,7 +26,7 @@
         "CICE5.1"
     ],
     "license": {
-        "cc-by-4.0": {
+        "cc_by_4.0": {
             "exceptions_contact": "@ucar.edu <- cesm_cmip6",
             "source-specific-info": ""
         }
