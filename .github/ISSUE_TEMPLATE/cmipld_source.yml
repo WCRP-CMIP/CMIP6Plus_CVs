@@ -87,8 +87,8 @@ body:
 -   id: license
     attributes:
         label: License
-        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/>
-            https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/ </a>. '
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/license/>
+            https://wcrp-cmip.github.io/WCRP-universe/license/ </a>. '
     validations:
         required: true
     type: input

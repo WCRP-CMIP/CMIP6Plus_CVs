@@ -14,11 +14,11 @@
             },
             "mip_era": {
                 "@type": "@id",
-                "@context": "http://wcrp-cmip.github.io/WCRP-UNIVERSE/mip/_context_"
+                "@context": "http://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
             },
             "product": {
                 "@type": "@id",
-                "@context": "http://wcrp-cmip.github.io/WCRP-UNIVERSE/product/_context_"
+                "@context": "http://wcrp-cmip.github.io/WCRP-universe/product/_context_"
             },
             "required": {
                 "@type": "@id",

@@ -85,8 +85,8 @@
         },
         "license": {
             "type": "object",
-            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/> https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/ </a>. ",
-            "$ref": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/license/_schema_#/contains"
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/license/> https://wcrp-cmip.github.io/WCRP-universe/license/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/license/_schema_#/contains"
         },
         "label-extended": {
             "type": "string",
@@ -95,8 +95,8 @@
         },
         "activity-participation": {
             "type": "array",
-            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-UNIVERSE/activity/> https://wcrp-cmip.github.io/WCRP-UNIVERSE/activity/ </a>. ",
-            "$ref": "https://wcrp-cmip.github.io/WCRP-UNIVERSE/activity/_schema_#/contains"
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
         },
         "name": {
             "type": "string",
