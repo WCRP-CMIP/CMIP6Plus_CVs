@@ -1,0 +1,44 @@
+{
+    "description": "ramp up with constant CO2 emissions",
+    "tier": 1,
+    "@context": "_context_",
+    "id": "esm-up2p0",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "bgc": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        }
+    },
+    "name": "esm-up2p0",
+    "parameters": {
+        "end": "",
+        "start": "",
+        "min_number_yrs_per_sim": 215,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "esm-piControl"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "tipmip"
+    ],
+    "experiment_description": "ramp up simulation with constant CO2 emissions yielding a warming of approximately 2 K/century (see TIPMIP experiment protocol for details)"
+}

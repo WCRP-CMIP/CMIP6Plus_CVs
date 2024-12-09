@@ -1,0 +1,34 @@
+{
+    "@context": "_context_",
+    "id": "miroc6",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "activity-participation": [
+        "RAMIP",
+        "cmip",
+        "lesfmip"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "label": "MIROC6",
+    "label-extended": "MIROC6",
+    "license": {
+        "cc_by_4.0": {
+            "exceptions-contact": "@jamstec.go.jp <- miroc-cmip6",
+            "source-specific-info": ""
+        }
+    },
+    "model-component": [
+        "sprintars6.0",
+        "ccsr-agcm",
+        "matsiro6.0",
+        "coco4.9"
+    ],
+    "name": "MIROC6",
+    "organisation": [
+        "consortia/miroc"
+    ],
+    "release-year": 2017
+}

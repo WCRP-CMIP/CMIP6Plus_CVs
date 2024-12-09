@@ -1,0 +1,10 @@
+{
+    "@context": "_context_",
+    "id": "none",
+    "type": [
+        "wcrp:sub_experiment",
+        "cmip6plus"
+    ],
+    "description": "none",
+    "name": "none"
+}

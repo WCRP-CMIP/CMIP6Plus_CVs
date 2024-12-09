@@ -1,0 +1,44 @@
+{
+    "description": "SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
+    "tier": "2",
+    "@context": "_context_",
+    "id": "ssp370-saf126ca",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "name": "ssp370-saf126ca",
+    "parameters": {
+        "end": "2051",
+        "start": "2015",
+        "min_number_yrs_per_sim": 37,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "historical"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "ramip"
+    ],
+    "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over sub-Saharan Africa."
+}

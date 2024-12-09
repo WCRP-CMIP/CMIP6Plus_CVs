@@ -1,0 +1,43 @@
+{
+    "@context": "_context_",
+    "id": "fut_ghg",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "lesfmip"
+    ],
+    "description": "As hist-GHG but with updated forcings",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "name": "fut-GHG",
+    "parameters": {
+        "end": 2024,
+        "min-number-yrs-per-sim": 0,
+        "start": 2015,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        "lesfmip"
+    ],
+    "parent_experiment": [
+        "hist-ghg"
+    ],
+    "sub_experiment": [
+        "f2023"
+    ],
+    "tier": 2
+}
