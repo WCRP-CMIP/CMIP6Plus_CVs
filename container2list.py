@@ -1,7 +1,7 @@
 import glob,json
 
 
-files = glob.glob("data_descriptors/*/*.json")
+files = glob.glob("src-data/*/*.json")
 
 for f in files:
     print(f)

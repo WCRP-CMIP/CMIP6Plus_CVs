@@ -1,0 +1,36 @@
+{
+    "@context": "_context_",
+    "id": "mpi-esm1-2-lr",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "activity-participation": [
+        "cmip",
+        "lesfmip"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "label": "MPI-ESM1-2-LR",
+    "label-extended": "MPI-ESM1.2-LR",
+    "license": {
+        "cc_by_4.0": {
+            "exceptions-contact": "@dkrz.de <- cmip6-mpi-esm",
+            "source-specific-info": ""
+        }
+    },
+    "model-component": [
+        ",-prescribed-macv2-sp",
+        "echam6.3",
+        "jsbach3.20",
+        "prescribed",
+        "mpiom1.63",
+        "hamocc6",
+        "unnamed"
+    ],
+    "name": "MPI-ESM1-2-LR",
+    "organisation": [
+        "institutions/mpi-m"
+    ],
+    "release-year": 2017
+}

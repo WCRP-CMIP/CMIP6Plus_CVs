@@ -1,0 +1,163 @@
+{
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "description": "Context identifier, typically set to '_context_'"
+        },
+        "id": {
+            "type": "string",
+            "description": "Unique identifier for the experiment",
+            "pattern": "^[a-z0-9_]+$"
+        },
+        "type": {
+            "type": "string",
+            "description": "Type of the entry",
+            "enum": [
+                "experiment"
+            ]
+        },
+        "activity": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
+        },
+        "description": {
+            "type": "string",
+            "description": "Detailed description of the experiment",
+            "minLength": 5
+        },
+        "model_realms": {
+            "type": "object",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/source_type/> https://wcrp-cmip.github.io/WCRP-universe/source_type/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/source_type/_schema_#/contains"
+        },
+        "name": {
+            "type": "string",
+            "description": "Human-readable name of the experiment",
+            "pattern": "^[a-zA-Z0-9-]+$"
+        },
+        "parameters": {
+            "type": "object",
+            "description": "Additional parameters for the experiment",
+            "properties": {
+                "end": {
+                    "type": "number",
+                    "description": "End parameter for the experiment"
+                },
+                "min-number-yrs-per-sim": {
+                    "type": "integer",
+                    "description": "Minimum number of years per simulation",
+                    "minimum": 0
+                },
+                "start": {
+                    "type": "number",
+                    "description": "Start parameter for the experiment"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier for additional parameters"
+                }
+            },
+            "required": [
+                "end",
+                "min-number-yrs-per-sim",
+                "start",
+                "id"
+            ]
+        },
+        "parent_activity": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
+        },
+        "parent_experiment": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/> https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_schema_#/contains"
+        },
+        "sub_experiment": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/> https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/_schema_#/contains"
+        },
+        "tier": {
+            "type": "integer",
+            "description": "Tier level of the experiment",
+            "minimum": 1,
+            "maximum": 3
+        }
+    },
+    "required": [
+        "@context",
+        "id",
+        "type",
+        "activity",
+        "description",
+        "model_realms",
+        "name",
+        "parameters",
+        "parent_activity",
+        "parent_experiment",
+        "sub_experiment",
+        "tier"
+    ],
+    "additionalProperties": false,
+    "id": "experiment",
+    "contains": {
+        "type": "string",
+        "enum": [
+            "1pctco2",
+            "abrupt_4xco2",
+            "amip",
+            "esm-up2p0",
+            "esm-up2p0-gwl2p0",
+            "esm-up2p0-gwl2p0-50y-dn2p0",
+            "esm-up2p0-gwl4p0",
+            "esm-up2p0-gwl4p0-50y-dn2p0",
+            "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+            "esm_hist",
+            "esm_picontrol",
+            "esm_picontrol_spinup",
+            "fut_aer",
+            "fut_ghg",
+            "fut_lu",
+            "fut_sol",
+            "fut_totalo3",
+            "fut_volc",
+            "hist_aer",
+            "hist_ghg",
+            "hist_lu",
+            "hist_nat",
+            "hist_nolu",
+            "hist_piaer",
+            "hist_pighg",
+            "hist_pisol",
+            "hist_pitotalo3",
+            "hist_pivolc",
+            "hist_sol",
+            "hist_totalo3",
+            "hist_volc",
+            "historical",
+            "piclim-370",
+            "piclim-370-126aer",
+            "piclim-370-126aer_nh3nox",
+            "piclim-370-afr126aer",
+            "piclim-370-eas126aer",
+            "piclim-370-nae126aer",
+            "piclim-370-sas126aer",
+            "picontrol",
+            "picontrol_spinup",
+            "ssp370-126aer",
+            "ssp370-126aer_nh3nox",
+            "ssp370-afr126aer",
+            "ssp370-asia126aer",
+            "ssp370-eas126aer",
+            "ssp370-nae126aer",
+            "ssp370-saf126ca",
+            "ssp370-sas126aer",
+            "ssp370-sas126ca"
+        ]
+    },
+    "base": "https://github.com/wcrp-cmip/CMIP6Plus_CVs/tree/main/src-data/experiment/"
+}

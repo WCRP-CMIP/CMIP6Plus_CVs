@@ -1,0 +1,2151 @@
+{
+  "@context": {
+  "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
+  "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
+  "id": "@id",
+  "type": "@type",
+  "cf": "https://wcrp-cmip.github.io/CF/",
+  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
+  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+  "variables": "https://wcrp-cmip.github.io/MIP-variables/",
+  "activity": {
+    "@type": "@id",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+  },
+  "model_realms": {
+    "@container": "@id",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/source_type/_context_"
+  },
+  "parent_activity": {
+    "@type": "@id",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+  },
+  "parent_experiment": {
+    "@type": "@id",
+    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_context_"
+  },
+  "sub_experiment": {
+    "@type": "@id",
+    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/_context_"
+  }
+},
+  "@graph": [
+    {
+  "id": "1pctco2",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: 1pctCO2",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "1pctCO2",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 150,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "abrupt_4xco2",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: abrupt-4xCO2",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "abrupt-4xCO2",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 150,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "amip",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: AMIP",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "amip",
+  "parameters": {
+    "end": 2022,
+    "min-number-yrs-per-sim": 43,
+    "start": 1979,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "none"
+  ],
+  "parent_experiment": [
+    "none"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "description": "ramp down after temporary overshoot to GWL2",
+  "tier": 1,
+  "id": "esm-up2p0-gwl2p0-50y-dn2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl2p0-50y-dn2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 100,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "tipmip"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl2p0 after 50 years"
+}
+    ,{
+  "description": "stabilisation at GWL2",
+  "tier": 1,
+  "id": "esm-up2p0-gwl2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "tipmip"
+  ],
+  "parent_experiment": [
+    "esm-up2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0"
+}
+    ,{
+  "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "tipmip"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl4p0-50y-dn2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-gwl4p0-50y-dn2p0"
+}
+    ,{
+  "description": "ramp down after temporary overshoot to GWL4",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0-50y-dn2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0-50y-dn2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 200,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "tipmip"
+  ],
+  "parent_experiment": [
+    "esm-up2p0-gwl4p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl4p0 after 50 years "
+}
+    ,{
+  "description": "stabilisation at GWL4",
+  "tier": 1,
+  "id": "esm-up2p0-gwl4p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0-gwl4p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "tipmip"
+  ],
+  "parent_experiment": [
+    "esm-up2p0"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "zero CO2 emissions simulation starting at global warming level of 4K, branching off from esm-up2p0"
+}
+    ,{
+  "description": "ramp up with constant CO2 emissions",
+  "tier": 1,
+  "id": "esm-up2p0",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-up2p0",
+  "parameters": {
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 215,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "esm-piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "tipmip"
+  ],
+  "experiment_description": "ramp up simulation with constant CO2 emissions yielding a warming of approximately 2 K/century (see TIPMIP experiment protocol for details)"
+}
+    ,{
+  "id": "esm_hist",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "CMIP6 historical (CO2 emission-driven)",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-hist",
+  "parameters": {
+    "end": 2014,
+    "min-number-yrs-per-sim": 165,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "esm-picontrol"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "esm_picontrol",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: control (emission-driven)",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-piControl",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 500,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "esm-picontrol-spinup"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "esm_picontrol_spinup",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: spin-up portion of the control (emission-driven)",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "bgc": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    }
+  },
+  "name": "esm-piControl-spinup",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 100,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "none"
+  ],
+  "parent_experiment": [
+    "none"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_aer",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-aer but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-Aer",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-aer"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_ghg",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-GHG but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-GHG",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-ghg"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_lu",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-lu but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-lu",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_sol",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-sol but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-sol",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-sol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_totalo3",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-totalO3 but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-totalO3",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-totalo3"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "fut_volc",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "As hist-volc but with updated forcings",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "fut-volc",
+  "parameters": {
+    "end": 2024,
+    "min-number-yrs-per-sim": 0,
+    "start": 2015,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "lesfmip"
+  ],
+  "parent_experiment": [
+    "hist-volc"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 2
+}
+    ,{
+  "id": "hist_aer",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Anthropogenic-aerosol-only historical simulations",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-aer",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "hist_ghg",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Well-mixed greenhouse-gas-only historical simulations",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-GHG",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "hist_lu",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Historical simulations with only land use changes",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-lu",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "hist_nat",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Natural forcings (solar + volcanic)",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-nat",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_nolu",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-noLu",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_piaer",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-piAer",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_pighg",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-piGHG",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_pisol",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "historical simulations with 1850 solar forcing",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-piSol",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_pitotalo3",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "historical simulations with 1850 total ozone",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-piTotalO3",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_pivolc",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "historical simulations with 1850 volcanic emissions",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-piVolc",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 3
+}
+    ,{
+  "id": "hist_sol",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Solar-only historical simulations",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-sol",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "hist_totalo3",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Ozone-only historical simulations",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-totalO3",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "hist_volc",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "lesfmip"
+  ],
+  "description": "Volcanic-only historical simulations",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "hist-volc",
+  "parameters": {
+    "end": 2020,
+    "min-number-yrs-per-sim": 0,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "f2023"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "historical",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "CMIP6 historical",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "historical",
+  "parameters": {
+    "end": 2014,
+    "min-number-yrs-per-sim": 165,
+    "start": 1850,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-126aer_nh3nox",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-126aer_nh3nox",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-afr126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-afr126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over Africa and the Middle East are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-eas126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-eas126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-nae126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-nae126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over North America and Europe are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370-sas126aer",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370-sas126aer",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0."
+}
+    ,{
+  "description": "",
+  "id": "piclim-370",
+  "model_realms": {
+    "agcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": true
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piClim-370",
+  "parameters": {
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "piControl"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions from SSP3-7.0."
+}
+    ,{
+  "id": "picontrol",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: control",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piControl",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 500,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "picontrol-spinup"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 1
+}
+    ,{
+  "id": "picontrol_spinup",
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "cmip"
+  ],
+  "description": "DECK: spin-up portion of the control",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "piControl-spinup",
+  "parameters": {
+    "end": -999,
+    "min-number-yrs-per-sim": 100,
+    "start": -999,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "none"
+  ],
+  "parent_experiment": [
+    "none"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "tier": 2
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with anthropogenic aerosol and precursor emissions taken from SSP1-2.6.",
+  "tier": 1,
+  "id": "ssp370-126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions"
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
+  "tier": "2",
+  "id": "ssp370-126aer_nh3nox",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-126aer_nh3nox",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx."
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
+  "tier": 1,
+  "id": "ssp370-afr126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-afr126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Africa and the Middle East"
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Asia is defined as the combination of the East Asian and South Asian regions used in ssp370-eas126aer and ssp370-sas126aer. ",
+  "tier": "2",
+  "id": "ssp370-asia126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-asia126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Asia."
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
+  "tier": 1,
+  "id": "ssp370-eas126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-eas126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia"
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
+  "tier": 1,
+  "id": "ssp370-nae126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-nae126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe"
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
+  "tier": "2",
+  "id": "ssp370-saf126ca",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-saf126ca",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over sub-Saharan Africa."
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+  "tier": 1,
+  "id": "ssp370-sas126aer",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-sas126aer",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia"
+}
+    ,{
+  "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+  "tier": "2",
+  "id": "ssp370-sas126ca",
+  "model_realms": {
+    "aogcm": {
+      "is_required": true
+    },
+    "aer": {
+      "is_required": false
+    },
+    "chem": {
+      "is_required": false
+    },
+    "bgc": {
+      "is_required": false
+    }
+  },
+  "name": "ssp370-sas126ca",
+  "parameters": {
+    "end": "2051",
+    "start": "2015",
+    "min_number_yrs_per_sim": 37,
+    "id": "additional_parameters"
+  },
+  "parent_activity": [
+    "cmip"
+  ],
+  "parent_experiment": [
+    "historical"
+  ],
+  "sub_experiment": [
+    "none"
+  ],
+  "type": [
+    "wcrp:experiment",
+    "cmip6plus"
+  ],
+  "activity": [
+    "ramip"
+  ],
+  "experiment_description": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia."
+}
+  ]
+}
