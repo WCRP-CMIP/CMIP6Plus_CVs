@@ -1,0 +1,43 @@
+{
+    "@context": "_context_",
+    "id": "esm_hist",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "cmip"
+    ],
+    "description": "CMIP6 historical (CO2 emission-driven)",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "bgc": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        }
+    },
+    "name": "esm-hist",
+    "parameters": {
+        "end": 2014,
+        "min-number-yrs-per-sim": 165,
+        "start": 1850,
+        "id": "additional_parameters"
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "esm-picontrol"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "tier": 1
+}

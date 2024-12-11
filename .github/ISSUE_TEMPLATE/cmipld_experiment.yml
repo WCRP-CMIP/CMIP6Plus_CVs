@@ -1,0 +1,165 @@
+name: 'Add/Modify: Experiment'
+description: 'Type: experiment'
+title: 'Add/Modify: Experiment: <enter item name>'
+labels:
+- delta
+- experiment
+body:
+-   type: markdown
+    attributes:
+        value: Please fill in the form below.
+-   id: '@context'
+    attributes:
+        label: '@Context'
+        description: Context identifier, typically set to '_context_'
+    validations:
+        required: true
+    type: input
+-   id: activity
+    attributes:
+        label: Activity
+        description: Enter the activity
+        options:
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
+    validations:
+        required: true
+    type: dropdown
+-   id: description
+    attributes:
+        label: Description
+        description: Detailed description of the experiment
+    validations:
+        required: true
+    type: input
+-   id: model_realms
+    attributes:
+        label: Model Realms
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/source_type/>
+            https://wcrp-cmip.github.io/WCRP-universe/source_type/ </a>. '
+    validations:
+        required: true
+    type: input
+-   id: name
+    attributes:
+        label: Name
+        description: Human-readable name of the experiment
+    validations:
+        required: true
+    type: input
+-   id: parameters
+    attributes:
+        label: Parameters
+        description: Additional parameters for the experiment
+    validations:
+        required: true
+    type: input
+-   id: parent_activity
+    attributes:
+        label: Parent Activity
+        description: Enter the parent activity
+        options:
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
+    validations:
+        required: true
+    type: dropdown
+-   id: parent_experiment
+    attributes:
+        label: Parent Experiment
+        description: Enter the parent experiment
+        options:
+        - 1pctco2
+        - abrupt_4xco2
+        - amip
+        - esm-up2p0
+        - esm-up2p0-gwl2p0
+        - esm-up2p0-gwl2p0-50y-dn2p0
+        - esm-up2p0-gwl4p0
+        - esm-up2p0-gwl4p0-50y-dn2p0
+        - esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0
+        - esm_hist
+        - esm_picontrol
+        - esm_picontrol_spinup
+        - fut_aer
+        - fut_ghg
+        - fut_lu
+        - fut_sol
+        - fut_totalo3
+        - fut_volc
+        - hist_aer
+        - hist_ghg
+        - hist_lu
+        - hist_nat
+        - hist_nolu
+        - hist_piaer
+        - hist_pighg
+        - hist_pisol
+        - hist_pitotalo3
+        - hist_pivolc
+        - hist_sol
+        - hist_totalo3
+        - hist_volc
+        - historical
+        - piclim-370
+        - piclim-370-126aer
+        - piclim-370-126aer_nh3nox
+        - piclim-370-afr126aer
+        - piclim-370-eas126aer
+        - piclim-370-nae126aer
+        - piclim-370-sas126aer
+        - picontrol
+        - picontrol_spinup
+        - ssp370-126aer
+        - ssp370-126aer_nh3nox
+        - ssp370-afr126aer
+        - ssp370-asia126aer
+        - ssp370-eas126aer
+        - ssp370-nae126aer
+        - ssp370-saf126ca
+        - ssp370-sas126aer
+        - ssp370-sas126ca
+    validations:
+        required: true
+    type: dropdown
+-   id: sub_experiment
+    attributes:
+        label: Sub Experiment
+        description: Enter the sub experiment
+        options:
+        - f2023
+        - none
+    validations:
+        required: true
+    type: dropdown
+-   id: tier
+    attributes:
+        label: Tier
+        description: Tier level of the experiment
+    validations:
+        required: true
+    type: input
