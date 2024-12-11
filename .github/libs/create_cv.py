@@ -143,12 +143,14 @@ CV.update(Additional)
 # read from mip tables
 ###################################
 
+remote_reference = 'refs/tags/v6.5.0.2'
+
 
 for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 
-    CV.update(read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}{key}.json'))
+    CV.update(read_json_from_github('PCMDI', mip_tables,remote_reference, f'{table_prefix}{key}.json'))
 
-institutions = {**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}institutions.json')['institutions'],**read_json_from_github('PCMDI', mip_tables, 'main', f'{table_prefix}consortiums.json')}
+institutions = {**read_json_from_github('PCMDI', mip_tables, remote_reference, f'{table_prefix}institutions.json')['institutions'],**read_json_from_github('PCMDI', mip_tables, remote_reference, f'{table_prefix}consortiums.json')}
 
 def mapinst(i):
     if i in institutions:
