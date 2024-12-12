@@ -1,0 +1,102 @@
+{
+    "repo": {
+        "mipera": "CMIP6Plus",
+        "repo": "CMIP6Plus_CVs",
+        "url": "git@github.com:WCRP-CMIP/CMIP6Plus_CVs.git",
+        "version": "v6.5.1.4"
+    },
+    "changelog": {
+        "last_changed": "2024/12/12 11:32 UTC",
+        "comment": [
+            "",
+            "",
+            "## Version Updated: v6.5.1.4 \u2192 v6.5.1.4",
+            "",
+            ">> \\` v{w}.{x}.{y}.{z} \\`",
+            "For further information: [see the wiki](https://wiki.mipcvs.dev)",
+            "",
+            " "
+        ]
+    },
+    "source_id": {
+        "counts": 12,
+        "keys": [
+            "CESM2",
+            "CNRM-ESM2-1",
+            "CanESM5-1",
+            "EC-Earth-AerChem",
+            "GISS-E2-1-G",
+            "HadGEM3-GC31-LL",
+            "MIROC6",
+            "MPI-ESM1-2-HR",
+            "MPI-ESM1-2-LR",
+            "MRI-ESM2-0",
+            "NorESM2-LM",
+            "UKESM1-0-LL"
+        ]
+    },
+    "experiment_id": {
+        "counts": 50,
+        "keys": [
+            "1pctCO2",
+            "abrupt-4xCO2",
+            "amip",
+            "esm-hist",
+            "esm-piControl",
+            "esm-piControl-spinup",
+            "esm-up2p0",
+            "esm-up2p0-gwl2p0",
+            "esm-up2p0-gwl2p0-50y-dn2p0",
+            "esm-up2p0-gwl4p0",
+            "esm-up2p0-gwl4p0-50y-dn2p0",
+            "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+            "fut-Aer",
+            "fut-GHG",
+            "fut-lu",
+            "fut-sol",
+            "fut-totalO3",
+            "fut-volc",
+            "hist-GHG",
+            "hist-aer",
+            "hist-lu",
+            "hist-nat",
+            "hist-noLu",
+            "hist-piGHG",
+            "hist-piAer",
+            "hist-piSol",
+            "hist-piTotalO3",
+            "hist-piVolc",
+            "hist-sol",
+            "hist-totalO3",
+            "hist-volc",
+            "historical",
+            "piClim-370",
+            "piClim-370-126aer",
+            "piClim-370-eas126aer",
+            "piClim-370-sas126aer",
+            "piClim-370-afr126aer",
+            "piClim-370-nae126aer",
+            "piClim-370-126aer-nh3nox",
+            "piControl",
+            "piControl-spinup",
+            "ssp370-126aer",
+            "ssp370-eas126aer",
+            "ssp370-sas126aer",
+            "ssp370-afr126aer",
+            "ssp370-nae126aer",
+            "ssp370-asia126aer",
+            "ssp370-saf126ca",
+            "ssp370-sas126ca",
+            "ssp370-126aer_nh3nox"
+        ]
+    },
+    "activity_id": {
+        "counts": 4,
+        "keys": [
+            "CMIP",
+            "LESFMIP",
+            "RAMIP",
+            "TIPMIP"
+        ]
+    }
+}
