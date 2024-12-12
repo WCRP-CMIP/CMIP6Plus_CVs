@@ -1384,12 +1384,19 @@
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
         ],
         "institution_id": {
+            "CCCma": "026ny0e17 - Environment and Climate Change Canada",
+            "CNRM-CERFACS": "CNRM-CERFACS - CNRM-CERFACS [consortium]",
+            "EC-Earth-Consortium": "EC-Earth-Consortium - EC-Earth-Consortium [consortium]",
             "MIROC": "MIROC - MIROC [consortium]",
             "MOHC": "Met Office Hadley Centre",
             "MPI-M": "05esem239 - Max Planck Institute for Meteorology",
+            "MRI": "02772kk97 - Japan Meteorological Agency",
             "NASA-GISS": "01cyfxe35 - Goddard Institute for Space Studies",
+            "NCAR": "05cvfcr44 - National Center for Atmospheric Research",
             "NCC": "NCC - NCC [consortium]",
-            "NERC": "02b5d8509 - Natural Environment Research Council"
+            "NERC": "02b5d8509 - Natural Environment Research Council",
+            "NIMS-KMA": "NIMS-KMA - NIMS-KMA [consortium]",
+            "NIWA": "04hxcaz34 - National Institute of Water and Atmospheric Research"
         },
         "license": [
             "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
@@ -1460,10 +1467,99 @@
             "variant_label"
         ],
         "source_id": {
+            "CESM2": {
+                "activity_participation": [
+                    "CMIP",
+                    "RAMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "NCAR"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@ucar.edu <- cesm_cmip6",
+                    "history": "2019-02-18: initially published under CC BY-SA 4.0; 2022-06-16: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "CESM2",
+                "source": "CESM2 (2018): \naerosol: MAM4 (same grid as atmos)\natmos: CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb)\natmosChem: MAM4 (same grid as atmos)\nland: CLM5 (same grid as atmos)\nlandIce: CISM2.1\nocean: POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)\nocnBgchem: MARBL (same grid as ocean)\nseaIce: CICE5.1 (same grid as ocean))"
+            },
+            "CNRM-ESM2-1": {
+                "activity_participation": [
+                    "CMIP",
+                    "RAMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "CNRM-CERFACS"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@meteo.fr <- contact.cmip",
+                    "history": "2018-09-14: initially published under CC BY-NC-SA 4.0; 2022-06-17: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "CNRM-ESM2-1",
+                "source": "CNRM-ESM2-1 (2017): \naerosol: TACTIC_v2\natmos: Arpege 6.3 (T127; Gaussian Reduced with 24572 grid points in total distributed over 128 latitude circles (with 256 grid points per latitude circle between 30degN and 30degS reducing to 20 grid points per latitude circle at 88.9degN and 88.9degS); 91 levels; top level 78.4 km)\natmosChem: REPROBUS-C_v2\nland: Surfex 8.0c\nlandIce: none\nocean: Nemo 3.6 (eORCA1, tripolar primarily 1deg; 362 x 294 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: Pisces 2.s\nseaIce: Gelato 6.1)"
+            },
+            "CanESM5-1": {
+                "activity_participation": [
+                    "CMIP",
+                    "LESFMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "CCCma"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
+                    "history": "2022-12-02: initially published under CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "CanESM5-1",
+                "source": "CanESM5-1 (2022): \naerosol: interactive\natmos: CanAM5.1 (T63L49 native atmosphere, T63 Linear Gaussian Grid; 128 x 64 longitude/latitude; 49 levels; top level 1 hPa)\natmosChem: specified oxidants for aerosols\nland: CLASS3.6/CTEM1.2\nlandIce: specified ice sheets\nocean: NEMO3.4.1 (ORCA1 tripolar grid, 1 deg with refinement to 1/3 deg within 20 degrees of the equator; 361 x 290 longitude/latitude; 45 vertical levels; top grid cell 0-6.19 m)\nocnBgchem: Canadian Model of Ocean Carbon (CMOC); NPZD ecosystem with OMIP prescribed carbonate chemistry\nseaIce: LIM2)"
+            },
+            "EC-Earth-AerChem": {
+                "activity_participation": [
+                    "CMIP",
+                    "RAMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "EC-Earth-Consortium"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@ec-earth.org <- cmip6-data",
+                    "history": "2020-06-22: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "EC-Earth3-AerChem",
+                "source": "EC-Earth3-AerChem (2019): \naerosol: TM5 (3 x 2 degrees; 120 x 90 longitude/latitude; 34 levels; top level: 0.1 hPa)\natmos: IFS cy36r4 (TL255, linearly reduced Gaussian grid equivalent to 512 x 256 longitude/latitude; 91 levels; top level 0.01 hPa)\natmosChem: TM5 (3 x 2 degrees; 120 x 90 longitude/latitude; 34 levels; top level: 0.1 hPa)\nland: HTESSEL (land surface scheme built in IFS)\nlandIce: none\nocean: NEMO3.6 (ORCA1 tripolar primarily 1 degree with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: LIM3)"
+            },
             "GISS-E2-1-G": {
                 "activity_participation": [
                     "LESFMIP",
-                    "CMIP"
+                    "CMIP",
+                    "RAMIP"
                 ],
                 "cohort": [
                     "Published"
@@ -1507,7 +1603,8 @@
             "MIROC6": {
                 "activity_participation": [
                     "CMIP",
-                    "LESFMIP"
+                    "LESFMIP",
+                    "RAMIP"
                 ],
                 "cohort": [
                     "Published"
@@ -1567,10 +1664,33 @@
                 "source_id": "MPI-ESM1-2-LR",
                 "source": "MPI-ESM1-2-LR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
             },
+            "MRI-ESM2-0": {
+                "activity_participation": [
+                    "CMIP",
+                    "RAMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "MRI"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
+                    "history": "2019-02-22: initially published under CC BY-SA 4.0; 2022-08-07: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "MRI-ESM2-0",
+                "source": "MRI-ESM2-0 (2017): \naerosol: MASINGAR mk2r4 (TL95; 192 x 96 longitude/latitude; 80 levels; top level 0.01 hPa)\natmos: MRI-AGCM3.5 (TL159; 320 x 160 longitude/latitude; 80 levels; top level 0.01 hPa)\natmosChem: MRI-CCM2.1 (T42; 128 x 64 longitude/latitude; 80 levels; top level 0.01 hPa)\nland: HAL 1.0\nlandIce: none\nocean: MRI.COM4.4 (tripolar primarily 0.5 deg latitude/1 deg longitude with meridional refinement down to 0.3 deg within 10 degrees north and south of the equator; 360 x 364 longitude/latitude; 61 levels; top grid cell 0-2 m)\nocnBgchem: MRI.COM4.4\nseaIce: MRI.COM4.4)"
+            },
             "NorESM2-LM": {
                 "activity_participation": [
                     "CMIP",
-                    "LESFMIP"
+                    "LESFMIP",
+                    "RAMIP"
                 ],
                 "cohort": [
                     "Published"
@@ -1587,6 +1707,31 @@
                 },
                 "source_id": "NorESM2-LM",
                 "source": "NorESM2-LM (2017): \naerosol: OsloAero\natmos: CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)\natmosChem: OsloChemSimp\nland: CLM\nlandIce: CISM\nocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])\nocnBgchem: HAMOCC\nseaIce: CICE)"
+            },
+            "UKESM1-0-LL": {
+                "activity_participation": [
+                    "CMIP",
+                    "RAMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "MOHC",
+                    "NERC",
+                    "NIMS-KMA",
+                    "NIWA"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
+                    "history": "2019-04-04: initially published under CC BY-SA 4.0; 2021-11-15: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "UKESM1-0-LL",
+                "source": "UKESM1-0-LL (2018): \naerosol: UKCA-GLOMAP-mode\natmos: MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)\natmosChem: UKCA-StratTrop\nland: JULES-ES-1.0\nlandIce: none\nocean: NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: MEDUSA2\nseaIce: CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude))"
             }
         },
         "source_type": [
@@ -1692,12 +1837,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Dec 12 2024 11:13 UTC",
+            "file_updated": "Thu Dec 12 2024 11:21 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-12-12T11:13:24Z",
+                "updated": "2024-12-12T11:20:47Z",
                 "tag": "v6.5.1.4",
-                "commit": "ce49d479a938385979120dcb0e1dd9dd074e5af7"
+                "commit": "16a80173350fa01351559a94aec075eafcc39664"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
