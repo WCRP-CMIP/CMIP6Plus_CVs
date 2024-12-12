@@ -944,6 +944,202 @@
             ],
             "tier": 1
         },
+        "piClim-370":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end":"2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions from SSP3-7.0.",
+            "experiment_id":"piClim-370",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end":"2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-126aer",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-eas126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end": "2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-eas126aer",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-sas126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end": "2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-sas126aer",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start":"2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-afr126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end": "2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over Africa and the Middle East are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-afr126aer",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-nae126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end": "2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over North America and Europe are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-nae126aer",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
+        "piClim-370-126aer-nh3nox":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "CHEM",
+                "BGC"
+            ],
+            "description": "",
+            "end": "2080",
+            "experiment":"pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+            "experiment_id":"piClim-370-126aer-nh3nox",
+            "min_number_yrs_per_sim": 30,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "piControl"
+            ],
+            "required_model_components":[
+                "AGCM",
+                "AER"
+            ],
+            "start": "2050",
+            "sub_experiment_id":[
+                "none"
+            ]
+        },
         "piControl": {
             "activity_id": [
                 "CMIP"
@@ -1001,6 +1197,267 @@
                 "none"
             ],
             "tier": 2
+        },
+        "ssp370-126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with anthropogenic aerosol and precursor emissions taken from SSP1-2.6.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions",
+            "experiment_id":"ssp370-126aer",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":1
+        },
+        "ssp370-eas126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia",
+            "experiment_id":"ssp370-eas126aer",
+            "min_number_yrs_per_sim":37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":1
+        },
+        "ssp370-sas126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia",
+            "experiment_id":"ssp370-sas126aer",
+            "min_number_yrs_per_sim":37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier": 1
+        },
+        "ssp370-afr126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Africa and the Middle East",
+            "experiment_id":"ssp370-afr126aer",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier": 1
+        },
+         "ssp370-nae126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe",
+            "experiment_id":"ssp370-nae126aer",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier": 1
+        },
+        "ssp370-asia126aer":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Asia is defined as the combination of the East Asian and South Asian regions used in ssp370-eas126aer and ssp370-sas126aer. ",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Asia.",
+            "experiment_id":"ssp370-asia126aer",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":"2"
+        },
+        "ssp370-saf126ca":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over sub-Saharan Africa.",
+            "experiment_id":"ssp370-saf126ca",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":"2"
+        },
+        "ssp370-sas126ca":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia.",
+            "experiment_id":"ssp370-sas126ca",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":"2"
+        },
+        "ssp370-126aer_nh3nox":{
+            "activity_id":[
+                "RAMIP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
+            "end":"2051",
+            "experiment":"SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx.",
+            "experiment_id":"ssp370-126aer_nh3nox",
+            "min_number_yrs_per_sim": 37,
+            "parent_activity_id":[
+                "CMIP"
+            ],
+            "parent_experiment_id":[
+                "historical"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"2015",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":"2"
         }
     }
 }

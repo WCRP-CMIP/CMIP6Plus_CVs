@@ -144,7 +144,6 @@ CV.update(Additional)
 ###################################
 
 remote_reference = 'refs/tags/v6.5.0.2'
-
 for key in 'source_type frequency realm grid_label nominal_resolution'.split():
 
     CV.update(read_json_from_github('PCMDI', mip_tables, remote_reference, f'{table_prefix}{key}.json'))
