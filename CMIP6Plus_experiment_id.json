@@ -9,8 +9,8 @@
         "file": {
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
-            "experiment_id_note": "Added TIPMIP and RAMIP experiments",
-            "checksum": "md5: 7532f80137072aec5a219d4c6a9faa9e"
+            "experiment_id_note": "Added TIPMIP Tier 2 experiments",
+            "checksum": "md5: 6b51ed32e802975d3d38783f99958d97"
         },
         "author": "Matthew Mizielinski",
         "institution_id": "MOHC"
@@ -219,6 +219,35 @@
             ],
             "tier": 1
         },
+        "esm-up2p0-gwl1p5": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL1.5",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 1.5K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl1p5",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
         "esm-up2p0-gwl2p0": {
             "activity_id": [
                 "TIPMIP"
@@ -247,6 +276,64 @@
                 "none"
             ],
             "tier": 1
+        },
+        "esm-up2p0-gwl3p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL3",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 3K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl3p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl5p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL5",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 5K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl5p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
         },
         "esm-up2p0-gwl2p0-50y-dn2p0": {
             "activity_id": [
