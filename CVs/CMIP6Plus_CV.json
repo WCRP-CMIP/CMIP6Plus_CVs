@@ -252,58 +252,6 @@
                 ],
                 "tier": 1
             },
-            "esm-up2p0-gwl3p0": {
-                "activity_id": [
-                    "TIPMIP"
-                ],
-                "additional_allowed_model_components": [
-                    "AER",
-                    "CHEM"
-                ],
-                "description": "stabilisation at GWL3",
-                "experiment": "zero CO2 emissions simulation starting at global warming level of 3K, branching off from esm-up2p0",
-                "experiment_id": "esm-up2p0-gwl3p0",
-                "parent_activity_id": [
-                    "TIPMIP"
-                ],
-                "parent_experiment_id": [
-                    "esm-up2p0"
-                ],
-                "required_model_components": [
-                    "AOGCM",
-                    "BGC"
-                ],
-                "sub_experiment_id": [
-                    "none"
-                ],
-                "tier": 2
-            },
-            "esm-up2p0-gwl5p0": {
-                "activity_id": [
-                    "TIPMIP"
-                ],
-                "additional_allowed_model_components": [
-                    "AER",
-                    "CHEM"
-                ],
-                "description": "stabilisation at GWL5",
-                "experiment": "zero CO2 emissions simulation starting at global warming level of 5K, branching off from esm-up2p0",
-                "experiment_id": "esm-up2p0-gwl5p0",
-                "parent_activity_id": [
-                    "TIPMIP"
-                ],
-                "parent_experiment_id": [
-                    "esm-up2p0"
-                ],
-                "required_model_components": [
-                    "AOGCM",
-                    "BGC"
-                ],
-                "sub_experiment_id": [
-                    "none"
-                ],
-                "tier": 2
-            },
             "esm-up2p0-gwl2p0-50y-dn2p0": {
                 "activity_id": [
                     "TIPMIP"
@@ -329,6 +277,32 @@
                     "none"
                 ],
                 "tier": 1
+            },
+            "esm-up2p0-gwl3p0": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM"
+                ],
+                "description": "stabilisation at GWL3",
+                "experiment": "zero CO2 emissions simulation starting at global warming level of 3K, branching off from esm-up2p0",
+                "experiment_id": "esm-up2p0-gwl3p0",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-up2p0"
+                ],
+                "required_model_components": [
+                    "AOGCM",
+                    "BGC"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 2
             },
             "esm-up2p0-gwl4p0": {
                 "activity_id": [
@@ -407,6 +381,32 @@
                     "none"
                 ],
                 "tier": 1
+            },
+            "esm-up2p0-gwl5p0": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM"
+                ],
+                "description": "stabilisation at GWL5",
+                "experiment": "zero CO2 emissions simulation starting at global warming level of 5K, branching off from esm-up2p0",
+                "experiment_id": "esm-up2p0-gwl5p0",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-up2p0"
+                ],
+                "required_model_components": [
+                    "AOGCM",
+                    "BGC"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 2
             },
             "fut-Aer": {
                 "activity_id": [
@@ -694,7 +694,7 @@
                 ],
                 "tier": 3
             },
-            "hist-piGHG": {
+            "hist-piAer": {
                 "activity_id": [
                     "LESFMIP"
                 ],
@@ -703,9 +703,9 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
-                "experiment": "historical forcing but with pre-industrial GHG",
-                "experiment_id": "hist-piGHG",
+                "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+                "experiment": "historical forcing, but with pre-industrial aerosol emissions",
+                "experiment_id": "hist-piAer",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -720,7 +720,7 @@
                 ],
                 "tier": 3
             },
-            "hist-piAer": {
+            "hist-piGHG": {
                 "activity_id": [
                     "LESFMIP"
                 ],
@@ -729,9 +729,9 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
-                "experiment": "historical forcing, but with pre-industrial aerosol emissions",
-                "experiment_id": "hist-piAer",
+                "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
+                "experiment": "historical forcing but with pre-industrial GHG",
+                "experiment_id": "hist-piGHG",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -978,7 +978,7 @@
                     "none"
                 ]
             },
-            "piClim-370-eas126aer": {
+            "piClim-370-126aer-nh3nox": {
                 "activity_id": [
                     "RAMIP"
                 ],
@@ -987,33 +987,8 @@
                     "BGC"
                 ],
                 "description": "",
-                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
-                "experiment_id": "piClim-370-eas126aer",
-                "parent_activity_id": [
-                    "CMIP"
-                ],
-                "parent_experiment_id": [
-                    "piControl"
-                ],
-                "required_model_components": [
-                    "AGCM",
-                    "AER"
-                ],
-                "sub_experiment_id": [
-                    "none"
-                ]
-            },
-            "piClim-370-sas126aer": {
-                "activity_id": [
-                    "RAMIP"
-                ],
-                "additional_allowed_model_components": [
-                    "CHEM",
-                    "BGC"
-                ],
-                "description": "",
-                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
-                "experiment_id": "piClim-370-sas126aer",
+                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+                "experiment_id": "piClim-370-126aer-nh3nox",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1053,6 +1028,31 @@
                     "none"
                 ]
             },
+            "piClim-370-eas126aer": {
+                "activity_id": [
+                    "RAMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "",
+                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+                "experiment_id": "piClim-370-eas126aer",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "piControl"
+                ],
+                "required_model_components": [
+                    "AGCM",
+                    "AER"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ]
+            },
             "piClim-370-nae126aer": {
                 "activity_id": [
                     "RAMIP"
@@ -1078,7 +1078,7 @@
                     "none"
                 ]
             },
-            "piClim-370-126aer-nh3nox": {
+            "piClim-370-sas126aer": {
                 "activity_id": [
                     "RAMIP"
                 ],
@@ -1087,8 +1087,8 @@
                     "BGC"
                 ],
                 "description": "",
-                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
-                "experiment_id": "piClim-370-126aer-nh3nox",
+                "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+                "experiment_id": "piClim-370-sas126aer",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1181,7 +1181,7 @@
                 ],
                 "tier": 1
             },
-            "ssp370-eas126aer": {
+            "ssp370-126aer_nh3nox": {
                 "activity_id": [
                     "RAMIP"
                 ],
@@ -1190,9 +1190,9 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
-                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia",
-                "experiment_id": "ssp370-eas126aer",
+                "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
+                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx.",
+                "experiment_id": "ssp370-126aer_nh3nox",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1205,33 +1205,7 @@
                 "sub_experiment_id": [
                     "none"
                 ],
-                "tier": 1
-            },
-            "ssp370-sas126aer": {
-                "activity_id": [
-                    "RAMIP"
-                ],
-                "additional_allowed_model_components": [
-                    "AER",
-                    "CHEM",
-                    "BGC"
-                ],
-                "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
-                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia",
-                "experiment_id": "ssp370-sas126aer",
-                "parent_activity_id": [
-                    "CMIP"
-                ],
-                "parent_experiment_id": [
-                    "historical"
-                ],
-                "required_model_components": [
-                    "AOGCM"
-                ],
-                "sub_experiment_id": [
-                    "none"
-                ],
-                "tier": 1
+                "tier": "2"
             },
             "ssp370-afr126aer": {
                 "activity_id": [
@@ -1245,32 +1219,6 @@
                 "description": "SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
                 "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Africa and the Middle East",
                 "experiment_id": "ssp370-afr126aer",
-                "parent_activity_id": [
-                    "CMIP"
-                ],
-                "parent_experiment_id": [
-                    "historical"
-                ],
-                "required_model_components": [
-                    "AOGCM"
-                ],
-                "sub_experiment_id": [
-                    "none"
-                ],
-                "tier": 1
-            },
-            "ssp370-nae126aer": {
-                "activity_id": [
-                    "RAMIP"
-                ],
-                "additional_allowed_model_components": [
-                    "AER",
-                    "CHEM",
-                    "BGC"
-                ],
-                "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
-                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe",
-                "experiment_id": "ssp370-nae126aer",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1311,6 +1259,58 @@
                 ],
                 "tier": "2"
             },
+            "ssp370-eas126aer": {
+                "activity_id": [
+                    "RAMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
+                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia",
+                "experiment_id": "ssp370-eas126aer",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "historical"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "ssp370-nae126aer": {
+                "activity_id": [
+                    "RAMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
+                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe",
+                "experiment_id": "ssp370-nae126aer",
+                "parent_activity_id": [
+                    "CMIP"
+                ],
+                "parent_experiment_id": [
+                    "historical"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
             "ssp370-saf126ca": {
                 "activity_id": [
                     "RAMIP"
@@ -1337,7 +1337,7 @@
                 ],
                 "tier": "2"
             },
-            "ssp370-sas126ca": {
+            "ssp370-sas126aer": {
                 "activity_id": [
                     "RAMIP"
                 ],
@@ -1346,9 +1346,9 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
-                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia.",
-                "experiment_id": "ssp370-sas126ca",
+                "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia",
+                "experiment_id": "ssp370-sas126aer",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1361,9 +1361,9 @@
                 "sub_experiment_id": [
                     "none"
                 ],
-                "tier": "2"
+                "tier": 1
             },
-            "ssp370-126aer_nh3nox": {
+            "ssp370-sas126ca": {
                 "activity_id": [
                     "RAMIP"
                 ],
@@ -1372,9 +1372,9 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
-                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx.",
-                "experiment_id": "ssp370-126aer_nh3nox",
+                "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
+                "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia.",
+                "experiment_id": "ssp370-sas126ca",
                 "parent_activity_id": [
                     "CMIP"
                 ],
@@ -1646,11 +1646,11 @@
                     "NASA-GISS"
                 ],
                 "license_info": {
+                    "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International",
-                    "url": "https://creativecommons.org/licenses/by/4.0/",
-                    "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
-                    "source_specific_info": ""
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "GISS-E2-1-G",
                 "source": "GISS-E2-1-G (2019): \naerosol: Varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)\natmos: GISS-E2.1 (2.5x2 degree; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)\natmosChem: Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)\nland: GISS LSM\nocean: GISS Ocean (GO1, 1 degree; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10 m)\nseaIce: GISS SI)"
@@ -1691,11 +1691,11 @@
                     "MIROC"
                 ],
                 "license_info": {
+                    "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International",
-                    "url": "https://creativecommons.org/licenses/by/4.0/",
-                    "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
-                    "source_specific_info": ""
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "MIROC6",
                 "source": "MIROC6 (2017): \naerosol: SPRINTARS6.0\natmos: CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)\nland: MATSIRO6.0\nocean: COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)\nseaIce: COCO4.9)"
@@ -1712,11 +1712,11 @@
                     "MPI-M"
                 ],
                 "license_info": {
+                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International",
-                    "url": "https://creativecommons.org/licenses/by/4.0/",
-                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
-                    "source_specific_info": ""
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "MPI-ESM1-2-HR",
                 "source": "MPI-ESM1-2-HR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
@@ -1733,11 +1733,11 @@
                     "MPI-M"
                 ],
                 "license_info": {
+                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International",
-                    "url": "https://creativecommons.org/licenses/by/4.0/",
-                    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
-                    "source_specific_info": ""
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "MPI-ESM1-2-LR",
                 "source": "MPI-ESM1-2-LR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
@@ -1777,11 +1777,11 @@
                     "NCC"
                 ],
                 "license_info": {
+                    "exceptions_contact": "@met.no <- noresm-ncc",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International",
-                    "url": "https://creativecommons.org/licenses/by/4.0/",
-                    "exceptions_contact": "@met.no <- noresm-ncc",
-                    "source_specific_info": ""
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "NorESM2-LM",
                 "source": "NorESM2-LM (2017): \naerosol: OsloAero\natmos: CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)\natmosChem: OsloChemSimp\nland: CLM\nlandIce: CISM\nocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])\nocnBgchem: HAMOCC\nseaIce: CICE)"
@@ -1915,12 +1915,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Dec 12 2024 16:36 UTC",
+            "file_updated": "Thu Dec 12 2024 16:46 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-12-12T16:41:28Z",
-                "tag": "v6.5.3.0",
-                "commit": "a7a79c3fcbfe193ba50b6d2cb3804ea54c1cdd70"
+                "updated": "2024-12-12T16:45:50Z",
+                "tag": "v6.5.2.0",
+                "commit": "c844936bdd641c40f90f84789f1638971dcc39b2"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
