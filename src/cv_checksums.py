@@ -25,12 +25,12 @@ def calculate_checksum(dictionary, overwrite=True, checksum_location='version_me
         If the ``checksum`` key already exists and ``overwrite`` is
         False.
     """
-    if 'checksum' in dictionary[checksum_location]:
+    if 'checksum' in dictionary['Header'][checksum_location]:
         if not overwrite:
             raise RuntimeError('Checksum already exists.')
-        del dictionary[checksum_location]['checksum']
+        del dictionary['Header'][checksum_location]['checksum']
     checksum = _checksum(dictionary)
-    dictionary[checksum_location]['checksum'] = checksum
+    dictionary['Header'][checksum_location]['checksum'] = checksum
 
 
 def validate_checksum(dictionary, checksum_location='version_metadata'):
