@@ -8,9 +8,9 @@
         },
         "file": {
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
-            "experiment_id_modified": "Thu Mar 14 21:34:08 2024 +0000",
-            "experiment_id_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)",
-            "checksum": "md5: 79829ed75cfef9116b4ebddb9fe9838d"
+            "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
+            "experiment_id_note": "Added TIPMIP and RAMIP experiments",
+            "checksum": "md5: 7532f80137072aec5a219d4c6a9faa9e"
         },
         "author": "Matthew Mizielinski",
         "institution_id": "MOHC"

@@ -8,12 +8,12 @@
         },
         "file": {
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "source_id_modified": "Thu Apr 4 13:22:36 2024 +0000",
-            "source_id_note": "Add resolution units.",
-            "checksum": "md5: 2fc20032717d115abe354c711f446a61"
+            "source_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
+            "source_id_note": "Register RAMIP source ids",
+            "checksum": "md5: 9e2231b71de68b7185a1b31a2223c291"
         },
-        "author": "Daniel Ellis",
-        "institution_id": "CMIP-IPO"
+        "author": "Matthew Mizielinski",
+        "institution_id": "MOHC"
     },
     "source_id": {
         "CESM2": {
