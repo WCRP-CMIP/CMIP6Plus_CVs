@@ -1,20 +1,20 @@
 {
     "Header": {
+        "author": "Matthew Mizielinski", 
         "collection": {
-            "CV_collection_version": "v6.5.2.0",
-            "CV_collection_modified": "2024-12-12T11:32:12Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.2.0",
+            "CV_collection_modified": "2024-12-12T16:41:12Z", 
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.3.0", 
+            "CV_collection_version": "v6.5.3.0", 
             "specs_doc": "v6.5.0"
-        },
+        }, 
         "file": {
-            "license_update_commit": "9768488cea4b73aba972474b1fa28a2d3b494716",
-            "license_modified": "Thu Mar 14 21:34:08 2024 +0000",
-            "license_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)",
-            "checksum": "md5: b080f2e58cd197535eccd2ff800a67dc"
-        },
-        "author": "Matthew Mizielinski",
+            "checksum": "md5: 14aad71306e891f21ccf1c4dee2dcd03", 
+            "license_modified": "Thu Mar 14 21:34:08 2024 +0000", 
+            "license_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)", 
+            "license_update_commit": "9768488cea4b73aba972474b1fa28a2d3b494716"
+        }, 
         "institution_id": "MOHC"
-    },
+    }, 
     "license": [
         "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
     ]

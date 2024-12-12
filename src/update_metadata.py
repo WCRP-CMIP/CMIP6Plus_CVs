@@ -14,10 +14,10 @@ FILES = [
     'CMIP6Plus_source_id.json', 
     'CMIP6Plus_tracking_id.json']
 
-new_version = "v6.5.2.0"
+new_version = "v6.5.3.0"
 collection = {
     "CV_collection_version": new_version,
-    "CV_collection_modified": "2024-12-12T11:32:12Z",
+    "CV_collection_modified": "2024-12-12T16:41:12Z",
     "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/{}".format(new_version),
     "specs_doc": "v6.5.0"
 }
@@ -28,4 +28,4 @@ for filename in FILES:
     data['Header']['collection'] = collection
     calculate_checksum(data,checksum_location="file")
     with open(filename, 'w') as fh:
-        json.dump(data, fh, indent=4, sort_keys=False)#, separators=(',', ':'))
+        json.dump(data, fh, indent=4, sort_keys=True)#, separators=(',', ':'))

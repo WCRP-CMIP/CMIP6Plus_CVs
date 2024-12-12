@@ -1,35 +1,35 @@
 {
     "Header": {
+        "author": "Matthew Mizielinski", 
         "collection": {
-            "CV_collection_version": "v6.5.2.0",
-            "CV_collection_modified": "2024-12-12T11:32:12Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.2.0",
+            "CV_collection_modified": "2024-12-12T16:41:12Z", 
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.3.0", 
+            "CV_collection_version": "v6.5.3.0", 
             "specs_doc": "v6.5.0"
-        },
+        }, 
         "file": {
-            "activity_id_update_commit": "704c44333b030ad35b9e287dbb0eb312ea625eda",
-            "activity_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
-            "activity_id_note": "Addition of TIPMIP and RAMIP",
-            "checksum": "md5: 9365ae77f44906260c0956431ee4ef49"
-        },
-        "author": "Matthew Mizielinski",
+            "activity_id_modified": "Thu Dec 12 13:28:00 2024 +0000", 
+            "activity_id_note": "Addition of TIPMIP and RAMIP", 
+            "activity_id_update_commit": "704c44333b030ad35b9e287dbb0eb312ea625eda", 
+            "checksum": "md5: bbc57fd0d740aead185947004c98151f"
+        }, 
         "institution_id": "MOHC"
-    },
+    }, 
     "activity_id": {
         "CMIP": {
-            "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
+            "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf", 
             "long_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
-        },
+        }, 
         "LESFMIP": {
-            "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
+            "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full", 
             "long_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
-        },
+        }, 
         "RAMIP": {
-            "URL": "https://ramip.ncas.ac.uk/",
+            "URL": "https://ramip.ncas.ac.uk/", 
             "long_name": "Regional Aerosol Model Intercomparison Project"
-        },
+        }, 
         "TIPMIP": {
-            "URL": "https://tipmip.pik-potsdam.de/",
+            "URL": "https://tipmip.pik-potsdam.de/", 
             "long_name": "Tipping Point Model Intercomparison Project"
         }
     }

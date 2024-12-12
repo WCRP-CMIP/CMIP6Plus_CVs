@@ -1918,8 +1918,8 @@
             "file_updated": "Thu Dec 12 2024 16:36 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2024-12-12T16:36:28Z",
-                "tag": "v6.5.2.0",
+                "updated": "2024-12-12T16:41:28Z",
+                "tag": "v6.5.3.0",
                 "commit": "a7a79c3fcbfe193ba50b6d2cb3804ea54c1cdd70"
             },
             "MIP tables": {
