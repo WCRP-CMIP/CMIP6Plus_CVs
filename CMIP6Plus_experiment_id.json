@@ -2,9 +2,9 @@
     "Header": {
         "author": "Matthew Mizielinski", 
         "collection": {
-            "CV_collection_modified": "2024-12-12T16:41:12Z", 
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.3.0", 
-            "CV_collection_version": "v6.5.3.0", 
+            "CV_collection_modified": "2025-01-09T10:01:04Z", 
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.3.1", 
+            "CV_collection_version": "v6.5.3.1", 
             "specs_doc": "v6.5.0"
         }, 
         "file": {
