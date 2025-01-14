@@ -1,0 +1,37 @@
+{
+    "activity_participation": [
+        "cmip",
+        "ramip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "release_year": "2017",
+    "@context": "_context_",
+    "id": "cnrm-esm2-1",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "organisation": [
+        "institutions/cnrm-cerfacs"
+    ],
+    "license": {
+        "cc-by-4.0": {
+            "exceptions_contact": "@meteo.fr <- contact.cmip",
+            "source_specific_info": ""
+        }
+    },
+    "label_extended": "CNRM-ESM2-1",
+    "model_component": [
+        "TACTIC_v2",
+        "Arpege",
+        "REPROBUS-C_v2",
+        "Surfex",
+        "none",
+        "Nemo",
+        "Pisces",
+        "Gelato"
+    ],
+    "label": "CNRM-ESM2-1"
+}

@@ -1,0 +1,37 @@
+{
+    "activity_participation": [
+        "cmip",
+        "ramip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "release_year": "2018",
+    "@context": "_context_",
+    "id": "cesm2",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "organisation": [
+        "institutions/ncar"
+    ],
+    "license": {
+        "cc-by-4.0": {
+            "exceptions_contact": "@ucar.edu <- cesm_cmip6",
+            "source_specific_info": ""
+        }
+    },
+    "label_extended": "CESM2",
+    "model_component": [
+        "MAM4",
+        "CAM6",
+        "MAM4",
+        "CLM5",
+        "CISM2.1",
+        "POP2",
+        "MARBL",
+        "CICE5.1"
+    ],
+    "label": "CESM2"
+}

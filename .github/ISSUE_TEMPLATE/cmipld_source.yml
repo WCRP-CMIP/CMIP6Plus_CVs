@@ -1,0 +1,131 @@
+name: 'Add/Modify: Source'
+description: 'Type: source'
+title: 'Add/Modify: Source: <enter item name>'
+labels:
+- delta
+- source
+body:
+-   type: markdown
+    attributes:
+        value: Please fill in the form below.
+-   id: activity_participation
+    attributes:
+        label: Activity Participation
+        description: Research activities the source participates in
+        options:
+        -   label: cmip
+        -   label: ramip
+        -   label: aerchemmip
+        -   label: c4mip
+        -   label: cfmip
+        -   label: damip
+        -   label: dcpp
+        -   label: geomip
+        -   label: lesfmip
+        -   label: lmip
+        -   label: pmip
+        -   label: rfmip
+        -   label: scenariomip
+        -   label: tipmip
+    validations:
+        required: true
+    type: checkboxes
+-   id: cohort
+    attributes:
+        label: Cohort
+        description: Cohort classification of the source
+        options:
+        -   label: published
+        -   label: unpublished
+        -   label: preliminary
+    validations:
+        required: true
+    type: checkboxes
+-   id: label
+    attributes:
+        label: Label
+        description: Short label for the source
+    validations:
+        required: true
+    type: input
+-   id: release_year
+    attributes:
+        label: Release Year
+        description: Year of release
+    validations:
+        required: true
+    type: input
+-   id: source_id
+    attributes:
+        label: Source Id
+        description: Unique identifier for the source
+    validations:
+        required: true
+    type: input
+-   id: '@context'
+    attributes:
+        label: '@Context'
+        description: Context identifier, typically set to '_context_'
+    validations:
+        required: true
+    type: input
+-   id: organisation
+    attributes:
+        label: Organisation
+        description: Organizational affiliations
+    validations:
+        required: true
+    type: input
+-   id: model-component
+    attributes:
+        label: Model-Component
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/>
+            https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/ </a>. '
+    validations:
+        required: true
+    type: input
+-   id: license
+    attributes:
+        label: License
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/license/>
+            https://wcrp-cmip.github.io/WCRP-universe/license/ </a>. '
+    validations:
+        required: true
+    type: input
+-   id: label-extended
+    attributes:
+        label: Label-Extended
+        description: Extended label for the source
+    validations:
+        required: true
+    type: input
+-   id: activity-participation
+    attributes:
+        label: Activity-Participation
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/>
+            https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. '
+        options:
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
+    validations:
+        required: true
+    type: dropdown
+-   id: name
+    attributes:
+        label: Name
+        description: Full name of the source
+    validations:
+        required: true
+    type: input

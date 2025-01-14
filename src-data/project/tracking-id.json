@@ -1,0 +1,12 @@
+{
+    "@context": "_context_",
+    "id": "tracking-id",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:tracking-id"
+    ],
+    "tracking_id": [
+        "hdl:21.14100/.*"
+    ]
+}

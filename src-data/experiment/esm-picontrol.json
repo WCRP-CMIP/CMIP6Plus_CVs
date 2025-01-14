@@ -1,0 +1,40 @@
+{
+    "@context": "_context_",
+    "id": "esm-picontrol",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "cmip"
+    ],
+    "description": "DECK: control (emission-driven)",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "bgc": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        }
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "esm-picontrol-spinup"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "tier": 1,
+    "end": -999,
+    "min_number_yrs_per_sim": 500,
+    "start": -999,
+    "label": "esm-piControl"
+}

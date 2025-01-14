@@ -1,0 +1,17 @@
+{
+    "@context": "_context_",
+    "id": "activity",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:activity"
+    ],
+    "activity": {
+        "lesfmip": {
+            "start": 2024
+        },
+        "cmip": {
+            "start": 2023
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "@context": "_context_",
+    "id": "giss-e2-1-g",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "license": {
+        "cc-by-4.0": {
+            "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
+            "source_specific_info": ""
+        }
+    },
+    "organisation": [
+        "institutions/nasa-giss"
+    ],
+    "label_extended": "GISS-E2.1G",
+    "activity_participation": [
+        "ramip",
+        "cmip",
+        "lesfmip"
+    ],
+    "model_component": [
+        "varies-with-physics-version",
+        "giss-e2.1",
+        "giss-lsm",
+        "giss-ocean",
+        "giss-si"
+    ],
+    "release_year": 2019,
+    "label": "GISS-E2.1-G"
+}

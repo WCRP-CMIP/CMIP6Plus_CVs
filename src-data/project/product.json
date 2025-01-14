@@ -1,0 +1,12 @@
+{
+    "@context": "_context_",
+    "id": "product",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:product"
+    ],
+    "product": [
+        "model-output"
+    ]
+}

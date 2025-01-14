@@ -1,0 +1,10 @@
+{
+    "@context": "_context_",
+    "id": "repo",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:repo"
+    ],
+    "repo": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs"
+}
