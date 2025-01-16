@@ -4,6 +4,9 @@
         {
             "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/project/",
             "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/project/",
+            "id":"@id",
+            "type":"@type",
+
             "activity": {
                 "@container": "@id",
                 "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
