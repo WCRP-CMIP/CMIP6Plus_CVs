@@ -2,8 +2,10 @@
     "@context": [
         "_context_",
         {
-            "@container": "@id",
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+            "activity": {
+                "@container": "@id",
+                "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+            }
         }
     ],
     "id": "activity",

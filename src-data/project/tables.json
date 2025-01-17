@@ -2,8 +2,10 @@
     "@context": [
         "_context_",
         {
-            "@type": "@id",
-            "@context": "https://wcrp-cmip.github.io/MIP-variables/tables/_context_"
+            "tables": {
+                "@type": "@id",
+                "@context": "https://wcrp-cmip.github.io/MIP-variables/tables/_context_"
+            }
         }
     ],
     "id": "tables",
