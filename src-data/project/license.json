@@ -1,5 +1,11 @@
 {
-    "@context": "_context_",
+    "@context": [
+        "_context_",
+        {
+            "@type": "@id",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_"
+        }
+    ],
     "id": "license",
     "type": [
         "wcrp:project",

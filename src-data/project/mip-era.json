@@ -1,5 +1,11 @@
 {
-    "@context": "_context_",
+    "@context": [
+        "_context_",
+        {
+            "@type": "@id",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
+        }
+    ],
     "id": "mip-era",
     "type": [
         "wcrp:project",
