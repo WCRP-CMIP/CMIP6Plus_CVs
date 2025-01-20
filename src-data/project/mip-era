@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "_context_",
+        {
+            "mip_era": {
+                "@type": "@id",
+                "@container": "@set",
+                "@context": "https://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
+            }
+        }
+    ],
+    "id": "mip-era",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:mip_era"
+    ],
+    "mip_era": [
+        "cmip6plus"
+    ]
+}

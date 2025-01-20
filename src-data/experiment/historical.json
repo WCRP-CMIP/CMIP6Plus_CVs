@@ -1,0 +1,40 @@
+{
+    "@context": "_context_",
+    "id": "historical",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "cmip"
+    ],
+    "description": "CMIP6 historical",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "picontrol"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "tier": 1,
+    "end": 2014,
+    "min_number_yrs_per_sim": 165,
+    "start": 1850,
+    "label": "historical"
+}

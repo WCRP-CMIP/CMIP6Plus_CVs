@@ -1,0 +1,40 @@
+{
+    "@context": "_context_",
+    "id": "picontrol-spinup",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "cmip"
+    ],
+    "description": "DECK: spin-up portion of the control",
+    "model_realms": {
+        "aogcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": false
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "parent_activity": [
+        "none"
+    ],
+    "parent_experiment": [
+        "none"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "tier": 2,
+    "end": -999,
+    "min_number_yrs_per_sim": 100,
+    "start": -999,
+    "label": "piControl-spinup"
+}

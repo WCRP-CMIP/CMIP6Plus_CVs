@@ -1,0 +1,40 @@
+{
+    "description": "",
+    "@context": "_context_",
+    "id": "piclim-370-sas126aer",
+    "model_realms": {
+        "agcm": {
+            "is_required": true
+        },
+        "aer": {
+            "is_required": true
+        },
+        "chem": {
+            "is_required": false
+        },
+        "bgc": {
+            "is_required": false
+        }
+    },
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "picontrol"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "ramip"
+    ],
+    "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "label": "piClim-370-sas126aer"
+}
