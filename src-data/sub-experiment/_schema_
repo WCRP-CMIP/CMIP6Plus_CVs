@@ -40,7 +40,7 @@
         "name"
     ],
     "additionalProperties": false,
-    "id": "sub_experiment",
+    "id": "sub-experiment",
     "contains": {
         "type": "string",
         "enum": [
@@ -48,5 +48,5 @@
             "none"
         ]
     },
-    "base": "https://github.com/wcrp-cmip/CMIP6Plus_CVs/tree/main/src-data/sub_experiment/"
+    "base": "https://github.com/wcrp-cmip/CMIP6Plus_CVs/tree/main/src-data/sub-experiment/"
 }

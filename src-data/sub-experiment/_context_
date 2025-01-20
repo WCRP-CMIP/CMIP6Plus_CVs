@@ -10,8 +10,7 @@
     "type": [
         "cmip6plus"
     ],
-    "@type":[
-        "wcrp:sub-experiment",
+    "@type": [
         "cmip6plus"
     ]
 }

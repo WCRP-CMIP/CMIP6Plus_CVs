@@ -3,7 +3,7 @@
     "properties": {
         "activity_participation": {
             "type": "array",
-            "description": "Research activities the source participates in",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
             "items": {
                 "type": "string",
                 "enum": [
@@ -23,7 +23,8 @@
                     "TIPMIP"
                 ]
             },
-            "minItems": 1
+            "minItems": 1,
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
         },
         "cohort": {
             "type": "array",
@@ -129,13 +130,13 @@
             "cesm2",
             "cnrm-esm2-1",
             "ec-earth-aerchem",
-            "giss_e2_1_g",
-            "hadgem3_gc31_ll",
+            "giss-e2-1-g",
+            "hadgem3-gc31-ll",
             "miroc6",
-            "mpi_esm1_2_hr",
-            "mpi_esm1_2_lr",
+            "mpi-esm1-2-hr",
+            "mpi-esm1-2-lr",
             "mri-esm2-0",
-            "noresm2_lm",
+            "noresm2-lm",
             "ukesm1-0-ll"
         ]
     },

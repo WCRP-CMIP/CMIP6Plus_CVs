@@ -11,25 +11,26 @@ body:
 -   id: activity_participation
     attributes:
         label: Activity Participation
-        description: Research activities the source participates in
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/>
+            https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. '
         options:
-        -   label: cmip
-        -   label: ramip
-        -   label: aerchemmip
-        -   label: c4mip
-        -   label: cfmip
-        -   label: damip
-        -   label: dcpp
-        -   label: geomip
-        -   label: lesfmip
-        -   label: lmip
-        -   label: pmip
-        -   label: rfmip
-        -   label: scenariomip
-        -   label: tipmip
+        - aerchemmip
+        - c4mip
+        - cfmip
+        - cmip
+        - damip
+        - dcpp
+        - geomip
+        - lesfmip
+        - lmip
+        - pmip
+        - ramip
+        - rfmip
+        - scenariomip
+        - tipmip
     validations:
         required: true
-    type: checkboxes
+    type: dropdown
 -   id: cohort
     attributes:
         label: Cohort

@@ -12,19 +12,27 @@
   "variables": "https://wcrp-cmip.github.io/MIP-variables/",
   "activity": {
     "@container": "@id",
-    "@context": "http://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+  },
+  "license": {
+    "@type": "@id",
+    "@container": "@set",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_"
   },
   "mip_era": {
     "@type": "@id",
-    "@context": "http://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
+    "@container": "@set",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
   },
   "product": {
     "@type": "@id",
-    "@context": "http://wcrp-cmip.github.io/WCRP-universe/product/_context_"
+    "@container": "@set",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/product/_context_"
   },
   "tables": {
     "@type": "@id",
-    "@context": "http://wcrp-cmip.github.io/MIP-variables/tables/_context_"
+    "@container": "@set",
+    "@context": "https://wcrp-cmip.github.io/MIP-variables/tables/_context_"
   }
 },
   "@graph": [
@@ -96,13 +104,13 @@
     "wcrp:license"
   ],
   "license": {
-    "cc_by_4.0": {
+    "cc-by-4.0": {
       "regex": "^CMIP6Plus model data produced by .* is licensed under a Creative Commons .* License (https://creativecommons\\.org/.*)\\. *Consult https://pcmdi\\.llnl\\.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
     }
   }
 }
     ,{
-  "id": "mip_era",
+  "id": "mip-era",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -133,7 +141,7 @@
   "repo": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs"
 }
     ,{
-  "id": "required_global_attributes",
+  "id": "required-global-attributes",
   "type": [
     "cmip6plus",
     "wcrp:project",
@@ -265,7 +273,7 @@
     "cmip6plus",
     "wcrp:tracking-id"
   ],
-  "tracking-id": [
+  "tracking_id": [
     "hdl:21.14100/.*"
   ]
 }

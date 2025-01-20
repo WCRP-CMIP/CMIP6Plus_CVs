@@ -1,9 +1,9 @@
-name: 'Add/Modify: Sub_experiment'
-description: 'Type: sub_experiment'
-title: 'Add/Modify: Sub_experiment: <enter item name>'
+name: 'Add/Modify: Sub-experiment'
+description: 'Type: sub-experiment'
+title: 'Add/Modify: Sub-experiment: <enter item name>'
 labels:
 - delta
-- sub_experiment
+- sub-experiment
 body:
 -   type: markdown
     attributes:

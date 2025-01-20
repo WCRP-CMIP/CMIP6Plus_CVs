@@ -1,7 +1,7 @@
 {
   "@context": {
-  "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/",
-  "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub_experiment/",
+  "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/",
+  "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/",
   "id": "@id",
   "type": "@type",
   "cf": "https://wcrp-cmip.github.io/CF/",
@@ -15,7 +15,7 @@
     {
   "id": "f2023",
   "type": [
-    "wcrp:sub_experiment",
+    "wcrp:sub-experiment",
     "cmip6plus"
   ],
   "description": "Forcings 2023",
@@ -24,7 +24,7 @@
     ,{
   "id": "none",
   "type": [
-    "wcrp:sub_experiment",
+    "wcrp:sub-experiment",
     "cmip6plus"
   ],
   "description": "none",
