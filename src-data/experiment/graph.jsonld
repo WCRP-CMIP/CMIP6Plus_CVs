@@ -16,10 +16,6 @@
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
   },
   "model_realms": {
-    "@container": [
-      "@id",
-      "@set"
-    ],
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
   },
   "parent_activity": {
@@ -88,19 +84,19 @@
   "model_realms": [
     {
       "id": "aogcm",
-      "is_required": true
+      "is_required#abrupt-4xco2": true
     },
     {
       "id": "aer",
-      "is_required": false
+      "is_required#abrupt-4xco2": false
     },
     {
       "id": "chem",
-      "is_required": false
+      "is_required#abrupt-4xco2": false
     },
     {
       "id": "bgc",
-      "is_required": false
+      "is_required#abrupt-4xco2": false
     }
   ],
   "parent_activity": [
