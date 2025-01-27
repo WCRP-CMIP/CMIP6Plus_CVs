@@ -2,6 +2,7 @@
   "@context": {
   "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
+  "entries": "@none",
   "id": "@id",
   "type": "@type",
   "cf": "https://wcrp-cmip.github.io/CF/",
@@ -15,7 +16,7 @@
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
   },
   "model_realms": {
-    "@container": "@id",
+    "@container": "@index",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
   },
   "parent_activity": {

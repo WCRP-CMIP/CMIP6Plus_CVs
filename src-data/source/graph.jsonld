@@ -2,6 +2,7 @@
   "@context": {
   "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
+  "entries": "@none",
   "id": "@id",
   "type": "@type",
   "cf": "https://wcrp-cmip.github.io/CF/",
@@ -17,7 +18,7 @@
   },
   "license": {
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_",
-    "@container": "@id"
+    "@container": "@index"
   }
 },
   "@graph": [

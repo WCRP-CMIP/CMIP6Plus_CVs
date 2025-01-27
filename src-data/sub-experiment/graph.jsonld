@@ -2,6 +2,7 @@
   "@context": {
   "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/",
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/",
+  "entries": "@none",
   "id": "@id",
   "type": "@type",
   "cf": "https://wcrp-cmip.github.io/CF/",

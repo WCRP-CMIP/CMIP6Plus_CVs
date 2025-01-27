@@ -1,25 +1,25 @@
 {
-  "@context": [
-    "../_context_",
-    {
-      "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
-      "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
-      "activity_participation": {
-        "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_",
-        "@type": "@id",
-        "@reverse": "https://wcrp-cmip.github.io/WCRP-universe/activity/source_activity"
-      },
-      "license": {
-        "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_",
-        "@container": "@index"
-      }
-    }
-  ],
-  "@embed": "@always",
-  "type": [
-    "cmip6plus"
-  ],
-  "@type": [
-    "cmip6plus"
-  ]
+    "@context": [
+        "../_context_",
+        {
+            "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
+            "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/source/",
+            "activity_participation": {
+                "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_",
+                "@type": "@id",
+                "@reverse": "https://wcrp-cmip.github.io/WCRP-universe/activity/source_activity"
+            },
+            "license": {
+                "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_",
+                "@container": "@index"
+            }
+        }
+    ],
+    "@embed": "@always",
+    "type": [
+        "cmip6plus"
+    ],
+    "@type": [
+        "cmip6plus"
+    ]
 }

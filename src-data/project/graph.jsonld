@@ -2,6 +2,7 @@
   "@context": {
   "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/project/",
   "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/project/",
+  "entries": "@none",
   "id": "@id",
   "type": "@type",
   "cf": "https://wcrp-cmip.github.io/CF/",
@@ -11,7 +12,7 @@
   "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
   "variables": "https://wcrp-cmip.github.io/MIP-variables/",
   "activity": {
-    "@container": "@id",
+    "@container": "@index",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
   },
   "license": {
