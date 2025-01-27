@@ -20,6 +20,7 @@
       "@index",
       "@set"
     ],
+    "@id": "{@index}",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
   },
   "parent_activity": {
