@@ -10,17 +10,21 @@
     ],
     "description": "DECK: abrupt-4xCO2",
     "model_realms": [
-         { "id":"aogcm",
-            "is_required": true
+        {
+            "id": "aogcm",
+            "is_required#abrupt-4xco2": true
         },
-         { "id":"aer",
-            "is_required": false
+        {
+            "id": "aer",
+            "is_required#abrupt-4xco2": false
         },
-        { "id": "chem",
-            "is_required": false
+        {
+            "id": "chem",
+            "is_required#abrupt-4xco2": false
         },
-        {"id":"bgc",
-            "is_required": false
+        {
+            "id": "bgc",
+            "is_required#abrupt-4xco2": false
         }
     ],
     "parent_activity": [
