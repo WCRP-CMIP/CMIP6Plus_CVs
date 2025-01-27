@@ -2,20 +2,24 @@
     "description": "",
     "@context": "_context_",
     "id": "piclim-370-126aer",
-    "model_realms": {
-        "agcm": {
+    "model_realms": [
+        {
+            "id": "agcm",
             "is_required": true
         },
-        "aer": {
+        {
+            "id": "aer",
             "is_required": true
         },
-        "chem": {
+        {
+            "id": "chem",
             "is_required": false
         },
-        "bgc": {
+        {
+            "id": "bgc",
             "is_required": false
         }
-    },
+    ],
     "parent_activity": [
         "cmip"
     ],

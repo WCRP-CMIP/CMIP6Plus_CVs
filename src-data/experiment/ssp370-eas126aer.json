@@ -3,20 +3,24 @@
     "tier": 1,
     "@context": "_context_",
     "id": "ssp370-eas126aer",
-    "model_realms": {
-        "aogcm": {
+    "model_realms": [
+        {
+            "id": "aogcm",
             "is_required": true
         },
-        "aer": {
+        {
+            "id": "aer",
             "is_required": false
         },
-        "chem": {
+        {
+            "id": "chem",
             "is_required": false
         },
-        "bgc": {
+        {
+            "id": "bgc",
             "is_required": false
         }
-    },
+    ],
     "parent_activity": [
         "cmip"
     ],

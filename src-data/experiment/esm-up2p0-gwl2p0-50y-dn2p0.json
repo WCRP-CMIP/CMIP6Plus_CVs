@@ -3,20 +3,24 @@
     "tier": 1,
     "@context": "_context_",
     "id": "esm-up2p0-gwl2p0-50y-dn2p0",
-    "model_realms": {
-        "aogcm": {
+    "model_realms": [
+        {
+            "id": "aogcm",
             "is_required": true
         },
-        "bgc": {
+        {
+            "id": "bgc",
             "is_required": true
         },
-        "aer": {
+        {
+            "id": "aer",
             "is_required": false
         },
-        "chem": {
+        {
+            "id": "chem",
             "is_required": false
         }
-    },
+    ],
     "parent_activity": [
         "tipmip"
     ],

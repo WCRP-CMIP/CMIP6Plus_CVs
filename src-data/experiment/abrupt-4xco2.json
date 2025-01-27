@@ -12,19 +12,19 @@
     "model_realms": [
         {
             "id": "aogcm",
-            "is_required#abrupt-4xco2": true
+            "is_required": true
         },
         {
             "id": "aer",
-            "is_required#abrupt-4xco2": false
+            "is_required": false
         },
         {
             "id": "chem",
-            "is_required#abrupt-4xco2": false
+            "is_required": false
         },
         {
             "id": "bgc",
-            "is_required#abrupt-4xco2": false
+            "is_required": false
         }
     ],
     "parent_activity": [

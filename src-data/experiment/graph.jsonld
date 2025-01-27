@@ -1,36 +1,5 @@
 {
-  "@context": {
-  "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-  "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-  "entries": "@none",
-  "id": "@id",
-  "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/CF/",
-  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
-  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
-  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
-  "variables": "https://wcrp-cmip.github.io/MIP-variables/",
-  "activity": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-  },
-  "model_realms": {
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
-  },
-  "parent_activity": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-  },
-  "parent_experiment": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_context_"
-  },
-  "sub_experiment": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/_context_"
-  }
-},
+  "@context": ,
   "@graph": [
     {
   "id": "1pctco2",
@@ -42,20 +11,24 @@
     "cmip"
   ],
   "description": "DECK: 1pctCO2",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -84,19 +57,19 @@
   "model_realms": [
     {
       "id": "aogcm",
-      "is_required#abrupt-4xco2": true
+      "is_required": true
     },
     {
       "id": "aer",
-      "is_required#abrupt-4xco2": false
+      "is_required": false
     },
     {
       "id": "chem",
-      "is_required#abrupt-4xco2": false
+      "is_required": false
     },
     {
       "id": "bgc",
-      "is_required#abrupt-4xco2": false
+      "is_required": false
     }
   ],
   "parent_activity": [
@@ -124,20 +97,24 @@
     "cmip"
   ],
   "description": "DECK: AMIP",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "none"
   ],
@@ -163,20 +140,24 @@
     "cmip"
   ],
   "description": "CMIP6 historical (CO2 emission-driven)",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -202,20 +183,24 @@
     "cmip"
   ],
   "description": "DECK: spin-up portion of the control (emission-driven)",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "none"
   ],
@@ -241,20 +226,24 @@
     "cmip"
   ],
   "description": "DECK: control (emission-driven)",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -274,20 +263,24 @@
   "description": "ramp down after temporary overshoot to GWL2",
   "tier": 1,
   "id": "esm-up2p0-gwl2p0-50y-dn2p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "tipmip"
   ],
@@ -314,20 +307,24 @@
   "description": "stabilisation at GWL2",
   "tier": 1,
   "id": "esm-up2p0-gwl2p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "tipmip"
   ],
@@ -354,20 +351,24 @@
   "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
   "tier": 1,
   "id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "tipmip"
   ],
@@ -394,20 +395,24 @@
   "description": "ramp down after temporary overshoot to GWL4",
   "tier": 1,
   "id": "esm-up2p0-gwl4p0-50y-dn2p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "tipmip"
   ],
@@ -434,20 +439,24 @@
   "description": "stabilisation at GWL4",
   "tier": 1,
   "id": "esm-up2p0-gwl4p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "tipmip"
   ],
@@ -474,20 +483,24 @@
   "description": "ramp up with constant CO2 emissions",
   "tier": 1,
   "id": "esm-up2p0",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -520,20 +533,24 @@
     "lesfmip"
   ],
   "description": "As hist-aer but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "lesfmip"
   ],
@@ -559,20 +576,24 @@
     "lesfmip"
   ],
   "description": "As hist-GHG but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "lesfmip"
   ],
@@ -598,20 +619,24 @@
     "lesfmip"
   ],
   "description": "As hist-lu but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -637,20 +662,24 @@
     "lesfmip"
   ],
   "description": "As hist-sol but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "lesfmip"
   ],
@@ -676,20 +705,24 @@
     "lesfmip"
   ],
   "description": "As hist-totalO3 but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "lesfmip"
   ],
@@ -715,20 +748,24 @@
     "lesfmip"
   ],
   "description": "As hist-volc but with updated forcings",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "lesfmip"
   ],
@@ -754,20 +791,24 @@
     "lesfmip"
   ],
   "description": "Anthropogenic-aerosol-only historical simulations",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -793,20 +834,24 @@
     "lesfmip"
   ],
   "description": "Well-mixed greenhouse-gas-only historical simulations",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -832,20 +877,24 @@
     "lesfmip"
   ],
   "description": "Historical simulations with only land use changes",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -871,20 +920,24 @@
     "lesfmip"
   ],
   "description": "Natural forcings (solar + volcanic)",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -910,20 +963,24 @@
     "lesfmip"
   ],
   "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -949,20 +1006,24 @@
     "lesfmip"
   ],
   "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -988,20 +1049,24 @@
     "lesfmip"
   ],
   "description": "Pre-industrial WMGHG, halocarbon and O3 precursor emissions, other forcings as for the historical experiment",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1027,20 +1092,24 @@
     "lesfmip"
   ],
   "description": "historical simulations with 1850 solar forcing",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1066,20 +1135,24 @@
     "lesfmip"
   ],
   "description": "historical simulations with 1850 total ozone",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1105,20 +1178,24 @@
     "lesfmip"
   ],
   "description": "historical simulations with 1850 volcanic emissions",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1144,20 +1221,24 @@
     "lesfmip"
   ],
   "description": "Solar-only historical simulations",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1183,20 +1264,24 @@
     "lesfmip"
   ],
   "description": "Ozone-only historical simulations",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1222,20 +1307,24 @@
     "lesfmip"
   ],
   "description": "Volcanic-only historical simulations",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1261,20 +1350,24 @@
     "cmip"
   ],
   "description": "CMIP6 historical",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1293,20 +1386,24 @@
     ,{
   "description": "",
   "id": "piclim-370-126aer-nh3nox",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1332,20 +1429,24 @@
     ,{
   "description": "",
   "id": "piclim-370-126aer",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1371,20 +1472,24 @@
     ,{
   "description": "",
   "id": "piclim-370-afr126aer",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1410,20 +1515,24 @@
     ,{
   "description": "",
   "id": "piclim-370-eas126aer",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1449,20 +1558,24 @@
     ,{
   "description": "",
   "id": "piclim-370-nae126aer",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1488,20 +1601,24 @@
     ,{
   "description": "",
   "id": "piclim-370-sas126aer",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1527,20 +1644,24 @@
     ,{
   "description": "",
   "id": "piclim-370",
-  "model_realms": {
-    "agcm": {
+  "model_realms": [
+    {
+      "id": "agcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": true
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1573,20 +1694,24 @@
     "cmip"
   ],
   "description": "DECK: spin-up portion of the control",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "none"
   ],
@@ -1612,20 +1737,24 @@
     "cmip"
   ],
   "description": "DECK: control",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1645,20 +1774,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
   "tier": "2",
   "id": "ssp370-126aer-nh3nox",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1685,20 +1818,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with anthropogenic aerosol and precursor emissions taken from SSP1-2.6.",
   "tier": 1,
   "id": "ssp370-126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1725,20 +1862,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
   "tier": 1,
   "id": "ssp370-afr126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1765,20 +1906,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Asia is defined as the combination of the East Asian and South Asian regions used in ssp370-eas126aer and ssp370-sas126aer. ",
   "tier": "2",
   "id": "ssp370-asia126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1805,20 +1950,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
   "tier": 1,
   "id": "ssp370-eas126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1845,20 +1994,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
   "tier": 1,
   "id": "ssp370-nae126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1885,20 +2038,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
   "tier": "2",
   "id": "ssp370-saf126ca",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1925,20 +2082,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
   "tier": 1,
   "id": "ssp370-sas126aer",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
@@ -1965,20 +2126,24 @@
   "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
   "tier": "2",
   "id": "ssp370-sas126ca",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
