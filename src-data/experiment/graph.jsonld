@@ -1,41 +1,5 @@
 {
-  "@context": {
-  "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-  "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-  "entries": "@none",
-  "id": "@id",
-  "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/CF/",
-  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
-  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
-  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
-  "variables": "https://wcrp-cmip.github.io/MIP-variables/",
-  "activity": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-  },
-  "model_realms": {
-    "@container": [
-      "@index",
-      "@set"
-    ],
-    "@id": "{@index}",
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
-  },
-  "parent_activity": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-  },
-  "parent_experiment": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_context_"
-  },
-  "sub_experiment": {
-    "@type": "@id",
-    "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/_context_"
-  }
-},
+  "@context": ,
   "@graph": [
     {
   "id": "1pctco2",
@@ -86,20 +50,24 @@
     "cmip"
   ],
   "description": "DECK: abrupt-4xCO2",
-  "model_realms": {
-    "aogcm": {
+  "model_realms": [
+    {
+      "id": "aogcm",
       "is_required": true
     },
-    "aer": {
+    {
+      "id": "aer",
       "is_required": false
     },
-    "chem": {
+    {
+      "id": "chem",
       "is_required": false
     },
-    "bgc": {
+    {
+      "id": "bgc",
       "is_required": false
     }
-  },
+  ],
   "parent_activity": [
     "cmip"
   ],
