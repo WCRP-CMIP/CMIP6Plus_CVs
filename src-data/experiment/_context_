@@ -1,36 +1,33 @@
 {
-    "@context": [
-        "../_context_",
-        {
-            "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-            "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
-            "activity": {
-                "@type": "@id",
-                "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-            },
-            "model_realms": {
-                "@container": "@id",
-                "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
-            },
-            "parent_activity": {
-                "@type": "@id",
-                "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
-            },
-            "parent_experiment": {
-                "@type": "@id",
-                "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_context_"
-            },
-            "sub_experiment": {
-                "@type": "@id",
-                "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/_context_"
-            }
-        }
-    ],
-    "@embed": "@always",
-    "type": [
-        "cmip6plus"
-    ],
-    "@type": [
-        "cmip6plus"
-    ]
+  "@context": [
+    "../_context_",
+    {
+      "@base": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
+      "@vocab": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/",
+      "activity": {
+        "@type": "@id",
+        "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+      },
+      "model_realms": {
+        "@container": "@index",
+        "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_"
+      },
+      "parent_activity": {
+        "@type": "@id",
+        "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
+      },
+      "parent_experiment": {
+        "@type": "@id",
+        "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/experiment/_context_"
+      },
+      "sub_experiment": {
+        "@type": "@id",
+        "@context": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/sub-experiment/_context_"
+      }
+    }
+  ],
+  "@embed": "@always",
+  "type": [
+    "cmip6plus"
+  ]
 }
