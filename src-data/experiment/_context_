@@ -10,8 +10,8 @@
             },
             "model_realms": {
                 "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_",
-                "@container":"@set"
-                }
+                "@container": "@set"
+            },
             "parent_activity": {
                 "@type": "@id",
                 "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
