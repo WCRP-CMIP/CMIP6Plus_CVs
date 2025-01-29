@@ -13,7 +13,7 @@
         "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
     },
     "organisation": [
-        "institutions/mohc"
+        "institution/mohc"
     ],
     "label_extended": "HadGEM3-GC3.1-N96ORCA1",
     "activity_participation": [

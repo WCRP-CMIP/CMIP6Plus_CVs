@@ -72,12 +72,13 @@
         },
         "organisation": {
             "type": "array",
-            "description": "Organizational affiliations",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/> https://wcrp-cmip.github.io/WCRP-universe/ </a>. ",
             "items": {
                 "type": "string",
                 "pattern": "^institutions/[a-z0-9_]+$"
             },
-            "minItems": 1
+            "minItems": 1,
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/_schema_#/contains"
         },
         "model-component": {
             "type": "array",

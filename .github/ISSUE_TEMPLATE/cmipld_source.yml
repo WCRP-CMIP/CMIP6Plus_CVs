@@ -73,7 +73,8 @@ body:
 -   id: organisation
     attributes:
         label: Organisation
-        description: Organizational affiliations
+        description: 'A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/>
+            https://wcrp-cmip.github.io/WCRP-universe/ </a>. '
     validations:
         required: true
     type: input

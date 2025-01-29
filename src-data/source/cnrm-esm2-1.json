@@ -14,7 +14,7 @@
         "cmip6plus"
     ],
     "organisation": [
-        "institutions/cnrm-cerfacs"
+        "institution/cnrm-cerfacs"
     ],
     "license": {
         "id": "cc-by-4.0",
