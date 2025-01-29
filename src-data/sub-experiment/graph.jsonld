@@ -28,7 +28,7 @@
     "wcrp:sub-experiment",
     "cmip6plus"
   ],
-  "description": "none",
+  "description": "There is no sub-experiment",
   "label": "none"
 }
   ]
