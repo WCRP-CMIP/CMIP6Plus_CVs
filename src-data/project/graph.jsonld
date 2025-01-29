@@ -12,10 +12,7 @@
   "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
   "variables": "https://wcrp-cmip.github.io/MIP-variables/",
   "activity": {
-    "@container": [
-      "@index",
-      "@set"
-    ],
+    "@container": "@set",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_"
   },
   "license": {

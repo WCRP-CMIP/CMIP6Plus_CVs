@@ -1,1 +1,10 @@
-{"@context": "_context_", "id": "f2023", "type": ["wcrp:sub-experiment", "cmip6plus"], "description": "Forcings 2023", "name": "f2023"}
+{
+    "@context": "_context_",
+    "id": "f2023",
+    "type": [
+        "wcrp:sub-experiment",
+        "cmip6plus"
+    ],
+    "description": "Forcings 2023",
+    "label": "f2023"
+}

@@ -20,7 +20,7 @@
     "cmip6plus"
   ],
   "description": "Forcings 2023",
-  "name": "f2023"
+  "label": "f2023"
 }
     ,{
   "id": "none",
@@ -29,7 +29,7 @@
     "cmip6plus"
   ],
   "description": "none",
-  "name": "none"
+  "label": "none"
 }
   ]
 }
