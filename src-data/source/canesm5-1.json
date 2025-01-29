@@ -17,10 +17,9 @@
         "institutions/cccma"
     ],
     "license": {
-        "cc-by-4.0": {
-            "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
-            "source_specific_info": ""
-        }
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
+        "source_specific_info": ""
     },
     "label_extended": "CanESM5.1",
     "model_component": [

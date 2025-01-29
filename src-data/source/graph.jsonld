@@ -40,10 +40,9 @@
     "institutions/cccma"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@ec.gc.ca <- f.cccma.info-info.ccmac.f",
+    "source_specific_info": ""
   },
   "label_extended": "CanESM5.1",
   "model_component": [
@@ -76,10 +75,9 @@
     "institutions/ncar"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@ucar.edu <- cesm_cmip6",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@ucar.edu <- cesm_cmip6",
+    "source_specific_info": ""
   },
   "label_extended": "CESM2",
   "model_component": [
@@ -112,10 +110,9 @@
     "institutions/cnrm-cerfacs"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@meteo.fr <- contact.cmip",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@meteo.fr <- contact.cmip",
+    "source_specific_info": ""
   },
   "label_extended": "CNRM-ESM2-1",
   "model_component": [
@@ -148,10 +145,9 @@
     "consortia/ec-earth-consortium"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@ec-earth.org <- cmip6-data",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@ec-earth.org <- cmip6-data",
+    "source_specific_info": ""
   },
   "label_extended": "EC-Earth3-AerChem",
   "model_component": [
@@ -175,10 +171,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
+    "source_specific_info": ""
   },
   "organisation": [
     "institutions/nasa-giss"
@@ -208,10 +203,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@metoffice.gov.uk <- cmip6.hadgem3",
-      "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@metoffice.gov.uk <- cmip6.hadgem3",
+    "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
   },
   "organisation": [
     "institutions/mohc"
@@ -240,10 +234,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+    "source_specific_info": ""
   },
   "organisation": [
     "consortia/miroc"
@@ -272,10 +265,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+    "source_specific_info": ""
   },
   "organisation": [
     "institutions/mpi-m"
@@ -306,10 +298,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@dkrz.de <- cmip6-mpi-esm",
+    "source_specific_info": ""
   },
   "organisation": [
     "institutions/mpi-m"
@@ -349,10 +340,9 @@
     "institutions/mri"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
+    "source_specific_info": ""
   },
   "label_extended": "MRI-ESM2.0",
   "model_component": [
@@ -376,10 +366,9 @@
   "cohort": "Published",
   "contributors": [],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@met.no <- noresm-ncc",
-      "source_specific_info": ""
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@met.no <- noresm-ncc",
+    "source_specific_info": ""
   },
   "organisation": [
     "consortia/ncc"
@@ -421,10 +410,9 @@
     "institutions/mohc"
   ],
   "license": {
-    "cc-by-4.0": {
-      "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
-      "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
-    }
+    "id": "cc-by-4.0",
+    "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
+    "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
   },
   "label_extended": "UKESM1.0-N96ORCA1",
   "model_component": [

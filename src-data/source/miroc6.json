@@ -8,10 +8,9 @@
     "cohort": "Published",
     "contributors": [],
     "license": {
-        "cc-by-4.0": {
-            "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
-            "source_specific_info": ""
-        }
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+        "source_specific_info": ""
     },
     "organisation": [
         "consortia/miroc"

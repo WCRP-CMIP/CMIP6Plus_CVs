@@ -17,10 +17,9 @@
         "institutions/mohc"
     ],
     "license": {
-        "cc-by-4.0": {
-            "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
-            "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
-        }
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
+        "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
     },
     "label_extended": "UKESM1.0-N96ORCA1",
     "model_component": [
