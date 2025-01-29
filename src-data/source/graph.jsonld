@@ -18,7 +18,7 @@
   },
   "license": {
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_",
-    "@container": "@set"
+    "@container": "@id"
   }
 },
   "@graph": [
