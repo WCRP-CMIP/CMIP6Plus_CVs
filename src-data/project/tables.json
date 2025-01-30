@@ -1,13 +1,6 @@
 {
     "@context": [
-        "_context_",
-        {
-            "tables": {
-                "@type": "@id",
-                "@container": "@set",
-                "@context": "https://wcrp-cmip.github.io/MIP-variables/tables/_context_"
-            }
-        }
+        "_context_"
     ],
     "id": "tables",
     "type": [

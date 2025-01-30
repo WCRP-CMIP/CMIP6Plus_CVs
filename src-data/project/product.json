@@ -1,13 +1,7 @@
 {
     "@context": [
-        "_context_",
-        {
-            "product": {
-                "@type": "@id",
-                "@container": "@set",
-                "@context": "https://wcrp-cmip.github.io/WCRP-universe/product/_context_"
-            }
-        }
+        "_context_"
+
     ],
     "id": "product",
     "type": [
