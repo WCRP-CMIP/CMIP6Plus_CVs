@@ -20,7 +20,7 @@
     "@container": "@set",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_"
   },
-  "mip_era": {
+  "mip-era": {
     "@type": "@id",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
   },
@@ -111,7 +111,9 @@
     "cmip6plus",
     "wcrp:mip_era"
   ],
-  "mip_era": "cmip6plus"
+  "mipera": [
+    "cmip6plus"
+  ]
 }
     ,{
   "id": "product-list",
