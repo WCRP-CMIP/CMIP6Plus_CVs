@@ -1,6 +1,6 @@
 {
     "@context": "_context_",
-    "id": "drs",
+    "id": "drs-list",
     "type": [
         "wcrp:project",
         "cmip6plus",

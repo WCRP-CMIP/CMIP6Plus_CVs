@@ -1,15 +1,14 @@
 {
     "@context": [
         "_context_"
-
     ],
-    "id": "product",
+    "id": "mip-era-list",
     "type": [
         "wcrp:project",
         "cmip6plus",
-        "wcrp:product"
+        "wcrp:mip_era"
     ],
-    "product": [
-        "model-output"
+    "mip_era": [
+        "cmip6plus"
     ]
 }

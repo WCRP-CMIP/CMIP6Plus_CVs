@@ -2,7 +2,7 @@
     "@context": [
         "_context_"
     ],
-    "id": "tables",
+    "id": "tables-list",
     "type": [
         "wcrp:project",
         "cmip6plus",

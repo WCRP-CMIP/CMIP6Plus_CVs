@@ -35,23 +35,19 @@
 },
   "@graph": [
     {
-  "id": "activity",
+  "id": "activity-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
     "wcrp:activity"
   ],
-  "activity": {
-    "lesfmip": {
-      "start": 2024
-    },
-    "cmip": {
-      "start": 2023
-    }
-  }
+  "activity": [
+    "lesfmip",
+    "cmip"
+  ]
 }
     ,{
-  "id": "drs",
+  "id": "drs-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -67,7 +63,7 @@
   }
 }
     ,{
-  "id": "index",
+  "id": "index-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -95,7 +91,7 @@
   }
 }
     ,{
-  "id": "license",
+  "id": "license-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -108,7 +104,7 @@
   }
 }
     ,{
-  "id": "mip-era",
+  "id": "mip-era-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -119,7 +115,7 @@
   ]
 }
     ,{
-  "id": "product",
+  "id": "product-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -130,7 +126,7 @@
   ]
 }
     ,{
-  "id": "repo",
+  "id": "repo-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -139,7 +135,7 @@
   "repo": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs"
 }
     ,{
-  "id": "required-global-attributes",
+  "id": "required-global-attributes-list",
   "type": [
     "cmip6plus",
     "wcrp:project",
@@ -178,7 +174,7 @@
   ]
 }
     ,{
-  "id": "tables",
+  "id": "tables-list",
   "type": [
     "wcrp:project",
     "cmip6plus",
@@ -265,7 +261,7 @@
   ]
 }
     ,{
-  "id": "tracking-id",
+  "id": "tracking-id-list",
   "type": [
     "wcrp:project",
     "cmip6plus",

@@ -2,13 +2,14 @@
     "@context": [
         "_context_"
     ],
-    "id": "mip-era",
+    "id": "activity-list",
     "type": [
         "wcrp:project",
         "cmip6plus",
-        "wcrp:mip_era"
+        "wcrp:activity"
     ],
-    "mip_era": [
-        "cmip6plus"
+    "activity": [
+        "lesfmip",
+        "cmip"
     ]
 }

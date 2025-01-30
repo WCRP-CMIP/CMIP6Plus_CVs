@@ -1,6 +1,6 @@
 {
     "@context": "_context_",
-    "id": "required-global-attributes",
+    "id": "required-global-attributes-list",
     "type": [
         "cmip6plus",
         "wcrp:project",
