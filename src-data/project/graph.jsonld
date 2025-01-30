@@ -111,9 +111,7 @@
     "cmip6plus",
     "wcrp:mip_era"
   ],
-  "mip_era": [
-    "cmip6plus"
-  ]
+  "mip_era": "cmip6plus"
 }
     ,{
   "id": "product-list",
@@ -122,9 +120,9 @@
     "cmip6plus",
     "wcrp:product"
   ],
-  "product": [
-    "model-output"
-  ]
+  "product": {
+    "id": "model-output"
+  }
 }
     ,{
   "id": "repo-list",
