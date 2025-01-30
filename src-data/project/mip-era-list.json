@@ -6,5 +6,5 @@
         "cmip6plus",
         "wcrp:mip_era"
     ],
-    "mipera": ["cmip6plus"]
+    "mip-era": ["cmip6plus"]
 }

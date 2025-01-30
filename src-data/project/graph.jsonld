@@ -111,7 +111,7 @@
     "cmip6plus",
     "wcrp:mip_era"
   ],
-  "mipera": [
+  "mip-era": [
     "cmip6plus"
   ]
 }
