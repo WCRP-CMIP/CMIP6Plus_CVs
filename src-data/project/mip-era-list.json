@@ -1,7 +1,5 @@
 {
-    "@context": [
-        "_context_"
-    ],
+    "@context": ["_context_"],
     "id": "mip-era-list",
     "type": [
         "wcrp:project",
