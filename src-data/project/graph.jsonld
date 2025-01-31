@@ -17,7 +17,7 @@
   },
   "era": {
     "@type": "@id",
-    "id": "mip_era",
+    "@value": "mip_era",
     "@context": "https://wcrp-cmip.github.io/WCRP-universe/mip/_context_"
   },
   "license": {
