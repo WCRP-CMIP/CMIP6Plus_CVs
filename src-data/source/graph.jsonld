@@ -21,7 +21,7 @@
     "@container": "@set"
   },
   "organisation": {
-    "@context": "https://wcrp-cmip.github.io/WCRP-universe/_context_",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/organisation/_context_",
     "@type": "@id"
   }
 },
@@ -41,7 +41,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "institution/cccma"
+    "organisation/cccma"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -220,7 +220,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "institution/ncar"
+    "organisation/ncar"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -399,7 +399,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "institution/cnrm-cerfacs"
+    "organisation/cnrm-cerfacs"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -559,7 +559,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "consortium/ec-earth-consortium"
+    "organisation/ec-earth-consortium"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -699,7 +699,7 @@
     "source_specific_info": ""
   },
   "organisation": [
-    "institution/nasa-giss"
+    "organisation/nasa-giss"
   ],
   "label_extended": "GISS-E2.1G",
   "activity_participation": [
@@ -840,7 +840,7 @@
     "source_specific_info": "https://ukesm.ac.uk/licensing-of-met-office-nerc-and-niwa-cmip6-data/"
   },
   "organisation": [
-    "institution/mohc"
+    "organisation/mohc"
   ],
   "label_extended": "HadGEM3-GC3.1-N96ORCA1",
   "activity_participation": [
@@ -961,7 +961,7 @@
     "source_specific_info": ""
   },
   "organisation": [
-    "consortium/miroc"
+    "organisation/miroc"
   ],
   "label_extended": "MIROC6",
   "activity_participation": [
@@ -1083,7 +1083,7 @@
     "source_specific_info": ""
   },
   "organisation": [
-    "institution/mpi-m"
+    "organisation/mpi-m"
   ],
   "label_extended": "MPI-ESM1.2-HR",
   "activity_participation": [
@@ -1242,7 +1242,7 @@
     "source_specific_info": ""
   },
   "organisation": [
-    "institution/mpi-m"
+    "organisation/mpi-m"
   ],
   "label_extended": "MPI-ESM1.2-LR",
   "activity_participation": [
@@ -1402,7 +1402,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "institution/mri"
+    "organisation/mri"
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -1561,7 +1561,7 @@
     "source_specific_info": ""
   },
   "organisation": [
-    "consortium/ncc"
+    "organisation/ncc"
   ],
   "label_extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
   "activity_participation": [
@@ -1741,7 +1741,7 @@
     "cmip6plus"
   ],
   "organisation": [
-    "institution/mohc"
+    "organisation/mohc"
   ],
   "license": {
     "id": "cc-by-4.0",
