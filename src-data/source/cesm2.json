@@ -14,7 +14,7 @@
         "cmip6plus"
     ],
     "organisation": [
-        "institution/ncar"
+        "organisation/ncar"
     ],
     "license": {
         "id": "cc-by-4.0",
