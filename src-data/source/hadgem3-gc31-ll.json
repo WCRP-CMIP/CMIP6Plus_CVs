@@ -24,7 +24,7 @@
         {
             "id": "ukca-glomap-mode",
             "type": "wcrp:model-component",
-            "model-family": "",
+            "model-family": "hadgem3",
             "component-family": "",
             "label": "UKCA-GLOMAP-mode",
             "description": "UKCA-GLOMAP-mode",
@@ -60,25 +60,6 @@
             "coupled-with": ""
         },
         {
-            "id": "none",
-            "type": "wcrp:model-component",
-            "model-family": "",
-            "component-family": "",
-            "label": "none",
-            "description": "none",
-            "realm": "atmoschem",
-            "native-nominal-resolution": [
-                "none"
-            ],
-            "native-horizontal-grid": "",
-            "native-vertical-grid": "",
-            "configuration": "",
-            "references": [],
-            "codebase": "",
-            "embedded-in": "",
-            "coupled-with": ""
-        },
-        {
             "id": "jules-hadgem3-gl7p1",
             "type": "wcrp:model-component",
             "model-family": "hadgem3",
@@ -91,26 +72,7 @@
             ],
             "native-horizontal-grid": "",
             "native-vertical-grid": "",
-            "configuration": "",
-            "references": [],
-            "codebase": "",
-            "embedded-in": "",
-            "coupled-with": ""
-        },
-        {
-            "id": "none",
-            "type": "wcrp:model-component",
-            "model-family": "",
-            "component-family": "",
-            "label": "none",
-            "description": "none",
-            "realm": "landice",
-            "native-nominal-resolution": [
-                "none"
-            ],
-            "native-horizontal-grid": "",
-            "native-vertical-grid": "",
-            "configuration": "",
+            "configuration": "gl7p1",
             "references": [],
             "codebase": "",
             "embedded-in": "",
@@ -126,25 +88,6 @@
             "realm": "ocean",
             "native-nominal-resolution": [
                 "100km"
-            ],
-            "native-horizontal-grid": "",
-            "native-vertical-grid": "",
-            "configuration": "",
-            "references": [],
-            "codebase": "",
-            "embedded-in": "",
-            "coupled-with": ""
-        },
-        {
-            "id": "none",
-            "type": "wcrp:model-component",
-            "model-family": "",
-            "component-family": "",
-            "label": "none",
-            "description": "none",
-            "realm": "ocnbgchem",
-            "native-nominal-resolution": [
-                "none"
             ],
             "native-horizontal-grid": "",
             "native-vertical-grid": "",

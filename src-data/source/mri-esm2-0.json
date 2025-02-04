@@ -100,25 +100,6 @@
             "coupled-with": ""
         },
         {
-            "id": "none",
-            "type": "wcrp:model-component",
-            "model-family": "",
-            "component-family": "",
-            "label": "none",
-            "description": "none",
-            "realm": "landice",
-            "native-nominal-resolution": [
-                "none"
-            ],
-            "native-horizontal-grid": "",
-            "native-vertical-grid": "",
-            "configuration": "",
-            "references": [],
-            "codebase": "",
-            "embedded-in": "",
-            "coupled-with": ""
-        },
-        {
             "id": "mripcom4p4",
             "type": "wcrp:model-component",
             "model-family": "",

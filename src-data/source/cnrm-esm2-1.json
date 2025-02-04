@@ -100,29 +100,10 @@
             "coupled-with": ""
         },
         {
-            "id": "none",
-            "type": "wcrp:model-component",
-            "model-family": "",
-            "component-family": "",
-            "label": "none",
-            "description": "none",
-            "realm": "landice",
-            "native-nominal-resolution": [
-                "none"
-            ],
-            "native-horizontal-grid": "",
-            "native-vertical-grid": "",
-            "configuration": "",
-            "references": [],
-            "codebase": "",
-            "embedded-in": "",
-            "coupled-with": ""
-        },
-        {
             "id": "nemo",
             "type": "wcrp:model-component",
             "model-family": "",
-            "component-family": "",
+            "component-family": "nemo",
             "label": "Nemo",
             "description": "Nemo 3.6 (eORCA1, tripolar primarily 1deg; 362 x 294 longitude/latitude; 75 levels; top grid cell 0-1 m)",
             "realm": "ocean",
