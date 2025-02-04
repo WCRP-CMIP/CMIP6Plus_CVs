@@ -14,7 +14,7 @@
         "cmip6plus"
     ],
     "organisation": [
-        "consortium/ec-earth-consortium"
+        "organisation/ec-earth-consortium"
     ],
     "license": {
         "id": "cc-by-4.0",
