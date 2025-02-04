@@ -13,7 +13,7 @@
         "source_specific_info": ""
     },
     "organisation": [
-        "organisation/ncc"
+        "ncc"
     ],
     "label_extended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)",
     "activity_participation": [
