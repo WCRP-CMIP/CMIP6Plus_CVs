@@ -6,5 +6,5 @@
         "cmip6plus",
         "wcrp:mip_era"
     ],
-    "era": ["cmip6plus"]
+    "mip_era": {"id":"cmip6plus"}
 }
