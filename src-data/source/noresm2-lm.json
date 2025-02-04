@@ -22,14 +22,158 @@
         "lesfmip"
     ],
     "model_component": [
-        "osloaero",
-        "cam-oslo",
-        "oslochemsimp",
-        "clm",
-        "cism",
-        "micom",
-        "hamocc",
-        "cice"
+        {
+            "id": "osloaero",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "OsloAero",
+            "description": "OsloAero",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cam-oslo",
+            "type": "wcrp:model-component",
+            "model-family": "cam",
+            "component-family": "",
+            "label": "CAM-OSLO",
+            "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "144 x 96 longitude/latitude",
+            "native-vertical-grid": "32 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "oslochemsimp",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "OsloChemSimp",
+            "description": "OsloChemSimp",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "clm",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "CLM",
+            "description": "CLM",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cism",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "CISM",
+            "description": "CISM",
+            "realm": "landice",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "micom",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MICOM",
+            "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "360 x 384 longitude/latitude",
+            "native-vertical-grid": "70 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "hamocc",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "HAMOCC",
+            "description": "HAMOCC",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cice",
+            "type": "wcrp:model-component",
+            "model-family": "hadgem3",
+            "component-family": "",
+            "label": "CICE",
+            "description": "CICE",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "360 x 330 longitude/latitude",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
     ],
     "release_year": 2017,
     "label": "NorESM2-LM"

@@ -23,14 +23,23 @@
     },
     "label_extended": "EC-Earth3-AerChem",
     "model_component": [
-        "TM5",
-        "IFS",
-        "TM5",
-        "HTESSEL",
-        "none",
-        "NEMO3.6",
-        "none",
-        "LIM3"
+        {
+            "id": "",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "",
+            "description": "",
+            "realm": "",
+            "native-nominal-resolution": [],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
     ],
     "label": "EC-Earth3-AerChem"
 }

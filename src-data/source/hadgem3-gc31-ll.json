@@ -21,11 +21,158 @@
         "lesfmip"
     ],
     "model_component": [
-        "ukca-glomap-mode",
-        "metum-hadgem3-ga7.1",
-        "jules-hadgem3-gl7.1",
-        "nemo-hadgem3-go6.0",
-        "cice-hadgem3-gsi8"
+        {
+            "id": "ukca-glomap-mode",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "UKCA-GLOMAP-mode",
+            "description": "UKCA-GLOMAP-mode",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "metum-hadgem3-ga7p1",
+            "type": "wcrp:model-component",
+            "model-family": "hadgem3",
+            "component-family": "",
+            "label": "MetUM-HadGEM3-GA7.1",
+            "description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "none",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "none",
+            "description": "none",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "none"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "jules-hadgem3-gl7p1",
+            "type": "wcrp:model-component",
+            "model-family": "hadgem3",
+            "component-family": "",
+            "label": "JULES-HadGEM3-GL7.1",
+            "description": "JULES-HadGEM3-GL7.1",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "none",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "none",
+            "description": "none",
+            "realm": "landice",
+            "native-nominal-resolution": [
+                "none"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "nemo-hadgem3-go6p0",
+            "type": "wcrp:model-component",
+            "model-family": "hadgem3",
+            "component-family": "",
+            "label": "NEMO-HadGEM3-GO6.0",
+            "description": "NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "none",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "none",
+            "description": "none",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "none"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cice-hadgem3-gsi8",
+            "type": "wcrp:model-component",
+            "model-family": "hadgem3",
+            "component-family": "",
+            "label": "CICE-HadGEM3-GSI8",
+            "description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
     ],
     "release_year": 2016,
     "label": "HadGEM3-GC31-LL"

@@ -21,13 +21,139 @@
         "lesfmip"
     ],
     "model_component": [
-        ",-prescribed-macv2-sp",
-        "echam6.3",
-        "jsbach3.20",
-        "prescribed",
-        "mpiom1.63",
-        "hamocc6",
-        "unnamed"
+        {
+            "id": ",",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": ",",
+            "description": ", prescribed MACv2-SP",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "echam6p3",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "ECHAM6.3",
+            "description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "192 x 96 longitude/latitude",
+            "native-vertical-grid": "47 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "jsbach3p20",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "JSBACH3.20",
+            "description": "JSBACH3.20",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "prescribed",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "prescribed",
+            "description": "prescribed",
+            "realm": "landice",
+            "native-nominal-resolution": [
+                "none"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mpiom1p63",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MPIOM1.63",
+            "description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "hamocc6",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "HAMOCC6",
+            "description": "HAMOCC6",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "unnamed",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "unnamed",
+            "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
     ],
     "release_year": 2017,
     "label": "MPI-ESM1.2-LR"

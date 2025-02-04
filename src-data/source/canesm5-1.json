@@ -23,14 +23,158 @@
     },
     "label_extended": "CanESM5.1",
     "model_component": [
-        "interactive",
-        "CanAM5.1",
-        "specified",
-        "CLASS3.6/CTEM1.2",
-        "specified",
-        "NEMO3.4.1",
-        "Canadian",
-        "LIM2"
+        {
+            "id": "interactive",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "interactive",
+            "description": "interactive",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "500km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "canam5p1",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "CanAM5.1",
+            "description": "CanAM5.1 (T63L49 native atmosphere, T63 Linear Gaussian Grid; 128 x 64 longitude/latitude; 49 levels; top level 1 hPa)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "500km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "specified",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "specified",
+            "description": "specified oxidants for aerosols",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "500km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "class3p6",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "CLASS3.6/CTEM1.2",
+            "description": "CLASS3.6/CTEM1.2",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "500km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "specified",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "specified",
+            "description": "specified ice sheets",
+            "realm": "landice",
+            "native-nominal-resolution": [
+                "500km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "nemo3p4p1",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "NEMO3.4.1",
+            "description": "NEMO3.4.1 (ORCA1 tripolar grid, 1 deg with refinement to 1/3 deg within 20 degrees of the equator; 361 x 290 longitude/latitude; 45 vertical levels; top grid cell 0-6.19 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "canadian",
+            "type": "wcrp:model-component",
+            "model-family": "cmoc",
+            "component-family": "",
+            "label": "Canadian",
+            "description": "Canadian Model of Ocean Carbon (CMOC); NPZD ecosystem with OMIP prescribed carbonate chemistry",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "lim2",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "LIM2",
+            "description": "LIM2",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
     ],
     "label": "CanESM5.1"
 }
