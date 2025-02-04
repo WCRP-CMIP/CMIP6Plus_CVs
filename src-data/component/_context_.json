@@ -1,8 +1,0 @@
-{
-    "@context": {},
-    "@embed": "@always",
-    "type": [
-        "wcrp:component",
-        "cmip6plus"
-    ]
-}
