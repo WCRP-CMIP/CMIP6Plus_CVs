@@ -47,6 +47,7 @@ jobs:
           # pipe should preseve newline properties for multilines
           ISSUE_SUBMITTER: ${{ github.event.issue.user.login }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_LABELS: ${{ github.event.issue.labels}}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         run: |
