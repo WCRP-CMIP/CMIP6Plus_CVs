@@ -1,0 +1,10 @@
+{
+    "@context": "_context_",
+    "id": "mip-era-list",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:mip_era"
+    ],
+    "mip_era": {"id":"cmip6plus"}
+}

@@ -1,0 +1,44 @@
+{
+    "@context": "_context_",
+    "id": "hist-aer",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "lesfmip"
+    ],
+    "description": "Anthropogenic-aerosol-only historical simulations",
+    "model_realms": [
+        {
+            "id": "aogcm",
+            "is_required": true
+        },
+        {
+            "id": "aer",
+            "is_required": false
+        },
+        {
+            "id": "chem",
+            "is_required": false
+        },
+        {
+            "id": "bgc",
+            "is_required": false
+        }
+    ],
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "picontrol"
+    ],
+    "sub_experiment": [
+        "f2023"
+    ],
+    "tier": 1,
+    "end": 2020,
+    "min_number_yrs_per_sim": 0,
+    "start": 1850,
+    "label": "hist-aer"
+}

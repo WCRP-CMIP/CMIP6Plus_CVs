@@ -1,0 +1,161 @@
+{
+    "activity_participation": [
+        "cmip",
+        "ramip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "release_year": "2017",
+    "@context": "_context_",
+    "id": "cnrm-esm2-1",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "organisation": [
+        "cnrm-cerfacs"
+    ],
+    "license": {
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@meteo.fr <- contact.cmip",
+        "source_specific_info": ""
+    },
+    "label_extended": "CNRM-ESM2-1",
+    "model_component": [
+        {
+            "id": "tactic-v2",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "TACTIC_v2",
+            "description": "TACTIC_v2",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "arpege",
+            "type": "wcrp:model-component",
+            "model-family": "meteo-france",
+            "component-family": "",
+            "label": "Arpege",
+            "description": "Arpege 6.3 (T127; Gaussian Reduced with 24572 grid points in total distributed over 128 latitude circles (with 256 grid points per latitude circle between 30degN and 30degS reducing to 20 grid points per latitude circle at 88.9degN and 88.9degS); 91 levels; top level 78.4 km)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "128 latitude circles (256 grid points per latitude circle between 30degN/S)",
+            "native-vertical-grid": "91 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "reprobus-c-v2",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "REPROBUS-C_v2",
+            "description": "REPROBUS-C_v2",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "surfex",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "Surfex",
+            "description": "Surfex 8.0c",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "nemo",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "nemo",
+            "label": "Nemo",
+            "description": "Nemo 3.6 (eORCA1, tripolar primarily 1deg; 362 x 294 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "362 x 292 longitude/latitude",
+            "native-vertical-grid": "75 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "pisces",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "Pisces",
+            "description": "Pisces 2.s",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "gelato",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "Gelato",
+            "description": "Gelato 6.1",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
+    ],
+    "label": "CNRM-ESM2-1"
+}

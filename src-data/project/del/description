@@ -1,0 +1,10 @@
+{
+    "@context": "_context_",
+    "id": "description",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:description"
+    ],
+    "description": "This is the project definition for CMIP6+"
+}

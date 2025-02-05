@@ -1,0 +1,45 @@
+{
+    "description": "ramp down after temporary overshoot to GWL4",
+    "tier": 1,
+    "@context": "_context_",
+    "id": "esm-up2p0-gwl4p0-50y-dn2p0",
+    "model_realms": [
+        {
+            "id": "aogcm",
+            "is_required": true
+        },
+        {
+            "id": "bgc",
+            "is_required": true
+        },
+        {
+            "id": "aer",
+            "is_required": false
+        },
+        {
+            "id": "chem",
+            "is_required": false
+        }
+    ],
+    "parent_activity": [
+        "tipmip"
+    ],
+    "parent_experiment": [
+        "esm-up2p0-gwl4p0"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "tipmip"
+    ],
+    "experiment_description": "ramp down simulation with CO2 emissions that are the negative of those used in esm-up2p0, branching off from esm-up2p0-gwl4p0 after 50 years ",
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 200,
+    "label": "esm-up2p0-gwl4p0-50y-dn2p0"
+}

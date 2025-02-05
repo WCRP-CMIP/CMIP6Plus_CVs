@@ -1,0 +1,15 @@
+{
+    "@context": [
+        "_context_"
+    ],
+    "id": "activity-list",
+    "type": [
+        "wcrp:project",
+        "cmip6plus",
+        "wcrp:activity"
+    ],
+    "activity": [
+        "lesfmip",
+        "cmip"
+    ]
+}

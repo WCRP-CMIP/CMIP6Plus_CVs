@@ -1,0 +1,45 @@
+{
+    "description": "stabilisation at GWL2 after temporary overshoot to GWL4",
+    "tier": 1,
+    "@context": "_context_",
+    "id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0",
+    "model_realms": [
+        {
+            "id": "aogcm",
+            "is_required": true
+        },
+        {
+            "id": "bgc",
+            "is_required": true
+        },
+        {
+            "id": "aer",
+            "is_required": false
+        },
+        {
+            "id": "chem",
+            "is_required": false
+        }
+    ],
+    "parent_activity": [
+        "tipmip"
+    ],
+    "parent_experiment": [
+        "esm-up2p0-gwl4p0-50y-dn2p0"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "tipmip"
+    ],
+    "experiment_description": "zero CO2 emissions simulation starting at global warming level of 2K, branching off from esm-up2p0-gwl4p0-50y-dn2p0",
+    "end": "",
+    "start": "",
+    "min_number_yrs_per_sim": 300,
+    "label": "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0"
+}

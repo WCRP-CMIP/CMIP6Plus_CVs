@@ -1,0 +1,44 @@
+{
+    "description": "",
+    "@context": "_context_",
+    "id": "piclim-370",
+    "model_realms": [
+        {
+            "id": "agcm",
+            "is_required": true
+        },
+        {
+            "id": "aer",
+            "is_required": true
+        },
+        {
+            "id": "chem",
+            "is_required": false
+        },
+        {
+            "id": "bgc",
+            "is_required": false
+        }
+    ],
+    "parent_activity": [
+        "cmip"
+    ],
+    "parent_experiment": [
+        "picontrol"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "ramip"
+    ],
+    "experiment_description": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions from SSP3-7.0.",
+    "end": "2080",
+    "start": "2050",
+    "min_number_yrs_per_sim": 30,
+    "label": "piClim-370"
+}

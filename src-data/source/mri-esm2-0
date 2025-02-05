@@ -1,0 +1,161 @@
+{
+    "activity_participation": [
+        "cmip",
+        "ramip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "release_year": "2017",
+    "@context": "_context_",
+    "id": "mri-esm2-0",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "organisation": [
+        "mri"
+    ],
+    "license": {
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@mri-jma.go.jp <- mdeushi",
+        "source_specific_info": ""
+    },
+    "label_extended": "MRI-ESM2.0",
+    "model_component": [
+        {
+            "id": "masingar",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MASINGAR",
+            "description": "MASINGAR mk2r4 (TL95; 192 x 96 longitude/latitude; 80 levels; top level 0.01 hPa)",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mri-agcm3p5",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MRI-AGCM3.5",
+            "description": "MRI-AGCM3.5 (TL159; 320 x 160 longitude/latitude; 80 levels; top level 0.01 hPa)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mri-ccm2p1",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MRI-CCM2.1",
+            "description": "MRI-CCM2.1 (T42; 128 x 64 longitude/latitude; 80 levels; top level 0.01 hPa)",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "hal",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "HAL",
+            "description": "HAL 1.0",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mripcom4p4",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MRI.COM4.4",
+            "description": "MRI.COM4.4 (tripolar primarily 0.5 deg latitude/1 deg longitude with meridional refinement down to 0.3 deg within 10 degrees north and south of the equator; 360 x 364 longitude/latitude; 61 levels; top grid cell 0-2 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mripcom4p4",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MRI.COM4.4",
+            "description": "MRI.COM4.4",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mripcom4p4",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "MRI.COM4.4",
+            "description": "MRI.COM4.4",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
+    ],
+    "label": "MRI-ESM2.0"
+}

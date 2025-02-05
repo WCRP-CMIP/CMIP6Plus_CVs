@@ -1,0 +1,142 @@
+{
+    "@context": "_context_",
+    "id": "giss-e2-1-g",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "cohort": "Published",
+    "contributors": [],
+    "license": {
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@lists.nasa.gov <- cmip-giss-l",
+        "source_specific_info": ""
+    },
+    "organisation": [
+        "nasa-giss"
+    ],
+    "label_extended": "GISS-E2.1G",
+    "activity_participation": [
+        "ramip",
+        "cmip",
+        "lesfmip"
+    ],
+    "model_component": [
+        {
+            "id": "varies",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "Varies",
+            "description": "Varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "giss-e2p1",
+            "type": "wcrp:model-component",
+            "model-family": "giss-e2",
+            "component-family": "",
+            "label": "GISS-E2.1",
+            "description": "GISS-E2.1 (2.5x2 degree; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "varies",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "Varies",
+            "description": "Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "giss",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "GISS",
+            "description": "GISS LSM",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "giss",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "GISS",
+            "description": "GISS Ocean (GO1, 1 degree; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "giss",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "",
+            "label": "GISS",
+            "description": "GISS SI",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "250km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
+    ],
+    "release_year": 2019,
+    "label": "GISS-E2.1-G"
+}

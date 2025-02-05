@@ -1,0 +1,180 @@
+{
+    "activity_participation": [
+        "cmip",
+        "ramip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "release_year": "2018",
+    "@context": "_context_",
+    "id": "cesm2",
+    "type": [
+        "wcrp:source",
+        "cmip6plus"
+    ],
+    "organisation": [
+        "ncar"
+    ],
+    "license": {
+        "id": "cc-by-4.0",
+        "exceptions_contact": "@ucar.edu <- cesm_cmip6",
+        "source_specific_info": ""
+    },
+    "label_extended": "CESM2",
+    "model_component": [
+        {
+            "id": "mam4",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "mam",
+            "label": "MAM4",
+            "description": "MAM4 (same grid as atmos)",
+            "realm": "aerosol",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cam6",
+            "type": "wcrp:model-component",
+            "model-family": "cam",
+            "component-family": "cam",
+            "label": "CAM6",
+            "description": "CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb)",
+            "realm": "atmos",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "288 x 192 longitude/latitude",
+            "native-vertical-grid": "32 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "mam4",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "mam",
+            "label": "MAM4",
+            "description": "MAM4 (same grid as atmos)",
+            "realm": "atmoschem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "clm5",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "clm",
+            "label": "CLM5",
+            "description": "CLM5 (same grid as atmos)",
+            "realm": "land",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cism2p1",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "cism",
+            "label": "CISM2.1",
+            "description": "CISM2.1",
+            "realm": "landice",
+            "native-nominal-resolution": [
+                "5km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "pop2",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "pop",
+            "label": "POP2",
+            "description": "POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+            "realm": "ocean",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "320x384 longitude/latitude",
+            "native-vertical-grid": "60 levels",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "marbl",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "marbl",
+            "label": "MARBL",
+            "description": "MARBL (same grid as ocean)",
+            "realm": "ocnbgchem",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        },
+        {
+            "id": "cice5p1",
+            "type": "wcrp:model-component",
+            "model-family": "",
+            "component-family": "cice",
+            "label": "CICE5.1",
+            "description": "CICE5.1 (same grid as ocean)",
+            "realm": "seaice",
+            "native-nominal-resolution": [
+                "100km"
+            ],
+            "native-horizontal-grid": "",
+            "native-vertical-grid": "",
+            "configuration": "",
+            "references": [],
+            "codebase": "",
+            "embedded-in": "",
+            "coupled-with": ""
+        }
+    ],
+    "label": "CESM2"
+}

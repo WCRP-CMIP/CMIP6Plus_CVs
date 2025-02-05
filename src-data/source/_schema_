@@ -1,0 +1,145 @@
+{
+    "type": "object",
+    "properties": {
+        "activity_participation": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "CMIP",
+                    "RAMIP",
+                    "AERCHEMMIP",
+                    "C4MIP",
+                    "CFMIP",
+                    "DAMIP",
+                    "DCPP",
+                    "GEOMIP",
+                    "LESFMIP",
+                    "LMIP",
+                    "PMIP",
+                    "RFMIP",
+                    "SCENARIOMIP",
+                    "TIPMIP"
+                ]
+            },
+            "minItems": 1,
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
+        },
+        "cohort": {
+            "type": "array",
+            "description": "Cohort classification of the source",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Published",
+                    "Unpublished",
+                    "Preliminary"
+                ]
+            },
+            "minItems": 1
+        },
+        "label": {
+            "type": "string",
+            "description": "Short label for the source",
+            "pattern": "^[A-Za-z0-9.-]+$"
+        },
+        "release_year": {
+            "type": "string",
+            "description": "Year of release",
+            "pattern": "^[0-9]{4}$"
+        },
+        "source_id": {
+            "type": "string",
+            "description": "Unique identifier for the source",
+            "pattern": "^[A-Za-z0-9.-]+$"
+        },
+        "@context": {
+            "type": "string",
+            "description": "Context identifier, typically set to '_context_'"
+        },
+        "id": {
+            "type": "string",
+            "description": "Lowercase unique identifier",
+            "pattern": "^[a-z0-9_]+$"
+        },
+        "type": {
+            "type": "string",
+            "description": "Type of the entry",
+            "enum": [
+                "source"
+            ]
+        },
+        "organisation": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/> https://wcrp-cmip.github.io/WCRP-universe/ </a>. ",
+            "items": {
+                "type": "string",
+                "pattern": "^institutions/[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/_schema_#/contains"
+        },
+        "model-component": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/> https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/component/_schema_#/contains"
+        },
+        "license": {
+            "type": "object",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/license/> https://wcrp-cmip.github.io/WCRP-universe/license/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/license/_schema_#/contains"
+        },
+        "label-extended": {
+            "type": "string",
+            "description": "Extended label for the source",
+            "pattern": "^[A-Za-z0-9.-]+$"
+        },
+        "activity-participation": {
+            "type": "array",
+            "description": "A reference object from <a href=https://wcrp-cmip.github.io/WCRP-universe/activity/> https://wcrp-cmip.github.io/WCRP-universe/activity/ </a>. ",
+            "$ref": "https://wcrp-cmip.github.io/WCRP-universe/activity/_schema_#/contains"
+        },
+        "name": {
+            "type": "string",
+            "description": "Full name of the source",
+            "pattern": "^[A-Za-z0-9.-]+$"
+        }
+    },
+    "required": [
+        "activity_participation",
+        "cohort",
+        "label",
+        "release_year",
+        "source_id",
+        "@context",
+        "id",
+        "type",
+        "organisation",
+        "model-component",
+        "license",
+        "label-extended",
+        "activity-participation",
+        "name"
+    ],
+    "additionalProperties": false,
+    "id": "source",
+    "contains": {
+        "type": "string",
+        "enum": [
+            "canesm5-1",
+            "cesm2",
+            "cnrm-esm2-1",
+            "ec-earth-aerchem",
+            "giss-e2-1-g",
+            "hadgem3-gc31-ll",
+            "miroc6",
+            "mpi-esm1-2-hr",
+            "mpi-esm1-2-lr",
+            "mri-esm2-0",
+            "noresm2-lm",
+            "ukesm1-0-ll"
+        ]
+    },
+    "base": "https://github.com/wcrp-cmip/CMIP6Plus_CVs/tree/main/src-data/source/"
+}

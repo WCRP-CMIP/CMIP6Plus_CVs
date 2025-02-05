@@ -1,0 +1,44 @@
+{
+    "@context": "_context_",
+    "id": "amip",
+    "type": [
+        "wcrp:experiment",
+        "cmip6plus"
+    ],
+    "activity": [
+        "cmip"
+    ],
+    "description": "DECK: AMIP",
+    "model_realms": [
+        {
+            "id": "agcm",
+            "is_required": true
+        },
+        {
+            "id": "aer",
+            "is_required": false
+        },
+        {
+            "id": "chem",
+            "is_required": false
+        },
+        {
+            "id": "bgc",
+            "is_required": false
+        }
+    ],
+    "parent_activity": [
+        "none"
+    ],
+    "parent_experiment": [
+        "none"
+    ],
+    "sub_experiment": [
+        "none"
+    ],
+    "tier": 1,
+    "end": 2022,
+    "min_number_yrs_per_sim": 43,
+    "start": 1979,
+    "label": "amip"
+}
