@@ -142,7 +142,7 @@
                 "BGC"
             ],
             "description":"B1 (and B2.1, B2.2) Ongoing decadal forecasts. First full forecast year follows start year (e.g., for s2017, first full forecast year is 2018)",
-            "end_year":"5 years after start year",
+            "end":"5 years after start year",
             "experiment":"forecast initialized from observations with forcing from ssp245",
             "experiment_id":"dcppB-forecast",
             "min_number_yrs_per_sim":5,
@@ -157,7 +157,7 @@
             "required_model_components":[
                 "AOGCM"
             ],
-            "start_year":"a year in the range 2017-2029",
+            "start":"a year in the range 2017-2029",
             "sub_experiment_id":[
                 "s2017",
                 "s2018",
