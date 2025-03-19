@@ -102,6 +102,78 @@
                 "none"
             ], 
             "tier": 1
+        },
+        "dcppA-assim":{
+            "activity_id":[
+                "DCPP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"A2.3 Assimilation runs used to generate initial conditions for hindcasts",
+            "end":2016,
+            "experiment":"Assimilation run paralleling the historical simulation, which may be used to generate hindcast initial conditions",
+            "experiment_id":"dcppA-assim",
+            "min_number_yrs_per_sim":56,
+            "parent_activity_id":[
+                "no parent"
+            ],
+            "parent_experiment_id":[
+                "no parent"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start":"before 1961",
+            "sub_experiment_id":[
+                "none"
+            ],
+            "tier":2
+        },
+        "dcppB-forecast":{
+            "activity_id":[
+                "DCPP"
+            ],
+            "additional_allowed_model_components":[
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description":"B1 (and B2.1, B2.2) Ongoing decadal forecasts. First full forecast year follows start year (e.g., for s2017, first full forecast year is 2018)",
+            "end_year":"5 years after start year",
+            "experiment":"forecast initialized from observations with forcing from ssp245",
+            "experiment_id":"dcppB-forecast",
+            "min_number_yrs_per_sim":5,
+            "parent_activity_id":[
+                "no parent",
+                "DCPP"
+            ],
+            "parent_experiment_id":[
+                "no parent",
+                "dcppA-assim"
+            ],
+            "required_model_components":[
+                "AOGCM"
+            ],
+            "start_year":"a year in the range 2017-2029",
+            "sub_experiment_id":[
+                "s2017",
+                "s2018",
+                "s2019",
+                "s2020",
+                "s2021",
+                "s2022",
+                "s2023",
+                "s2024",
+                "s2025",
+                "s2026",
+                "s2027",
+                "s2028",
+                "s2029"
+            ],
+            "tier":1
         }, 
         "esm-hist": {
             "activity_id": [

@@ -17,6 +17,19 @@
     }, 
     "sub_experiment_id": {
         "f2023": "Forcings 2023", 
+        "s2017":"initialized near end of year 2017",
+        "s2018":"initialized near end of year 2018",
+        "s2019":"initialized near end of year 2019",
+        "s2020":"initialized near end of year 2020",
+        "s2021":"initialized near end of year 2021",
+        "s2022":"initialized near end of year 2022",
+        "s2023":"initialized near end of year 2023",
+        "s2024":"initialized near end of year 2024",
+        "s2025":"initialized near end of year 2025",
+        "s2026":"initialized near end of year 2026",
+        "s2027":"initialized near end of year 2027",
+        "s2028":"initialized near end of year 2028",
+        "s2029":"initialized near end of year 2029",
         "none": "none"
     }
 }
