@@ -20,6 +20,10 @@
             "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf", 
             "long_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
         }, 
+        "DCPP":{
+            "URL": "https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/cmip6-endorsed-mips-article/1065-modelling-cmip6-dcpp",
+            "long_name":"Decadal Climate Prediction Project"
+        },
         "LESFMIP": {
             "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full", 
             "long_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
