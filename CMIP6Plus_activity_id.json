@@ -8,10 +8,10 @@
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "activity_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
-            "activity_id_note": "Addition of TIPMIP and RAMIP",
-            "activity_id_update_commit": "704c44333b030ad35b9e287dbb0eb312ea625eda",
-            "checksum": "md5: d0b149e0b69fb7e04bd287a7911e7997"
+            "activity_id_modified": "Mon Mar 31 12:40:00 2025 +0100",
+            "activity_id_note": "Addition of TBIMIP",
+            "activity_id_update_commit": "",
+            "checksum": ""
         },
         "institution_id": "MOHC"
     },
@@ -31,6 +31,10 @@
         "RAMIP": {
             "URL": "https://ramip.ncas.ac.uk/",
             "long_name": "Regional Aerosol Model Intercomparison Project"
+        },
+        "TBIMIP": {
+            "URL": "https://www.clivar.org/research-foci/basin-interaction",
+            "long_name": "Tropical Basin Interaction Model Intercomparison Project"
         },
         "TIPMIP": {
             "URL": "https://tipmip.pik-potsdam.de/",
