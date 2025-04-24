@@ -1,5 +1,5 @@
 {
     "@context": "000_context.jsonld",
-    "id": "_csiro-arccss",
+    "id": "hammoz-consortium",
     "type": "organisation"
 }
