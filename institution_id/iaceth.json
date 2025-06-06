@@ -1,5 +1,6 @@
 {
     "@context": "000_context.jsonld",
     "id": "iaceth",
-    "type": "organisation"
+    "type": "organisation",
+    "description": ""
 }

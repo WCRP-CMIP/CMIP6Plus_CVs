@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "ipsl",
     "type": "organisation",
-    "myprop":"42",
-    "established": 1998
-
+    "myprop": "42",
+    "established": 1998,
+    "description": "Institut Pierre Simon Laplace, Paris 75252, France"
 }
