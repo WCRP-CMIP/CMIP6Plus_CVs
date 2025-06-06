@@ -1625,6 +1625,64 @@
             ],
             "tier": 2
         },
+        "ssp245-ch4-tm":{
+            "activity_id": [
+                "MethaneMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "fully coupled companion simulations to CMIP6 experiment ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to technical measures scenario 2020-2050, based on employing all plausible technical methane mitigation measures",
+            "end": "2050",
+            "experiment": "ssp245 with methane concentrations reduced according to technical measures mitigation scenario",
+            "experiment_id": "ssp370-126aer",
+            "min_number_yrs_per_sim": 31,
+            "parent_activity_id": [
+                "ScenarioMIP"
+            ],
+            "parent_experiment_id": [
+                "ssp245"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "2020",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "ssp245-ch4-tmbc":{
+            "activity_id": [
+                "MethaneMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "fully coupled companion simulations to ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to ambitious scenario 2020-2050, based on employing all plausible technical methane mitigation measures as well as behavioural changes",
+            "end": "2050",
+            "experiment": "ssp245 with methane concentrations reduced according to ambitious mitigation scenario",
+            "experiment_id": "ssp370-126aer",
+            "min_number_yrs_per_sim": 31,
+            "parent_activity_id": [
+                "ScenarioMIP"
+            ],
+            "parent_experiment_id": [
+                "ssp245"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "2020",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
         "ssp370-126aer": {
             "activity_id": [
                 "RAMIP"
