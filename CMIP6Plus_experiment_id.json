@@ -2,13 +2,13 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_modified": "2024-03-28T13:30:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.4.0",
-            "CV_collection_version": "v6.5.4.0",
+            "CV_collection_modified": "2025-06-09T13:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.5.0",
+            "CV_collection_version": "v6.5.5.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: dab8c8f3dfef807dacf4fe1b932b8bf5",
+            "checksum": "md5: 9fcb490bed3fb147882794c2a2bccc42",
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38"
@@ -1625,7 +1625,7 @@
             ],
             "tier": 2
         },
-        "ssp245-ch4-tm":{
+        "ssp245-ch4-tm": {
             "activity_id": [
                 "MethaneMIP"
             ],
@@ -1654,7 +1654,7 @@
             ],
             "tier": 1
         },
-        "ssp245-ch4-tmbc":{
+        "ssp245-ch4-tmbc": {
             "activity_id": [
                 "MethaneMIP"
             ],

@@ -14,10 +14,10 @@ FILES = [
     'CMIP6Plus_source_id.json', 
     'CMIP6Plus_tracking_id.json']
 
-new_version = "v6.5.4.0"
+new_version = "v6.5.5.0"
 collection = {
     "CV_collection_version": new_version,
-    "CV_collection_modified": "2024-03-28T13:30:00Z",
+    "CV_collection_modified": "2025-06-09T13:30:00Z",
     "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/{}".format(new_version),
     "specs_doc": "v6.5.0"
 }

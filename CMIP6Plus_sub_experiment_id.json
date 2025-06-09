@@ -2,13 +2,13 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_modified": "2024-03-28T13:30:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.4.0",
-            "CV_collection_version": "v6.5.4.0",
+            "CV_collection_modified": "2025-06-09T13:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.5.0",
+            "CV_collection_version": "v6.5.5.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 6ed399f35e05362df2a858c19a2bd36c",
+            "checksum": "md5: eacbc8d63a7b75c6b6eba215de24c493",
             "sub_experiment_id_modified": "Thu Mar 14 21:34:08 2024 +0000",
             "sub_experiment_id_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)",
             "sub_experiment_id_update_commit": "385bc4dd397b4aacb4568c3833a420f0e4d30a22"
