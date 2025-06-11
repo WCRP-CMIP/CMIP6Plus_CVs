@@ -31,7 +31,7 @@ jobs:
 
       - name: Get a list of directories with updated files
         id: install-cmipld
-        uses: WCRP-CMIP/CMIP-LD/actions/cmipld@main
+        uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
       
 
       - name: Checkout repository
