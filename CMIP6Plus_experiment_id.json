@@ -2186,6 +2186,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-hind-A-anom",
             "min_number_yrs_per_sim": 39,
@@ -2214,6 +2215,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Atlantic Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-hind-A",
             "min_number_yrs_per_sim": 39,
@@ -2242,6 +2244,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
             "experiment_id": "tbi-hind-I-anom",
             "min_number_yrs_per_sim": 39,
@@ -2270,6 +2273,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Indian Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
             "experiment_id": "tbi-hind-I",
             "min_number_yrs_per_sim": 39,
@@ -2298,6 +2302,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
             "experiment_id": "tbi-hind-P-anom",
             "min_number_yrs_per_sim": 39,
@@ -2326,6 +2331,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982–2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Pacific Ocean (10 S–10 N) during the forecasts.",
+            "end": "2021",
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
             "experiment_id": "tbi-hind-P",
             "min_number_yrs_per_sim": 39,
