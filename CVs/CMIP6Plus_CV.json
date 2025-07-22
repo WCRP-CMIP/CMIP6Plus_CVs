@@ -1778,8 +1778,8 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Reference experiment: coupled ocean\u2013atmosphere simulation with radiative forcing from historical (up to 2014) and ssp585 (2015\u20132021). If historical and ssp585 have already been performed the output from these experiments can be used instead.",
-                "experiment": "Coupled ocean\u2013atmosphere simulation with historical radiative forcing",
+                "description": "Reference experiment: coupled ocean-atmosphere simulation with radiative forcing from historical (up to 2014) and ssp585 (2015-2021). If historical and ssp585 have already been performed the output from these experiments can be used instead.",
+                "experiment": "Coupled ocean-atmosphere simulation with historical radiative forcing",
                 "experiment_id": "tbi-hist-ctrl",
                 "parent_activity_id": [
                     "no parent"
@@ -1804,7 +1804,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended).",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended).",
                 "experiment": "Seasonal hindcast experiment",
                 "experiment_id": "tbi-hind-ctrl",
                 "parent_activity_id": [
@@ -1830,7 +1830,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S\u201310 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the model SST climatology plus observed SST anomalies.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
                 "experiment_id": "tbi-pace-A-anom",
                 "parent_activity_id": [
@@ -1856,7 +1856,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S\u201310 N). The restoring target is the observed SST.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the observed SST.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
                 "experiment_id": "tbi-pace-A",
                 "parent_activity_id": [
@@ -1882,7 +1882,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S\u201315 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
                 "experiment_id": "tbi-pace-I-anom",
                 "parent_activity_id": [
@@ -1908,7 +1908,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S\u201315 N). The restoring target is the observed SST.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the observed SST.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
                 "experiment_id": "tbi-pace-I",
                 "parent_activity_id": [
@@ -1934,7 +1934,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S\u201315 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
                 "experiment_id": "tbi-pace-P-anom",
                 "parent_activity_id": [
@@ -1960,7 +1960,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S\u201315 N). The restoring target is the observed SST.",
+                "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the observed SST.",
                 "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
                 "experiment_id": "tbi-pace-P",
                 "parent_activity_id": [
@@ -1986,7 +1986,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
                 "experiment_id": "tbi-hind-A-anom",
                 "parent_activity_id": [
@@ -2012,7 +2012,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Atlantic Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
                 "experiment_id": "tbi-hind-A",
                 "parent_activity_id": [
@@ -2038,7 +2038,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
                 "experiment_id": "tbi-hind-I-anom",
                 "parent_activity_id": [
@@ -2064,7 +2064,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Indian Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
                 "experiment_id": "tbi-hind-I",
                 "parent_activity_id": [
@@ -2090,7 +2090,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
                 "experiment_id": "tbi-hind-P-anom",
                 "parent_activity_id": [
@@ -2116,7 +2116,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "description": "Hindcast experiment for the period 1982\u20132021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Pacific Ocean (10 S\u201310 N) during the forecasts.",
+                "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
                 "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
                 "experiment_id": "tbi-hind-P",
                 "parent_activity_id": [
@@ -2795,12 +2795,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Tue Jul 22 2025 11:00 UTC",
+            "file_updated": "Tue Jul 22 2025 11:39 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2025-07-22T11:00:12Z",
+                "updated": "2025-07-22T11:39:23Z",
                 "tag": "v6.5.5.0",
-                "commit": "704a69f864bca05bda828375e35250c9c9050687"
+                "commit": "42564e0efb9500c90347da4d822abe7715b20f75"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
