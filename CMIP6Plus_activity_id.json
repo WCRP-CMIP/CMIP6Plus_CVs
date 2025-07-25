@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.6.1",
-            "CV_collection_modified": "2025-07-24T10:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.6.1",
+            "CV_collection_version": "v6.5.6.2",
+            "CV_collection_modified": "2025-07-25T12:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.6.2",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "activity_id_modified": "Mon Mar 31 12:40:00 2025 +0100",
             "activity_id_note": "Addition of TBIMIP",
             "activity_id_update_commit": "",
-            "checksum": "md5: ecdc97aa81059df05e671cd6c88b5dc5"
+            "checksum": "md5: 5db692eedd5affa7e2c45207ec475a85"
         },
         "institution_id": "MOHC"
     },
