@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.6.2",
-            "CV_collection_modified": "2025-07-25T12:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.6.2",
+            "CV_collection_version": "v6.5.7.0",
+            "CV_collection_modified": "2025-07-31T09:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
-            "checksum": "md5: 696840f1366a74e4fb8da9f017f43ec7"
+            "checksum": "md5: 19454d67db16d9494ed313acc52f4d13"
         },
         "institution_id": "MOHC"
     },
@@ -588,6 +588,35 @@
             ],
             "tier": 2
         },
+        "esm-up2p0-gwl1p5-50y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp-down after GWL1.5",
+            "end": "",
+            "experiment": "ramp down from global warming level of 1.5K after 50 years, with CO2 emissions that are the negative of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl1p5-50y-dn2p0",
+            "min_number_yrs_per_sim": 75,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl1p5"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
         "esm-up2p0-gwl2p0": {
             "activity_id": [
                 "TIPMIP"
@@ -616,6 +645,64 @@
                 "none"
             ],
             "tier": 1
+        },
+        "esm-up2p0-gwl2p0-200y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp-down after extended period of GWL2",
+            "end": "",
+            "experiment": "ramp down from global warming level of 2K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl2p0-200y-dn2p0",
+            "min_number_yrs_per_sim": 100,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl2p0-50y-dn1p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "slow ramp-down after GWL2",
+            "end": "",
+            "experiment": "ramp down from global warming level of 2K after 50 years, with CO2 emissions that are the negative and half the magnitude of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl2p0-50y-dn1p0",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
         },
         "esm-up2p0-gwl2p0-50y-dn2p0": {
             "activity_id": [
@@ -646,6 +733,35 @@
             ],
             "tier": 1
         },
+        "esm-up2p0-gwl2p0-50y-dn2p0-gwl0p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at piControl after temporary overshoot to GWL2",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl2p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
+            "experiment_id": "esm-up2p0-gwl2p0-50y-dn2p0-gwl0p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl2p0-50y-dn2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
         "esm-up2p0-gwl3p0": {
             "activity_id": [
                 "TIPMIP"
@@ -664,6 +780,180 @@
             ],
             "parent_experiment_id": [
                 "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-200y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp-down after extended period of GWL3",
+            "end": "",
+            "experiment": "ramp down from global warming level of 3K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl3p0-200y-dn2p0",
+            "min_number_yrs_per_sim": 150,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-50y-dn1p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "slow ramp-down after GWL3",
+            "end": "",
+            "experiment": "ramp down from global warming level of 3K after 50 years, with CO2 emissions that are the negative and half magnitude of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl3p0-50y-dn1p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-50y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp-down after GWL3",
+            "end": "",
+            "experiment": "ramp down from global warming level of 3K after 50 years, with CO2 emissions that are the negative of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0",
+            "min_number_yrs_per_sim": 150,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-50y-dn2p0-gwl0p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at piControl after temporary overshoot to GWL3",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
+            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl0p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0-50y-dn2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-50y-dn2p0-gwl1p5": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL1.5 after temporary overshoot to GWL3",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 1.5 K global warming level",
+            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl1p5",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0-50y-dn2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl3p0-50y-dn2p0-gwl2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL2 after temporary overshoot to GWL3",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 2 K global warming level",
+            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl2p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl3p0-50y-dn2p0"
             ],
             "required_model_components": [
                 "AOGCM",
@@ -704,6 +994,64 @@
             ],
             "tier": 1
         },
+        "esm-up2p0-gwl4p0-200y-dn2p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "ramp-down after extended period of GWL4",
+            "end": "",
+            "experiment": "ramp down from global warming level of 4K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl4p0-200y-dn2p0",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl4p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl4p0-50y-dn1p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "slow ramp-down after GWL4",
+            "end": "",
+            "experiment": "ramp down from global warming level of 4K after 50 years, with CO2 emissions that are the negative and half the magnitude of those used in esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl4p0-50y-dn1p0",
+            "min_number_yrs_per_sim": 400,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl4p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
         "esm-up2p0-gwl4p0-50y-dn2p0": {
             "activity_id": [
                 "TIPMIP"
@@ -732,6 +1080,35 @@
                 "none"
             ],
             "tier": 1
+        },
+        "esm-up2p0-gwl4p0-50y-dn2p0-gwl0p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at piControl after temporary overshoot to GWL4",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl4p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
+            "experiment_id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl0p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0-gwl4p0-50y-dn2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
         },
         "esm-up2p0-gwl4p0-50y-dn2p0-gwl2p0": {
             "activity_id": [
@@ -774,6 +1151,35 @@
             "end": "",
             "experiment": "zero CO2 emissions simulation starting at global warming level of 5K, branching off from esm-up2p0",
             "experiment_id": "esm-up2p0-gwl5p0",
+            "min_number_yrs_per_sim": 300,
+            "parent_activity_id": [
+                "TIPMIP"
+            ],
+            "parent_experiment_id": [
+                "esm-up2p0"
+            ],
+            "required_model_components": [
+                "AOGCM",
+                "BGC"
+            ],
+            "start": "",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "esm-up2p0-gwl6p0": {
+            "activity_id": [
+                "TIPMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM"
+            ],
+            "description": "stabilisation at GWL6",
+            "end": "",
+            "experiment": "zero CO2 emissions simulation starting at global warming level of 6 K, branching off from esm-up2p0",
+            "experiment_id": "esm-up2p0-gwl6p0",
             "min_number_yrs_per_sim": 300,
             "parent_activity_id": [
                 "TIPMIP"
@@ -1944,267 +2350,6 @@
             ],
             "tier": "2"
         },
-        "tbi-hist-ctrl": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Reference experiment: coupled ocean-atmosphere simulation with radiative forcing from historical (up to 2014) and ssp585 (2015-2021). If historical and ssp585 have already been performed the output from these experiments can be used instead.",
-            "end": "2021",
-            "experiment": "Coupled ocean-atmosphere simulation with historical radiative forcing",
-            "experiment_id": "tbi-hist-ctrl",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "no parent"
-            ],
-            "parent_experiment_id": [
-                "no parent"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-hind-ctrl": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended).",
-            "end": "2021",
-            "experiment": "Seasonal hindcast experiment",
-            "experiment_id": "tbi-hind-ctrl",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "no parent"
-            ],
-            "parent_experiment_id": [
-                "no parent"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-A-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
-            "experiment_id": "tbi-pace-A-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-A": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the observed SST.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
-            "experiment_id": "tbi-pace-A",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "2"
-        },
-        "tbi-pace-I-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
-            "experiment_id": "tbi-pace-I-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-I": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the observed SST.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
-            "experiment_id": "tbi-pace-I",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "2"
-        },
-        "tbi-pace-P-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
-            "experiment_id": "tbi-pace-P-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-P": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the observed SST.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
-            "experiment_id": "tbi-pace-P",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "2"
-        },
-        "tbi-hind-A-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
-            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
-            "experiment_id": "tbi-hind-A-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hind-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
         "tbi-hind-A": {
             "activity_id": [
                 "TBIMIP"
@@ -2234,7 +2379,7 @@
             ],
             "tier": "2"
         },
-        "tbi-hind-I-anom": {
+        "tbi-hind-A-anom": {
             "activity_id": [
                 "TBIMIP"
             ],
@@ -2243,10 +2388,10 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
+            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
             "end": "2021",
-            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
-            "experiment_id": "tbi-hind-I-anom",
+            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
+            "experiment_id": "tbi-hind-A-anom",
             "min_number_yrs_per_sim": 39,
             "parent_activity_id": [
                 "TBIMIP"
@@ -2292,7 +2437,7 @@
             ],
             "tier": "2"
         },
-        "tbi-hind-P-anom": {
+        "tbi-hind-I-anom": {
             "activity_id": [
                 "TBIMIP"
             ],
@@ -2301,10 +2446,10 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
+            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
             "end": "2021",
-            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
-            "experiment_id": "tbi-hind-P-anom",
+            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
+            "experiment_id": "tbi-hind-I-anom",
             "min_number_yrs_per_sim": 39,
             "parent_activity_id": [
                 "TBIMIP"
@@ -2350,411 +2495,266 @@
             ],
             "tier": "1"
         },
-        "esm-up2p0-gwl6p0": {
+        "tbi-hind-P-anom": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at GWL6",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation starting at global warming level of 6 K, branching off from esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl6p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
+            "end": "2021",
+            "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
+            "experiment_id": "tbi-hind-P-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hind-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "1"
         },
-        "esm-up2p0-gwl3p0-50y-dn2p0": {
+        "tbi-hind-ctrl": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "ramp-down after GWL3",
-            "end": "",
-            "experiment": "ramp down from global warming level of 3K after 50 years, with CO2 emissions that are the negative of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0",
-            "min_number_yrs_per_sim": 150,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended).",
+            "end": "2021",
+            "experiment": "Seasonal hindcast experiment",
+            "experiment_id": "tbi-hind-ctrl",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "1"
         },
-        "esm-up2p0-gwl1p5-50y-dn2p0": {
+        "tbi-hist-ctrl": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "ramp-down after GWL1.5",
-            "end": "",
-            "experiment": "ramp down from global warming level of 1.5K after 50 years, with CO2 emissions that are the negative of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl1p5-50y-dn2p0",
-            "min_number_yrs_per_sim": 75,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl1p5"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Reference experiment: coupled ocean-atmosphere simulation with radiative forcing from historical (up to 2014) and ssp585 (2015-2021). If historical and ssp585 have already been performed the output from these experiments can be used instead.",
+            "end": "2021",
+            "experiment": "Coupled ocean-atmosphere simulation with historical radiative forcing",
+            "experiment_id": "tbi-hist-ctrl",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "1"
         },
-        "esm-up2p0-gwl3p0-50y-dn2p0-gwl2p0": {
+        "tbi-pace-A": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at GWL2 after temporary overshoot to GWL3",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 2 K global warming level",
-            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl2p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0-50y-dn2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the observed SST.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
+            "experiment_id": "tbi-pace-A",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "2"
         },
-        "esm-up2p0-gwl3p0-50y-dn2p0-gwl1p5": {
+        "tbi-pace-A-anom": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at GWL1.5 after temporary overshoot to GWL3",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 1.5 K global warming level",
-            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl1p5",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0-50y-dn2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
+            "experiment_id": "tbi-pace-A-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "1"
         },
-        "esm-up2p0-gwl4p0-50y-dn2p0-gwl0p0": {
+        "tbi-pace-I": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at piControl after temporary overshoot to GWL4",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl4p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
-            "experiment_id": "esm-up2p0-gwl4p0-50y-dn2p0-gwl0p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl4p0-50y-dn2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the observed SST.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
+            "experiment_id": "tbi-pace-I",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "2"
         },
-        "esm-up2p0-gwl3p0-50y-dn2p0-gwl0p0": {
+        "tbi-pace-I-anom": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at piControl after temporary overshoot to GWL3",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl3p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
-            "experiment_id": "esm-up2p0-gwl3p0-50y-dn2p0-gwl0p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0-50y-dn2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
+            "experiment_id": "tbi-pace-I-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "1"
         },
-        "esm-up2p0-gwl2p0-50y-dn2p0-gwl0p0": {
+        "tbi-pace-P": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "stabilisation at piControl after temporary overshoot to GWL2",
-            "end": "",
-            "experiment": "zero CO2 emissions simulation branching off from esm-up2p0-gwl2p0-50y-dn2p0 after it passes the 0 K global warming level (piControl)",
-            "experiment_id": "esm-up2p0-gwl2p0-50y-dn2p0-gwl0p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl2p0-50y-dn2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the observed SST.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
+            "experiment_id": "tbi-pace-P",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
+            "tier": "2"
         },
-        "esm-up2p0-gwl4p0-200y-dn2p0": {
+        "tbi-pace-P-anom": {
             "activity_id": [
-                "TIPMIP"
+                "TBIMIP"
             ],
             "additional_allowed_model_components": [
                 "AER",
-                "CHEM"
-            ],
-            "description": "ramp-down after extended period of GWL4",
-            "end": "",
-            "experiment": "ramp down from global warming level of 4K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl4p0-200y-dn2p0",
-            "min_number_yrs_per_sim": 200,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl4p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
+                "CHEM",
                 "BGC"
             ],
-            "start": "",
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+            "end": "2021",
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
+            "experiment_id": "tbi-pace-P-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1982",
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": 2
-        },
-        "esm-up2p0-gwl3p0-200y-dn2p0": {
-            "activity_id": [
-                "TIPMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
-            ],
-            "description": "ramp-down after extended period of GWL3",
-            "end": "",
-            "experiment": "ramp down from global warming level of 3K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl3p0-200y-dn2p0",
-            "min_number_yrs_per_sim": 150,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
-                "BGC"
-            ],
-            "start": "",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": 2
-        },
-        "esm-up2p0-gwl2p0-200y-dn2p0": {
-            "activity_id": [
-                "TIPMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
-            ],
-            "description": "ramp-down after extended period of GWL2",
-            "end": "",
-            "experiment": "ramp down from global warming level of 2K after 200 years, with CO2 emissions that are the negative of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl2p0-200y-dn2p0",
-            "min_number_yrs_per_sim": 100,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
-                "BGC"
-            ],
-            "start": "",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": 2
-        },
-        "esm-up2p0-gwl4p0-50y-dn1p0": {
-            "activity_id": [
-                "TIPMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
-            ],
-            "description": "slow ramp-down after GWL4",
-            "end": "",
-            "experiment": "ramp down from global warming level of 4K after 50 years, with CO2 emissions that are the negative and half the magnitude of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl4p0-50y-dn1p0",
-            "min_number_yrs_per_sim": 400,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl4p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
-                "BGC"
-            ],
-            "start": "",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": 2
-        },
-        "esm-up2p0-gwl3p0-50y-dn1p0": {
-            "activity_id": [
-                "TIPMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
-            ],
-            "description": "slow ramp-down after GWL3",
-            "end": "",
-            "experiment": "ramp down from global warming level of 3K after 50 years, with CO2 emissions that are the negative and half magnitude of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl3p0-50y-dn1p0",
-            "min_number_yrs_per_sim": 300,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl3p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
-                "BGC"
-            ],
-            "start": "",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": 2
-        },
-        "esm-up2p0-gwl2p0-50y-dn1p0": {
-            "activity_id": [
-                "TIPMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM"
-            ],
-            "description": "slow ramp-down after GWL2",
-            "end": "",
-            "experiment": "ramp down from global warming level of 2K after 50 years, with CO2 emissions that are the negative and half the magnitude of those used in esm-up2p0",
-            "experiment_id": "esm-up2p0-gwl2p0-50y-dn1p0",
-            "min_number_yrs_per_sim": 200,
-            "parent_activity_id": [
-                "TIPMIP"
-            ],
-            "parent_experiment_id": [
-                "esm-up2p0-gwl2p0"
-            ],
-            "required_model_components": [
-                "AOGCM",
-                "BGC"
-            ],
-            "start": "",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": 2
+            "tier": "1"
         }
     }
 }
