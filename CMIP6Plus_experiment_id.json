@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_modified": "2025-07-25T12:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.6.2",
-            "CV_collection_version": "v6.5.6.2",
+            "CV_collection_version": "v6.5.7.0",
+            "CV_collection_modified": "2025-07-31T09:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
-            "checksum": "md5: 696840f1366a74e4fb8da9f017f43ec7",
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
-            "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38"
+            "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
+            "checksum": "md5: 19454d67db16d9494ed313acc52f4d13"
         },
         "institution_id": "MOHC"
     },
