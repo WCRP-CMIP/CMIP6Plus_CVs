@@ -15,5 +15,7 @@
         },
         "institution_id": "MOHC"
     },
-    "product": "model-output"
+    "product": [
+        "model-output"
+    ]
 }
