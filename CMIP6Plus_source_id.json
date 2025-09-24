@@ -248,6 +248,64 @@
             "release_year": "2022",
             "source_id": "CanESM5-1"
         },
+        "E3SM-2-1":{
+            "activity_participation": [
+                "CMIP",
+                "LESFMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "PNNL-WACCEM"
+            ],
+            "label": "E3SM 2.1",
+            "label_extended": "E3SM 2.1 (Energy Exascale Earth System Model)",
+            "license_info": {
+                "exceptions_contact": "@llnl.gov <- e3sm-data-support",
+                "history": "2024-02-05: initially published under CC BY 4.0",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "MAM4 w/ new resuspension, marine organics, secondary organics, and dust (atmos physics grid)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmos": {
+                    "description": "EAM (E3SMv2.1, cubed sphere spectral-element; 5400 els., 30x30 per cube face. Dynamics: degree 3 (p=3) polynomials within each spectral els., 112 km ave. resolution. Physics: 2x2 finite volume cells within each spectral els., 1.5 degree (168 km) average grid spacing; 72 vertical layers w/ top at 60 km)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmosChem": {
+                    "description": "Troposphere specified oxidants (except passive ozone with the lower boundary sink) for aerosols. Stratosphere linearized interactive ozone (LINOZ v2) (atmos physics grid)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "land": {
+                    "description": "ELM (E3SMv2.1, atmos physics grid, satellite phenology mode), MOSART (E3SMv2.1, 0.5 deg lat/lon grid)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean":{
+                    "description": "MPAS-Ocean (E3SMv2.1, EC30to60E2r2 unstructured SVTs mesh with 236853 cells and 719506 edges, variable resolution 60 km to 30 km; 60 levels; top grid cell 0-10 m)",
+                    "native_nominal_resolution": "50 km"
+                },
+                "ocnBgchem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "seaIce": {
+                    "description": "MPAS-Seaice (E3SMv2.1, MPAS-Ocean grid; 5 ice categories, 7 ice layers, 5 snow layers)",
+                    "native_nominal_resolution": "50 km"
+                }
+            },
+            "release_year": "2024",
+            "source_id": "E3SM-2-1"
+        },
         "EC-Earth3-AerChem": {
             "activity_participation": [
                 "CMIP",
