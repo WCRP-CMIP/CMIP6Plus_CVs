@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.7.0",
-            "CV_collection_modified": "2025-07-31T09:30:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.0",
+            "CV_collection_version": "v6.5.7.1",
+            "CV_collection_modified": "2025-09-24T12:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.1",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: b00800e9b0484d3e08b39fdf714158c3"
+            "checksum": "md5: 04a3019fb884d4c8f100e2f9bd14eafb"
         },
         "institution_id": "MOHC"
     },
@@ -248,7 +248,7 @@
             "release_year": "2022",
             "source_id": "CanESM5-1"
         },
-        "E3SM-2-1":{
+        "E3SM-2-1": {
             "activity_participation": [
                 "CMIP",
                 "LESFMIP"
@@ -290,7 +290,7 @@
                     "description": "none",
                     "native_nominal_resolution": "none"
                 },
-                "ocean":{
+                "ocean": {
                     "description": "MPAS-Ocean (E3SMv2.1, EC30to60E2r2 unstructured SVTs mesh with 236853 cells and 719506 edges, variable resolution 60 km to 30 km; 60 levels; top grid cell 0-10 m)",
                     "native_nominal_resolution": "50 km"
                 },
