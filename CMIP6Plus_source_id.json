@@ -709,12 +709,14 @@
         "MPI-ESM1-2-LR": {
             "activity_participation": [
                 "CMIP",
+                "DCPP",
                 "LESFMIP"
             ],
             "cohort": [
                 "Published"
             ],
             "institution_id": [
+                "DWD",
                 "MPI-M"
             ],
             "label": "MPI-ESM1-2-LR",
@@ -728,7 +730,7 @@
             },
             "model_component": {
                 "aerosol": {
-                    "description": ", prescribed MACv2-SP",
+                    "description": "none, prescribed MACv2-SP",
                     "native_nominal_resolution": "250 km",
                     "version": "none"
                 },
