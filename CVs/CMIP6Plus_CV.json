@@ -2572,6 +2572,7 @@
         "institution_id": {
             "CCCma": "026ny0e17 - Environment and Climate Change Canada",
             "CNRM-CERFACS": "CNRM-CERFACS - CNRM-CERFACS [consortium]",
+            "DWD": "02nrqs528 - German Meteorological Service",
             "EC-Earth-Consortium": "EC-Earth-Consortium - EC-Earth-Consortium [consortium]",
             "MIROC": "MIROC - MIROC [consortium]",
             "MOHC": "Met Office Hadley Centre",
@@ -2923,12 +2924,14 @@
             "MPI-ESM1-2-LR": {
                 "activity_participation": [
                     "CMIP",
+                    "DCPP",
                     "LESFMIP"
                 ],
                 "cohort": [
                     "Published"
                 ],
                 "institution_id": [
+                    "DWD",
                     "MPI-M"
                 ],
                 "license_info": {
@@ -2939,7 +2942,7 @@
                     "url": "https://creativecommons.org/licenses/by/4.0/"
                 },
                 "source_id": "MPI-ESM1-2-LR",
-                "source": "MPI-ESM1-2-LR (2017): \naerosol: , prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
+                "source": "MPI-ESM1-2-LR (2017): \naerosol: none, prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\nland: JSBACH3.20\nlandIce: prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model))"
             },
             "MRI-ESM2-0": {
                 "activity_participation": [
@@ -3184,12 +3187,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Nov 06 2025 09:14 UTC",
+            "file_updated": "Thu Nov 06 2025 13:59 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2025-11-06T09:14:19Z",
+                "updated": "2025-11-06T13:59:35Z",
                 "tag": "v6.5.7.1",
-                "commit": "9be3af743771c67482d7a0b581614113400ac40c"
+                "commit": "3862b6478540593f6ba60e263f8b2b0055e74390"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
