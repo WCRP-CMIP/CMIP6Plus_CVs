@@ -51,7 +51,7 @@ Visit the wiki using the button above, or [this link](https://github.com/WCRP-CM
 
 ## Currently active MIPs
 
-To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/model-intercomparison-projects-mips/) page on the CMIP website.
+To see a listing of currently active or planning activities/MIPs, please review details on the [Model Intercomparison Projects (MIPs)](https://wcrp-cmip.org/cmip-phases/) page on the CMIP website.
 
 ## Registering Institutions, Models, or requesting changes to CVs:
 
