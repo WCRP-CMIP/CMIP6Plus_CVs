@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.7.3",
-            "CV_collection_modified": "2025-11-18T12:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.3",
+            "CV_collection_version": "v6.5.8.0",
+            "CV_collection_modified": "2025-11-18T15:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.8.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
-            "checksum": "md5: c44669fe62608f61fae4f5ecbd6c5e1c"
+            "checksum": "md5: 3e5ac3b12e7f0f00701824a43c836161"
         },
         "institution_id": "MOHC"
     },
@@ -2765,7 +2765,7 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S–15 N). The restoring target is the model SST climatology.",
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S\u201315 N). The restoring target is the model SST climatology.",
             "end": "1199",
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Pacific Ocean",
             "experiment_id": "tbi-pace-P-clim-mod",
@@ -2794,7 +2794,7 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S–10 N). The restoring target is the model SST climatology.",
+            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S\u201310 N). The restoring target is the model SST climatology.",
             "end": "1199",
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Atlantic Ocean",
             "experiment_id": "tbi-pace-A-clim-mod",
@@ -2823,7 +2823,7 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indo-Pacific region (15 S–15 N). The restoring target is the model SST climatology.",
+            "description": "Pacemaker experiment with SST restoring in the tropical Indo-Pacific region (15 S\u201315 N). The restoring target is the model SST climatology.",
             "end": "1199",
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian and Pacific oceans",
             "experiment_id": "tbi-pace-IP-clim-mod",
@@ -2852,7 +2852,7 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S–15 N). The restoring target is the model SST climatology.",
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S\u201315 N). The restoring target is the model SST climatology.",
             "end": "1199",
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian Ocean",
             "experiment_id": "tbi-pace-I-clim-mod",
@@ -2881,9 +2881,9 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Reference experiment: coupled ocean–atmosphere simulation with radiative forcing from pre-industrial control run.",
+            "description": "Reference experiment: coupled ocean\u2013atmosphere simulation with radiative forcing from pre-industrial control run.",
             "end": "1199",
-            "experiment": "Coupled ocean–atmosphere simulation with pre-industrial radiative forcing",
+            "experiment": "Coupled ocean\u2013atmosphere simulation with pre-industrial radiative forcing",
             "experiment_id": "tbi-piCtrl",
             "min_number_yrs_per_sim": 200,
             "parent_activity_id": [
