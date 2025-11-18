@@ -2755,6 +2755,151 @@
                 "none"
             ],
             "tier": "1"
+        },
+        "tbi-pace-P-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S–15 N). The restoring target is the model SST climatology.",
+            "end": "1199",
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Pacific Ocean",
+            "experiment_id": "tbi-pace-P-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piCtrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1000",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": "3"
+        },
+        "tbi-pace-A-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S–10 N). The restoring target is the model SST climatology.",
+            "end": "1199",
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Atlantic Ocean",
+            "experiment_id": "tbi-pace-A-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piCtrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1000",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": "3"
+        },
+        "tbi-pace-IP-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Indo-Pacific region (15 S–15 N). The restoring target is the model SST climatology.",
+            "end": "1199",
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian and Pacific oceans",
+            "experiment_id": "tbi-pace-IP-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piCtrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1000",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": "3"
+        },
+        "tbi-pace-I-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S–15 N). The restoring target is the model SST climatology.",
+            "end": "1199",
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian Ocean",
+            "experiment_id": "tbi-pace-I-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piCtrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1000",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": "3"
+        },
+        "tbi-piCtrl": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Reference experiment: coupled ocean–atmosphere simulation with radiative forcing from pre-industrial control run.",
+            "end": "1199",
+            "experiment": "Coupled ocean–atmosphere simulation with pre-industrial radiative forcing",
+            "experiment_id": "tbi-piCtrl",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "no parent"
+            ],
+            "parent_experiment_id": [
+                "no parent"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": "1000",
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": "3"
         }
     }
 }
