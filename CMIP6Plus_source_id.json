@@ -2,77 +2,77 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.7.2",
-            "CV_collection_modified": "2025-11-06T14:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.2",
+            "CV_collection_version": "v6.5.7.3",
+            "CV_collection_modified": "2025-11-18T12:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.7.3",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: bf2ffc963649c75b1f28521a4431fa65"
+            "checksum": "md5: 395663e0a56ab2d8a70e9b78a10f104e"
         },
         "institution_id": "MOHC"
     },
     "source_id": {
-        "ACCESS-CM2":{
-            "activity_participation":[
+        "ACCESS-CM2": {
+            "activity_participation": [
                 "CMIP",
                 "TBIMIP"
             ],
-            "cohort":[
+            "cohort": [
                 "Published"
             ],
-            "institution_id":[
+            "institution_id": [
                 "CSIRO-ARCCSS"
             ],
-            "label":"ACCESS-CM2",
-            "label_extended":"Australian Community Climate and Earth System Simulator Climate Model Version 2",
-            "license_info":{
-                "exceptions_contact":"@csiro.au <- access_csiro",
-                "history":"2019-11-08: initially published under CC BY-SA 4.0; 2022-06-10: relaxed to CC BY 4.0",
-                "id":"CC BY 4.0",
-                "license":"Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
-                "source_specific_info":"",
-                "url":"https://creativecommons.org/licenses/by/4.0/"
+            "label": "ACCESS-CM2",
+            "label_extended": "Australian Community Climate and Earth System Simulator Climate Model Version 2",
+            "license_info": {
+                "exceptions_contact": "@csiro.au <- access_csiro",
+                "history": "2019-11-08: initially published under CC BY-SA 4.0; 2022-06-10: relaxed to CC BY 4.0",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "model_component":{
-                "aerosol":{
-                    "description":"UKCA-GLOMAP-mode",
-                    "native_nominal_resolution":"250 km"
+            "model_component": {
+                "aerosol": {
+                    "description": "UKCA-GLOMAP-mode",
+                    "native_nominal_resolution": "250 km"
                 },
-                "atmos":{
-                    "description":"MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
-                    "native_nominal_resolution":"250 km"
+                "atmos": {
+                    "description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+                    "native_nominal_resolution": "250 km"
                 },
-                "atmosChem":{
-                    "description":"none",
-                    "native_nominal_resolution":"none"
+                "atmosChem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
                 },
-                "land":{
-                    "description":"CABLE2.5",
-                    "native_nominal_resolution":"250 km"
+                "land": {
+                    "description": "CABLE2.5",
+                    "native_nominal_resolution": "250 km"
                 },
-                "landIce":{
-                    "description":"none",
-                    "native_nominal_resolution":"none"
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
                 },
-                "ocean":{
-                    "description":"ACCESS-OM2 (GFDL-MOM5, tripolar primarily 1deg; 360 x 300 longitude/latitude; 50 levels; top grid cell 0-10 m)",
-                    "native_nominal_resolution":"100 km"
+                "ocean": {
+                    "description": "ACCESS-OM2 (GFDL-MOM5, tripolar primarily 1deg; 360 x 300 longitude/latitude; 50 levels; top grid cell 0-10 m)",
+                    "native_nominal_resolution": "100 km"
                 },
-                "ocnBgchem":{
-                    "description":"none",
-                    "native_nominal_resolution":"none"
+                "ocnBgchem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
                 },
-                "seaIce":{
-                    "description":"CICE5.1.2 (same grid as ocean)",
-                    "native_nominal_resolution":"100 km"
+                "seaIce": {
+                    "description": "CICE5.1.2 (same grid as ocean)",
+                    "native_nominal_resolution": "100 km"
                 }
             },
-            "release_year":"2019",
-            "source_id":"ACCESS-CM2"
+            "release_year": "2019",
+            "source_id": "ACCESS-CM2"
         },
         "CESM2": {
             "activity_participation": [
