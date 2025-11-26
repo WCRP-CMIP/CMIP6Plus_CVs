@@ -2986,6 +2986,27 @@
                 "source_id": "GISS-E2-1-G",
                 "source": "GISS-E2-1-G (2019): \naerosol: Varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)\natmos: GISS-E2.1 (2.5x2 degree; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)\natmosChem: Varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)\nland: GISS LSM\nocean: GISS Ocean (GO1, 1 degree; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10 m)\nseaIce: GISS SI)"
             },
+            "GISS-E2-1-G-CC2": {
+                "activity_participation": [
+                    "CMIP",
+                    "TIPMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "NASA-GISS"
+                ],
+                "license_info": {
+                    "exceptions_contact": "lists.nasa.gov <- cmip-giss-l",
+                    "id": "CC0 1.0",
+                    "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0 1.0; https://creativecommons.org/publicdomain/zero/1.0/)",
+                    "source_specific_info": "https://data.giss.nasa.gov/modelE/cmip6/#datalicense",
+                    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                },
+                "source_id": "GISS-E2-1-G-CC2",
+                "source": "GISS-E2-1-G-CC2 (2025): \naerosol: varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)\natmos: GISS-E2.1 (2 x 2.5 degrees; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)\natmosChem: varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)\nland: GISS LSM\nlandIce: Fixed\nocean: GISS Ocean (1 deg; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10m)\nocnBgchem: NOBM v2 (NASA Ocean Biogeochemistry Model; same grid as ocean)\nseaIce: GISS SI (same grid as ocean))"
+            },
             "HadGEM3-GC31-LL": {
                 "activity_participation": [
                     "CMIP",
@@ -3340,12 +3361,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Nov 20 2025 09:17 UTC",
+            "file_updated": "Wed Nov 26 2025 12:48 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2025-11-20T09:17:15Z",
-                "tag": "v6.5.8.0",
-                "commit": "91172c573ae1abc9444b7dc318ec4497058decf1"
+                "updated": "2025-11-26T12:48:26Z",
+                "tag": "v6.5.8.1",
+                "commit": "029ce96656a5535882db663a16bcc505973f5154"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
