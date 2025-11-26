@@ -536,6 +536,63 @@
             "release_year": 2019,
             "source_id": "GISS-E2-1-G"
         },
+"GISS-E2-1-G-CC2":{
+            "activity_participation":[
+                "CMIP",
+                "TIPMIP"
+            ],
+            "cohort":[
+                "Published"
+            ],
+            "institution_id":[
+                "NASA-GISS"
+            ],
+            "label":"GISS-E2-1-G-CC2",
+            "label_extended":"GISS-E2-1-G-CC2",
+            "license_info":{
+                "exceptions_contact": "lists.nasa.gov <- cmip-giss-l",
+                "id":"CC0 1.0",
+                "license":"Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0 1.0; https://creativecommons.org/publicdomain/zero/1.0/)",
+                "source_specific_info":"https://data.giss.nasa.gov/modelE/cmip6/#datalicense",
+                "url":"https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "model_component":{
+                "aerosol":{
+                    "description":"varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)",
+                    "native_nominal_resolution":"250 km"
+                },
+                "atmos":{
+                    "description":"GISS-E2.1 (2 x 2.5 degrees; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+                    "native_nominal_resolution":"250 km"
+                },
+                "atmosChem":{
+                    "description":"varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+                    "native_nominal_resolution":"250 km"
+                },
+                "land":{
+                    "description":"GISS LSM",
+                    "native_nominal_resolution":"250 km"
+                },
+                "landIce":{
+                    "description":"Fixed",
+                    "native_nominal_resolution":"250 km"
+                },
+                "ocean":{
+                    "description":"GISS Ocean (1 deg; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10m)",
+                    "native_nominal_resolution":"100 km"
+                },
+                "ocnBgchem":{
+                    "description":"NOBM v2 (NASA Ocean Biogeochemistry Model; same grid as ocean)",
+                    "native_nominal_resolution":"100 km"
+                },
+                "seaIce":{
+                    "description":"GISS SI (same grid as ocean)",
+                    "native_nominal_resolution":"100 km"
+                }
+            },
+            "release_year":"2025",
+            "source_id":"GISS-E2-1-G-CC2"
+        },
         "HadGEM3-GC31-LL": {
             "activity_participation": [
                 "CMIP",
