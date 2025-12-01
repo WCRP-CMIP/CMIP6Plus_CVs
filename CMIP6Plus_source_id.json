@@ -375,6 +375,8 @@
             "institution_id": [
                 "EC-Earth-Consortium"
             ],
+            "label":"EC-Earth3",
+            "label_extended":"EC Earth 3.3",
             "license_info": {
                 "exceptions_contact": "@ec-earth.org <- cmip6-data",
                 "history": "2019-04-05: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
@@ -546,6 +548,8 @@
             "institution_id": [
                 "EC-Earth-Consortium"
             ],
+            "label":"EC-Earth3-Veg",
+            "label_extended":"EC-Earth3-Veg",
             "license_info": {
                 "exceptions_contact": "@ec-earth.org <- cmip6-data",
                 "history": "2019-04-10: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
