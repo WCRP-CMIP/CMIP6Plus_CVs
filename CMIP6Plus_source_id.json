@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.8.2",
-            "CV_collection_modified": "2025-11-26T12:45:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.8.2",
+            "CV_collection_version": "v6.5.8.3",
+            "CV_collection_modified": "2025-12-01T12:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.8.3",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: b24189c4107a369d05c086da9037b075"
+            "checksum": "md5: f0bd7a61ed2eb5d2ffe23dab27db5026"
         },
         "institution_id": "MOHC"
     },
@@ -364,6 +364,64 @@
             "release_year": "2024",
             "source_id": "E3SM-2-1"
         },
+        "EC-Earth3": {
+            "activity_participation": [
+                "CMIP",
+                "DCPP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "EC-Earth-Consortium"
+            ],
+            "label":"EC-Earth3",
+            "label_extended":"EC Earth 3.3",
+            "license_info": {
+                "exceptions_contact": "@ec-earth.org <- cmip6-data",
+                "history": "2019-04-05: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "atmos": {
+                    "description": "IFS cy36r4 (TL255, linearly reduced Gaussian grid equivalent to 512 x 256 longitude/latitude; 91 levels; top level 0.01 hPa)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmosChem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "land": {
+                    "description": "HTESSEL (land surface scheme built in IFS)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean": {
+                    "description": "NEMO3.6 (ORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocnBgchem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "seaIce": {
+                    "description": "LIM3",
+                    "native_nominal_resolution": "100 km"
+                }
+            },
+            "release_year": "2019",
+            "source_id": "EC-Earth3"
+        },
         "EC-Earth3-AerChem": {
             "activity_participation": [
                 "CMIP",
@@ -479,6 +537,63 @@
             },
             "release_year": "2024",
             "source_id": "EC-Earth3-ESM-1"
+        },
+        "EC-Earth3-Veg": {
+            "activity_participation": [
+                "CMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "EC-Earth-Consortium"
+            ],
+            "label":"EC-Earth3-Veg",
+            "label_extended":"EC-Earth3-Veg",
+            "license_info": {
+                "exceptions_contact": "@ec-earth.org <- cmip6-data",
+                "history": "2019-04-10: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "atmos": {
+                    "description": "IFS cy36r4 (TL255, linearly reduced Gaussian grid equivalent to 512 x 256 longitude/latitude; 91 levels; top level 0.01 hPa)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmosChem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "land": {
+                    "description": "HTESSEL (land surface scheme built in IFS) and LPJ-GUESS v4",
+                    "native_nominal_resolution": "100 km"
+                },
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean": {
+                    "description": "NEMO3.6 (ORCA1 tripolar primarily 1 degree with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocnBgchem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "seaIce": {
+                    "description": "LIM3",
+                    "native_nominal_resolution": "100 km"
+                }
+            },
+            "release_year": "2019",
+            "source_id": "EC-Earth3-Veg"
         },
         "GISS-E2-1-G": {
             "activity_participation": [
