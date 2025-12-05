@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.8.3",
-            "CV_collection_modified": "2025-12-01T12:30:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.8.3",
+            "CV_collection_version": "v6.5.9.0",
+            "CV_collection_modified": "2025-12-05T10:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: f0bd7a61ed2eb5d2ffe23dab27db5026"
+            "checksum": "md5: 55d9203657365c0e086914c4e07882ac"
         },
         "institution_id": "MOHC"
     },
@@ -376,8 +376,8 @@
             "institution_id": [
                 "EC-Earth-Consortium"
             ],
-            "label":"EC-Earth3",
-            "label_extended":"EC Earth 3.3",
+            "label": "EC-Earth3",
+            "label_extended": "EC Earth 3.3",
             "license_info": {
                 "exceptions_contact": "@ec-earth.org <- cmip6-data",
                 "history": "2019-04-05: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
@@ -550,8 +550,8 @@
             "institution_id": [
                 "EC-Earth-Consortium"
             ],
-            "label":"EC-Earth3-Veg",
-            "label_extended":"EC-Earth3-Veg",
+            "label": "EC-Earth3-Veg",
+            "label_extended": "EC-Earth3-Veg",
             "license_info": {
                 "exceptions_contact": "@ec-earth.org <- cmip6-data",
                 "history": "2019-04-10: initially published under CC BY-SA 4.0; 2022-06-02: relaxed to CC BY 4.0",
