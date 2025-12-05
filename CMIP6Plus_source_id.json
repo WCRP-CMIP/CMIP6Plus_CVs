@@ -367,7 +367,8 @@
         "EC-Earth3": {
             "activity_participation": [
                 "CMIP",
-                "DCPP"
+                "DCPP",
+                "ScenarioMIP"
             ],
             "cohort": [
                 "Published"
@@ -540,7 +541,8 @@
         },
         "EC-Earth3-Veg": {
             "activity_participation": [
-                "CMIP"
+                "CMIP",
+                "ScenarioMIP"
             ],
             "cohort": [
                 "Published"

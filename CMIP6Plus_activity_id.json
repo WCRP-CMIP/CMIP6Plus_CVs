@@ -36,6 +36,10 @@
             "URL": "https://ramip.ncas.ac.uk/",
             "long_name": "Regional Aerosol Model Intercomparison Project"
         },
+        "ScenarioMIP": {
+            "URL": "https://wcrp-cmip.org/mips/scenariomip/",
+            "long_name": "Scenario Model Intercomparison Project"
+        },
         "TBIMIP": {
             "URL": "https://www.clivar.org/research-foci/basin-interaction",
             "long_name": "Tropical Basin Interaction Model Intercomparison Project"

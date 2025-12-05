@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.8.3",
             "CV_collection_modified": "2025-12-01T12:30:00Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.8.3",
+            "CV_collection_version": "v6.5.8.3",
             "specs_doc": "v6.5.0"
         },
         "file": {
+            "checksum": "md5: a53a4b8ff60fe83e3e91257551c071f7",
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
-            "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
-            "checksum": "md5: a53a4b8ff60fe83e3e91257551c071f7"
+            "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38"
         },
         "institution_id": "MOHC"
     },
@@ -452,7 +452,7 @@
                 "CHEM"
             ],
             "description": "CMIP6 historical (CO2 emission-driven)",
-            "end": "2014",
+            "end": 2014,
             "experiment": "all-forcing simulation of the recent past with atmospheric CO2 concentration calculated (CO2 emission-driven)",
             "experiment_id": "esm-hist",
             "min_number_yrs_per_sim": 165,
@@ -466,7 +466,7 @@
                 "AOGCM",
                 "BGC"
             ],
-            "start": "1850",
+            "start": 1850,
             "sub_experiment_id": [
                 "none"
             ],
@@ -1758,7 +1758,7 @@
                 "BGC"
             ],
             "description": "CMIP6 historical",
-            "end": "2014",
+            "end": 2014,
             "experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
             "experiment_id": "historical",
             "min_number_yrs_per_sim": 165,
@@ -1771,7 +1771,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1850",
+            "start": 1850,
             "sub_experiment_id": [
                 "none"
             ],
@@ -1786,7 +1786,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions from SSP3-7.0.",
             "experiment_id": "piClim-370",
             "min_number_yrs_per_sim": 30,
@@ -1800,7 +1800,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1814,7 +1814,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-126aer",
             "min_number_yrs_per_sim": 30,
@@ -1828,7 +1828,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1842,7 +1842,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions, including NH3 and NOx, are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-126aer-nh3nox",
             "min_number_yrs_per_sim": 30,
@@ -1856,7 +1856,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1870,7 +1870,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over Africa and the Middle East are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-afr126aer",
             "min_number_yrs_per_sim": 30,
@@ -1884,7 +1884,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1898,7 +1898,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over East Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-eas126aer",
             "min_number_yrs_per_sim": 30,
@@ -1912,7 +1912,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1926,7 +1926,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over North America and Europe are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-nae126aer",
             "min_number_yrs_per_sim": 30,
@@ -1940,7 +1940,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -1954,7 +1954,7 @@
                 "BGC"
             ],
             "description": "",
-            "end": "2080",
+            "end": 2080,
             "experiment": "pre-industrial climatological SSTs and forcing, but with 2050 anthropogenic emissions. Aerosol and precursor emissions over South Asia are taken from SSP1-2.6, while all other anthropogenic emissions follow SSP3-7.0.",
             "experiment_id": "piClim-370-sas126aer",
             "min_number_yrs_per_sim": 30,
@@ -1968,7 +1968,7 @@
                 "AGCM",
                 "AER"
             ],
-            "start": "2050",
+            "start": 2050,
             "sub_experiment_id": [
                 "none"
             ]
@@ -2031,6 +2031,93 @@
             ],
             "tier": 2
         },
+        "ssp119": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with low radiative forcing throughout reaching about 1.9 W/m2 in 2100 based on SSP1. Concentration-driven",
+            "end": 2100,
+            "experiment": "low-end scenario reaching 1.9 W m-2, based on SSP1",
+            "experiment_id": "ssp119",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "ssp126": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with low radiative forcing by the end of century. Following approximately RCP2.6 global forcing pathway but with new forcing based on SSP1. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+            "end": "2100 or 2300",
+            "experiment": "update of RCP2.6 based on SSP1",
+            "experiment_id": "ssp126",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "ssp245": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with medium radiative forcing by the end of century. Following approximately RCP4.5 global forcing pathway but with new forcing based on SSP2. Concentration-driven",
+            "end": 2100,
+            "experiment": "update of RCP4.5 based on SSP2",
+            "experiment_id": "ssp245",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
         "ssp245-ch4-tm": {
             "activity_id": [
                 "MethaneMIP"
@@ -2041,7 +2128,7 @@
                 "BGC"
             ],
             "description": "fully coupled companion simulations to CMIP6 experiment ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to technical measures scenario 2020-2050, based on employing all plausible technical methane mitigation measures",
-            "end": "2050",
+            "end": 2050,
             "experiment": "ssp245 with methane concentrations reduced according to technical measures mitigation scenario",
             "experiment_id": "ssp370-126aer",
             "min_number_yrs_per_sim": 31,
@@ -2054,7 +2141,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2020",
+            "start": 2020,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2070,7 +2157,7 @@
                 "BGC"
             ],
             "description": "fully coupled companion simulations to ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to ambitious scenario 2020-2050, based on employing all plausible technical methane mitigation measures as well as behavioural changes",
-            "end": "2050",
+            "end": 2050,
             "experiment": "ssp245 with methane concentrations reduced according to ambitious mitigation scenario",
             "experiment_id": "ssp370-126aer",
             "min_number_yrs_per_sim": 31,
@@ -2083,7 +2170,37 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2020",
+            "start": 2020,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "ssp370": {
+            "activity_id": [
+                "ScenarioMIP",
+                "AerChemMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with high radiative forcing by the end of century. Reaches about 7.0 W/m2 by 2100; fills gap in RCP forcing pathways between 6.0 and 8.5 W/m2. Concentration-driven",
+            "end": 2100,
+            "experiment": "gap-filling scenario reaching 7.0 based on SSP3",
+            "experiment_id": "ssp370",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2099,7 +2216,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with anthropogenic aerosol and precursor emissions taken from SSP1-2.6.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions",
             "experiment_id": "ssp370-126aer",
             "min_number_yrs_per_sim": 37,
@@ -2112,7 +2229,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2128,7 +2245,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but anthropogenic aerosol and precursor emissions, including NH3 and NOx, taken from SSP1-2.6.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions, including NH3 and NOx.",
             "experiment_id": "ssp370-126aer_nh3nox",
             "min_number_yrs_per_sim": 37,
@@ -2141,11 +2258,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "ssp370-afr126aer": {
             "activity_id": [
@@ -2157,7 +2274,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with African and Middle Eastern anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Africa and the Middle East is the region bounded by 20W, 60E, 35S and 35N.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Africa and the Middle East",
             "experiment_id": "ssp370-afr126aer",
             "min_number_yrs_per_sim": 37,
@@ -2170,7 +2287,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2186,7 +2303,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. Asia is defined as the combination of the East Asian and South Asian regions used in ssp370-eas126aer and ssp370-sas126aer. ",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over Asia.",
             "experiment_id": "ssp370-asia126aer",
             "min_number_yrs_per_sim": 37,
@@ -2199,11 +2316,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "ssp370-eas126aer": {
             "activity_id": [
@@ -2215,7 +2332,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with East Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. East Asia is the region bounded by 95 and 133E and 20 and 53N.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over East Asia",
             "experiment_id": "ssp370-eas126aer",
             "min_number_yrs_per_sim": 37,
@@ -2228,7 +2345,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2244,7 +2361,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with North American and European anthropogenic aerosol and precursor emissions taken from SSP1-2.6. North America and Europe are the regions bounded by 150W, 45W, 25N and 70N, and 20W, 45E, 35N and 70N.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over North America and Europe",
             "experiment_id": "ssp370-nae126aer",
             "min_number_yrs_per_sim": 37,
@@ -2257,7 +2374,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2273,7 +2390,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with sub-Saharan African black carbon and organic carbon emissions taken from SSP1-2.6. Sub-Saharan Africa is the region bounded by 20W, 50E, 35S, and 12N",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over sub-Saharan Africa.",
             "experiment_id": "ssp370-saf126ca",
             "min_number_yrs_per_sim": 37,
@@ -2286,11 +2403,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "ssp370-sas126aer": {
             "activity_id": [
@@ -2302,7 +2419,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with South Asian anthropogenic aerosol and precursor emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 anthropogenic aerosol and precursor emissions over South Asia",
             "experiment_id": "ssp370-sas126aer",
             "min_number_yrs_per_sim": 37,
@@ -2315,7 +2432,7 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
@@ -2331,7 +2448,7 @@
                 "BGC"
             ],
             "description": "SSP3-7.0 anthropogenic emissions, but with South Asian black carbon and organic carbon emissions taken from SSP1-2.6. South Asia is the region bounded by 65 and 95E and 5 and 35N.",
-            "end": "2051",
+            "end": 2051,
             "experiment": "SSP3-7.0 forcing, but with SSP1-2.6 black carbon and organic carbon emissions over South Asia.",
             "experiment_id": "ssp370-sas126ca",
             "min_number_yrs_per_sim": 37,
@@ -2344,11 +2461,127 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "2015",
+            "start": 2015,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
+        },
+        "ssp434": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with low radiative forcing by the end of century. Reaches about 3.4 W/m2 by 2100; fills gap in RCP forcing pathways between 4.5 and 2.6 W/m2. Concentration-driven",
+            "end": 2100,
+            "experiment": "gap-filling scenario reaching 3.4 based on SSP4",
+            "experiment_id": "ssp434",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "ssp460": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with medium radiative forcing by the end of century. Following approximately RCP6.0 global forcing pathway but with new forcing based on SSP4. Concentration-driven",
+            "end": 2100,
+            "experiment": "update of RCP6.0 based on SSP4",
+            "experiment_id": "ssp460",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "ssp534-over": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "21st century overshoot scenario relative to SSP5_34. Branches from SSP5_85 at 2040 with emissions reduced to zero by 2070 and negative thereafter. This simulation should optionally be extended to year 2300",
+            "end": "2100 or 2300",
+            "experiment": "overshoot of 3.4 W/m**2 branching from ssp585 in 2040",
+            "experiment_id": "ssp534-over",
+            "min_number_yrs_per_sim": 61,
+            "parent_activity_id": [
+                "ScenarioMIP"
+            ],
+            "parent_experiment_id": [
+                "ssp585"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2040,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "ssp585": {
+            "activity_id": [
+                "ScenarioMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Future scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway but with new forcing based on SSP5. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+            "end": "2100 or 2300",
+            "experiment": "update of RCP8.5 based on SSP5",
+            "experiment_id": "ssp585",
+            "min_number_yrs_per_sim": 86,
+            "parent_activity_id": [
+                "CMIP"
+            ],
+            "parent_experiment_id": [
+                "historical"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 2015,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
         },
         "tbi-hind-A": {
             "activity_id": [
@@ -2360,7 +2593,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-hind-A",
             "min_number_yrs_per_sim": 39,
@@ -2373,11 +2606,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "tbi-hind-A-anom": {
             "activity_id": [
@@ -2389,7 +2622,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Atlantic Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-hind-A-anom",
             "min_number_yrs_per_sim": 39,
@@ -2402,11 +2635,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-hind-I": {
             "activity_id": [
@@ -2418,7 +2651,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
             "experiment_id": "tbi-hind-I",
             "min_number_yrs_per_sim": 39,
@@ -2431,11 +2664,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "tbi-hind-I-anom": {
             "activity_id": [
@@ -2447,7 +2680,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Indian Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Indian Ocean",
             "experiment_id": "tbi-hind-I-anom",
             "min_number_yrs_per_sim": 39,
@@ -2460,11 +2693,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-hind-P": {
             "activity_id": [
@@ -2476,7 +2709,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to observations in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
             "experiment_id": "tbi-hind-P",
             "min_number_yrs_per_sim": 39,
@@ -2489,11 +2722,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-hind-P-anom": {
             "activity_id": [
@@ -2505,7 +2738,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended). SSTs are restored to model climatology plus observed anomalies in the tropical Pacific Ocean (10 S-10 N) during the forecasts.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Hindcast with SST anomalies restored to observations in the tropical Pacific Ocean",
             "experiment_id": "tbi-hind-P-anom",
             "min_number_yrs_per_sim": 39,
@@ -2518,11 +2751,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-hind-ctrl": {
             "activity_id": [
@@ -2534,7 +2767,7 @@
                 "BGC"
             ],
             "description": "Hindcast experiment for the period 1982-2021 with ocean initialization in February (mandatory), May, August, and November (recommended).",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Seasonal hindcast experiment",
             "experiment_id": "tbi-hind-ctrl",
             "min_number_yrs_per_sim": 39,
@@ -2547,11 +2780,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-hist-ctrl": {
             "activity_id": [
@@ -2563,7 +2796,7 @@
                 "BGC"
             ],
             "description": "Reference experiment: coupled ocean-atmosphere simulation with radiative forcing from historical (up to 2014) and ssp585 (2015-2021). If historical and ssp585 have already been performed the output from these experiments can be used instead.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Coupled ocean-atmosphere simulation with historical radiative forcing",
             "experiment_id": "tbi-hist-ctrl",
             "min_number_yrs_per_sim": 39,
@@ -2576,11 +2809,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
+            "tier": 1
         },
         "tbi-pace-A": {
             "activity_id": [
@@ -2592,7 +2825,7 @@
                 "BGC"
             ],
             "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the observed SST.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-pace-A",
             "min_number_yrs_per_sim": 39,
@@ -2605,11 +2838,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "2"
+            "tier": 2
         },
         "tbi-pace-A-anom": {
             "activity_id": [
@@ -2621,7 +2854,7 @@
                 "BGC"
             ],
             "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
+            "end": 2021,
             "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Atlantic",
             "experiment_id": "tbi-pace-A-anom",
             "min_number_yrs_per_sim": 39,
@@ -2634,156 +2867,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1982",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "1"
-        },
-        "tbi-pace-I": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the observed SST.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
-            "experiment_id": "tbi-pace-I",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "2"
-        },
-        "tbi-pace-I-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
-            "experiment_id": "tbi-pace-I-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-P": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the observed SST.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
-            "experiment_id": "tbi-pace-P",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "2"
-        },
-        "tbi-pace-P-anom": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
-            "end": "2021",
-            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
-            "experiment_id": "tbi-pace-P-anom",
-            "min_number_yrs_per_sim": 39,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-hist-ctrl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1982",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "1"
-        },
-        "tbi-pace-P-clim-mod": {
-            "activity_id": [
-                "TBIMIP"
-            ],
-            "additional_allowed_model_components": [
-                "AER",
-                "CHEM",
-                "BGC"
-            ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology.",
-            "end": "1199",
-            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Pacific Ocean",
-            "experiment_id": "tbi-pace-P-clim-mod",
-            "min_number_yrs_per_sim": 200,
-            "parent_activity_id": [
-                "TBIMIP"
-            ],
-            "parent_experiment_id": [
-                "tbi-piControl"
-            ],
-            "required_model_components": [
-                "AOGCM"
-            ],
-            "start": "1000",
-            "sub_experiment_id": [
-                "none"
-            ],
-            "tier": "3"
+            "tier": 1
         },
         "tbi-pace-A-clim-mod": {
             "activity_id": [
@@ -2795,7 +2883,7 @@
                 "BGC"
             ],
             "description": "Pacemaker experiment with SST restoring in the tropical Atlantic Ocean (10 S-10 N). The restoring target is the model SST climatology.",
-            "end": "1199",
+            "end": 1199,
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Atlantic Ocean",
             "experiment_id": "tbi-pace-A-clim-mod",
             "min_number_yrs_per_sim": 200,
@@ -2808,13 +2896,13 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1000",
+            "start": 1000,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "3"
+            "tier": 3
         },
-        "tbi-pace-IP-clim-mod": {
+        "tbi-pace-I": {
             "activity_id": [
                 "TBIMIP"
             ],
@@ -2823,25 +2911,54 @@
                 "CHEM",
                 "BGC"
             ],
-            "description": "Pacemaker experiment with SST restoring in the tropical Indo-Pacific region (15 S-15 N). The restoring target is the model SST climatology.",
-            "end": "1199",
-            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian and Pacific oceans",
-            "experiment_id": "tbi-pace-IP-clim-mod",
-            "min_number_yrs_per_sim": 200,
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the observed SST.",
+            "end": 2021,
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
+            "experiment_id": "tbi-pace-I",
+            "min_number_yrs_per_sim": 39,
             "parent_activity_id": [
                 "TBIMIP"
             ],
             "parent_experiment_id": [
-                "tbi-piControl"
+                "tbi-hist-ctrl"
             ],
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1000",
+            "start": 1982,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "3"
+            "tier": 2
+        },
+        "tbi-pace-I-anom": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+            "end": 2021,
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Indian Ocean",
+            "experiment_id": "tbi-pace-I-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1982,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
         },
         "tbi-pace-I-clim-mod": {
             "activity_id": [
@@ -2853,7 +2970,7 @@
                 "BGC"
             ],
             "description": "Pacemaker experiment with SST restoring in the tropical Indian Ocean (15 S-15 N). The restoring target is the model SST climatology.",
-            "end": "1199",
+            "end": 1199,
             "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian Ocean",
             "experiment_id": "tbi-pace-I-clim-mod",
             "min_number_yrs_per_sim": 200,
@@ -2866,11 +2983,127 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1000",
+            "start": 1000,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "3"
+            "tier": 3
+        },
+        "tbi-pace-IP-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Indo-Pacific region (15 S-15 N). The restoring target is the model SST climatology.",
+            "end": 1199,
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Indian and Pacific oceans",
+            "experiment_id": "tbi-pace-IP-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1000,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 3
+        },
+        "tbi-pace-P": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the observed SST.",
+            "end": 2021,
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
+            "experiment_id": "tbi-pace-P",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1982,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 2
+        },
+        "tbi-pace-P-anom": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology plus observed SST anomalies.",
+            "end": 2021,
+            "experiment": "Pacemaker experiment with SST anomalies restored to observations in the tropical Pacific",
+            "experiment_id": "tbi-pace-P-anom",
+            "min_number_yrs_per_sim": 39,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-hist-ctrl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1982,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 1
+        },
+        "tbi-pace-P-clim-mod": {
+            "activity_id": [
+                "TBIMIP"
+            ],
+            "additional_allowed_model_components": [
+                "AER",
+                "CHEM",
+                "BGC"
+            ],
+            "description": "Pacemaker experiment with SST restoring in the tropical Pacific Ocean (15 S-15 N). The restoring target is the model SST climatology.",
+            "end": 1199,
+            "experiment": "Pacemaker experiment with SST restored to model climatology in the tropical Pacific Ocean",
+            "experiment_id": "tbi-pace-P-clim-mod",
+            "min_number_yrs_per_sim": 200,
+            "parent_activity_id": [
+                "TBIMIP"
+            ],
+            "parent_experiment_id": [
+                "tbi-piControl"
+            ],
+            "required_model_components": [
+                "AOGCM"
+            ],
+            "start": 1000,
+            "sub_experiment_id": [
+                "none"
+            ],
+            "tier": 3
         },
         "tbi-piControl": {
             "activity_id": [
@@ -2882,7 +3115,7 @@
                 "BGC"
             ],
             "description": "Reference experiment: coupled ocean-atmosphere simulation with radiative forcing from pre-industrial control run.",
-            "end": "1199",
+            "end": 1199,
             "experiment": "Coupled ocean-atmosphere simulation with pre-industrial radiative forcing",
             "experiment_id": "tbi-piControl",
             "min_number_yrs_per_sim": 200,
@@ -2895,11 +3128,11 @@
             "required_model_components": [
                 "AOGCM"
             ],
-            "start": "1000",
+            "start": 1000,
             "sub_experiment_id": [
                 "none"
             ],
-            "tier": "3"
+            "tier": 3
         }
     }
 }
