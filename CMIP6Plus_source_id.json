@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.9.0",
-            "CV_collection_modified": "2025-12-05T10:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.0",
+            "CV_collection_version": "v6.5.9.1",
+            "CV_collection_modified": "2026-01-05T14:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.1",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: 55d9203657365c0e086914c4e07882ac"
+            "checksum": "md5: 753aa0816b83742e7e842dcef39e18a2"
         },
         "institution_id": "MOHC"
     },

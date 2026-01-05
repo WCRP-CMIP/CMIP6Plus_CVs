@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.9.0",
-            "CV_collection_modified": "2025-12-05T10:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.0",
+            "CV_collection_version": "v6.5.9.1",
+            "CV_collection_modified": "2026-01-05T14:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.1",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "experiment_id_modified": "Thu Dec 12 13:28:00 2024 +0000",
             "experiment_id_note": "Added TIPMIP Tier 2 experiments",
             "experiment_id_update_commit": "c5347255773c6678036cf7389d14a0341cef9f38",
-            "checksum": "md5: 8384ba6f6be78c2699ffa67fcf993eb8"
+            "checksum": "md5: 364ea6744e70e588d915e965d871b023"
         },
         "institution_id": "MOHC"
     },
@@ -2130,7 +2130,7 @@
             "description": "fully coupled companion simulations to CMIP6 experiment ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to technical measures scenario 2020-2050, based on employing all plausible technical methane mitigation measures",
             "end": 2050,
             "experiment": "ssp245 with methane concentrations reduced according to technical measures mitigation scenario",
-            "experiment_id": "ssp370-126aer",
+            "experiment_id": "ssp245-ch4-tm",
             "min_number_yrs_per_sim": 31,
             "parent_activity_id": [
                 "ScenarioMIP"
@@ -2159,7 +2159,7 @@
             "description": "fully coupled companion simulations to ssp245 with methane concentrations (and potentially ozone concentrations) prescribed according to ambitious scenario 2020-2050, based on employing all plausible technical methane mitigation measures as well as behavioural changes",
             "end": 2050,
             "experiment": "ssp245 with methane concentrations reduced according to ambitious mitigation scenario",
-            "experiment_id": "ssp370-126aer",
+            "experiment_id": "ssp245-ch4-tmbc",
             "min_number_yrs_per_sim": 31,
             "parent_activity_id": [
                 "ScenarioMIP"
