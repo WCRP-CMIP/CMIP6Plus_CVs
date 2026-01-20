@@ -16,6 +16,10 @@
         "institution_id": "MOHC"
     },
     "activity_id": {
+        "CERESMIP": {
+            "URL": "https://data.giss.nasa.gov/CERESMIP/",
+            "long_name": "Clouds and the Earth’s Radiant Energy System (CERES) Model Intercomparison Project (CERESMIP)"
+        },
         "CMIP": {
             "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
             "long_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
