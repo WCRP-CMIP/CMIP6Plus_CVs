@@ -18,7 +18,7 @@
     "activity_id": {
         "CERESMIP": {
             "URL": "https://data.giss.nasa.gov/CERESMIP/",
-            "long_name": "Clouds and the Earth\u2019s Radiant Energy System (CERES) Model Intercomparison Project (CERESMIP)"
+            "long_name": "Clouds and the Earth's Radiant Energy System (CERES) Model Intercomparison Project (CERESMIP)"
         },
         "CMIP": {
             "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
