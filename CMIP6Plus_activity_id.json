@@ -2,20 +2,24 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.9.1",
-            "CV_collection_modified": "2026-01-05T14:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.9.1",
+            "CV_collection_version": "v6.5.10.0",
+            "CV_collection_modified": "2026-01-27T10:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.10.0",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "activity_id_modified": "Mon Mar 31 12:40:00 2025 +0100",
             "activity_id_note": "Addition of TBIMIP",
             "activity_id_update_commit": "",
-            "checksum": "md5: 5ba32d0be0ecdf85ac332262fb349036"
+            "checksum": "md5: b6fb679f29f56b55177ae367dd8823ab"
         },
         "institution_id": "MOHC"
     },
     "activity_id": {
+        "CERESMIP": {
+            "URL": "https://data.giss.nasa.gov/CERESMIP/",
+            "long_name": "Clouds and the Earth's Radiant Energy System (CERES) Model Intercomparison Project (CERESMIP)"
+        },
         "CMIP": {
             "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
             "long_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
