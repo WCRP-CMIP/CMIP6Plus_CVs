@@ -1072,7 +1072,7 @@
             "label": "NorCPM1",
             "label_extended": "Norwegian Climate Prediction Model version 1",
             "license_info": {
-                "exceptions_contact": "@uib.no <- norcpm",
+                "exceptions_contact": "@met.no <- noresm-ncc",
                 "id": "CC BY 4.0",
                 "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
                 "source_specific_info": "",
