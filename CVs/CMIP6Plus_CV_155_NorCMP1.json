@@ -3608,7 +3608,7 @@
                     "NCC"
                 ],
                 "license_info": {
-                    "exceptions_contact": "@uib.no <- norcpm",
+                    "exceptions_contact": "@met.no <- noresm-ncc",
                     "id": "CC BY 4.0",
                     "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
                     "source_specific_info": "",
@@ -3838,12 +3838,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Mon Feb 02 2026 09:23 UTC",
+            "file_updated": "Mon Feb 02 2026 09:27 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2026-02-02T09:23:10Z",
+                "updated": "2026-02-02T09:27:18Z",
                 "tag": "v6.5.10.0",
-                "commit": "d758ba15cf70c6e7d8a72ea7f4f86594ef91de0c"
+                "commit": "c5d974cfd4152fd8d53a190be7e62e10b5083791"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
