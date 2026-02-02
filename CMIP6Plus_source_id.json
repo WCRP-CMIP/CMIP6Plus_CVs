@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.10.0",
-            "CV_collection_modified": "2026-01-27T10:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.10.0",
+            "CV_collection_version": "v6.5.10.1",
+            "CV_collection_modified": "2026-02-02T09:30:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.10.1",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register EC-Earth3-ESM-1 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: cfb49a33c3b2be421717a380fefdde16"
+            "checksum": "md5: 0d3b67271b6a227158b2c97bd49b5ddf"
         },
         "institution_id": "MOHC"
     },
@@ -1057,6 +1057,63 @@
             },
             "release_year": "2017",
             "source_id": "MRI-ESM2-0"
+        },
+        "NorCPM1": {
+            "activity_participation": [
+                "CMIP",
+                "DCPP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "NCC"
+            ],
+            "label": "NorCPM1",
+            "label_extended": "Norwegian Climate Prediction Model version 1",
+            "license_info": {
+                "exceptions_contact": "@met.no <- noresm-ncc",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "OsloAero4.1 (same grid as atmos)",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmos": {
+                    "description": "CAM-OSLO4.1 (2 degree resolution; 144 x 96 longitude/latitude; 26 levels; top level ~2 hPa)",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmosChem": {
+                    "description": "OsloChemSimp4.1 (same grid as atmos)",
+                    "native_nominal_resolution": "250 km"
+                },
+                "land": {
+                    "description": "CLM4 (same grid as atmos)",
+                    "native_nominal_resolution": "250 km"
+                },
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean": {
+                    "description": "MICOM1.1 (1 degree resolution; 320 x 384 longitude/latitude; 53 levels; top grid cell 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocnBgchem": {
+                    "description": "HAMOCC5.1 (same grid as ocean)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "seaIce": {
+                    "description": "CICE4 (same grid as ocean)",
+                    "native_nominal_resolution": "100 km"
+                }
+            },
+            "release_year": "2019",
+            "source_id": "NorCPM1"
         },
         "NorESM2-LM": {
             "activity_participation": [
