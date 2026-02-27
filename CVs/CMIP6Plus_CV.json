@@ -3112,6 +3112,7 @@
         ],
         "institution_id": {
             "CCCma": "026ny0e17 - Environment and Climate Change Canada",
+            "CMCC": "01tf11a61 - Euro-Mediterranean Center for Climate Change",
             "CNRM-CERFACS": "CNRM-CERFACS - CNRM-CERFACS [consortium]",
             "CSIRO-ARCCSS": "CSIRO-ARCCSS - CSIRO-ARCCSS [consortium]",
             "DWD": "02nrqs528 - German Meteorological Service",
@@ -3242,6 +3243,51 @@
                 },
                 "source_id": "CESM2",
                 "source": "CESM2 (2018): \naerosol: MAM4 (same grid as atmos)\natmos: CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb)\natmosChem: MAM4 (same grid as atmos)\nland: CLM5 (same grid as atmos)\nlandIce: CISM2.1\nocean: POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)\nocnBgchem: MARBL (same grid as ocean)\nseaIce: CICE5.1 (same grid as ocean))"
+            },
+            "CMCC-CM2-SR5": {
+                "activity_participation": [
+                    "CMIP",
+                    "DCPP",
+                    "ScenarioMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "CMCC"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@cmcc.it <- cmcc-cmip-contact",
+                    "history": "2020-02-26: initially published under CC BY-SA 4.0; 2022-06-27: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "CMCC-CM2-SR5",
+                "source": "CMCC-CM2-SR5 (2016): \naerosol: MAM3\natmos: CAM5.3 (1deg; 288 x 192 longitude/latitude; 30 levels; top at ~2 hPa)\natmosChem: none\nland: CLM4.5 (BGC mode)\nlandIce: none\nocean: NEMO3.6 (ORCA1 tripolar primarly 1 deg lat/lon with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 50 vertical levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: CICE4.0)"
+            },
+            "CMCC-ESM2": {
+                "activity_participation": [
+                    "CMIP",
+                    "ScenarioMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "CMCC"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@cmcc.it <- cmcc-cmip-contact",
+                    "history": "2020-02-03: initially published under CC BY-SA 4.0; 2022-06-27: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "CMCC-ESM2",
+                "source": "CMCC-ESM2 (2017): \naerosol: MAM3\natmos: CAM5.3 (1deg; 288 x 192 longitude/latitude; 30 levels; top at ~2 hPa)\natmosChem: none\nland: CLM4.5 (BGC mode)\nlandIce: none\nocean: NEMO3.6 (ORCA1 tripolar primarly 1 deg lat/lon with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 50 vertical levels; top grid cell 0-1 m)\nocnBgchem: BFM5.2\nseaIce: CICE4.0)"
             },
             "CNRM-ESM2-1": {
                 "activity_participation": [
@@ -3838,12 +3884,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Mon Feb 02 2026 09:29 UTC",
+            "file_updated": "Fri Feb 27 2026 17:07 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2026-02-02T09:29:46Z",
-                "tag": "v6.5.10.0",
-                "commit": "982be146e30223e23242b2e599b76f33c7d525c1"
+                "updated": "2026-02-27T17:07:31Z",
+                "tag": "v6.5.10.1",
+                "commit": "44e2c921971b601e9cd0bebe5fbb1e9fc885a5d5"
             },
             "MIP tables": {
                 "updated": "2024-10-09T09:26:10Z",
