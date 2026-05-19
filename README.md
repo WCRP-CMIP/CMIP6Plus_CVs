@@ -1,3 +1,3 @@
 # cmip6plus-cvs
 
-Describe your project here.
+Describe cmip6plus CV here.
