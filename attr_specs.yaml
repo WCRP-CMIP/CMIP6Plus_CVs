@@ -193,4 +193,3 @@
   attr_field_name: external_variables
   attr_field_value_type: string_array
   is_required: false
-
