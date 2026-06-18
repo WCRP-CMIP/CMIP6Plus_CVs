@@ -3128,6 +3128,7 @@
             "NERC": "02b5d8509 - Natural Environment Research Council",
             "NIMS-KMA": "NIMS-KMA - NIMS-KMA [consortium]",
             "NIWA": "04hxcaz34 - National Institute of Water and Atmospheric Research",
+            "NOAA-GFDL": "NOAA-GFDL - NOAA-GFDL [consortium]",
             "PNNL-WACCEM": "05h992307 - Pacific Northwest National Laboratory"
         },
         "license": [
@@ -3489,6 +3490,29 @@
                 },
                 "source_id": "EC-Earth3-Veg",
                 "source": "EC-Earth3-Veg (2019): \naerosol: none\natmos: IFS cy36r4 (TL255, linearly reduced Gaussian grid equivalent to 512 x 256 longitude/latitude; 91 levels; top level 0.01 hPa)\natmosChem: none\nland: HTESSEL (land surface scheme built in IFS) and LPJ-GUESS v4\nlandIce: none\nocean: NEMO3.6 (ORCA1 tripolar primarily 1 degree with meridional refinement down to 1/3 degree in the tropics; 362 x 292 longitude/latitude; 75 levels; top grid cell 0-1 m)\nocnBgchem: none\nseaIce: LIM3)"
+            },
+            "GFDL-CM4": {
+                "activity_participation": [
+                    "CMIP",
+                    "CERESMIP",
+                    "ScenarioMIP"
+                ],
+                "cohort": [
+                    "Published"
+                ],
+                "institution_id": [
+                    "NOAA-GFDL"
+                ],
+                "license_info": {
+                    "exceptions_contact": "@noaa.gov <- gfdl.climate.model.info",
+                    "history": "2018-03-01: initially published under CC BY-SA 4.0; 2022-06-08: relaxed to CC BY 4.0",
+                    "id": "CC BY 4.0",
+                    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                    "source_specific_info": "",
+                    "url": "https://creativecommons.org/licenses/by/4.0/"
+                },
+                "source_id": "GFDL-CM4",
+                "source": "GFDL-CM4 (2018): \naerosol: interactive\natmos: GFDL-AM4.0.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)\natmosChem: fast chemistry, aerosol only\nland: GFDL-LM4.0.1 (1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 20 levels; bottom level 10m); land-Veg:unnamed (dynamic vegetation, dynamic land use); land-Hydro:unnamed (soil water and ice, multi-layer snow, rivers and lakes)\nlandIce: GFDL-LM4.0.1\nocean: GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)\nocnBgchem: GFDL-BLINGv2\nseaIce: GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories))"
             },
             "GISS-E2-1-G": {
                 "activity_participation": [
@@ -3908,12 +3932,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Wed Mar 18 2026 15:18 UTC",
+            "file_updated": "Thu Jun 18 2026 08:29 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2026-03-18T15:17:56Z",
-                "tag": "v6.5.10.2",
-                "commit": "ce4d6fc360aef6d184e53f87a3a2180d64ea00ba"
+                "updated": "2026-06-18T08:29:16Z",
+                "tag": "v6.5.10.3",
+                "commit": "5d4e2deae89a56ad01636ed58f05e0535b093b09"
             },
             "MIP tables": {
                 "updated": "2026-03-03T15:14:57Z",
