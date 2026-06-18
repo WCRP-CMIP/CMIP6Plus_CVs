@@ -1,7 +1,9 @@
 # CMIP6Plus Controlled Vocabularies
 
 Core Controlled Vocabularies (CVs) for use in CMIP6Plus
-#
+
+If requests for updates are not picked up promptly please contact the CMIP IPO [email](mailto:cmip-ipo@esa.int) or tag @cmip-ipo for escallation. We endeavour to make changes within a few working days.
+
 
 
 
