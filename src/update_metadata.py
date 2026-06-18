@@ -14,7 +14,7 @@ FILES = [
     'CMIP6Plus_source_id.json', 
     'CMIP6Plus_tracking_id.json']
 
-new_version = "v6.5.10.3"
+new_version = "v6.5.10.4"
 collection = {
     "CV_collection_version": new_version,
     "CV_collection_modified": "2026-03-18T15:30:00Z",
