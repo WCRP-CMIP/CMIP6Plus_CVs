@@ -3932,12 +3932,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Thu Jun 18 2026 08:29 UTC",
+            "file_updated": "Thu Jun 18 2026 08:37 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2026-06-18T08:29:16Z",
-                "tag": "v6.5.10.3",
-                "commit": "5d4e2deae89a56ad01636ed58f05e0535b093b09"
+                "updated": "2026-06-18T08:37:26Z",
+                "tag": "v6.5.10.4",
+                "commit": "d1bd75fbbdd81aac2c91c5ab8790743a5868a618"
             },
             "MIP tables": {
                 "updated": "2026-03-03T15:14:57Z",
