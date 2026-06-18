@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.10.3",
+            "CV_collection_version": "v6.5.10.4",
             "CV_collection_modified": "2026-03-18T15:30:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.10.3",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.10.4",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
-            "source_id_note": "Register EC-Earth3-ESM-1 source_id",
+            "source_id_note": "Register GFDL-CM4 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: 6d8ae0021483c0429863b86e541a10a6"
+            "checksum": "md5: 877c470e460bfd03fa93cc8c0d0b2c44"
         },
         "institution_id": "MOHC"
     },
@@ -772,6 +772,65 @@
             },
             "release_year": "2019",
             "source_id": "EC-Earth3-Veg"
+        },
+        "GFDL-CM4": {
+            "activity_participation": [
+                "CMIP",
+                "CERESMIP",
+                "ScenarioMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "NOAA-GFDL"
+            ],
+            "label": "GFDL-CM4",
+            "label_extended": "GFDL-CM4",
+            "license_info": {
+                "exceptions_contact": "@noaa.gov <- gfdl.climate.model.info",
+                "history": "2018-03-01: initially published under CC BY-SA 4.0; 2022-06-08: relaxed to CC BY 4.0",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "interactive",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmos": {
+                    "description": "GFDL-AM4.0.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "atmosChem": {
+                    "description": "fast chemistry, aerosol only",
+                    "native_nominal_resolution": "100 km"
+                },
+                "land": {
+                    "description": "GFDL-LM4.0.1 (1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 20 levels; bottom level 10m); land-Veg:unnamed (dynamic vegetation, dynamic land use); land-Hydro:unnamed (soil water and ice, multi-layer snow, rivers and lakes)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "landIce": {
+                    "description": "GFDL-LM4.0.1",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocean": {
+                    "description": "GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                    "native_nominal_resolution": "25 km"
+                },
+                "ocnBgchem": {
+                    "description": "GFDL-BLINGv2",
+                    "native_nominal_resolution": "25 km"
+                },
+                "seaIce": {
+                    "description": "GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories)",
+                    "native_nominal_resolution": "25 km"
+                }
+            },
+            "release_year": "2018",
+            "source_id": "GFDL-CM4"
         },
         "GISS-E2-1-G": {
             "activity_participation": [
