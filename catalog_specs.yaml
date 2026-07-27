@@ -159,7 +159,7 @@ link_properties:
   - rel: cite-as
     link_type: "application/json"
     title: "Citation URL"
-    is_required: true
+    is_required: false
 
   - rel: describedby
     link_type: "text/html"
