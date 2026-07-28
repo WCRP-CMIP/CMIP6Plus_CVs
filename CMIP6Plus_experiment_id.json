@@ -3489,7 +3489,7 @@
                 "ISM"
             ],
             "description": "Historical esm-hist simulation starting on 1920 with additional Greenland Ice Sheet melting around Greenland.",
-            "end": 2015
+            "end": 2015,
             "experiment": "Historical with hosing around Greenland.",
             "experiment_id": "tipmip-ocn-p1t1-Ba",
             "min_number_yrs_per_sim": 94,
