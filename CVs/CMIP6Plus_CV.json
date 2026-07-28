@@ -3037,6 +3037,384 @@
                     "none"
                 ],
                 "tier": 3
+            },
+            "tipmip-ocn-p1t1-Aa": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Ramp-up run with increasing CO2 emissions leading to a warming of ~2K/century with increasing freshwater release from 0 to 0.3 Sv in ~100 yrs.",
+                "experiment": "Ramp-up around Greenland",
+                "experiment_id": "tipmip-ocn-p1t1-Aa",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Ab": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Zero emission run starting directly after Aa with freshwater release kept at 0.3 Sv.",
+                "experiment": "Constant around Greenland",
+                "experiment_id": "tipmip-ocn-p1t1-Ab",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Aa"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Ac": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Ramp-down with decreasing CO2 emissions leading to a cooling of ~2K/century with decreasing freshwater release from 0.3 to 0 Sv over ~100 years.",
+                "experiment": "Ramp-down around Greenland",
+                "experiment_id": "tipmip-ocn-p1t1-Ac",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Ab"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Ad": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Zero emission run starting directly after Ac, with no freshwater release.",
+                "experiment": "No freshwater release",
+                "experiment_id": "tipmip-ocn-p1t1-Ad",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Ac"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Ba": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Historical esm-hist simulation starting on 1920 with additional Greenland Ice Sheet melting around Greenland.",
+                "experiment": "Historical with hosing around Greenland.",
+                "experiment_id": "tipmip-ocn-p1t1-Ba",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-hist"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Bb": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "ScenarioMIP like SSP2-4.5 simulation starting on 2015 with additional Greenland Ice Sheet melting around Greenland.",
+                "experiment": "ScenarioMIP SSP2-4.5 with hosing around Greenland.",
+                "experiment_id": "tipmip-ocn-p1t1-Bb",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Ba"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t2-Bb": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "ScenarioMIP like SSP5-8.5 simulation starting on 2015 with additional Greenland Ice Sheet melting around Greenland.",
+                "experiment": "ScenarioMIP SSP5-8.5 with hosing around Greenland.",
+                "experiment_id": "tipmip-ocn-p1t2-Bb",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Ba"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 2
+            },
+            "tipmip-ocn-p1t1-Ca": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Uniform hosing of 0.3 Sv north of 50 N in North Atlantic to Bering Strait.",
+                "experiment": "NaHosMIP u03-hos",
+                "experiment_id": "tipmip-ocn-p1t1-Ca",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Cb": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Equivalent to NaHosMIP u03-r50 experiments (Jackson et al. 2023).",
+                "experiment": "No hosing, initialized from tipmip-ocn-p1t1-Ca.",
+                "experiment_id": "tipmip-ocn-p1t1-Cb",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Ca"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t2-Ca": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Constant 0.3 Sv of water hosing over the North Atlantic and Arctiv North (North of 50 N) starting from a GWL2 stabilized run.",
+                "experiment": "NaHosMIP under GWL2",
+                "experiment_id": "tipmip-ocn-p1t2-Ca",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-up2p0-gwl2p0"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 2
+            },
+            "tipmip-ocn-p1t2-Cb": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Equivalent to NaHosMIP u03-r50 experiments (Jackson et al. 2023) in a warmer 2K world.",
+                "experiment": "No hosing, initialized from tipmip-ocn-p1t2-Ca.",
+                "experiment_id": "tipmip-ocn-p1t2-Cb",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t2-Ca"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 2
+            },
+            "tipmip-ocn-p1t1-Da": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Ramp-up to 0.3 Sv in 50 years corresponding to the same amount of freshwater as 50 years of NaHosMIP u03hos.",
+                "experiment": "Uniform hosing in the Labrador Sea.",
+                "experiment_id": "tipmip-ocn-p1t1-Da",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "esm-piControl"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Db": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "Ramp-down from 0.3 Sv to 0.0 Sv in 50 years starting from Da.",
+                "experiment": "Uniform hosing in the Labrador Sea.",
+                "experiment_id": "tipmip-ocn-p1t1-Db",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Da"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
+            },
+            "tipmip-ocn-p1t1-Dc": {
+                "activity_id": [
+                    "TIPMIP"
+                ],
+                "additional_allowed_model_components": [
+                    "AER",
+                    "BGC",
+                    "CHEM",
+                    "ISM"
+                ],
+                "description": "0 Sv freshwater branching from the ramp-down hosing in Db.",
+                "experiment": "No hosing in the Labrador Sea.",
+                "experiment_id": "tipmip-ocn-p1t1-Dc",
+                "parent_activity_id": [
+                    "TIPMIP"
+                ],
+                "parent_experiment_id": [
+                    "tipmip-ocn-p1t1-Db"
+                ],
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "sub_experiment_id": [
+                    "none"
+                ],
+                "tier": 1
             }
         },
         "forcing_index": [
@@ -3954,12 +4332,12 @@
             "r[[:digit:]]\\{1,\\}i[[:digit:]]\\{1,\\}p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "version_metadata": {
-            "file_updated": "Mon Jul 13 2026 16:27 UTC",
+            "file_updated": "Tue Jul 28 2026 10:38 UTC",
             "checksum": "",
             "CVs": {
-                "updated": "2026-07-13T16:27:32Z",
-                "tag": "v6.5.10.4",
-                "commit": "11f17f32da2e8acd70c0692c334cf5f75af673b9"
+                "updated": "2026-07-28T10:38:41Z",
+                "tag": "v6.5.10.5",
+                "commit": "2d5149b922d4a6811b4a201e23a09d7d14bdbce4"
             },
             "MIP tables": {
                 "updated": "2026-03-03T15:14:57Z",
