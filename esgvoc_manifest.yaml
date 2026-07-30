@@ -2,9 +2,11 @@ schema_version: '1'
 project:
   id: cmip6plus
   name: CMIP6Plus Controlled Vocabulary
-cv_version: 2.1.1
-universe_version: 1.0.25
+cv_version: 2.1.2
+universe_version: 1.0.27
 esgvoc:
   min_version: 4.0.0
 release_notes: |
-  - member_id: 1 modified
+  - citation_url: 1 added
+  - experiment_id: 14 added
+  - version: 2 added
