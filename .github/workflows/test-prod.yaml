@@ -20,7 +20,10 @@ jobs:
       - uses: ./.github/actions/setup-esgvoc
 
       - name: Test cmip6plus build
-        run: esgvoc test run cmip6plus . --universe-branch main
+        env:
+          REPO: ${{ github.event.pull_request.head.repo.clone_url }}
+          BRANCH: ${{ github.head_ref }}
+        run: esgvoc test run cmip6plus --repo "$REPO" --branch "$BRANCH" --universe-branch main
 
       - name: Detect changes
         id: changes
