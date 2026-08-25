@@ -21,8 +21,9 @@ jobs:
 
       - name: Test cmip6plus build
         env:
+          REPO: ${{ github.event.pull_request.head.repo.clone_url }}
           BRANCH: ${{ github.head_ref }}
-        run: esgvoc test run cmip6plus --branch "$BRANCH" --universe-branch main
+        run: esgvoc test run cmip6plus --repo "$REPO" --branch "$BRANCH" --universe-branch main
 
       - name: Detect changes
         id: changes
