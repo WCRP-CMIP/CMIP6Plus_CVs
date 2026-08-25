@@ -17,8 +17,14 @@ jobs:
 
       - name: Test cmip6plus build
         env:
+          REPO: ${{ github.event.pull_request.head.repo.clone_url || '' }}
           BRANCH: ${{ github.head_ref || github.ref_name }}
-        run: esgvoc test run cmip6plus --branch "$BRANCH" --universe-branch esgvoc_dev
+        run: |
+          if [ -n "$REPO" ]; then
+            esgvoc test run cmip6plus --repo "$REPO" --branch "$BRANCH" --universe-branch esgvoc_dev
+          else
+            esgvoc test run cmip6plus --branch "$BRANCH" --universe-branch esgvoc_dev
+          fi
 
       - name: Print publish command
         run: |
