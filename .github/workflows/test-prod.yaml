@@ -20,9 +20,7 @@ jobs:
       - uses: ./.github/actions/setup-esgvoc
 
       - name: Test cmip6plus build
-        env:
-          BRANCH: ${{ github.head_ref }}
-        run: esgvoc test run cmip6plus --branch "$BRANCH" --universe-branch main
+        run: esgvoc test run cmip6plus . --universe-branch main
 
       - name: Detect changes
         id: changes
