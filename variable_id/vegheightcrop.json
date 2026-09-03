@@ -1,5 +1,6 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "vegheightcrop",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "vegheightcrop",
+    "type": "variable",
+    "alias_standard_name": []
 }

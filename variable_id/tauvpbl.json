@@ -1,5 +1,6 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "tauvpbl",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "tauvpbl",
+    "type": "variable",
+    "alias_standard_name": []
 }

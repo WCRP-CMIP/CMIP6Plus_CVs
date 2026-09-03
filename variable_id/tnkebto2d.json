@@ -1,5 +1,6 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "tnkebto2d",
-  "type": "variable"
+    "@context": "000_context.jsonld",
+    "id": "tnkebto2d",
+    "type": "variable",
+    "alias_standard_name": []
 }
