@@ -2,16 +2,16 @@
     "Header": {
         "author": "Matthew Mizielinski",
         "collection": {
-            "CV_collection_version": "v6.5.11.0",
-            "CV_collection_modified": "2026-07-28T11:00:00Z",
-            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.11.0",
+            "CV_collection_version": "v6.5.11.1",
+            "CV_collection_modified": "2026-10-21T17:00:00Z",
+            "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.11.1",
             "specs_doc": "v6.5.0"
         },
         "file": {
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register GFDL-CM4 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: 59d1b001745de0fef21ae495d88b90cd"
+            "checksum": "md5: 4a2f16bdd225d24ad2f4580eb9a9624d"
         },
         "institution_id": "MOHC"
     },
@@ -1112,6 +1112,64 @@
             },
             "release_year": 2017,
             "source_id": "MIROC6"
+        },
+        "MIROC4m": {
+            "activity_participation": [
+                "CMIP",
+                "TIPMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "MIROC"
+            ],
+            "label": "MIROC4m",
+            "label_extended": "MIROC4m",
+            "license_info": {
+                "exceptions_contact": "@jamstec.go.jp <- miroc-cmip6",
+                "history": "",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "atmos": {
+                    "description": "CCSR AGCM (T42; 128 x 64 longitude/latitude; 20 levels; top level sigma = 0.02)",
+                    "native_nominal_resolution": "500 km"
+                },
+                "atmosChem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "land": {
+                    "description": "MATSIRO",
+                    "native_nominal_resolution": "500 km"
+                },
+                "landIce": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean": {
+                    "description": "COCO3.4 (bipolar primarily 1deg; 256 x 192 longitude/latitude; 44 levels; top grid cell 0-5 m)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocnBgchem": {
+                    "description": "none",
+                    "native_nominal_resolution": "none"
+                },
+                "seaIce": {
+                    "description": "COCO3.4",
+                    "native_nominal_resolution": "100 km"
+                }
+            },
+            "release_year": "2004",
+            "source_id": "MIROC4m"
         },
         "MIROC-ES2L": {
             "activity_participation": [
