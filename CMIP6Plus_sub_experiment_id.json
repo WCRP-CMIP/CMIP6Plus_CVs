@@ -3,7 +3,7 @@
         "author": "Matthew Mizielinski",
         "collection": {
             "CV_collection_version": "v6.5.11.1",
-            "CV_collection_modified": "2026-10-21T17:00:00Z",
+            "CV_collection_modified": "2026-10-22T12:00:00Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.11.1",
             "specs_doc": "v6.5.0"
         },
@@ -11,7 +11,7 @@
             "sub_experiment_id_modified": "Thu Mar 14 21:34:08 2024 +0000",
             "sub_experiment_id_note": "Minor tweaks to correct issues in CMIP6Plus_CV.json generation (#59)",
             "sub_experiment_id_update_commit": "385bc4dd397b4aacb4568c3833a420f0e4d30a22",
-            "checksum": "md5: 36fe318c0ed79c592d568ac1028a905d"
+            "checksum": "md5: a1a3c1ff18c5fc6685d1fe1191f1056d"
         },
         "institution_id": "MOHC"
     },
