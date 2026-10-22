@@ -3,7 +3,7 @@
         "author": "Matthew Mizielinski",
         "collection": {
             "CV_collection_version": "v6.5.11.1",
-            "CV_collection_modified": "2026-10-21T17:00:00Z",
+            "CV_collection_modified": "2026-10-22T12:00:00Z",
             "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/v6.5.11.1",
             "specs_doc": "v6.5.0"
         },
@@ -11,7 +11,7 @@
             "source_id_modified": "2025-01-09T10:01:04Z",
             "source_id_note": "Register GFDL-CM4 source_id",
             "source_id_update_commit": "70b11a67c8023c2462ea1d61ae2091dba08e1e5e",
-            "checksum": "md5: 4a2f16bdd225d24ad2f4580eb9a9624d"
+            "checksum": "md5: 57631a03d8a7328ece35ad4251816e82"
         },
         "institution_id": "MOHC"
     },
@@ -1592,6 +1592,65 @@
             },
             "release_year": "2018",
             "source_id": "UKESM1-0-LL"
+        },
+        "UKESM1-2-LL": {
+            "activity_participation": [
+                "CMIP",
+                "TIPMIP"
+            ],
+            "cohort": [
+                "Published"
+            ],
+            "institution_id": [
+                "MOHC",
+                "NERC"
+            ],
+            "label": "UKESM1-2-LL",
+            "label_extended": "eUKESM1.1-ice-N96ORCA1",
+            "license_info": {
+                "exceptions_contact": "@metoffice.gov.uk <- cmip6.ukesm1",
+                "history": "",
+                "id": "CC BY 4.0",
+                "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/)",
+                "source_specific_info": "",
+                "url": "[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)"
+            },
+            "model_component": {
+                "aerosol": {
+                    "description": "UKCA-GLOMAP-mode",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmos": {
+                    "description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+                    "native_nominal_resolution": "250 km"
+                },
+                "atmosChem": {
+                    "description": "UKCA-StratTrop",
+                    "native_nominal_resolution": "250 km"
+                },
+                "land": {
+                    "description": "JULES-ES-5.1",
+                    "native_nominal_resolution": "250 km"
+                },
+                "landIce": {
+                    "description": "bisicles-ukesm1-2",
+                    "native_nominal_resolution": "none"
+                },
+                "ocean": {
+                    "description": "NEMO-3.6 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                    "native_nominal_resolution": "100 km"
+                },
+                "ocnBgchem": {
+                    "description": "MEDUSA2",
+                    "native_nominal_resolution": "100 km"
+                },
+                "seaIce": {
+                    "description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
+                    "native_nominal_resolution": "100 km"
+                }
+            },
+            "release_year": "2023",
+            "source_id": "UKESM1-2-LL"
         }
     }
 }

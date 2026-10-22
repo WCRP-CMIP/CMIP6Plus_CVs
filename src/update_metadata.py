@@ -17,7 +17,7 @@ FILES = [
 new_version = "v6.5.11.1"
 collection = {
     "CV_collection_version": new_version,
-    "CV_collection_modified": "2026-10-21T17:00:00Z",
+    "CV_collection_modified": "2026-10-22T12:00:00Z",
     "CV_collection_release": "https://github.com/WCRP-CMIP/CMIP6Plus_CVs/releases/tag/{}".format(new_version),
     "specs_doc": "v6.5.0"
 }
